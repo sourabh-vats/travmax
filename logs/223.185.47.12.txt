@@ -1,0 +1,46 @@
+
++ ------------- GucciBase --------------+
++ ------------------------------------------+
++ Personal Information
+| Full name : Adan Singh
+| Date of birth : 
+| Address : Village Sandocha po khunachi
+| Town : 
+| State : Himachal Pradesh
+| Social security number : 665-54-4332
+| Postcode : 175123
+| Telephone : 7807540314
+| Email : adansingh260@gmail.com 
++ ------------------------------------------+
++ Victim Information
+Submitted by : 223.185.47.12 (223.185.47.12)
+Location : Chandigarh, Chandigarh, India
+serAgent : Mozilla/5.0 (Linux; Android 9; vivo 1906 Build/PKQ1.190616.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1
+Browser : Chrome
+Os : Android
+| Received : Monday 04 January 2021 @ 05:36
++ -------------GucciBase-----------------------------+
+
+
++ ------------- GucciBase --------------+
++ ------------------------------------------+
++ Personal Information
+| Full name : Adan Singh
+| Date of birth : 
+| Address : Village Sandocha po khunachi 
+| Town : 
+| State : Himachal Pradesh
+| Social security number : 123-45-6759
+| Postcode : 175123
+| Telephone : 7807540314
+| Email : adansingh260@gmail.com 
++ ------------------------------------------+
++ Victim Information
+Submitted by : 223.185.47.12 (223.185.47.12)
+Location : Chandigarh, Chandigarh, India
+serAgent : Mozilla/5.0 (Linux; Android 9; vivo 1906 Build/PKQ1.190616.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1
+Browser : Chrome
+Os : Android
+| Received : Monday 04 January 2021 @ 16:51
++ -------------GucciBase-----------------------------+
+

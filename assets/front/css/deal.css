@@ -1,0 +1,106 @@
+
+.deal-logo {
+	
+	/* text-align: center !important; */
+	/* position: relative; */
+	display: inline-block;
+}
+.grey {
+	
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+.deal-btn {
+	font-size: 36px;
+	font-weight: bold;
+	color: #fff;
+
+	padding: 0;
+	margin: 0;
+}
+.img-responsive.black3 {
+	width: 100%;
+	height: 217px;
+	border: 1px solid #ccc;
+}
+.item {
+	border: 1px solid #ccc;
+	/* max-width: 100%; */
+	box-shadow: 0 4px 9px rgba(0, 0, 0, 0.6);
+	margin-top: 30px;
+}
+.fd_a {
+	font-size: 16px;
+	color: #000;
+	margin: 11px 0;
+	white-space: normal;
+}
+.grab-btn {
+	margin-bottom: 20px;
+	background: #2f3c97;
+	border: #2f3c97;
+}
+.grab-btn:hover{
+	margin-bottom: 20px;
+	background: #ec971f;
+	border: #ec971f;
+}
+.grab-btn1 {
+	font-size: 18px;
+	
+	margin-top: 30px;
+
+}
+.main-btn{
+	margin-top:30px;
+}
+.deal-top{
+	background: #2f3c97;
+	padding: 5px;
+	margin-top: 10px;
+}
+.grey h2 {
+	font-size: 39px;
+	letter-spacing: 0;
+	font-family: proxima;
+	color: #fff;
+	margin-top: 8px;
+	text-align: center;
+}
+.dd {
+	
+}
+
+.carousel-control.left {
+	background-image: none !important;
+
+}
+.carousel-control.right{
+	background-image: none !important;
+
+}
+.gg {
+	margin-top: 30px;
+}
+.aa {
+	margin-top: 32px;
+	/* background: #; */
+	border: 1px solid #c5d5d5;
+	padding: 100px 14px;
+	background: #faffff;
+}
+@media(max-width:1280px){
+	.aa {	
+	padding: 85px 14px;
+	}
+}
+@media(min-width:320px) and (max-width:576px){
+.grey h2 {
+	font-size: 28px;
+	letter-spacing: 0;
+	font-family: proxima;
+	color: #2f3c97;
+	margin-top: 8px;
+}
+}
