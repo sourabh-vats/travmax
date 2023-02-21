@@ -6,7 +6,7 @@
    <div class="container">
       <div class="partner_main">
          <div class="row">
-            <h2 class="text-center nao-just-custmore">Holidays are now Affordable & Profitable </h2>
+            <h2 class="text-center nao-just-custmore">Test </h2>
             <div class="inner-images">
                 <img src="<?php echo base_url(); ?>assets/images/WhatsAp.jpg" class="img-responsive">
              </div>
