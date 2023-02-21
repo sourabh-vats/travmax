@@ -561,7 +561,7 @@ var x = setInterval(function() {
 
 
 
-<h1 class="tittles">My Total Earnings</h1>
+<h1 class="tittles">My total Earnings</h1>
 
 <div class="gm fst_gm clr4 col-sm-4">
   <a href="<?php echo base_url(); ?>/admin/add_money">
@@ -614,7 +614,7 @@ var x = setInterval(function() {
 <div class="imggg">
 	<img src="images/img12.jpg"> 
 	</div>
-	<div class="df"><span>My Total Earnings<big> <i class="fa fa-inr" ></i>  <?php echo array_sum(array_column($incomes, 'tamount'))-$credits;?></big> </span></div> 
+	<div class="df"><span>my Total Earnings<big> <i class="fa fa-inr" ></i>  <?php echo array_sum(array_column($incomes, 'tamount'))-$credits;?></big> </span></div> 
 </div>
  </a> 
 </div>  -->

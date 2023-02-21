@@ -315,7 +315,7 @@ style=" font-size: 20px;
 <div class="imggg">
 	<img src="images/img12.jpg"> 
 	</div>
-	<div class="df"><span>My Total Earnings<big> <?php echo count($online_purchase);?></big> </span></div> 
+	<div class="df"><span>My Total earnings<big> <?php echo count($online_purchase);?></big> </span></div> 
 </div>
  </a> 
 </div>
