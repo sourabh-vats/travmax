@@ -2,11 +2,9 @@
 if ($this->session->userdata('is_customer_logged_in')) {
     echo ("logged in");
 } else {
-?>
-    <script type="text/javascript">
-        $("#registerLoginModal").modal("show");
-    </script>
-<?php
+    echo '<script type="text/javascript">';
+    echo '$("#registerLoginModal").modal("show");';
+    echo '</script>';
 }
 ?>
 <style>
