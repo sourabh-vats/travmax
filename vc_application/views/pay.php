@@ -4,6 +4,7 @@ if($this->session->userdata('is_customer_logged_in')){
 }else{
     echo("logged out");
 }
+echo base_url();
 ?>
 <style>
     .topsection {
