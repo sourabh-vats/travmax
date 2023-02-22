@@ -2,7 +2,7 @@
 if($this->session->userdata('is_customer_logged_in')){
     echo("logged in");
 }else{
-    echo("logged out");
+    echo '<script>$("#registerLoginModal").modal("show");</script>';
 }
 ?>
 <style>
