@@ -1,8 +1,8 @@
 <?php
 if($this->session->userdata('is_customer_logged_in')){
-    die("logged in");
+    echo("logged in");
 }else{
-    die("logged out");
+    echo("logged out");
 }
 ?>
 <style>
