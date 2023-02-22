@@ -1,3 +1,10 @@
+<?php
+if($this->session->userdata('is_customer_logged_in')){
+    die("logged in");
+}else{
+    die("logged out");
+}
+?>
 <style>
     .topsection {
         min-height: 50vh;
