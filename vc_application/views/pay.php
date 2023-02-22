@@ -1,8 +1,12 @@
 <?php
-if($this->session->userdata('is_customer_logged_in')){
-    echo("logged in");
-}else{
-    echo '<script>$("#registerLoginModal").modal("show");</script>';
+if ($this->session->userdata('is_customer_logged_in')) {
+    echo ("logged in");
+} else {
+?>
+    <script>
+        $("#registerLoginModal").modal("show");
+    </script>
+<?php
 }
 ?>
 <style>
