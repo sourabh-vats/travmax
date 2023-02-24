@@ -475,6 +475,7 @@ class Profile extends CI_Controller
         $data['shopping_voucher_modal'] = '';
         $data['invite_email'] = '';
         $data['main_content'] = 'admin/admin_welcome';
+        $data['package'] = $this->Users_model->get_package($id);
         $this->load->view('includes/admin/template', $data);
     }
 

@@ -590,12 +590,18 @@
         <div class="df">
           <span>My Installments <big> <?php //echo $credits;
                                       ?></big> </span>
-        </div>
+  
+  </div>
       </div>
-    </a>
+  
+      </a>
   </div>
 
-  <h1 class="tittles">My total Earnings</h1>
+
+  <h1 class="tittles">My Package</h1>
+  <div>
+  <?php echo $data['package']; ?>
+  </div>
 
   <h1 class="tittles">My total Earnings</h1>
 
