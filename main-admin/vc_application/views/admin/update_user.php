@@ -51,7 +51,7 @@ $attributes = array('class' => 'form', 'id' => '');
 echo validation_errors();
 //print_r($editor);
 if (empty($user)) {
-    echo form_open('admin/upgrade_user', $attributes);
+    echo form_open('admin/update_user', $attributes);
 ?>
     <fieldset>
         <div class="form-group col-sm-4">
@@ -68,7 +68,7 @@ if (empty($user)) {
     </fieldset>
 <?php echo form_close();
 } else {
-    echo form_open('admin/upgrade_user/' . $this->uri->segment(3), $attributes);
+    echo form_open('admin/update_user/' . $this->uri->segment(3), $attributes);
 ?>
     <fieldset>
         <div class="form-group col-sm-4">
