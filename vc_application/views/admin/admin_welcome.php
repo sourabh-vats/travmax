@@ -633,7 +633,6 @@
 
 
 
-
   <!----<div class="gm fst_gm clr3 col-sm-4">
   <a href="javascript:;">
 <div class="pgn">     
@@ -1181,6 +1180,7 @@ my purchases  </br><button>Enter</button></span>
     </div>
   </div>
 </div>
+<h1 class="tittles">My Packages</h1>
 </div>
 <script>
   jQuery(document).ready(function() {
