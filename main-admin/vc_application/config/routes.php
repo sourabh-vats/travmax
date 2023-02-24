@@ -62,6 +62,10 @@ $route['login'] = 'user/index';
 $route['logout'] = 'user/logout';
 $route['login/validate_credentials'] = 'user/validate_credentials';
 
+
+// New
+$route['admin/update_user'] = 'vc_site_admin/customer/update_user';
+
 /*Orders*/
 $route['admin/member-login'] = 'vc_site_admin/user/member_login';
 $route['admin/order'] = 'vc_site_admin/order/index';
