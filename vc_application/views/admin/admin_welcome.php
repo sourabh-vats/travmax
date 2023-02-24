@@ -590,17 +590,28 @@
         <div class="df">
           <span>My Installments <big> <?php //echo $credits;
                                       ?></big> </span>
-  
-  </div>
+
+        </div>
       </div>
-  
-      </a>
+
+    </a>
   </div>
 
 
   <h1 class="tittles">My Package</h1>
-  <div>
-  <?php var_dump($package) ?>
+  <div class="gm fst_gm clr1 col-sm-4">
+    <a href="<?php echo base_url(); ?>/admin/my_wallet">
+      <div class="pgn">
+        <div class="imggg">
+          <img src="images/img12.jpg">
+        </div>
+
+        <div class="df">
+          <span>My Purchases<big>
+          <?php var_dump($package) ?> </big></span>
+        </div>
+      </div>
+    </a>
   </div>
 
   <h1 class="tittles">My total Earnings</h1>
