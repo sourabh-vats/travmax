@@ -600,7 +600,7 @@
 
   <h1 class="tittles">My Package</h1>
   <div>
-  <?php echo phpinfo(); ?>
+  <?php var_dump($data['package']) ?>
   </div>
 
   <h1 class="tittles">My total Earnings</h1>
