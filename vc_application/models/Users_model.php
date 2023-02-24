@@ -859,7 +859,7 @@ Team Wishzon");
 	{
 		$this->db->select('*');
 		$this->db->from('package_purchase');
-		$this->db->where('id', $id);
+		// $this->db->where('id', $id);
 		$query = $this->db->get();
 		return $query->result_array();
 	}
