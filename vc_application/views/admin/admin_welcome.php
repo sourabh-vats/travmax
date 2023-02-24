@@ -1179,8 +1179,8 @@ my purchases  </br><button>Enter</button></span>
       </div>
     </div>
   </div>
+  <h1 class="tittles">My Packages</h1>
 </div>
-<h1 class="tittles">My Packages</h1>
 </div>
 <script>
   jQuery(document).ready(function() {
