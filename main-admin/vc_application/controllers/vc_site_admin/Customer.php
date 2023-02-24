@@ -1232,9 +1232,10 @@ Team Divinoindia");
         $data['page_slug'] = 'Update User';
         $data['page_title'] = 'Update User';
 
-        var_dump($data['page_title']);
-        die();
         if ($this->input->server('REQUEST_METHOD') === 'POST' && $this->input->post('find_customer') != '') {
+            echo 'reached here';
+            var_dump($data['page_title']);
+            die();
             $this->form_validation->set_rules('assign_to', 'assign to', 'required|trim');
             $find_user = $this->input->post('assign_to');
             $find_user = trim($find_user);
