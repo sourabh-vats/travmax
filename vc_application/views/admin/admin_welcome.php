@@ -1119,6 +1119,9 @@ my purchases  </br><button>Enter</button></span>
 <div class="col-sm-6 col-sm-offset-3">
 <div class="frdn" data-toggle="modal" data-target="#invite-friend-modal">Invite Friends</div>
 </div> ---->
+
+<h1 class="tittles">My Packages</h1>
+
 <!-- Modal -->
 <div id="all-transaction-modal" class="modal fade" role="dialog">
   <div class="modal-dialog modal-lg">
@@ -1179,7 +1182,6 @@ my purchases  </br><button>Enter</button></span>
       </div>
     </div>
   </div>
-  <h1 class="tittles">My Packages</h1>
 </div>
 </div>
 <script>
