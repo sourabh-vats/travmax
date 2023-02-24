@@ -1238,7 +1238,7 @@ Team Divinoindia");
             $find_user = $this->input->post('assign_to');
             $find_user = trim($find_user);
             $data['user'] = $this->Users_model->get_customer_data_by_id($find_user);
-            var_dump($data['user']);
+            print_r($data['user']);
             die();
             if (empty($data['user'])) {
                 $this->form_validation->set_rules('start_date', '', 'required');
