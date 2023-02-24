@@ -1238,7 +1238,7 @@ Team Divinoindia");
             $find_user = $this->input->post('assign_to');
             $find_user = trim($find_user);
             $data['user'] = $this->Users_model->get_customer_data_by_id($find_user);
-            
+
             if (empty($data['user'])) {
                 $this->form_validation->set_rules('start_date', '', 'required');
                 $this->form_validation->set_message('required', 'This user is not exist');
@@ -1249,6 +1249,8 @@ Team Divinoindia");
             if ($this->form_validation->run()) {
             }
         } else if ($this->input->server('REQUEST_METHOD') === 'POST') {
+            echo 'reached here';
+            die();
             /*form validation*/
             $this->form_validation->set_rules('assign_to', 'assign to', 'required|trim');
             $this->form_validation->set_rules('product', 'Package', 'required');
