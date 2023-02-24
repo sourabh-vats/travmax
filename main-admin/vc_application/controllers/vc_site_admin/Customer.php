@@ -11,6 +11,7 @@ class Customer extends CI_Controller
         $this->load->helper('form');
         $this->load->library('form_validation');
         $this->load->model('customer_model');
+        $this->load->model('Users_model');
 
         if (!$this->session->userdata('is_admin_logged_in')) {
             redirect('admin');
