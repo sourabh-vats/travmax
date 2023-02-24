@@ -90,5 +90,15 @@ class Users_model extends CI_Model {
 		$query = $this->db->get();
 		return $query->result_array(); 
 	}
+
+	function get_customer_data_by_id($blissid)
+	{
+		$this->db->select('c.*,d.id as did,d.customer_id as dcustomer_id,d.direct as ddirect');
+		$this->db->from('customer as c');
+		$this->db->from('customer as d', 'd.customer_id = c.customer_id', 'left');
+		$this->db->where('c.customer_id', $blissid);
+		$query = $this->db->get();
+		return $query->result_array();
+	}
 }
 
