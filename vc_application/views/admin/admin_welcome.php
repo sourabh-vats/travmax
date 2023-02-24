@@ -595,7 +595,7 @@
     </a>
   </div>
 
-
+  <h1 class="tittles">My total Earnings</h1>
 
   <h1 class="tittles">My total Earnings</h1>
 
@@ -1120,7 +1120,6 @@ my purchases  </br><button>Enter</button></span>
 <div class="frdn" data-toggle="modal" data-target="#invite-friend-modal">Invite Friends</div>
 </div> ---->
 
-<h1 class="tittles">My Packages</h1>
 
 <!-- Modal -->
 <div id="all-transaction-modal" class="modal fade" role="dialog">
