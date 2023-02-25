@@ -182,9 +182,7 @@ echo '</pre>';
                 </button>
                 <div id="navbarCollapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-
                         <?php $store = $this->uri->segment(2); ?>
-
                         <?php if ($user['franchisee'] > 0 && 1 == 2) { ?>
                             <li class="home atv"> <a href="<?php echo base_url(); ?>admin/franchisee"><i class="fa fa-dashboard"></i> Dashboard</a></li>
                             <li><a href="<?php echo base_url(); ?>"><i class="fa fa-home"></i> Home</a></li>
@@ -196,7 +194,7 @@ echo '</pre>';
 
                             <li <?php if ($store == '') {
                                     echo 'class="home atv"';
-                                } ?>><a href="<?php echo base_url(); ?>admin"><i class="fa fa-user-circle-o" aria-hidden="true"></i> My Account </a></li>
+                                } ?>><a href="<?php echo base_url(); ?>admin"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Home </a></li>
                             <li <?php if ($store == 'profile') {
                                     echo 'class="home atv"';
                                 } ?>><a href="<?php echo base_url(); ?>admin/profile"><i class="fa fa-file-o" aria-hidden="true"></i> Personal Details</a></li>
@@ -204,8 +202,8 @@ echo '</pre>';
                                     echo 'class="home atv"';
                                 } ?>><a href="<?php echo base_url(); ?>admin/kyc"><i class="fa fa-university" aria-hidden="true"></i> Payment Details</a></li>
 
-                            <li><a href="<?php echo base_url(); ?>admin/add_member"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Add Member's </a></li>
-                            <li><a href="<?php echo base_url(); ?>admin/member"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> My Member's </a></li>
+                            <!-- <li><a href="<?php echo base_url(); ?>admin/add_member"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Add Member's </a></li>
+                            <li><a href="<?php echo base_url(); ?>admin/member"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> My Member's </a></li> -->
 
                             <li <?php if ($store == 'upgrade_account') {
                                     echo 'class="home atv"';
@@ -214,7 +212,7 @@ echo '</pre>';
                             <li><a href="<?php echo base_url(); ?>invite_friend"><i class="fa fa-share-alt" aria-hidden="true"></i> Invite Friends</a></li>
                             <li><a href="<?php echo base_url(); ?>admin/installments"><i class="fa fa-share-alt" aria-hidden="true"></i> Installments</a></li>
                             <!--<li><a href="<?php echo base_url(); ?>admin/password"><i class="fa fa-lock" aria-hidden="true"></i> Change Password</a></li>-->
-                            <!--<li><a href="<?php echo base_url(); ?>admin/uploadreceipts"><i class="fa fa-safari" aria-hidden="true"></i> Untraced Purchase</a></li>-->
+                            <li><a href="<?php echo base_url(); ?>admin/uploadreceipts"><i class="fa fa-safari" aria-hidden="true"></i> Upload Payment Proof</a></li>
                             <li <?php if ($store == 'DistributorLevelInformation') {
                                     echo 'class="home atv"';
                                 } ?>><a href="<?php echo base_url(); ?>admin/DistributorLevelInformation"><i class="fa fa-safari" aria-hidden="true"></i> My Circle Information</a></li>
