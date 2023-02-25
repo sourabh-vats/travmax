@@ -1,5 +1,6 @@
 <?php
 $user = $profile[0];
+$full_name = $user['f_name'] . " " . $user['l_name'];
 echo '<pre>';
 print_r($user);
 echo '</pre>';
@@ -162,7 +163,7 @@ echo '</pre>';
                 <img src="/images/avatar.png">
             </div>
             <div class="col-sm-12  protext text-center">
-                <h3><?php echo $this->session->userdata('full_name'); ?></h3>
+                <h3><?php echo $full_name; ?></h3>
             </div>
             <div class="col-sm-12 smg text-center">
                 <h5>Unique ID: <?php echo $this->session->userdata('bliss_id'); ?></h5>
