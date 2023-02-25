@@ -14,6 +14,68 @@ class Profile extends CI_Controller
             redirect(base_url() . '');
         }
     }
+
+    public function index()
+    {
+        $data['page_keywords'] = '';
+        $data['page_description'] = '';
+        $data['page_slug'] = 'Dashboard';
+        $data['page_title'] = 'Dashboard';
+
+        $data['myfriends'] = array();
+        $id = $this->session->userdata('cust_id');
+        $customer_id = $this->session->userdata('bliss_id');
+        $data['profile'] = $this->Users_model->profile($id);
+
+        echo '<pre>';
+        print_r($data['profile']);
+        echo '</pre>';
+        die();
+
+        $team = array();
+        $ids = array($customer_id);
+        $p = 0;
+        while ($p < 1) {
+            $myfriends = $this->Users_model->my_friends_in($ids);
+            if (!empty($myfriends)) {
+                $team = array_merge($team, $myfriends);
+
+                $ids = array_column($myfriends, 'customer_id');
+            } else {
+                $p++;
+            }
+        }
+        $data['total_partner'] = $team;
+
+        $left_count = array_column($team, 'macro');
+        $team_consume = array_column($team, 'consume');
+        $data['macro_partner'] = array_count_values($left_count);
+        $data['team_consume'] = array_count_values($team_consume);
+        $data['card_request'] = $this->Users_model->customer_card_request($id);
+        $data['products'] = $this->Users_model->my_orders($id);
+        $data['bliss_amount'] = $this->Users_model->my_bliss_amount($id);
+        $data['online_purchase'] = $this->Users_model->redeem_online_purchase($customer_id);
+        //$data['macro_purchase'] = $this->Users_model->redeem_macro_purchase($id);
+        $data['online_purchase_num'] = $this->Users_model->select_manual_num('upload_receipt', array('customer_id' => $customer_id));
+        $data['macro_purchase_num'] = $this->Users_model->select_manual_num('transaction_wallet', array('userid' => $id, 'type' => 'Activate Account'));
+        $data['macro_purchase_sum'] = $this->Users_model->get_all_manual_sum('transaction_wallet', 'amount', array('userid' => $id, 'type' => 'Activate Account'));
+        $data['online_purchase_sum'] = $this->Users_model->get_all_manual_sum('upload_receipt', 'amount', array('customer_id' => $customer_id));
+        $data['redeem_amount'] = $this->Users_model->bliss_perk_redeem_amount($id);
+        $data['bliss_perk_history'] = $this->Users_model->bliss_perk_history($id);
+        $data['show_direct'] = $this->Users_model->show_incomes($id);
+        $data['incomes'] = $this->Users_model->total_incomes($id);        //print_r($data['incomes']); die();
+        $data['moneyback'] = $this->Users_model->get_first_moneyback($id);
+
+        $data['purchases'] = $this->Users_model->get_all_purchases($id);
+        //print_r($data['purchases']); die();
+        $data['redeem_error'] = '';
+        $data['shopping_voucher_modal'] = '';
+        $data['invite_email'] = '';
+        $data['main_content'] = 'admin/admin_welcome';
+        $data['package'] = $this->Users_model->get_package($id);
+        $this->load->view('includes/admin/template', $data);
+    }
+
     public function request_fund()
     {
         $id = $this->session->userdata('cust_id');
@@ -419,66 +481,6 @@ class Profile extends CI_Controller
         $this->load->view('includes/admin/template', $data);
     }
 
-
-    public function index()
-    {
-        $data['page_keywords'] = '';
-        $data['page_description'] = '';
-        $data['page_slug'] = 'profile';
-        $data['page_title'] = 'Profile';
-
-
-
-        $data['myfriends'] = array();
-        $id = $this->session->userdata('cust_id');
-        $customer_id = $this->session->userdata('bliss_id');
-        $data['profile'] = $this->Users_model->profile($id);
-
-
-        $team = array();
-        $ids = array($customer_id);
-        $p = 0;
-        while ($p < 1) {
-            $myfriends = $this->Users_model->my_friends_in($ids);
-            if (!empty($myfriends)) {
-                $team = array_merge($team, $myfriends);
-
-                $ids = array_column($myfriends, 'customer_id');
-            } else {
-                $p++;
-            }
-        }
-        $data['total_partner'] = $team;
-
-        $left_count = array_column($team, 'macro');
-        $team_consume = array_column($team, 'consume');
-        $data['macro_partner'] = array_count_values($left_count);
-        $data['team_consume'] = array_count_values($team_consume);
-        $data['card_request'] = $this->Users_model->customer_card_request($id);
-        $data['products'] = $this->Users_model->my_orders($id);
-        $data['bliss_amount'] = $this->Users_model->my_bliss_amount($id);
-        $data['online_purchase'] = $this->Users_model->redeem_online_purchase($customer_id);
-        //$data['macro_purchase'] = $this->Users_model->redeem_macro_purchase($id);
-        $data['online_purchase_num'] = $this->Users_model->select_manual_num('upload_receipt', array('customer_id' => $customer_id));
-        $data['macro_purchase_num'] = $this->Users_model->select_manual_num('transaction_wallet', array('userid' => $id, 'type' => 'Activate Account'));
-        $data['macro_purchase_sum'] = $this->Users_model->get_all_manual_sum('transaction_wallet', 'amount', array('userid' => $id, 'type' => 'Activate Account'));
-        $data['online_purchase_sum'] = $this->Users_model->get_all_manual_sum('upload_receipt', 'amount', array('customer_id' => $customer_id));
-        $data['redeem_amount'] = $this->Users_model->bliss_perk_redeem_amount($id);
-        $data['bliss_perk_history'] = $this->Users_model->bliss_perk_history($id);
-        $data['show_direct'] = $this->Users_model->show_incomes($id);
-        $data['incomes'] = $this->Users_model->total_incomes($id);        //print_r($data['incomes']); die();
-        $data['moneyback'] = $this->Users_model->get_first_moneyback($id);
-
-        $data['purchases'] = $this->Users_model->get_all_purchases($id);
-        //print_r($data['purchases']); die();
-        $data['redeem_error'] = '';
-        $data['shopping_voucher_modal'] = '';
-        $data['invite_email'] = '';
-        $data['main_content'] = 'admin/admin_welcome';
-        $data['package'] = $this->Users_model->get_package($id);
-        $this->load->view('includes/admin/template', $data);
-    }
-
     public function get_friend_by_id($customer_id)
     {
         $return = array('name' => '', 'friends' => '', 'return' => 'false');
@@ -660,13 +662,6 @@ class Profile extends CI_Controller
         $this->load->view('includes/admin/template', $data);
     }
 
-
-
-
-
-
-
-
     public function profile_details()
     {
         $id = $this->session->userdata('cust_id');
@@ -731,7 +726,6 @@ class Profile extends CI_Controller
         $data['main_content'] = 'admin/profile_details';
         $this->load->view('includes/admin/template', $data);
     }
-
 
     public function uploadreceipts()
     {
@@ -855,10 +849,6 @@ class Profile extends CI_Controller
         $data['main_content'] = 'admin/product';
         $this->load->view('includes/admin/template', $data);
     }
-
-
-
-
 
     public function show_income()
     {
@@ -1024,10 +1014,6 @@ class Profile extends CI_Controller
         $this->load->view('includes/admin/template', $data);
     }
 
-
-
-
-
     public function payment()
     {
 
@@ -1106,7 +1092,6 @@ class Profile extends CI_Controller
     }
 
     // callback method
-
     public function callback()
     {
         if (!empty($this->input->post('razorpay_payment_id')) && !empty($this->input->post('merchant_order_id'))) {
@@ -1149,62 +1134,39 @@ class Profile extends CI_Controller
 
                             $error = $response_array['error']['code'] . ':' . $response_array['error']['description'];
                         } else {
-
                             $error = 'RAZORPAY_ERROR:Invalid Response <br/>' . $result;
                         }
                     }
-
                     //echo "<pre>";print_r($response_array);//exit;
-
                 }
-
                 //close connection 
-
                 curl_close($ch); //die();
-
             } catch (Exception $e) {
-
                 $success = false;
-
                 $error = 'OPENCART_ERROR:Request to Razorpay Failed';
             }
-
             if ($success === true) {
-
                 if (!empty($this->session->userdata('ci_subscription_keys'))) {
-
                     $this->session->unset_userdata('ci_subscription_keys');
                 }
-
-
-
                 $this->session->set_flashdata('flash_message', 'updated');
-
                 if (!$order_info['order_status_id']) {
-
                     redirect($this->input->post('merchant_surl_id'));
                 } else {
-
                     redirect($this->input->post('merchant_surl_id'));
                 }
-
                 $this->session->unset_userdata('insid');
             } else {
-
                 redirect($this->input->post('merchant_furl_id'));
             }
         } else {
-
             echo 'An error occured. Contact site administrator, please!';
         }
-
         redirect(base_url('vc_site_admin/profile/payment'));
     }
 
     public function upgrade_account()
     {
-
-
         $id = $this->session->userdata('cust_id');
         $customer_id = $this->session->userdata('bliss_id');
         $data['profile'] = $this->Users_model->get_customer_data_by_id($customer_id);
@@ -1341,7 +1303,6 @@ class Profile extends CI_Controller
         $this->load->view('includes/admin/template', $data);
     }
 
-
     public function upgrade_user()
     {
 
@@ -1365,8 +1326,7 @@ class Profile extends CI_Controller
             //if the form has passed through the validation
             if ($this->form_validation->run()) {
             }
-        } 
-        else if ($this->input->server('REQUEST_METHOD') === 'POST') {
+        } else if ($this->input->server('REQUEST_METHOD') === 'POST') {
             /*form validation*/
             $this->form_validation->set_rules('assign_to', 'assign to', 'required|trim');
             $this->form_validation->set_rules('product', 'Package', 'required');
@@ -1765,7 +1725,6 @@ class Profile extends CI_Controller
         $data['main_content'] = 'admin/Payment_request';
         $this->load->view('includes/admin/template', $data);
     }
-
 
     public function add_member()
     {
