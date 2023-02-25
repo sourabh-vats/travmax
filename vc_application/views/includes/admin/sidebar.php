@@ -1,5 +1,8 @@
 <?php
 $user = $profile[0];
+echo '<pre>';
+print_r($user);
+echo '</pre>';
 ?>
 
 <style>
