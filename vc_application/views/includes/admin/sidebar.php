@@ -154,32 +154,19 @@ $user = $profile[0];
 
 <div class="col-sm-2 left-bar">
     <div class="col-sm-12  col-xs-10 pro-pic smryy">
-
         <div class="user_name text-center ">
-
             <div id="show" class="fileinput-preview thumbnail bult" style="">
                 <img src="/images/avatar.png">
             </div>
-
-
             <div class="col-sm-12  protext text-center">
                 <h3><?php echo $this->session->userdata('full_name'); ?></h3>
-                <h3><?php if ($user['macro'] > 0) {
-                        echo 'Macro Partner';
-                    } else {
-                        echo 'Micro Partner';
-                    }   ?></h3>
             </div>
-
             <div class="col-sm-12 smg text-center">
-                <h5>ZKey: <?php echo $this->session->userdata('bliss_id'); ?></h5>
-                <p><i class="fa fa-phone"></i> : +91 <?php echo $profile[0]['phone']; ?> </p>
-                <p><i class="fa fa-envelope"></i> : <?php echo $profile[0]['email']; ?> </p>
-
+                <h5>Unique ID: <?php echo $this->session->userdata('bliss_id'); ?></h5>
             </div>
-
         </div>
     </div>
+
     <div class="list-right col-xs-2">
         <div class="prfl">
             <nav role="navigation" class="navbar navbar-default">
