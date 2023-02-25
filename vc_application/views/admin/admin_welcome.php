@@ -370,6 +370,20 @@
   }
   echo validation_errors();
   ?>
+
+<?php
+//Notification if user hasn't selected or booked any package
+if ($has_package) {
+  # code...
+} else {
+  echo '<div class="alert alert-danger">';
+  echo '<a class="close" data-dismiss="alert">×</a>';
+  echo 'You have not booked any package. Please book a package to activate your account. Click Here to book your package.';
+  echo '</div>';
+}
+
+
+?>
 </div>
 <div class="col-sm-12 right-bar">
 
