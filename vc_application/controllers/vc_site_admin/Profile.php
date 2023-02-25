@@ -28,7 +28,8 @@ class Profile extends CI_Controller
         $data['profile'] = $this->Users_model->profile($id);
 
         echo '<pre>';
-        print_r($data['profile']);
+        echo $id;
+        echo $customer_id;
         echo '</pre>';
         die();
 
