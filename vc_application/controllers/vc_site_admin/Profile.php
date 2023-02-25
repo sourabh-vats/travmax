@@ -27,12 +27,7 @@ class Profile extends CI_Controller
         $customer_id = $this->session->userdata('bliss_id');
         $data['profile'] = $this->Users_model->profile($id);
 
-        echo '<pre>';
-        echo $id;
-        echo $customer_id;
-        echo '</pre>';
-        die();
-
+        //Calculate Total Team Members
         $team = array();
         $ids = array($customer_id);
         $p = 0;
@@ -40,7 +35,6 @@ class Profile extends CI_Controller
             $myfriends = $this->Users_model->my_friends_in($ids);
             if (!empty($myfriends)) {
                 $team = array_merge($team, $myfriends);
-
                 $ids = array_column($myfriends, 'customer_id');
             } else {
                 $p++;
