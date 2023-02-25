@@ -608,7 +608,7 @@
 
         <div class="df">
           <span>My Purchases<big>
-          <?php var_dump($package) ?> </big></span>
+          <?php var_dump($has_package) ?> </big></span>
         </div>
       </div>
     </a>
