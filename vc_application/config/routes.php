@@ -149,6 +149,9 @@ $route['admin/profile'] = 'vc_site_admin/profile/profile';
 $route['admin/kyc'] = 'vc_site_admin/profile/kyc';
 $route['admin/profile_details'] = 'vc_site_admin/profile/profile_details';
 
+// Select Package
+$route['admin/select_package'] = 'vc_site_admin/profile/select_package';
+
 /* Admin  upload receipt*/
 $route['admin/uploadreceipts'] = 'vc_site_admin/profile/uploadreceipts';
 $route['admin/uploadreceipts/add'] = 'vc_site_admin/profile/addreceipts';

@@ -78,6 +78,27 @@ class Profile extends CI_Controller
         $this->load->view('includes/admin/template', $data);
     }
 
+    public function select_package()
+    {
+        $data['page_keywords'] = '';
+        $data['page_description'] = '';
+        $data['page_slug'] = 'Select Package';
+        $data['page_title'] = 'Dashboard';
+
+        $id = $this->session->userdata('cust_id');
+        $customer_id = $this->session->userdata('bliss_id');
+        $data['has_package'] = false;
+        $data['package_information'] = $this->Users_model->get_package($id);
+        if(empty($data['package_information'])){
+            $data['has_package'] = false;
+        }else{
+            $data['has_package'] = true;
+        }
+
+        $data['main_content'] = 'admin/select_package';
+        $this->load->view('includes/admin/template', $data);
+    }
+
     public function request_fund()
     {
         $id = $this->session->userdata('cust_id');

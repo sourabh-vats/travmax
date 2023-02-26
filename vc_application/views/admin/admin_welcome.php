@@ -376,7 +376,7 @@
   if (!$has_package) {
     echo '<div class="alert alert-danger">';
     echo '<a class="close" data-dismiss="alert">×</a>';
-    echo 'You have not booked any package. Please book a package to activate your account. Click Here to book your package.';
+    echo 'You have not booked any package. Please book a package to activate your account. <a href="/admin/select_package">Click Here</a> to book your package.';
     echo '</div>';
   }
   ?>
