@@ -87,6 +87,7 @@ class Profile extends CI_Controller
 
         $id = $this->session->userdata('cust_id');
         $customer_id = $this->session->userdata('bliss_id');
+        $data['profile'] = $this->Users_model->profile($id);
         $data['has_package'] = false;
         $data['package_information'] = $this->Users_model->get_package($id);
         if(empty($data['package_information'])){
