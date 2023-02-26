@@ -41,9 +41,11 @@ class Profile extends CI_Controller
             }
         }
         $data['total_partner'] = $team;
-        $this->Users_model->get_package($id);
 
         $data['has_package'] = false;
+        $data['package_information'] = $this->Users_model->get_package($id);
+        print_r($data['package_information']);
+        die();
 
         $left_count = array_column($team, 'macro');
         $team_consume = array_column($team, 'consume');
