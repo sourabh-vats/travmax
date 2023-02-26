@@ -45,13 +45,10 @@ class Profile extends CI_Controller
         $data['has_package'] = false;
         $data['package_information'] = $this->Users_model->get_package($id);
         if(empty($data['package_information'])){
-            echo 'No package information found.';
-            die();
+            $data['has_package'] = false;
         }else{
-            print_r($data['package_information']);
-            die();
+            $data['has_package'] = true;
         }
-        
 
         $left_count = array_column($team, 'macro');
         $team_consume = array_column($team, 'consume');
