@@ -44,6 +44,8 @@ class Profile extends CI_Controller
 
         $data['has_package'] = false;
         $data['package_information'] = $this->Users_model->get_package($id);
+        print_r($data['package_information']);
+            die();
         if(empty($data['package_information'])){
             echo 'No package information found.';
             die();
