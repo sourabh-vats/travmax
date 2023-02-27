@@ -6,3 +6,33 @@
         </div>
     <?php } ?>
 </div>
+<div class="row">
+    <h1 class="text-center">Pick A Plan</h1>
+    <div class="col">
+        <h2>Travnow</h2>
+        <p>Travel Now</p>
+        <p>Pay in Full</p>
+        <p>Get Franchise</p>
+        <p>Earn Free Holidays</p>
+        <p>Get Marco Partnership</p>
+        <h2>Rs.69900</h2>
+    </div>
+    <div class="col">
+        <h2>Travnow</h2>
+        <p>Travel Now</p>
+        <p>Pay in Full</p>
+        <p>Get Franchise</p>
+        <p>Earn Free Holidays</p>
+        <p>Get Marco Partnership</p>
+        <h2>Rs.69900</h2>
+    </div>
+    <div class="col">
+        <h2>Travnow</h2>
+        <p>Travel Now</p>
+        <p>Pay in Full</p>
+        <p>Get Franchise</p>
+        <p>Earn Free Holidays</p>
+        <p>Get Marco Partnership</p>
+        <h2>Rs.69900</h2>
+    </div>
+</div>
