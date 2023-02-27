@@ -866,7 +866,7 @@ Team Wishzon");
 
 	function get_all_packages(){
 		$this->db->select('*');
-		$this->db->from('package_purchase');
+		$this->db->from('package');
 		$query = $this->db->get();
 		return $query->result_array();
 	}
