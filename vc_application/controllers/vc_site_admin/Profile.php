@@ -48,12 +48,7 @@ class Profile extends CI_Controller
             $data['has_package'] = false;
         }else{
             $data['has_package'] = true;
-            redirect(base_url() . '');
         }
-        $data['all_packages'] = $this->Users_model->get_all_packages();
-
-        print_r($data['all_packages']);
-        die();
         
         $left_count = array_column($team, 'macro');
         $team_consume = array_column($team, 'consume');
@@ -101,8 +96,12 @@ class Profile extends CI_Controller
             $data['has_package'] = false;
         }else{
             $data['has_package'] = true;
-
+            redirect(base_url() . '');
         }
+        $data['all_packages'] = $this->Users_model->get_all_packages();
+
+        print_r($data['all_packages']);
+        die();
 
         $data['main_content'] = 'admin/select_package';
         $this->load->view('includes/admin/template', $data);
