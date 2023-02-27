@@ -1,3 +1,6 @@
 a{
     text-decoration: none;
 }
+.alert-danger>a{
+    color: white;
+}
