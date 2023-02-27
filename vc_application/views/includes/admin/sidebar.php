@@ -1,9 +1,6 @@
 <?php
 $user = $profile[0];
 $full_name = $user['f_name'] . " " . $user['l_name'];
-echo '<pre>';
-print_r($user);
-echo '</pre>';
 ?>
 
 <style>
