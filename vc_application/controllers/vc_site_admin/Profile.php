@@ -84,6 +84,7 @@ class Profile extends CI_Controller
         $data['page_description'] = '';
         $data['page_slug'] = 'Select Package';
         $data['page_title'] = 'Dashboard';
+        $data['js'] = '/js/select_package.js';
 
         $id = $this->session->userdata('cust_id');
         $customer_id = $this->session->userdata('bliss_id');
