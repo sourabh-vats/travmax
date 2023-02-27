@@ -39,6 +39,7 @@
 		echo '<link rel="stylesheet" href="' . $bootstrap . '" rel="stylesheet" type="text/css"></link>';
 	}
 	?>
+	<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
