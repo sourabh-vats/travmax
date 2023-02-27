@@ -100,9 +100,6 @@ class Profile extends CI_Controller
         }
         $data['all_packages'] = $this->Users_model->get_all_packages();
 
-        print_r($data['all_packages']);
-        die();
-
         $data['main_content'] = 'admin/select_package';
         $this->load->view('includes/admin/template', $data);
     }
