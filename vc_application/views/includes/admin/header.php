@@ -35,6 +35,9 @@
 	if (!empty($js)) {
 		echo '<script src="' . $js . '"></script>';
 	}
+	if (!empty($bootstrap)) {
+		echo '<link rel="stylesheet" href=""' . $bootstrap . '" rel="stylesheet" type="text/css"></link>';
+	}
 	?>
 </head>
 
