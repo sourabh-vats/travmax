@@ -3,19 +3,5 @@
     <div class="col-md-4">
         <img src="" alt="" height="300px" width="250px">
     </div>
-    <div class="col-md-4">
-        <img src="" alt="" height="300px" width="250px">
-    </div>
-    <div class="col-md-4">
-        <img src="" alt="" height="300px" width="250px">
-    </div>
-    <div class="col-md-4">
-        <img src="" alt="" height="300px" width="250px">
-    </div>
-    <div class="col-md-4">
-        <img src="" alt="" height="300px" width="250px">
-    </div>
-    <div class="col-md-4">
-        <img src="" alt="" height="300px" width="250px">
-    </div>
+    
 </div>
