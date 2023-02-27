@@ -1,7 +1,12 @@
-a{
+html {
+    font-size: 16px;
+}
+
+a {
     text-decoration: none;
 }
-.alert-danger>a{
+
+.alert-danger>a {
     color: deepskyblue;
     font-weight: bolder;
 }
