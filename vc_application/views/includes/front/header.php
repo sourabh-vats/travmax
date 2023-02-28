@@ -172,7 +172,7 @@ if($page_description !=''){ echo '<meta name="keywords" content="'.$page_descrip
           <i class="fa fa-user"></i> Hi, <?php echo ucfirst($this->session->userdata('full_name'));?><i class="fa fa-angle-down"></i>
         </a>
         <div class="dropdown-menu dropdown-menu1 " aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo base_url();?>admin">Account</a>
+          <a class="dropdown-item" href="<?php echo base_url();?>admin">Dashboard</a>
           <a class="dropdown-item" href="<?php echo base_url();?>admin/profile">Profile</a>
           <!--<a class="dropdown-item" href="#">Wishzon Card-Purchase</a>-->
           <a class="dropdown-item" href="<?php echo base_url();?>logout">Logout</a>
