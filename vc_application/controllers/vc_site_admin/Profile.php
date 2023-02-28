@@ -98,20 +98,20 @@ class Profile extends CI_Controller
             $data['has_package'] = true;
             redirect(base_url() . '');
         }
-        if ($this->input->server('REQUEST_METHOD')) {
-            $data_to_store = array(
-                'f_name' => $this->input->post('f_name'),
-                'l_name' => $this->input->post('l_name')
-            );
-            $return = $this->Users_model->update_profile($id, $data_to_store);
+        // if ($this->input->server('REQUEST_METHOD')) {
+        //     $data_to_store = array(
+        //         'f_name' => $this->input->post('f_name'),
+        //         'l_name' => $this->input->post('l_name')
+        //     );
+        //     $return = $this->Users_model->update_profile($id, $data_to_store);
 
-            if ($return == TRUE) {
-                $this->session->set_flashdata('flash_message', 'updated');
-                redirect(base_url() . 'admin/profile');
-            } else {
-                $this->session->set_flashdata('flash_message', 'not_updated');
-            }
-        }
+        //     if ($return == TRUE) {
+        //         $this->session->set_flashdata('flash_message', 'updated');
+        //         redirect(base_url() . 'admin/profile');
+        //     } else {
+        //         $this->session->set_flashdata('flash_message', 'not_updated');
+        //     }
+        // }
         $data['all_packages'] = $this->Users_model->get_all_packages();
 
         $data['main_content'] = 'admin/select_package';
