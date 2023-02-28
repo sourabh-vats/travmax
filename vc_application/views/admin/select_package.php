@@ -57,7 +57,8 @@ if ($this->session->flashdata('flash_message')) {
     $attributes = array('class' => 'form');
     echo form_open_multipart(base_url() . 'admin/select_package', $attributes);
     ?>
-    <input type="hidden" value="<?php echo $user['id']; ?>" name="cid">
+    <input type="hidden" name="package_id">
+    <input type="hidden" name="payment_type" value="1">
     <button class="btn btn-lg btn-primary" type="submit">Book</button>
     <?php echo form_close(); ?>
 </div>

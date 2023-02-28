@@ -100,10 +100,12 @@ class Profile extends CI_Controller
         }
         if ($this->input->server('REQUEST_METHOD') && $this->input->server('REQUEST_METHOD') == "POST") {
             $data_to_store = array(
-                'f_name' => $this->input->post('f_name'),
-                'l_name' => $this->input->post('l_name')
+                'package_id' => $this->input->post('package_id'),
+                'payment_type' => $this->input->post('payment_type')
             );
-            $return = $this->Users_model->update_profile($id, $data_to_store);
+            print_r($data_to_store);
+            die();
+            //$return = $this->Users_model->update_profile($id, $data_to_store);
 
             if ($return == TRUE) {
                 $this->session->set_flashdata('flash_message', 'updated');

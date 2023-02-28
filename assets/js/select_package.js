@@ -5,5 +5,6 @@ $(document).ready(function () {
         package = JSON.parse(package);
         $("#pick_a_plan_section").removeClass("d-none");
         $("#travnow_price").text(package['total']);
+        $("input[name=package_id]").val(package['id']);
     });
 });
