@@ -8,7 +8,7 @@
 </div>
 <div class="row">
     <h1 class="text-center">Pick A Plan</h1>
-    <div class="col">
+    <div class="col-md-4">
         <h2>Travnow</h2>
         <p>Travel Now</p>
         <p>Pay in Full</p>
@@ -17,7 +17,7 @@
         <p>Get Marco Partnership</p>
         <h2>Rs.69900</h2>
     </div>
-    <div class="col">
+    <div class="col-md-4">
         <h2>Travnow</h2>
         <p>Travel Now</p>
         <p>Pay in Full</p>
@@ -26,7 +26,7 @@
         <p>Get Marco Partnership</p>
         <h2>Rs.69900</h2>
     </div>
-    <div class="col">
+    <div class="col-md-4">
         <h2>Travnow</h2>
         <p>Travel Now</p>
         <p>Pay in Full</p>
@@ -35,5 +35,5 @@
         <p>Get Marco Partnership</p>
         <h2>Rs.69900</h2>
     </div>
-    <button class="btn btn-lg btn-success">Book</button>
+    <button class="btn btn-lg btn-primary">Book</button>
 </div>
