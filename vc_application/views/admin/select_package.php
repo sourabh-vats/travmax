@@ -50,7 +50,7 @@ if ($this->session->flashdata('flash_message')) {
     <?php
     $user = $profile[0];
     $attributes = array('class' => 'form');
-    echo form_open_multipart(base_url() . 'admin/profile', $attributes);
+    echo form_open_multipart(base_url() . 'admin/select_package', $attributes);
     ?>
     <input type="hidden" value="<?php echo $user['id']; ?>" name="cid">
     <button class="btn btn-lg btn-primary" type="submit">Book</button>
