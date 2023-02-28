@@ -35,4 +35,5 @@
         <p>Get Marco Partnership</p>
         <h2>Rs.69900</h2>
     </div>
+    <button class="btn btn-lg btn-success">Book</button>
 </div>
