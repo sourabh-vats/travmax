@@ -14,7 +14,7 @@ a {
 .select_package_id{
     cursor: pointer;
     box-sizing: border-box;
-    border: 2px solid rgba(red, green, blue, 0);
+    border: 2px solid white;
 }
 
 .select_package_id:hover{
