@@ -36,6 +36,10 @@
         <p>Get Marco Partnership</p>
         <h2>Rs.69900</h2>
     </div>
-    <?php echo form_open_multipart(base_url() . 'admin/profile', $attributes); ?>
+    <?php
+    $attributes = array('class' => 'form');
+    echo form_open_multipart(base_url() . 'admin/profile', $attributes);
+    ?>
+    <input type="hidden" value="<?php echo $user['id']; ?>" name="cid">
     <button class="btn btn-lg btn-primary">Book</button>
 </div>
