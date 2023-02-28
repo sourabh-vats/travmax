@@ -2,7 +2,7 @@
 <div class="row d-flex align-items-center justify-content-center flex-wrap">
     <?php foreach ($all_packages as $package) { ?>
         <div class="col-md-4 d-flex justify-content-center p-3">
-            <img class="img-fluid" src="/assets/images/<?php echo $package['name'] ?>.jpg" alt="">
+            <img class="img-fluid select_package_id" src="/assets/images/<?php echo $package['name']; ?>.jpg" alt="" title="<?php echo $package['id']; ?>">
         </div>
     <?php } ?>
 </div>
