@@ -3,6 +3,7 @@
     <?php foreach ($all_packages as $package) { ?>
         <div class="col-md-4 d-flex justify-content-center p-3">
             <img class="img-fluid select_package_id" src="/assets/images/<?php echo $package['name']; ?>.jpg" alt="" title="<?php echo $package['id']; ?>">
+            <input type="hidden" name="package_information" id="package_information" value="<?php echo $package; ?>">
         </div>
     <?php } ?>
 </div>
