@@ -98,6 +98,8 @@ class Profile extends CI_Controller
             $data['has_package'] = true;
             redirect(base_url() . '');
         }
+        echo $this->input->server('REQUEST_METHOD');
+        die();
         // if ($this->input->server('REQUEST_METHOD')) {
         //     $data_to_store = array(
         //         'f_name' => $this->input->post('f_name'),
