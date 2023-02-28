@@ -7,7 +7,7 @@
         </div>
     <?php } ?>
 </div>
-<div class="row">
+<div class="row d-none" id="pick_a_plan_section">
     <h1 class="text-center">Pick A Plan</h1>
     <div class="col-md-4">
         <h2>Travnow</h2>
@@ -16,7 +16,7 @@
         <p>Get Franchise</p>
         <p>Earn Free Holidays</p>
         <p>Get Marco Partnership</p>
-        <h2>Rs.69900</h2>
+        <h2 id="travnow_price">Rs.69900</h2>
     </div>
     <div class="col-md-4">
         <h2>Travnow</h2>
