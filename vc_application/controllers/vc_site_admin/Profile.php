@@ -107,7 +107,7 @@ class Profile extends CI_Controller
 
             if ($return == TRUE) {
                 $this->session->set_flashdata('flash_message', 'updated');
-                redirect(base_url() . 'admin/profile');
+                redirect(base_url() . 'admin/select_package');
             } else {
                 $this->session->set_flashdata('flash_message', 'not_updated');
             }

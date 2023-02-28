@@ -6,6 +6,11 @@ if ($this->session->flashdata('flash_message')) {
         echo '<a class="close" data-dismiss="alert">×</a>';
         echo 'Profile updated successfully.';
         echo '</div>';
+    } else if ($this->session->flashdata('flash_message') == 'not_updated') {
+        echo '<div class="alert alert-danger">';
+        echo '<a class="close" data-dismiss="alert">×</a>';
+        echo 'Some Error Occured. Contact Us for help.';
+        echo '</div>';
     }
 }
 ?>
