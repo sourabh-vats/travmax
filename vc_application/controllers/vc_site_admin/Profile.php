@@ -44,12 +44,12 @@ class Profile extends CI_Controller
 
         $data['has_package'] = false;
         $data['package_information'] = $this->Users_model->get_package($id);
-        if(empty($data['package_information'])){
+        if (empty($data['package_information'])) {
             $data['has_package'] = false;
-        }else{
+        } else {
             $data['has_package'] = true;
         }
-        
+
         $left_count = array_column($team, 'macro');
         $team_consume = array_column($team, 'consume');
         $data['macro_partner'] = array_count_values($left_count);
@@ -92,11 +92,25 @@ class Profile extends CI_Controller
         $data['profile'] = $this->Users_model->profile($id);
         $data['has_package'] = false;
         $data['package_information'] = $this->Users_model->get_package($id);
-        if(empty($data['package_information'])){
+        if (empty($data['package_information'])) {
             $data['has_package'] = false;
-        }else{
+        } else {
             $data['has_package'] = true;
             redirect(base_url() . '');
+        }
+        if ($this->input->server('REQUEST_METHOD')) {
+            $data_to_store = array(
+                'f_name' => $this->input->post('f_name'),
+                'l_name' => $this->input->post('l_name')
+            );
+            $return = $this->Users_model->update_profile($id, $data_to_store);
+
+            if ($return == TRUE) {
+                $this->session->set_flashdata('flash_message', 'updated');
+                redirect(base_url() . 'admin/profile');
+            } else {
+                $this->session->set_flashdata('flash_message', 'not_updated');
+            }
         }
         $data['all_packages'] = $this->Users_model->get_all_packages();
 

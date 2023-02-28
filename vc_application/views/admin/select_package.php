@@ -1,3 +1,14 @@
+<?php
+//flash messages
+if ($this->session->flashdata('flash_message')) {
+    if ($this->session->flashdata('flash_message') == 'updated') {
+        echo '<div class="alert alert-success">';
+        echo '<a class="close" data-dismiss="alert">×</a>';
+        echo 'Profile updated successfully.';
+        echo '</div>';
+    }
+}
+?>
 <h1 class="text-center">Please select a package from the following and continue.</h1>
 <div class="row d-flex align-items-center justify-content-center flex-wrap">
     <?php foreach ($all_packages as $package) { ?>
@@ -42,6 +53,6 @@
     echo form_open_multipart(base_url() . 'admin/profile', $attributes);
     ?>
     <input type="hidden" value="<?php echo $user['id']; ?>" name="cid">
-    <button class="btn btn-lg btn-primary">Book</button>
+    <button class="btn btn-lg btn-primary" type="submit">Book</button>
     <?php echo form_close(); ?>
 </div>
