@@ -21,6 +21,8 @@ class Profile extends CI_Controller
         $data['page_description'] = '';
         $data['page_slug'] = 'Dashboard';
         $data['page_title'] = 'Dashboard';
+        $data['js'] = '/assets/js/select_package.js';
+        $data['bootstrap'] = '/assets/css/bootstrap.min.css';
 
         $data['myfriends'] = array();
         $id = $this->session->userdata('cust_id');
