@@ -25,32 +25,32 @@ if ($this->session->flashdata('flash_message')) {
 </div>
 <div class="row d-none" id="pick_a_plan_section">
     <h1 class="text-center">Pick A Plan</h1>
-    <div class="col-md-4">
+    <div class="col-md-4 plan_box" id="travnow_plan">
         <h2>Travnow</h2>
         <p>Travel Now</p>
         <p>Pay in Full</p>
         <p>Get Franchise</p>
         <p>Earn Free Holidays</p>
-        <p>Get Marco Partnership</p>
         <h2 id="travnow_price">Rs.69900</h2>
     </div>
-    <div class="col-md-4">
-        <h2>Travnow</h2>
-        <p>Travel Now</p>
-        <p>Pay in Full</p>
+    <div class="col-md-4 plan_box" id="travlater_plan">
+        <h2>Travlater</h2>
+        <p>Book Now</p>
+        <p>Pay booking amount</p>
+        <p>Pay the rest in 90 Days</p>
         <p>Get Franchise</p>
         <p>Earn Free Holidays</p>
-        <p>Get Marco Partnership</p>
-        <h2>Rs.69900</h2>
+        <h2 id="travlater_price">Rs.13200</h2>
     </div>
-    <div class="col-md-4">
-        <h2>Travnow</h2>
-        <p>Travel Now</p>
-        <p>Pay in Full</p>
+    <div class="col-md-4 plan_box" id="traveasy_plan">
+        <h2>Traveasy</h2>
+        <p>Book Now</p>
+        <p>Pay in Installments</p>
+        <p>Pay down payment</p>
+        <p>Rest in Installments</p>
         <p>Get Franchise</p>
         <p>Earn Free Holidays</p>
-        <p>Get Marco Partnership</p>
-        <h2>Rs.69900</h2>
+        <h2 id="traveasy_price">Rs.9900</h2>
     </div>
     <?php
     $user = $profile[0];
@@ -58,7 +58,7 @@ if ($this->session->flashdata('flash_message')) {
     echo form_open_multipart(base_url() . 'admin/select_package', $attributes);
     ?>
     <input type="hidden" name="package_id">
-    <input type="hidden" name="payment_type" value="1">
+    <input type="hidden" name="payment_type">
     <button class="btn btn-lg btn-primary" type="submit">Book</button>
     <?php echo form_close(); ?>
 </div>

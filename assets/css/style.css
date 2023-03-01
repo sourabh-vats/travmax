@@ -21,3 +21,11 @@ a {
     cursor: pointer;
     border: 2px solid deepskyblue;
 }
+
+.plan_box:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.plan_box.selected{
+    background-color: antiquewhite;
+}
