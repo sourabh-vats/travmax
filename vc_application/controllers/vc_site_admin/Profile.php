@@ -105,8 +105,6 @@ class Profile extends CI_Controller
                 'payment_type' => $this->input->post('payment_type')
             );
             $return = $this->Users_model->add_user_package($data_to_store);
-            echo $id;
-            die();
             if ($return == TRUE) {
                 $this->session->set_flashdata('flash_message', 'updated');
                 redirect(base_url() . 'admin/select_package');
