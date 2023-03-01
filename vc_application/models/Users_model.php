@@ -872,7 +872,7 @@ Team Wishzon");
 		return $query->result_array();
 	}
 
-	function add_user_package($id, $data_to_store)
+	function add_user_package($data_to_store)
 	{
 		$this->db->insert('package_purchase', $data_to_store);
 		return TRUE;

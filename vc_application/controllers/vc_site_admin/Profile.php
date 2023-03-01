@@ -100,10 +100,11 @@ class Profile extends CI_Controller
         }
         if ($this->input->server('REQUEST_METHOD') && $this->input->server('REQUEST_METHOD') == "POST") {
             $data_to_store = array(
+                'user_id' => $id,
                 'package_id' => $this->input->post('package_id'),
                 'payment_type' => $this->input->post('payment_type')
             );
-            $return = $this->Users_model->add_user_package($id, $data_to_store);
+            $return = $this->Users_model->add_user_package($data_to_store);
             echo $id;
             die();
             if ($return == TRUE) {
