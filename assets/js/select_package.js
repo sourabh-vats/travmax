@@ -8,6 +8,7 @@ $(document).ready(function () {
     });
 
     $(".plan_box").click(function () {
+        console.log("hi");
         var planName = $(this).attr("id");
         var planId;
         switch (planName) {
