@@ -286,8 +286,7 @@
   $micro_purchases_amount = $micro_online_purchase_amount + $micro_utility_purchase_amount + $micro_service_purchase_amount;
   ?>
 
-  <h2 class="wella">Welcome <?php echo $this->session->userdata('user_name'); ?></h2>
-  <?php
+<?php
   //flash messages
   if ($this->session->flashdata('flash_message')) {
     if ($this->session->flashdata('flash_message') == 'redeem') {
