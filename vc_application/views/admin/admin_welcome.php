@@ -286,7 +286,7 @@
   $micro_purchases_amount = $micro_online_purchase_amount + $micro_utility_purchase_amount + $micro_service_purchase_amount;
   ?>
 
-<?php
+  <?php
   //flash messages
   if ($this->session->flashdata('flash_message')) {
     if ($this->session->flashdata('flash_message') == 'redeem') {
@@ -343,11 +343,22 @@
 
 </div>
 <div class="col-sm-12 right-bar">
+  <h1 class="tittles">My Package</h1>
+  <div class="gm fst_gm clr1 col-sm-4">
+    <a href="<?php echo base_url(); ?>/admin/my_wallet">
+      <div class="pgn">
+        <div class="imggg">
+          <img src="images/img12.jpg">
+        </div>
 
-
+        <div class="df">
+          <span>My Purchases<big>
+              <?php var_dump($has_package) ?> </big></span>
+        </div>
+      </div>
+    </a>
+  </div>
   <?php if ($profile[0]['macro'] == 0 && !empty($moneyback) && date('Y-m-d') <= date('Y-m-d', strtotime('+15 days', strtotime($moneyback[0]['rdate'])))) { ?>
-
-
     <div class="sd sdfg  text-center">
       <div class="leftttt">
         <h3>Account history</h3>
@@ -357,8 +368,6 @@
         <p id="demo"></p>
       </div>
     </div>
-
-
     <script>
       // Set the date we're counting down to
       var countDownDate = new Date("Aug 22, 2021 15:37:25").getTime();
@@ -393,74 +402,75 @@
 
   <?php } ?>
 
+  <div class="main-wallet">
+    <div class="row">
 
+      <div class="col-md-4 text-center wallet"><a href="<?php echo base_url(); ?>admin/payment">
+          <h4>Online Payment</h4>
+        </a></div>
+      <div class="col-md-4 text-center"><a href="<?php echo base_url(); ?>admin/request-fund">
+          <h4>Upload Receipt</h4>
+        </a></div>
+      <div class="col-md-4 text-center"><a href="<?php echo base_url(); ?>admin/transfer_master">
+          <h4>Transfer Moneyback</h4>
+      </div>
 
-
-
-
-  <!--<div class="main-wallet">
-  <div class="row">
-
-    <div class="col-md-4 text-center wallet"><a href="<?php echo base_url(); ?>admin/payment"><h4>Online Payment</h4></a></div>
-    <div class="col-md-4 text-center"><a href="<?php echo base_url(); ?>admin/request-fund"><h4>Upload Receipt</h4></a></div>
-    <div class="col-md-4 text-center"><a href="<?php echo base_url(); ?>admin/transfer_master"><h4>Transfer Moneyback</h4></div>
-    
+    </div>
   </div>
-</div>-->
 
 
   <div class="gm fst_gm clr4 col-sm-4">
-    <!--a href="<?php //echo base_url(); 
-                ?>/admin/add_money"-->
-    <div class="pgn">
-      <div class="imggg">
-        <img src="images/img12.jpg">
-      </div>
+    <a href="<?php echo base_url();
+              ?>/admin/add_money">
+      <div class="pgn">
+        <div class="imggg">
+          <img src="images/img12.jpg">
+        </div>
 
-      <div class="df">
-        <span> Total Amount<big>
-            <?php echo $profile[0]['package_amt']; ?></strong></big></span>
+        <div class="df">
+          <span> Total Amount<big>
+              <?php echo $profile[0]['package_amt']; ?></strong></big></span>
+        </div>
       </div>
-    </div>
     </a>
   </div>
 
   <div class="gm fst_gm clr2 col-sm-4">
-    <!--a href="<?php //echo base_url(); 
-                ?>/admin/macro_credits"-->
-    <div class="pgn">
-      <div class="imggg">
-        <img src="images/img12.jpg">
-      </div>
+    <a href="<?php echo base_url();
+              ?>/admin/macro_credits">
+      <div class="pgn">
+        <div class="imggg">
+          <img src="images/img12.jpg">
+        </div>
 
-      <div class="df">
-        <span> Booking Amount<big>
+        <div class="df">
+          <span> Booking Amount<big>
 
-            <?php if (!empty($purchases[0]['amount'])) {
-              echo $purchases[0]['amount'];
-            } else {
-              echo 0;
-            } ?>
-            <?php //echo $purchases[0]['amount']+0;
-            ?></strong></big></span>
+              <?php if (!empty($purchases[0]['amount'])) {
+                echo $purchases[0]['amount'];
+              } else {
+                echo 0;
+              } ?>
+              <?php echo $purchases[0]['amount'] + 0;
+              ?></strong></big></span>
+        </div>
       </div>
-    </div>
     </a>
   </div>
 
   <div class="gm fst_gm clr1 col-sm-4">
-    <!--a href="<?php //echo base_url(); 
-                ?>/admin/my_wallet"-->
-    <div class="pgn">
-      <div class="imggg">
-        <img src="images/img12.jpg">
-      </div>
+    <a href="<?php echo base_url();
+              ?>/admin/my_wallet">
+      <div class="pgn">
+        <div class="imggg">
+          <img src="images/img12.jpg">
+        </div>
 
-      <div class="df">
-        <span> Wallet Balance <big>
-            <?php echo $profile[0]['income_wallet']; ?></strong></big></span>
+        <div class="df">
+          <span> Wallet Balance <big>
+              <?php echo $profile[0]['income_wallet']; ?></strong></big></span>
+        </div>
       </div>
-    </div>
     </a>
   </div>
 
@@ -516,7 +526,7 @@
           <img src="images/img12.jpg">
         </div>
         <div class="df adds_mny"><span> My Trav Cash <big>
-              <?php echo 0 //$profile[0]['income_wallet'];
+              <?php echo $profile[0]['income_wallet'];
               ?></strong></big></span></div>
       </div>
     </a>
@@ -531,7 +541,7 @@
 
         <div class="df">
           <span>My Travoucher<big>
-              <?php echo 0 //$profile[0]['income_wallet'];
+              <?php echo $profile[0]['income_wallet'];
               ?></strong></big></span>
         </div>
       </div>
@@ -559,7 +569,7 @@
         </div>
 
         <div class="df">
-          <span>My Installments <big> <?php //echo $credits;
+          <span>My Installments <big> <?php echo $credits;
                                       ?></big> </span>
 
         </div>
@@ -568,22 +578,6 @@
     </a>
   </div>
 
-
-  <h1 class="tittles">My Package</h1>
-  <div class="gm fst_gm clr1 col-sm-4">
-    <a href="<?php echo base_url(); ?>/admin/my_wallet">
-      <div class="pgn">
-        <div class="imggg">
-          <img src="images/img12.jpg">
-        </div>
-
-        <div class="df">
-          <span>My Purchases<big>
-              <?php var_dump($has_package) ?> </big></span>
-        </div>
-      </div>
-    </a>
-  </div>
 
   <h1 class="tittles">My total Earnings</h1>
 
@@ -621,135 +615,142 @@
 
 
 
-  <!----<div class="gm fst_gm clr3 col-sm-4">
-  <a href="javascript:;">
-<div class="pgn">     
-<div class="imggg">
-	<img src="images/img12.jpg"> 
-	</div>
-	<div class="df"><span>my Total Earnings<big> <i class="fa fa-inr" ></i>  <?php echo array_sum(array_column($incomes, 'tamount')) - $credits; ?></big> </span></div> 
+  <div class="gm fst_gm clr3 col-sm-4">
+    <a href="javascript:;">
+      <div class="pgn">
+        <div class="imggg">
+          <img src="images/img12.jpg">
+        </div>
+        <div class="df"><span>my Total Earnings<big> <i class="fa fa-inr"></i> <?php echo array_sum(array_column($incomes, 'tamount')) - $credits; ?></big> </span></div>
+      </div>
+    </a>
+  </div>
+
+
+  <div class="gm fst_gm clr4 col-sm-4">
+    <a href="<?php echo base_url(); ?>admin/Payment_request/Cashback">
+      <div class="pgn">
+        <div class="imggg">
+          <img src="images/img12.jpg">
+        </div>
+        <div class="df"><span>My Cashback<big> <i class="fa fa-inr"></i> <?php echo $user['cash_wallet']; ?></big> </span></div>
+      </div>
+    </a>
+  </div>
+
+  <div class="gm fst_gm clr5 col-sm-4">
+    <a href="<?php echo base_url(); ?>admin/Payment_request/MoneyBack">
+      <div class="pgn">
+
+        <div class="imggg">
+          <img src="images/img12.jpg">
+        </div>
+
+        <div class="df"><span>My Moneyback<big> <i class="fa fa-inr"></i> <?php echo $user['money_wallet']; ?></big> </span></div>
+      </div>
+    </a>
+  </div>
+
+  <div class="gm fst_gm clr6 col-sm-4">
+    <a href="javascript:;">
+      <div class="pgn">
+        <div class="imggg">
+          <img src="images/img12.jpg">
+        </div>
+        <div class="df"><span>My Business Income<big> <i class="fa fa-inr"></i> 0</big> </span></div>
+      </div>
+    </a>
+  </div>
+
+
+
 </div>
- </a> 
-</div>  -->
 
-
-  <!--<div class="gm fst_gm clr4 col-sm-4">
-  <a href="<?php echo base_url(); ?>admin/Payment_request/Cashback">
-<div class="pgn">  
-<div class="imggg">
-	<img src="images/img12.jpg"> 
-	</div>
-	<div class="df"><span>My Cashback<big> <i class="fa fa-inr"></i>  <?php echo $user['cash_wallet']; ?></big> </span></div> 
-</div> 
-</a>
-</div>
-
-<div class="gm fst_gm clr5 col-sm-4">
-<a href="<?php echo base_url(); ?>admin/Payment_request/MoneyBack">
-<div class="pgn"> 
-
-<div class="imggg">
-	<img src="images/img12.jpg"> 
-	</div>
-
-	<div class="df"><span>My Moneyback<big> <i class="fa fa-inr"></i> <?php echo $user['money_wallet']; ?></big> </span></div> 
-</div>
- </a>
-</div>
-
-<div class="gm fst_gm clr6 col-sm-4">
-  <a  href="javascript:;">
-<div class="pgn">  
-<div class="imggg">
-	<img src="images/img12.jpg"> 
-	</div>
-	<div class="df"><span>My Business Income<big> <i class="fa fa-inr"></i> 0</big> </span></div> 
-</div>
-</a> 
-</div> -->
-
-
-
-</div>
-
-<!----  <div class="col-sm-12">
-<ul class="main-div">
+<div class="col-sm-12">
+  <ul class="main-div">
     <li><button class="main-inner-bouuon active" id="my-cashback" class="intro" onclick="openCity(event, 'London')">
-		<div class="df"><span>My Cashback <br><big> <i class="fa fa-inr"></i>  <?php echo $pending_cashback + $redeem_cashback + $approved_cashback; ?></big> </span></div> 
-	</button></li>
-    <li> <button class="main-inner-bouuon" id="moneyback" onclick="openCity(event, 'Paris')"><div class="df"><span>My Moneyback <br><big> <i class="fa fa-inr"></i> <?php echo $pending_moneyback + $approved_moneyback; ?></big> </span></div></button>
-	</li>
-    <li><button class="main-inner-bouuon" id="my-income" onclick="openCity(event, 'Tokyo')"><div class="df"><span>My Business Income <br><big> <i class="fa fa-inr"></i> 0</big> </span></div> </button></li>
-</ul>
-<div id="London" class="tabcontent">
-  <div class="row">
-  <div class="col-sm-12">
-	<h1 class="tittles">My Cashback</h1>
-	</div>
-	<div class="col-sm-4 bottm_bordr">
+        <div class="df"><span>My Cashback <br><big> <i class="fa fa-inr"></i> <?php echo $pending_cashback + $redeem_cashback + $approved_cashback; ?></big> </span></div>
+      </button></li>
+    <li> <button class="main-inner-bouuon" id="moneyback" onclick="openCity(event, 'Paris')">
+        <div class="df"><span>My Moneyback <br><big> <i class="fa fa-inr"></i> <?php echo $pending_moneyback + $approved_moneyback; ?></big> </span></div>
+      </button>
+    </li>
+    <li><button class="main-inner-bouuon" id="my-income" onclick="openCity(event, 'Tokyo')">
+        <div class="df"><span>My Business Income <br><big> <i class="fa fa-inr"></i> 0</big> </span></div>
+      </button></li>
+  </ul>
+  <div id="London" class="tabcontent">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="tittles">My Cashback</h1>
+      </div>
+      <div class="col-sm-4 bottm_bordr">
         <div class="my-cashback-inner-first">
-        <p class="p-inner">Amount of Purchases</p>
-        <big> <i class="fa fa-inr"></i> <?php echo $purchases_amount; ?></big>
-        <p class="mt-5 ammount-txt">This amount is the approved cashback after verification</p>
-    </div>
-    </div>
-	<div class="col-sm-4 bottm_bordr">
+          <p class="p-inner">Amount of Purchases</p>
+          <big> <i class="fa fa-inr"></i> <?php echo $purchases_amount; ?></big>
+          <p class="mt-5 ammount-txt">This amount is the approved cashback after verification</p>
+        </div>
+      </div>
+      <div class="col-sm-4 bottm_bordr">
         <div class="my-cashback-inner-first">
-        <p class="p-inner">Cashback Earned</p>
-        <big> <i class="fa fa-inr"></i> <?php echo $approved_cashback; ?></big>
-        <p class="mt-5 ammount-txt">This amount is the approved cashback after verification</p>
-    </div>
-    </div>
-    <div class="col-sm-4 bottm_bordr1">
+          <p class="p-inner">Cashback Earned</p>
+          <big> <i class="fa fa-inr"></i> <?php echo $approved_cashback; ?></big>
+          <p class="mt-5 ammount-txt">This amount is the approved cashback after verification</p>
+        </div>
+      </div>
+      <div class="col-sm-4 bottm_bordr1">
         <div class="my-cashback-inner-first">
-        <p class="p-inner">Pending Cashback</p>
-        <big> <i class="fa fa-inr"></i> <?php echo $pending_cashback; ?></big>
-        <p class="mt-5 ammount-txt">This amount is the pending cashback yet to be verified</p></div>
-    </div>
-    <div class="col-sm-4 bottm_bordr2">
+          <p class="p-inner">Pending Cashback</p>
+          <big> <i class="fa fa-inr"></i> <?php echo $pending_cashback; ?></big>
+          <p class="mt-5 ammount-txt">This amount is the pending cashback yet to be verified</p>
+        </div>
+      </div>
+      <div class="col-sm-4 bottm_bordr2">
         <div class="my-cashback-inner-first">
-        <p class="p-inner">Approved Cashback</p>
-        <big> <i class="fa fa-inr"></i> <?php echo $approved_cashback; ?></big>
-        <p class="mt-5 ammount-txt">This amount is the approved cashback after verification</p>
-    </div>
-    </div>
-   
-    <div class="col-sm-4 bottm_bordr2">
+          <p class="p-inner">Approved Cashback</p>
+          <big> <i class="fa fa-inr"></i> <?php echo $approved_cashback; ?></big>
+          <p class="mt-5 ammount-txt">This amount is the approved cashback after verification</p>
+        </div>
+      </div>
+
+      <div class="col-sm-4 bottm_bordr2">
         <div class="my-cashback-inner-first">
-        <p class="p-inner">Total Redeemed Cashback</p>
-        <big> <i class="fa fa-inr"></i> <?php echo $redeem_cashback; ?></big>
-        <p class="mt-5 ammount-txt">This is the amount of the cashback transferred to me</p></div>
+          <p class="p-inner">Total Redeemed Cashback</p>
+          <big> <i class="fa fa-inr"></i> <?php echo $redeem_cashback; ?></big>
+          <p class="mt-5 ammount-txt">This is the amount of the cashback transferred to me</p>
+        </div>
+      </div>
     </div>
-</div>
-</div>
- <div class="row mt-5 main-inner-ro" id="show-inner">
- <div class="col-sm-12">
- <h1 class="titles2">My Moneyback</h1>
- </div>
- <div class="col-sm-4 bottm_bordr">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Amount of Purchases</p>
-        <big> <i class="fa fa-inr"></i> <?php echo $purchases_amount; ?></big>
-        <p class="mt-5 ammount-txt">This amount is the total of all my purchases</p></div>
+  </div>
+  <div class="row mt-5 main-inner-ro" id="show-inner">
+    <div class="col-sm-12">
+      <h1 class="titles2">My Moneyback</h1>
     </div>
     <div class="col-sm-4 bottm_bordr">
-        <div class="my-cashback-inner-first">
+      <div class="my-cashback-inner-first">
+        <p class="p-inner">Amount of Purchases</p>
+        <big> <i class="fa fa-inr"></i> <?php echo $purchases_amount; ?></big>
+        <p class="mt-5 ammount-txt">This amount is the total of all my purchases</p>
+      </div>
+    </div>
+    <div class="col-sm-4 bottm_bordr">
+      <div class="my-cashback-inner-first">
         <p class="p-inner">Moneyback Eligibility<br>(111%)</p>
         <big> <i class="fa fa-inr"></i> <?php echo $profile[0]['eligibility']; ?></big>
         <p class="mt-5 ammount-txt">This is the total amount of moneyback I can earn</p>
+      </div>
     </div>
-    </div>
-   
-   <div class="col-sm-4 bottm_bordr1">
-        <div class="my-cashback-inner-first">
+
+    <div class="col-sm-4 bottm_bordr1">
+      <div class="my-cashback-inner-first">
         <p class="p-inner">Reedem Moneyback from<br> Moneyback Eligibility</p>
         <big> <i class="fa fa-inr"></i> <?php echo $approved_moneyback; ?></big>
         <p class="mt-5 ammount-txt">This is the total amount of moneyback I can earn</p>
+      </div>
     </div>
-    </div>
-   
+
     <div class="col-sm-4 bottm_bordr">
-        <div class="my-cashback-inner-first">
+      <div class="my-cashback-inner-first">
         <p class="p-inner">Pending from Moneyback Eligibility</p>
         <big> <i class="fa fa-inr"></i> <?php $pending_money = $profile[0]['eligibility'] - $approved_moneyback;
                                         if ($pending_money >= 0) {
@@ -757,356 +758,382 @@
                                         } else {
                                           echo 0;
                                         } ?></big>
-        <p class="mt-5 ammount-txt">This amount is the total amount which has been approved. I can take it to bank</p></div>
+        <p class="mt-5 ammount-txt">This amount is the total amount which has been approved. I can take it to bank</p>
+      </div>
     </div>
-    <div class="col-sm-4 bottm_bordr">    
-        <div class="my-cashback-inner-first">
+    <div class="col-sm-4 bottm_bordr">
+      <div class="my-cashback-inner-first">
         <p class="p-inner">Pending Moneyback</p>
         <big> <i class="fa fa-inr"></i> <?php echo $pending_moneyback; ?></big>
         <p class="mt-5 ammount-txt">This is the amount waiting for appoval</p>
+      </div>
     </div>
-    </div>
-   <div class="col-sm-4 bottm_bordr1">
-        <div class="my-cashback-inner-first">
+    <div class="col-sm-4 bottm_bordr1">
+      <div class="my-cashback-inner-first">
         <p class="p-inner">Approved Moneyback</p>
         <big> <i class="fa fa-inr"></i> <?php echo $approved_moneyback; ?></big>
-        <p class="mt-5 ammount-txt">This amount is moneyback transferred to me</p></div>
+        <p class="mt-5 ammount-txt">This amount is moneyback transferred to me</p>
+      </div>
     </div>
     <div class="col-sm-4 bottm_bordr2">
-        <div class="my-cashback-inner-first">
+      <div class="my-cashback-inner-first">
         <p class="p-inner">Total MB (Pending + Approved + Redeemed MB)</p>
         <big> <i class="fa fa-inr"></i> <?php echo $moneyback; ?></big>
-        <p class="mt-5 ammount-txt">This amount is moneyback transferred to me</p></div>
+        <p class="mt-5 ammount-txt">This amount is moneyback transferred to me</p>
+      </div>
     </div>
-</div> 
+  </div>
 
 
-<div id="my-income-inner" class="tabcontent" style="display:none">
+  <div id="my-income-inner" class="tabcontent" style="display:none">
 
-<div class="row">
-<div class="col-sm-12">
-<h1 class="title3">My Business Income</h1>
-</div>  
-    <div class="col-sm-4 bottm_bordr2">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Approved Income</p>
-        <big> <i class="fa fa-inr"></i> 0</big>
-        <p class="mt-5 ammount-txt">This amount is the approved cashback after verification</p>
-    </div>
-    </div>
-   <div class="col-sm-4 bottm_bordr2">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Pending Income</p>
-        <big> <i class="fa fa-inr"></i> 0</big>
-        <p class="mt-5 ammount-txt">This amount is the pending cashback yet to be verified</p></div>
-    </div>
-    <div class="col-sm-4">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Total Redeemed Income</p>
-        <big> <i class="fa fa-inr"></i> 0</big>
-        <p class="mt-5 ammount-txt">This is the amount of the cashback transferred to me</p></div>
-    </div>
-</div>
-</div>
-
-<div class="co">
     <div class="row">
-        <div class="col-sm-12">
-            <div class="db-nner">
-                <h6>Total Redeemed Earnings ( Redeemed Cashback + Redeemed Moneyback + Redeemed Earnings ) : <i class="fa fa-inr" aria-hidden="true"></i> <?php echo $redeem_moneyback + $redeem_cashback; ?></h6>
-            </div>
+      <div class="col-sm-12">
+        <h1 class="title3">My Business Income</h1>
+      </div>
+      <div class="col-sm-4 bottm_bordr2">
+        <div class="my-cashback-inner-first">
+          <p class="p-inner">Approved Income</p>
+          <big> <i class="fa fa-inr"></i> 0</big>
+          <p class="mt-5 ammount-txt">This amount is the approved cashback after verification</p>
         </div>
+      </div>
+      <div class="col-sm-4 bottm_bordr2">
+        <div class="my-cashback-inner-first">
+          <p class="p-inner">Pending Income</p>
+          <big> <i class="fa fa-inr"></i> 0</big>
+          <p class="mt-5 ammount-txt">This amount is the pending cashback yet to be verified</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="my-cashback-inner-first">
+          <p class="p-inner">Total Redeemed Income</p>
+          <big> <i class="fa fa-inr"></i> 0</big>
+          <p class="mt-5 ammount-txt">This is the amount of the cashback transferred to me</p>
+        </div>
+      </div>
     </div>
-</div>
-<div class="co-middel">
+  </div>
+
+  <div class="co">
     <div class="row">
-        <div class="col-sm-12">
-            <ul class="inner-content">
-                <li><div class="db-">
+      <div class="col-sm-12">
+        <div class="db-nner">
+          <h6>Total Redeemed Earnings ( Redeemed Cashback + Redeemed Moneyback + Redeemed Earnings ) : <i class="fa fa-inr" aria-hidden="true"></i> <?php echo $redeem_moneyback + $redeem_cashback; ?></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="co-middel">
+    <div class="row">
+      <div class="col-sm-12">
+        <ul class="inner-content">
+          <li>
+            <div class="db-">
               <img src="<?php echo base_url(); ?>images/mypurchases.png">
               <h2>My Purchases</h2> <br>
             </div>
             <div> <span>These are all my purchases</span></div>
-        </li>
-            <li class="flex-end"><a href="#" ></a>
-                 <button class="" id="purchases-view">View <i class="fa fa-angle-right" aria-hidden="true"></i></button>
-            </li>
-            </ul>
-            <div id="purchases-inner">
-                  <div class="row mt-5 main-inner-ro">
-    <div class="col-sm-4 bottm_bordr">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Amount of Purchases</p>
-        <big><i class="fa fa-inr"></i> <?php echo $purchases_amount; ?></big>
-        <p class="mt-5 ammount-txt">This is the amount of all my purchases</p>
-    </div>
-    </div>
-   <div class="col-sm-4 bottm_bordr">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">No. of Purchases</p>
-        <big> <?php echo $purchases_count; ?></big>
-        <p class="mt-5 ammount-txt">These are total number of my Online purchases</p></div>
-    </div>
-    <div class="col-sm-4 bottm_bordr1">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Online Purchases</p>
-        <big> <i class="fa fa-inr"></i> <?php echo $online_purchase_amount; ?></big>
-        <p class="mt-5 ammount-txt">These are total number of my Online purchases</p></div>
-    </div>
-     </div>
-   <div class="row">
-        <div class="col-sm-4 bottm_bordr2">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Micro Purchases</p>
-        <big> <i class="fa fa-inr"></i> <?php echo $micro_purchases_amount; ?></big>
-        <p class="mt-5 ammount-txt">This is the amount waiting for appoval</p>
-    </div>
-    </div>
-   <div class="col-sm-4 bottm_bordr2">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Macro Purchases</p>
-        <big> <i class="fa fa-inr"></i> <?php echo $macro_purchases_amount; ?></big>
-        <p class="mt-5 ammount-txt">Macro Purchases</p></div>
-    </div>
-    <div class="col-sm-4">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Mega Purchases</p>
-        <big> <i class="fa fa-inr"></i> 0.00</big>
-        <p class="mt-5 ammount-txt">This amount is the moneyback transferred to me</p></div>
-    </div>
-    <div class="row btns">
-        <div class="col-sm-4">
-           <div class="inner-btn"><a href="<?php echo base_url(); ?>admin/uploadreceipts"><img src="<?php echo base_url(); ?>images/instorecancellation.png">Untraced Purchase</a><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div> 
+          </li>
+          <li class="flex-end"><a href="#"></a>
+            <button class="" id="purchases-view">View <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </li>
+        </ul>
+        <div id="purchases-inner">
+          <div class="row mt-5 main-inner-ro">
+            <div class="col-sm-4 bottm_bordr">
+              <div class="my-cashback-inner-first">
+                <p class="p-inner">Amount of Purchases</p>
+                <big><i class="fa fa-inr"></i> <?php echo $purchases_amount; ?></big>
+                <p class="mt-5 ammount-txt">This is the amount of all my purchases</p>
+              </div>
+            </div>
+            <div class="col-sm-4 bottm_bordr">
+              <div class="my-cashback-inner-first">
+                <p class="p-inner">No. of Purchases</p>
+                <big> <?php echo $purchases_count; ?></big>
+                <p class="mt-5 ammount-txt">These are total number of my Online purchases</p>
+              </div>
+            </div>
+            <div class="col-sm-4 bottm_bordr1">
+              <div class="my-cashback-inner-first">
+                <p class="p-inner">Online Purchases</p>
+                <big> <i class="fa fa-inr"></i> <?php echo $online_purchase_amount; ?></big>
+                <p class="mt-5 ammount-txt">These are total number of my Online purchases</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 bottm_bordr2">
+              <div class="my-cashback-inner-first">
+                <p class="p-inner">Micro Purchases</p>
+                <big> <i class="fa fa-inr"></i> <?php echo $micro_purchases_amount; ?></big>
+                <p class="mt-5 ammount-txt">This is the amount waiting for appoval</p>
+              </div>
+            </div>
+            <div class="col-sm-4 bottm_bordr2">
+              <div class="my-cashback-inner-first">
+                <p class="p-inner">Macro Purchases</p>
+                <big> <i class="fa fa-inr"></i> <?php echo $macro_purchases_amount; ?></big>
+                <p class="mt-5 ammount-txt">Macro Purchases</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="my-cashback-inner-first">
+                <p class="p-inner">Mega Purchases</p>
+                <big> <i class="fa fa-inr"></i> 0.00</big>
+                <p class="mt-5 ammount-txt">This amount is the moneyback transferred to me</p>
+              </div>
+            </div>
+            <div class="row btns">
+              <div class="col-sm-4">
+                <div class="inner-btn"><a href="<?php echo base_url(); ?>admin/uploadreceipts"><img src="<?php echo base_url(); ?>images/instorecancellation.png">Untraced Purchase</a><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div>
+              </div>
+              <div class="col-sm-4">
+                <div class="inner-btn"><a href="<?php echo base_url(); ?>admin/uploadreceipts/add"><img src="<?php echo base_url(); ?>images/instorecancellation.png">Upload Purchase</a><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div>
+              </div>
+              <div class="col-sm-4">
+                <div class="inner-btn"><a href="#"><img src="<?php echo base_url(); ?>images/instorecancellation.png">Recent Purchases</a><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div>
+              </div>
+              <div class="col-sm-4 mt-5" id="btn-true">
+                <div class="inner-btn"><a href="#"><img src="<?php echo base_url(); ?>images/instorecancellation.png">Online Cancellations</a><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div>
+              </div>
+              <div class="col-sm-4" id="btn-true">
+                <div class="inner-btn"><a href="#"><img src="<?php echo base_url(); ?>images/instorecancellation.png">Instore Cancellations</a><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div>
+              </div>
+            </div>
+          </div>
         </div>
-         <div class="col-sm-4">
-           <div class="inner-btn"><a href="<?php echo base_url(); ?>admin/uploadreceipts/add"><img src="<?php echo base_url(); ?>images/instorecancellation.png">Upload Purchase</a><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div> 
-        </div>
-         <div class="col-sm-4">
-           <div class="inner-btn"><a href="#"><img src="<?php echo base_url(); ?>images/instorecancellation.png">Recent Purchases</a><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div> 
-        </div>
-        <div class="col-sm-4 mt-5" id="btn-true">
-           <div class="inner-btn"><a href="#"><img src="<?php echo base_url(); ?>images/instorecancellation.png">Online Cancellations</a><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div> 
-        </div>
-        <div class="col-sm-4" id="btn-true">
-           <div class="inner-btn"><a href="#"><img src="<?php echo base_url(); ?>images/instorecancellation.png">Instore Cancellations</a><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div> 
-        </div>
+      </div>
     </div>
-     </div>
-   </div>
-        </div>
-    </div>
-</div>
-<div class="co-middel">
+  </div>
+  <div class="co-middel">
     <div class="row">
-        <div class="col-sm-12">
-            <ul class="inner-content">
-                <li><div class="db-">
+      <div class="col-sm-12">
+        <ul class="inner-content">
+          <li>
+            <div class="db-">
               <img src="<?php echo base_url(); ?>images/mypartners.png">
               <h2>My Partners</h2> <br>
             </div>
             <div> <span>These are all my partners</span></div>
-        </li>
-            <li class="flex-end"><a href="#"></a>
-                 <button class="" id="partners-view">View <i class="fa fa-angle-right" aria-hidden="true"></i></button>
-            </li>
-            </ul>
-              <div id="partners-inner">
-                  <div class="row mt-5 main-inner-ro">
-    <div class="col-sm-4 bottm_bordr">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Total Partners</p>
-        <big> <?php echo count($total_partner); ?></big>
-        <p class="mt-5 ammount-txt">This is the total number of my partners</p>
-    </div>
-    </div>
-   <div class="col-sm-4 bottm_bordr">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Active Partners</p>
-        <big> <?php if (array_key_exists(1, $team_consume)) {
-                echo $team_consume[1];
-              } else {
-                echo 0;
-              } ?></big>
-        <p class="mt-5 ammount-txt">These are my partners who have made purchases</p></div>
-    </div>
-    <div class="col-sm-4 bottm_bordr1">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Inactive Partners</p>
-        <big></i><?php if (array_key_exists(0, $team_consume)) {
-                    echo $team_consume[0];
-                  } else {
-                    echo 0;
-                  } ?></big>
-        <p class="mt-5 ammount-txt">These partners are yet to make a purchase</p></div>
-    </div>
-     </div>
-   <div class="row">
-        <div class="col-sm-4 bottm_bordr2">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Macro Partners</p>
-        <big>  <?php if (array_key_exists(33, $macro_partner)) {
-                  echo $macro_partner[33];
-                } else {
-                  echo 0;
-                } ?></big>
-        <p class="mt-5 ammount-txt">These are partners in my circles who have upgraded to Macro Partners</p>
-    </div>
-    </div>
-   <div class="col-sm-4 bottm_bordr2">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Mega Partners</p>  
-        <big></i> 0</big>
-        <p class="mt-5 ammount-txt">These are partners in my circles who have upgraded to Mega Partners</p></div>
-    </div>
-    <div class="col-sm-4">
-        <div class="my-cashback-inner-first">
-        <p class="p-inner">Total Redeemed Moneyback</p>
-        <big> <i class="fa fa-inr"></i> <?php echo $moneyback; ?></big>
-        <p class="mt-5 ammount-txt">This amount is moneyback transferred to me</p></div>
-    </div>
+          </li>
+          <li class="flex-end"><a href="#"></a>
+            <button class="" id="partners-view">View <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </li>
+        </ul>
+        <div id="partners-inner">
+          <div class="row mt-5 main-inner-ro">
+            <div class="col-sm-4 bottm_bordr">
+              <div class="my-cashback-inner-first">
+                <p class="p-inner">Total Partners</p>
+                <big> <?php echo count($total_partner); ?></big>
+                <p class="mt-5 ammount-txt">This is the total number of my partners</p>
               </div>
-   </div>
-</div>
+            </div>
+            <div class="col-sm-4 bottm_bordr">
+              <div class="my-cashback-inner-first">
+                <p class="p-inner">Active Partners</p>
+                <big> <?php if (array_key_exists(1, $team_consume)) {
+                        echo $team_consume[1];
+                      } else {
+                        echo 0;
+                      } ?></big>
+                <p class="mt-5 ammount-txt">These are my partners who have made purchases</p>
+              </div>
+            </div>
+            <div class="col-sm-4 bottm_bordr1">
+              <div class="my-cashback-inner-first">
+                <p class="p-inner">Inactive Partners</p>
+                <big></i><?php if (array_key_exists(0, $team_consume)) {
+                            echo $team_consume[0];
+                          } else {
+                            echo 0;
+                          } ?></big>
+                <p class="mt-5 ammount-txt">These partners are yet to make a purchase</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 bottm_bordr2">
+              <div class="my-cashback-inner-first">
+                <p class="p-inner">Macro Partners</p>
+                <big> <?php if (array_key_exists(33, $macro_partner)) {
+                        echo $macro_partner[33];
+                      } else {
+                        echo 0;
+                      } ?></big>
+                <p class="mt-5 ammount-txt">These are partners in my circles who have upgraded to Macro Partners</p>
+              </div>
+            </div>
+            <div class="col-sm-4 bottm_bordr2">
+              <div class="my-cashback-inner-first">
+                <p class="p-inner">Mega Partners</p>
+                <big></i> 0</big>
+                <p class="mt-5 ammount-txt">These are partners in my circles who have upgraded to Mega Partners</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="my-cashback-inner-first">
+                <p class="p-inner">Total Redeemed Moneyback</p>
+                <big> <i class="fa fa-inr"></i> <?php echo $moneyback; ?></big>
+                <p class="mt-5 ammount-txt">This amount is moneyback transferred to me</p>
+              </div>
+            </div>
+          </div>
         </div>
-   
-</div></div> -->
-
-
-<!----
-
-<div class="col-sm-12" id="bliss-wallet">
-<?php
-$independent = $total_friend = $stage = $achivers = 0;
-$referrals = '';
-if (!empty($myfriends)) {
-  $total_friend = count($myfriends);
-  foreach ($myfriends as $friend) {
-    if ($friend['level'] == '1') {
-      $independent = $independent + 1;
-      $referrals .= '<tr><td>' . $friend['name'] . '</td><td>' . $friend['friends'] . '</td></tr>';
-    }
-    if ($friend['level'] > $stage) {
-      $stage = $friend['level'];
-    }
-  }
-}
-?>
-<!--<div class="sd sdfg  text-center">
-<h3>Sales Associate</h3>
-<div class="gm fst_gm col-sm-3">
-<div data-toggle="modal" data-target="#referralModal">
-<div class="pgn">
-<img src="images/img20.jpg">
-<div class="df">
-<span>Independent <big>
-
-<?php echo $independent; ?></big> </span>
-</div>
-</div></div></div>
-<div id="referralModal" class="modal fade" role="dialog">
-  <div class="modal-dialog"> 
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Independent Sales Associate</h4>
       </div>
-      <div class="modal-body">
-        <table class="table">
-		<tr><th class="text-center">Name</th><th class="text-center">Friends</th></tr>
-		<?php if ($referrals == '') {
-      echo '<tr><td colspan="2">No friends.</td></tr>';
-    } else {
-      echo $referrals;
-    } ?>
-		</table>
-      </div> 
-    </div> 
+    </div>
+
   </div>
 </div>
-<div class="gm fst_gm col-sm-3">
-  <a data-target="#historyModel" data-toggle="modal" href="javascript:void(0)">
-<div class="pgn"><img src="images/img6.jpg"> <div class="df"><span>Total <big><?php echo $total_friend; ?></strong></big> </span></div> 
-<div class="hover_opn"><span>
-This is the total  of all
-my purchases  </br><button>Enter</button></span>
-</div>
-</div></a> 
-</div>
-<div class="gm fst_gm col-sm-3">
-  <a data-target="#historyModel" data-toggle="modal" href="javascript:void(0)">
-<div class="pgn"><img src="images/img8.jpg"> <div class="df"><span>Stage <big><?php echo $stage; ?></strong></big> </span></div> 
-<div class="hover_opn"><span>
-This is the total  of all
-my purchases  </br><button>Enter</button></span>
-</div>
-</div></a> </div>
-<div class="gm fst_gm col-sm-3">
-  <a data-target="#historyModel" data-toggle="modal" href="javascript:void(0)">
-<div class="pgn"><img src="images/goodness-score.jpg"> <div class="df"><span>Achievers <big><?php echo $achivers; ?></strong></big> </span></div> 
-<div class="hover_opn"><span>
-This is the total  of all
-my purchases  </br><button>Enter</button></span>
-</div>
-</div>
-</a> 
-</div>
-</div>-->
+
+
+<div class="col-sm-12" id="bliss-wallet">
+  <?php
+  $independent = $total_friend = $stage = $achivers = 0;
+  $referrals = '';
+  if (!empty($myfriends)) {
+    $total_friend = count($myfriends);
+    foreach ($myfriends as $friend) {
+      if ($friend['level'] == '1') {
+        $independent = $independent + 1;
+        $referrals .= '<tr><td>' . $friend['name'] . '</td><td>' . $friend['friends'] . '</td></tr>';
+      }
+      if ($friend['level'] > $stage) {
+        $stage = $friend['level'];
+      }
+    }
+  }
+  ?>
+  <div class="sd sdfg  text-center">
+    <h3>Sales Associate</h3>
+    <div class="gm fst_gm col-sm-3">
+      <div data-toggle="modal" data-target="#referralModal">
+        <div class="pgn">
+          <img src="images/img20.jpg">
+          <div class="df">
+            <span>Independent <big>
+
+                <?php echo $independent; ?></big> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="referralModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Independent Sales Associate</h4>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <tr>
+                <th class="text-center">Name</th>
+                <th class="text-center">Friends</th>
+              </tr>
+              <?php if ($referrals == '') {
+                echo '<tr><td colspan="2">No friends.</td></tr>';
+              } else {
+                echo $referrals;
+              } ?>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gm fst_gm col-sm-3">
+      <a data-target="#historyModel" data-toggle="modal" href="javascript:void(0)">
+        <div class="pgn"><img src="images/img6.jpg">
+          <div class="df"><span>Total <big><?php echo $total_friend; ?></strong></big> </span></div>
+          <div class="hover_opn"><span>
+              This is the total of all
+              my purchases </br><button>Enter</button></span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="gm fst_gm col-sm-3">
+      <a data-target="#historyModel" data-toggle="modal" href="javascript:void(0)">
+        <div class="pgn"><img src="images/img8.jpg">
+          <div class="df"><span>Stage <big><?php echo $stage; ?></strong></big> </span></div>
+          <div class="hover_opn"><span>
+              This is the total of all
+              my purchases </br><button>Enter</button></span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="gm fst_gm col-sm-3">
+      <a data-target="#historyModel" data-toggle="modal" href="javascript:void(0)">
+        <div class="pgn"><img src="images/goodness-score.jpg">
+          <div class="df"><span>Achievers <big><?php echo $achivers; ?></strong></big> </span></div>
+          <div class="hover_opn"><span>
+              This is the total of all
+              my purchases </br><button>Enter</button></span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 
 
 </div>
 
 
-<!--
 <div class="sd sdfg  text-center" id="my-transaction">
 
- <div class="gm fst_gm col-sm-3">
-  <a href="<?php echo base_url(); ?>admin/directs">
-<div class="pgn">
-<img src="images/img22.jpg">
- <div class="df" >
- <span >My Referrals  <big>
-<?php echo $independent; ?></strong></big> </span></div> 
-<div class="hover_opn"><span>
-This is the total  of all
-my purchases  </br><button>Enter</button></span>
-</div>
-</div>
-</a> 
-</div>
+  <div class="gm fst_gm col-sm-3">
+    <a href="<?php echo base_url(); ?>admin/directs">
+      <div class="pgn">
+        <img src="images/img22.jpg">
+        <div class="df">
+          <span>My Referrals <big>
+              <?php echo $independent; ?></strong></big> </span>
+        </div>
+        <div class="hover_opn"><span>
+            This is the total of all
+            my purchases </br><button>Enter</button></span>
+        </div>
+      </div>
+    </a>
+  </div>
 
 
 
-<div class="gm fst_gm col-sm-3">
-  <a  href="<?php echo base_url(); ?>admin/income/show">
-<div class="pgn"><img src="images/img12.jpg"> <div class="df"><span>Referral Income  <big><i class="fa fa-inr"></i><?php echo $total; ?></big> </span></div> 
-</div>
- </a> 
-</div>
-<div class="gm fst_gm col-sm-3">
-  <a href="<?php echo base_url(); ?>feedback">
-<div class="pgn"><img src="images/img21.jpg">
-<div class="df">
- <span>Feedback</span>
- </div> 
-</div>
-   </a> 
-</div>
+  <div class="gm fst_gm col-sm-3">
+    <a href="<?php echo base_url(); ?>admin/income/show">
+      <div class="pgn"><img src="images/img12.jpg">
+        <div class="df"><span>Referral Income <big><i class="fa fa-inr"></i><?php echo $total; ?></big> </span></div>
+      </div>
+    </a>
+  </div>
+  <div class="gm fst_gm col-sm-3">
+    <a href="<?php echo base_url(); ?>feedback">
+      <div class="pgn"><img src="images/img21.jpg">
+        <div class="df">
+          <span>Feedback</span>
+        </div>
+      </div>
+    </a>
+  </div>
 
-<div class="gm fst_gm col-sm-3">
-   <a href="<?php echo base_url(); ?>complaint">
-<div class="pgn"><img src="images/img19.jpg">
-<div class="df">
-<span>Complaint</span>
-</div> 
-</div>
- </a> 
-</div>
+  <div class="gm fst_gm col-sm-3">
+    <a href="<?php echo base_url(); ?>complaint">
+      <div class="pgn"><img src="images/img19.jpg">
+        <div class="df">
+          <span>Complaint</span>
+        </div>
+      </div>
+    </a>
+  </div>
 
 
-</div>  
+</div>
 <div class="col-sm-6 col-sm-offset-3">
-<div class="frdn" data-toggle="modal" data-target="#invite-friend-modal">Invite Friends</div>
-</div> ---->
+  <div class="frdn" data-toggle="modal" data-target="#invite-friend-modal">Invite Friends</div>
+</div>
 
 
 <!-- Modal -->
