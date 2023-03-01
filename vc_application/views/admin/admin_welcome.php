@@ -396,7 +396,7 @@
         <div class="gm fst_gm clr1 col-sm-4">
           <div class="pgn">
             <div class="df">
-              <span>My Purchases<?php var_dump($has_package) ?></span>
+              <span>My Purchases<?php var_dump($package_data) ?></span>
             </div>
           </div>
         </div>
