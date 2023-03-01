@@ -388,7 +388,9 @@
   <?php } ?>
 
   <section>
-    <h1 class="tittles">My Package</h1>
+    <div class="row">
+      <h1 class="tittles">My Package</h1>
+    </div>
     <div class="row">
       <div class="gm fst_gm clr1 col-sm-4">
         <a href="<?php echo base_url(); ?>/admin/my_wallet">
