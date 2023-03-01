@@ -343,25 +343,6 @@
 
 </div>
 <div class="col-sm-12 right-bar">
-  <section>
-    <h1 class="tittles">My Package</h1>
-    <div class="row">
-      <div class="gm fst_gm clr1 col-sm-4">
-        <a href="<?php echo base_url(); ?>/admin/my_wallet">
-          <div class="pgn">
-            <div class="imggg">
-              <img src="images/img12.jpg">
-            </div>
-
-            <div class="df">
-              <span>My Purchases<big>
-                  <?php var_dump($has_package) ?> </big></span>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
   <?php if ($profile[0]['macro'] == 0 && !empty($moneyback) && date('Y-m-d') <= date('Y-m-d', strtotime('+15 days', strtotime($moneyback[0]['rdate'])))) { ?>
     <div class="sd sdfg  text-center">
       <div class="leftttt">
@@ -438,6 +419,25 @@
       </div>
     </a>
   </div>
+  <section>
+    <h1 class="tittles">My Package</h1>
+    <div class="row">
+      <div class="gm fst_gm clr1 col-sm-4">
+        <a href="<?php echo base_url(); ?>/admin/my_wallet">
+          <div class="pgn">
+            <div class="imggg">
+              <img src="images/img12.jpg">
+            </div>
+
+            <div class="df">
+              <span>My Purchases<big>
+                  <?php var_dump($has_package) ?> </big></span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <div class="gm fst_gm clr2 col-sm-4">
     <a href="<?php echo base_url();
