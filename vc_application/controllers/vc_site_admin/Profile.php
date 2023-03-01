@@ -39,10 +39,8 @@ class Profile extends CI_Controller
         }
         $data["package_data"] = "";
         if ($data['has_package']) {
-            $data["package_data"] = $this->Users_model->get_package_data($data['package_information']['id']);
+            $data["package_data"] = $this->Users_model->get_package_data($data['package_information'][0]['package_id']);
         }
-        var_dump($data['package_information'][0]);
-        die();
 
         //Calculate Total Team Members
         $team = array();
