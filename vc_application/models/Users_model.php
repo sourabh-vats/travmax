@@ -871,4 +871,11 @@ Team Wishzon");
 		$query = $this->db->get();
 		return $query->result_array();
 	}
+
+	function update_user_package($id, $data_to_store)
+	{
+		$this->db->where('id', $id);
+		$this->db->update('package_purchase', $data_to_store);
+		return TRUE;
+	}
 }

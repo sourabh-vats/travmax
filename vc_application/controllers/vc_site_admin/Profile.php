@@ -103,9 +103,7 @@ class Profile extends CI_Controller
                 'package_id' => $this->input->post('package_id'),
                 'payment_type' => $this->input->post('payment_type')
             );
-            print_r($data_to_store);
-            die();
-            //$return = $this->Users_model->update_profile($id, $data_to_store);
+            $return = $this->Users_model->update_user_package($id, $data_to_store);
 
             if ($return == TRUE) {
                 $this->session->set_flashdata('flash_message', 'updated');
