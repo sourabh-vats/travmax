@@ -61,12 +61,6 @@
     padding: 8px 0 0;
   }
 
-
-  @media (max-width: 1599px) and (min-width: 1366px) .gm {
-    margin: 0 28px 0 0;
-  }
-  }
-
   .gm .df {
     font-size: 24px;
   }
@@ -176,14 +170,13 @@
     font-weight: 600;
   }
 </style>
+
 <div class="smry smry4  text-center">
-  My Account
+  Dashboard
 </div>
 <div class="col-sm-12">
   <?php
   $user = $profile[0];
-
-
   $total = 0;
   if (!empty($show_direct)) {
     foreach ($show_direct as $row) {
@@ -191,17 +184,12 @@
       $total = $total + $row['amount'];
     }
   }
-
   $cashback = $approved_cashback = $pending_cashback = $redeem_cashback = $moneyback = $approved_moneyback = $pending_moneyback = $redeem_moneyback = $credits = 0;
-
   if (!empty($incomes)) {
     foreach ($incomes as $inc) {
-
-      //if($inc['type']=='MoneyBack') { $moneyback = $moneyback + $inc['tamount']; }
       if ($inc['type'] == 'Credits') {
         $credits = $credits + $inc['tamount'];
       }
-
       if ($inc['type'] == 'MoneyBack') {
         if ($inc['status'] == 'Approved') {
           $approved_moneyback = $approved_moneyback + $inc['tamount'];
@@ -212,10 +200,8 @@
         if ($inc['status'] == 'Redeem') {
           $redeem_moneyback = $redeem_moneyback + $inc['tamount'];
         }
-
         $moneyback = $moneyback + $inc['tamount'];
       }
-
       if ($inc['type'] == 'Cashback') {
         if ($inc['status'] == 'Approved') {
           $approved_cashback = $approved_cashback + $inc['tamount'];
@@ -231,18 +217,9 @@
       }
     }
   }
-
-
-
-
   $purchases_count = $purchases_amount = $online_purchase_count = $online_purchase_amount = $utility_purchase_count = $utility_purchase_amount = $service_purchase_count = $service_purchase_amount = $instore_purchase_count = $instore_purchase_amount =  0;
-
-
   $micro_purchases_count = $micro_purchases_amount = $micro_online_purchase_count = $micro_online_purchase_amount = $micro_utility_purchase_count = $micro_utility_purchase_amount = $micro_service_purchase_count = $micro_service_purchase_amount = $micro_instore_purchase_count = $micro_instore_purchase_amount =  0;
-
-
   $macro_purchases_count = $macro_purchases_amount = $macro_online_purchase_count = $macro_online_purchase_amount = $macro_utility_purchase_count = $macro_utility_purchase_amount = $macro_service_purchase_count = $macro_service_purchase_amount = $macro_instore_purchase_count = $macro_instore_purchase_amount =  0;
-
   $macro_count = $macro_amount = 0;
 
   if (!empty($purchases)) {
@@ -256,12 +233,10 @@
             $macro_online_purchase_amount = $macro_online_purchase_amount + $purchase['amount'];
             $macro_online_purchase_count = $macro_online_purchase_count + 1;
           }
-
           $online_purchase_amount = $online_purchase_amount + $purchase['amount'];
           $online_purchase_count = $online_purchase_count + 1;
         }
         if ($purchase['order_type'] == 'Utility') {
-
           if ($purchase['role'] == 'Micro') {
             $micro_utility_purchase_amount = $micro_utility_purchase_amount + $purchase['amount'];
             $micro_utility_purchase_count = $micro_utility_purchase_count + 1;
@@ -269,12 +244,10 @@
             $macro_utility_purchase_amount = $macro_utility_purchase_amount + $purchase['amount'];
             $macro_utility_purchase_count = $macro_utility_purchase_count + 1;
           }
-
           $utility_purchase_amount = $utility_purchase_amount + $purchase['amount'];
           $utility_purchase_count = $utility_purchase_count + 1;
         }
         if ($purchase['order_type'] == 'Instore') {
-
           if ($purchase['role'] == 'Micro') {
             $micro_service_purchase_amount = $micro_service_purchase_amount + $purchase['amount'];
             $micro_service_purchase_count = $micro_service_purchase_count + 1;
@@ -282,14 +255,10 @@
             $macro_service_purchase_amount = $macro_service_purchase_amount + $purchase['amount'];
             $macro_service_purchase_count = $macro_service_purchase_count + 1;
           }
-
-
           $service_purchase_amount = $service_purchase_amount + $purchase['amount'];
           $instore_purchase_count = $instore_purchase_count + 1;
         }
-
         if ($purchase['order_type'] == 'Instore') {
-
           if ($purchase['role'] == 'Micro') {
             $micro_service_purchase_amount = $micro_service_purchase_amount + $purchase['amount'];
             $micro_service_purchase_count = $micro_service_purchase_count + 1;
@@ -311,21 +280,13 @@
       }
     }
   }
-
   $purchases_count = $online_purchase_count + $utility_purchase_count + $instore_purchase_count + $macro_purchases_count;
   $purchases_amount = $online_purchase_amount + $utility_purchase_amount + $service_purchase_amount + $macro_purchases_amount;
-
   $micro_purchases_count = $micro_online_purchase_count + $micro_utility_purchase_count + $micro_instore_purchase_count;
   $micro_purchases_amount = $micro_online_purchase_amount + $micro_utility_purchase_amount + $micro_service_purchase_amount;
-
-  //$macro_purchases_count = $macro_online_purchase_count + $macro_utility_purchase_count + $macro_instore_purchase_count;
-  //$macro_purchases_amount = $macro_online_purchase_amount + $macro_utility_purchase_amount + $macro_service_purchase_amount;
-
-
-
   ?>
 
-  <!--h2 class="wella">Welcome <?php echo $this->session->userdata('user_name'); ?></h2-->
+  <h2 class="wella">Welcome <?php echo $this->session->userdata('user_name'); ?></h2
   <?php
   //flash messages
   if ($this->session->flashdata('flash_message')) {

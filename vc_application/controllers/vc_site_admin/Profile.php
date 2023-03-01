@@ -96,7 +96,7 @@ class Profile extends CI_Controller
             $data['has_package'] = false;
         } else {
             $data['has_package'] = true;
-            redirect(base_url() . '');
+            redirect(base_url() . '/admin');
         }
         if ($this->input->server('REQUEST_METHOD') && $this->input->server('REQUEST_METHOD') == "POST") {
             $data_to_store = array(
