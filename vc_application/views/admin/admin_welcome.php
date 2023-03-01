@@ -405,7 +405,7 @@
           <div class="pgn">
             <div class="df">
               <span>Payment Plan</span>
-              <span><?php echo $data['package_information'][0]['payment_plan']; ?></span>
+              <span><?php echo $package_information[0]['payment_plan']; ?></span>
             </div>
           </div>
         </div>
