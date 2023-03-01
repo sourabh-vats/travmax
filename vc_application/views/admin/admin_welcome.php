@@ -387,6 +387,26 @@
 
   <?php } ?>
 
+  <section>
+    <h1 class="tittles">My Package</h1>
+    <div class="row">
+      <div class="gm fst_gm clr1 col-sm-4">
+        <a href="<?php echo base_url(); ?>/admin/my_wallet">
+          <div class="pgn">
+            <div class="imggg">
+              <img src="images/img12.jpg">
+            </div>
+
+            <div class="df">
+              <span>My Purchases<big>
+                  <?php var_dump($has_package) ?> </big></span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <div class="main-wallet">
     <div class="row">
 
@@ -419,25 +439,6 @@
       </div>
     </a>
   </div>
-  <section>
-    <h1 class="tittles">My Package</h1>
-    <div class="row">
-      <div class="gm fst_gm clr1 col-sm-4">
-        <a href="<?php echo base_url(); ?>/admin/my_wallet">
-          <div class="pgn">
-            <div class="imggg">
-              <img src="images/img12.jpg">
-            </div>
-
-            <div class="df">
-              <span>My Purchases<big>
-                  <?php var_dump($has_package) ?> </big></span>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
 
   <div class="gm fst_gm clr2 col-sm-4">
     <a href="<?php echo base_url();
