@@ -396,7 +396,16 @@
         <div class="gm fst_gm clr1 col-sm-4">
           <div class="pgn">
             <div class="df">
-              <span>My Purchases<?php var_dump($package_data) ?></span>
+              <span>Name</span>
+              <span><?php echo $package_data[0]['name']; ?></span>
+            </div>
+          </div>
+        </div>
+        <div class="gm fst_gm clr1 col-sm-4">
+          <div class="pgn">
+            <div class="df">
+              <span>Payment Plan</span>
+              <span><?php echo $data['package_information'][0]['payment_plan']; ?></span>
             </div>
           </div>
         </div>
