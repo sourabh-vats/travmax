@@ -29,6 +29,21 @@ class Profile extends CI_Controller
         $customer_id = $this->session->userdata('bliss_id');
         $data['profile'] = $this->Users_model->profile($id);
 
+        //package information
+        $data['has_package'] = false;
+        $data['package_information'] = $this->Users_model->get_package($id);
+        if (empty($data['package_information'])) {
+            $data['has_package'] = false;
+        } else {
+            $data['has_package'] = true;
+        }
+        $data["package_data"] = "";
+        if ($data['has_package']) {
+            $data["package_data"] = $this->Users_model->get_package_data($data['package_information']['id']);
+        }
+        var_dump($data["package_data"]);
+        die();
+
         //Calculate Total Team Members
         $team = array();
         $ids = array($customer_id);
@@ -44,13 +59,7 @@ class Profile extends CI_Controller
         }
         $data['total_partner'] = $team;
 
-        $data['has_package'] = false;
-        $data['package_information'] = $this->Users_model->get_package($id);
-        if (empty($data['package_information'])) {
-            $data['has_package'] = false;
-        } else {
-            $data['has_package'] = true;
-        }
+        
 
         $left_count = array_column($team, 'macro');
         $team_consume = array_column($team, 'consume');

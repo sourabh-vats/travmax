@@ -11,6 +11,12 @@ a {
     font-weight: bolder;
 }
 
+/* Dashboard Home Page */
+.right-bar{
+    margin-top: 80px;
+}
+
+/* Select Package Page */
 .select_package_id{
     cursor: pointer;
     box-sizing: border-box;

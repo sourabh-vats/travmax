@@ -387,28 +387,22 @@
 
   <?php } ?>
 
-  <section>
-    <div class="row">
-      <h1 class="tittles">My Package</h1>
-    </div>
-    <div class="row">
-      <div class="gm fst_gm clr1 col-sm-4">
-        <a href="<?php echo base_url(); ?>/admin/my_wallet">
+  <?php if ($has_package) { ?>
+    <section>
+      <div class="row">
+        <h1 class="tittles">My Package</h1>
+      </div>
+      <div class="row">
+        <div class="gm fst_gm clr1 col-sm-4">
           <div class="pgn">
-            <div class="imggg">
-              <img src="images/img12.jpg">
-            </div>
-
             <div class="df">
-              <span>My Purchases<big>
-                  <?php var_dump($has_package) ?> </big></span>
+              <span>My Purchases<?php var_dump($has_package) ?></span>
             </div>
           </div>
-        </a>
+        </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  <?php } ?>
   <div class="main-wallet">
     <div class="row">
 
