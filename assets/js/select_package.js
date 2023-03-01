@@ -8,6 +8,7 @@ $(document).ready(function () {
         $(".plan_box").each(function () {
             $(this).removeClass("selected");
         })
+        $("#book_package_btn").addClass("d-none");
     });
 
     $(".plan_box").click(function () {
@@ -31,5 +32,6 @@ $(document).ready(function () {
                 break;
         }
         $("input[name=payment_type]").val(planId);
+        $("#book_package_btn").removeClass("d-none");
     })
 });

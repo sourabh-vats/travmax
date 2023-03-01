@@ -59,6 +59,6 @@ if ($this->session->flashdata('flash_message')) {
     ?>
     <input type="hidden" name="package_id">
     <input type="hidden" name="payment_type">
-    <button class="btn btn-lg btn-primary" type="submit">Book</button>
+    <button class="btn btn-lg btn-primary w-100 my-3 d-none" id="book_package_btn" type="submit">Book</button>
     <?php echo form_close(); ?>
 </div>
