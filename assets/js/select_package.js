@@ -8,7 +8,7 @@ $(document).ready(function () {
     });
 
     $(".plan_box").click(function () {
-        console.log("hi");
+        $(this).addClass("selected");
         var planName = $(this).attr("id");
         var planId;
         switch (planName) {
@@ -24,6 +24,6 @@ $(document).ready(function () {
             default:
                 break;
         }
-        $("#payment_type").val(planId);
+        $("input[name=payment_type]").val(planId);
     })
 });
