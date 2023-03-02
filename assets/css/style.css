@@ -18,13 +18,15 @@ a {
 
 .card_heading {
     font-size: 20px;
+    font-weight: 700;
 }
 
 .card_data {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.titles {
+.tittles {
     margin-left: 10px;
     margin-right: 10px;
 }
