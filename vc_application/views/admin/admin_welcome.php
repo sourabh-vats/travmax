@@ -411,6 +411,22 @@
             </div>
           </div>
         </div>
+        <div class="gm fst_gm clr1 col-sm-4">
+          <div class="pgn">
+            <div class="df">
+              <p class="card_heading">Remaining Payment</p>
+              <p class="card_data">Rs. Null</p>
+            </div>
+          </div>
+        </div>
+        <div class="gm fst_gm clr1 col-sm-4">
+          <div class="pgn">
+            <div class="df">
+              <p class="card_heading">Amount Pais</p>
+              <p class="card_data">Rs. Null</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   <?php } ?>
