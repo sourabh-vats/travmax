@@ -31,6 +31,10 @@ a {
     margin-right: 10px;
 }
 
+#package_mrp {
+    text-decoration: line-through;
+}
+
 /* Select Package Page */
 .select_package_id {
     cursor: pointer;

@@ -398,8 +398,17 @@
         <div class="gm fst_gm clr1 col-sm-4">
           <div class="pgn">
             <div class="df">
-              <p class="card_heading">Name</p>
+              <p class="card_heading">Payment Plan</p>
               <p class="card_data"><?php echo $package_information[0]['payment_type']; ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="gm fst_gm clr1 col-sm-4">
+          <div class="pgn">
+            <div class="df">
+              <p class="card_heading">Total Price</p>
+              <p class="card_data" id="package_mrp"><?php echo $package_data[0]['mrp']; ?></p>
+              <p class="card_data"><?php echo $package_data[0]['total']; ?></p>
             </div>
           </div>
         </div>
