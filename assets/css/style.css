@@ -39,6 +39,8 @@ p {
     text-decoration: line-through;
     font-size: 20px;
     font-weight: 600;
+    float: none;
+    line-height: normal;
 }
 
 /* Select Package Page */
