@@ -6,6 +6,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-bottom: 2px;
+}
+
 .alert-danger>a {
     color: deepskyblue;
     font-weight: bolder;
