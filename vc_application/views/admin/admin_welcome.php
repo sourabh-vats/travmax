@@ -407,8 +407,7 @@
           <div class="pgn">
             <div class="df">
               <p class="card_heading">Total Price</p>
-              <p class="card_data" id="package_mrp">Rs. <?php echo $package_data[0]['mrp']; ?></p>
-              <p class="card_data">Rs. <?php echo $package_data[0]['total']; ?></p>
+              <p class="card_data">Rs. <span id="package_mrp"><?php echo $package_data[0]['mrp']; ?></span> Rs. <?php echo $package_data[0]['total']; ?></p>
             </div>
           </div>
         </div>
