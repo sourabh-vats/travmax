@@ -422,7 +422,7 @@
         <div class="gm fst_gm clr1 col-sm-4">
           <div class="pgn">
             <div class="df">
-              <p class="card_heading">Amount Pais</p>
+              <p class="card_heading">Amount Paid</p>
               <p class="card_data">Rs. Null</p>
             </div>
           </div>
@@ -430,6 +430,37 @@
       </div>
     </section>
   <?php } ?>
+  <section>
+    <div class="row">
+      <h1 class="tittles">My Income</h1>
+    </div>
+    <div class="row">
+      <div class="gm fst_gm clr1 col-sm-4">
+        <div class="pgn">
+          <div class="df">
+            <p class="card_heading">Income</p>
+            <p class="card_data">Null</p>
+          </div>
+        </div>
+      </div>
+      <div class="gm fst_gm clr1 col-sm-4">
+        <div class="pgn">
+          <div class="df">
+            <p class="card_heading">Travel Money</p>
+            <p class="card_data">Null</p>
+          </div>
+        </div>
+      </div>
+      <div class="gm fst_gm clr1 col-sm-4">
+        <div class="pgn">
+          <div class="df">
+            <p class="card_heading">Coming Soon</p>
+            <p class="card_data">Null</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <div class="main-wallet">
     <div class="row">
 
