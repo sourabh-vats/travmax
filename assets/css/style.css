@@ -12,24 +12,35 @@ a {
 }
 
 /* Dashboard Home Page */
+.right-bar {
+    margin-top: 10px;
+}
 
+.card_heading {
+    font-size: 20px;
+}
+
+.card_data {
+    font-size: 16px;
+}
 
 /* Select Package Page */
-.select_package_id{
+.select_package_id {
     cursor: pointer;
     box-sizing: border-box;
     border: 2px solid white;
 }
 
-.select_package_id:hover{
+.select_package_id:hover {
     cursor: pointer;
     border: 2px solid deepskyblue;
 }
 
-.plan_box:hover{
+.plan_box:hover {
     cursor: pointer;
     background-color: aliceblue;
 }
-.plan_box.selected{
+
+.plan_box.selected {
     background-color: antiquewhite;
 }

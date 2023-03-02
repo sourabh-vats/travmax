@@ -2,7 +2,8 @@
   .wip {
     max-width: 1080px;
   }
-    .smry {
+
+  .smry {
     font-size: 45px;
 
     padding: 10px 0;
@@ -389,8 +390,8 @@
         <div class="gm fst_gm clr1 col-sm-4">
           <div class="pgn">
             <div class="df">
-              <span>Name</span>
-              <span><?php echo $package_data[0]['name']; ?></span>
+              <p class="card_heading">Name</p>
+              <p class="card_data"><?php echo $package_data[0]['name']; ?></p>
             </div>
           </div>
         </div>
