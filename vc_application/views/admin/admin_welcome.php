@@ -398,8 +398,8 @@
         <div class="gm fst_gm clr1 col-sm-4">
           <div class="pgn">
             <div class="df">
-              <span>Payment Plan</span>
-              <span><?php echo $package_information[0]['payment_plan']; ?></span>
+              <p class="card_heading">Name</p>
+              <p class="card_data"><?php print_r($package_data[0]); ?></p>
             </div>
           </div>
         </div>
