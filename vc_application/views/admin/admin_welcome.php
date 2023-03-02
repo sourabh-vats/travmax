@@ -2,14 +2,7 @@
   .wip {
     max-width: 1080px;
   }
-
-  .sd.sdfg.text-center {
-    width: 100%;
-    background: #dedede;
-    min-height: 65px;
-  }
-
-  .smry {
+    .smry {
     font-size: 45px;
 
     padding: 10px 0;
