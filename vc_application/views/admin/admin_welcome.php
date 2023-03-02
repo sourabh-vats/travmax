@@ -399,7 +399,7 @@
           <div class="pgn">
             <div class="df">
               <p class="card_heading">Name</p>
-              <p class="card_data"><?php print_r($package_information[0]); ?></p>
+              <p class="card_data"><?php echo $package_information[0]['payment_type']; ?></p>
             </div>
           </div>
         </div>
