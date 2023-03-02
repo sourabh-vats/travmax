@@ -218,7 +218,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                                 } ?>><a href="<?php echo base_url(); ?>admin/activity_log"><i class="fa fa-address-card-o" aria-hidden="true"></i> Activity log</a></li>
                             <li <?php if ($store == 'wallet_history') {
                                     echo 'class="home atv"';
-                                } ?>><a href="<?php echo base_url(); ?>admin/wallet_history"><i class="fa fa-file" aria-hidden="true"></i> Wallet History</a></li>
+                                } ?>><a href="<?php echo base_url(); ?>admin/wallet_history"><i class="fa fa-file" aria-hidden="true"></i> Account History</a></li>
                             <li><a href="<?php echo base_url(); ?>admin/kyc"><i class="fa fa-cog" aria-hidden="true"></i> Settings </a></li>
                             <li><a href="<?php echo base_url(); ?>terms_of_use"><i class="fa fa-file" aria-hidden="true"></i> Terms and Conditions</a></li>
                             <li><a href="<?php echo base_url(); ?>feedback"><i class="fa fa-comment" aria-hidden="true"></i> Give Us Feedback</a></li>

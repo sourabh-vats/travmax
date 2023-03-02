@@ -427,6 +427,14 @@
             </div>
           </div>
         </div>
+        <div class="gm fst_gm clr1 col-sm-4">
+          <div class="pgn">
+            <div class="df">
+              <p class="card_heading">Upload Receipt</p>
+              <p class="card_data"><a href="<?php echo base_url(); ?>admin/request-fund">Upload Receipt</a></p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   <?php } ?>
@@ -501,9 +509,6 @@
 
       <div class="col-md-4 text-center wallet"><a href="<?php echo base_url(); ?>admin/payment">
           <h4>Online Payment</h4>
-        </a></div>
-      <div class="col-md-4 text-center"><a href="<?php echo base_url(); ?>admin/request-fund">
-          <h4>Upload Receipt</h4>
         </a></div>
       <div class="col-md-4 text-center"><a href="<?php echo base_url(); ?>admin/transfer_master">
           <h4>Transfer Moneyback</h4>
