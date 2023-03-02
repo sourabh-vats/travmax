@@ -461,6 +461,41 @@
       </div>
     </div>
   </section>
+  <section>
+    <div class="row">
+      <h1 class="tittles">Other</h1>
+    </div>
+    <div class="row">
+      <div class="gm fst_gm clr1 col-sm-4">
+        <div class="pgn">
+          <div class="df">
+            <p class="card_heading">My Partners</p>
+            <p class="card_data">Null</p>
+          </div>
+        </div>
+      </div>
+      <div class="gm fst_gm clr1 col-sm-4">
+        <div class="pgn">
+          <div class="df">
+            <p class="card_heading">My Sales</p>
+            <p class="card_data">Null</p>
+          </div>
+        </div>
+      </div>
+      <div class="gm fst_gm clr1 col-sm-4">
+        <div class="pgn">
+          <div class="df">
+            <p class="card_heading">Team Sales</p>
+            <p class="card_data">Null</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
   <div class="main-wallet">
     <div class="row">
 
