@@ -37,6 +37,8 @@ p {
 
 #package_mrp {
     text-decoration: line-through;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* Select Package Page */
