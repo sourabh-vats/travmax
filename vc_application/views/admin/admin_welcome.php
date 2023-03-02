@@ -545,7 +545,7 @@
               } else {
                 echo 0;
               } ?>
-              <?php echo $purchases[0]['amount'] + 0;
+              <?php //echo $purchases[0]['amount'] + 0;
               ?></strong></big></span>
         </div>
       </div>
