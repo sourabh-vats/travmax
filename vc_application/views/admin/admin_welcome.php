@@ -415,7 +415,7 @@
           <div class="pgn">
             <div class="df">
               <p class="card_heading">Remaining Payment</p>
-              <p class="card_data">Rs. Null</p>
+              <p class="card_data">Rs. <?php echo $package_information[0]['amount_remaining']; ?></p>
             </div>
           </div>
         </div>
@@ -423,7 +423,7 @@
           <div class="pgn">
             <div class="df">
               <p class="card_heading">Amount Paid</p>
-              <p class="card_data">Rs. Null</p>
+              <p class="card_data">Rs. <?php echo $package_information[0]['amount_paid']; ?></p>
             </div>
           </div>
         </div>
