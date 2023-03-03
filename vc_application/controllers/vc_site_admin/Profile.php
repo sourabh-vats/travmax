@@ -1362,6 +1362,8 @@ class Profile extends CI_Controller
         $amount = $this->input->post('amount');
 
         if ($this->input->server('REQUEST_METHOD') === 'POST' && $this->input->post('find_customer') != '') {
+            echo 'reached in first';
+            die();
             $this->form_validation->set_rules('assign_to', 'assign to', 'required|trim');
             $find_user = $this->input->post('assign_to');
             $find_user = trim($find_user);
@@ -1376,6 +1378,8 @@ class Profile extends CI_Controller
             if ($this->form_validation->run()) {
             }
         } else if ($this->input->server('REQUEST_METHOD') === 'POST') {
+            echo 'reached in second';
+            die();
             /*form validation*/
             $this->form_validation->set_rules('assign_to', 'assign to', 'required|trim');
             $this->form_validation->set_rules('product', 'Package', 'required');
