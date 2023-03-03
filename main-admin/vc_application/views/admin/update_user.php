@@ -62,12 +62,10 @@ if (empty($user)) {
             <input type="hidden" name="product" value="55000">
             <input type="hidden" name="payment" value="5500">
             <input type="hidden" name="gst" value="550">
+            <p><label>Booked Package: </label>&nbsp;<?php echo $package[0]['name']; ?></p>
             <p><label>Activation Package: </label>&nbsp; 55000</p>
             <p><label>Activation amount: </label>&nbsp; 5500 + 550 (10% GST) = INR 6050</p>
         </div>
-        <p>
-            <label>package: </label>&nbsp;Rs 8000 
-        </p>
         <div class="form-group  col-lg-12">
             <button class="btn btn-success" type="submit">Buy Macro Package</button> &nbsp;
             <a class="btn btn-primary" href="<?php echo base_url() . 'admin/update_user'; ?>">Back </a>

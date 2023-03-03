@@ -109,6 +109,24 @@ class Users_model extends CI_Model {
 		$query = $this->db->get();
 		return $query->result_array();
 	}
+
+	function get_package($id)
+	{
+		$this->db->select('*');
+		$this->db->from('package_purchase');
+		$this->db->where('user_id', $id);
+		$query = $this->db->get();
+		return $query->result_array();
+	}
+
+	function get_package_data($id)
+	{
+		$this->db->select('*');
+		$this->db->from('package');
+		$this->db->where('id', $id);
+		$query = $this->db->get();
+		return $query->result_array();
+	}
 	
 }
 

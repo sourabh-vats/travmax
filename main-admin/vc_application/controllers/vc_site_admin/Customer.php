@@ -1251,6 +1251,9 @@ Team Divinoindia");
             $find_user = trim($find_user);
             $data['user'] = $this->Users_model->get_customer_data_by_id($find_user);
 
+            //user selected package information
+            $data['user_package_booked'] = $this->Users_model->get_package($find_user);
+            $data['package'] = $this->Users_model->get_package_data($data['user_package_booked'][0]['package_id']);
             if (empty($data['user'])) {
                 $this->form_validation->set_rules('start_date', '', 'required');
                 $this->form_validation->set_message('required', 'This user is not exist');
