@@ -62,10 +62,9 @@ if (empty($user)) {
             <p><label>Package Amount: </label>&nbsp;<?php echo $package[0]['total']; ?></p>
             <p><label>Amount Paid: </label>&nbsp;<?php echo $user_package_booked[0]['amount_paid']; ?></p>
             <p><label>Amount Remaining: </label>&nbsp;<?php echo $user_package_booked[0]['amount_remaining']; ?></p>
-            <p><label>Paying Now: </label>&nbsp;<?php echo $user_package_booked[0]['amount_remaining']; ?></p>
+            <p><label>Paying Now: </label><input type="number" name="payment" value="" required></p>
             <input type="hidden" name="assign_to" value="<?php echo $user[0]['customer_id']; ?>">
             <input type="hidden" name="product" value="<?php echo $package[0]['total']; ?>">
-            <input type="number" name="payment" value="" required>
             <input type="hidden" name="gst" value="">
         </div>
         <div class="form-group  col-lg-12">
