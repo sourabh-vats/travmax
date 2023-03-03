@@ -1376,8 +1376,6 @@ class Profile extends CI_Controller
             if ($this->form_validation->run()) {
             }
         } else if ($this->input->server('REQUEST_METHOD') === 'POST') {
-            echo 'reached in second';
-            die();
             /*form validation*/
             $this->form_validation->set_rules('assign_to', 'assign to', 'required|trim');
             $this->form_validation->set_rules('product', 'Package', 'required');
