@@ -1,18 +1,5 @@
-<style>
-    label.checkbox {
-        padding-left: 20px;
-    }
-
-    .add-more-d-area-div-parent input {
-        margin-bottom: 6px;
-    }
-
-    label.checkbox {
-        font-weight: normal;
-    }
-</style>
 <div class="page-heading">
-    <h2>Become Macro</h2>
+    <h2>Update User</h2>
 </div>
 
 <?php
@@ -40,7 +27,6 @@ if ($this->session->flashdata('flash_message')) {
         echo '</div>';
     }
 }
-//print_r($restaurants);
 ?>
 
 <?php

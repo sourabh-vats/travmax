@@ -1235,7 +1235,7 @@ Team Divinoindia");
 
         $id = $this->session->userdata('cust_id');
         $customer_id = $this->session->userdata('bliss_id');
-        //$data['profile'] = $this->Users_model->profile($id);
+        $data['profile'] = $this->Users_model->profile($id);
         $data['user'] = $data['pin'] = array();
         $amount = $this->input->post('amount');
 

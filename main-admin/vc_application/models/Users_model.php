@@ -101,6 +101,14 @@ class Users_model extends CI_Model {
 		return $query->result_array();
 	}
 
+	function profile($id)
+	{
+		$this->db->select('*');
+		$this->db->from('customer');
+		$this->db->where('id', $id);
+		$query = $this->db->get();
+		return $query->result_array();
+	}
 	
 }
 
