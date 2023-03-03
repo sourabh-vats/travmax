@@ -57,18 +57,18 @@ if (empty($user)) {
         <div class="form-group col-sm-4">
             <p>
                 <label>Customer: </label>&nbsp;<?php echo $user[0]['f_name'] . ' ' . $user[0]['l_name'] . ' (' . $user[0]['customer_id'] . ')'; ?>
-                <input type="hidden" name="assign_to" value="<?php echo $user[0]['customer_id']; ?>">
             </p>
-            <input type="hidden" name="product" value="55000">
+            <p><label>Booked Package: </label>&nbsp;<?php echo $package[0]['name']; ?></p>
+            <p><label>Package Amount: </label>&nbsp;<?php echo $package[0]['total']; ?></p>
+            <p><label>Amount Paid: </label>&nbsp;<?php echo $user_package_booked[0]['amount_paid']; ?></p>
+            <p><label>Amount Remaining: </label>&nbsp;<?php echo $user_package_booked[0]['amount_remaining']; ?></p>
+            <input type="hidden" name="assign_to" value="<?php echo $user[0]['customer_id']; ?>">
+            <input type="hidden" name="product" value="<?php echo $package[0]['total']; ?>">
             <input type="hidden" name="payment" value="5500">
             <input type="hidden" name="gst" value="550">
-            <p><label>Booked Package: </label>&nbsp;<?php echo $package[0]['name']; ?></p>
-            <p><label>Payment Plan: </label>&nbsp;<?php echo $user_package_booked[0]['payment_type']; ?></p>
-            <p><label>Activation Package: </label>&nbsp; 55000</p>
-            <p><label>Activation amount: </label>&nbsp; 5500 + 550 (10% GST) = INR 6050</p>
         </div>
         <div class="form-group  col-lg-12">
-            <button class="btn btn-success" type="submit">Buy Macro Package</button> &nbsp;
+            <button class="btn btn-success" type="submit">Update</button> &nbsp;
             <a class="btn btn-primary" href="<?php echo base_url() . 'admin/update_user'; ?>">Back </a>
         </div>
     </fieldset>
