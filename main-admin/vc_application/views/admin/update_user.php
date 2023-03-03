@@ -63,6 +63,7 @@ if (empty($user)) {
             <input type="hidden" name="payment" value="5500">
             <input type="hidden" name="gst" value="550">
             <p><label>Booked Package: </label>&nbsp;<?php echo $package[0]['name']; ?></p>
+            <p><label>Payment Plan: </label>&nbsp;<?php echo $user_package_booked[0]['payment_plan']; ?></p>
             <p><label>Activation Package: </label>&nbsp; 55000</p>
             <p><label>Activation amount: </label>&nbsp; 5500 + 550 (10% GST) = INR 6050</p>
         </div>
