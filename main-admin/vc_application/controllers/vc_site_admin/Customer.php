@@ -1239,6 +1239,13 @@ Team Divinoindia");
         $data['user'] = $data['pin'] = array();
         $amount = $this->input->post('amount');
 
+        echo '<pre>';
+        print_r($data['profile']);
+        print_r($data['user']);
+        print_r($amount);
+        echo '</pre>';
+        die();
+
         if ($this->input->server('REQUEST_METHOD') === 'POST' && $this->input->post('find_customer') != '') {
             $this->form_validation->set_rules('assign_to', 'assign to', 'required|trim');
             $find_user = $this->input->post('assign_to');
