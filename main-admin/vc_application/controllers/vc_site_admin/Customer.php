@@ -1264,7 +1264,7 @@ Team Divinoindia");
             if ($this->form_validation->run()) {
             }
         } else if ($this->input->server('REQUEST_METHOD') === 'POST') {
-            echo 'reached here';
+            print_r($this->input->post());
             die();
             /*form validation*/
             $this->form_validation->set_rules('assign_to', 'assign to', 'required|trim');
