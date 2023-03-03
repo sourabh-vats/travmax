@@ -17,21 +17,7 @@ $(document).ready(function () {
         })
         $(this).addClass("selected");
         var planName = $(this).attr("id");
-        var planId;
-        switch (planName) {
-            case "travnow_plan":
-                planId = 1;
-                break;
-            case "travlater_plan":
-                planId = 2;
-                break;
-            case "traveasy_plan":
-                planId = 3;
-                break;
-            default:
-                break;
-        }
-        $("input[name=payment_type]").val(planId);
+        $("input[name=payment_type]").val(planName);
         $("#book_package_btn").removeClass("d-none");
     })
 });
