@@ -59,6 +59,7 @@ if (empty($user)) {
                 <label>Customer: </label>&nbsp;<?php echo $user[0]['f_name'] . ' ' . $user[0]['l_name'] . ' (' . $user[0]['customer_id'] . ')'; ?>
             </p>
             <p><label>Booked Package: </label>&nbsp;<?php echo $package[0]['name']; ?></p>
+            <p><label>Payment Plan: </label>&nbsp;<?php echo $user_package_booked[0]['payment_type'];; ?></p>
             <p><label>Package Amount: </label>&nbsp;<?php echo $package[0]['total']; ?></p>
             <p><label>Amount Paid: </label>&nbsp;<?php echo $user_package_booked[0]['amount_paid']; ?></p>
             <p><label>Amount Remaining: </label>&nbsp;<?php echo $user_package_booked[0]['amount_remaining']; ?></p>

@@ -127,6 +127,12 @@ class Users_model extends CI_Model {
 		$query = $this->db->get();
 		return $query->result_array();
 	}
+
+	function update_wallet($id, $amount, $column)
+	{
+		$sql = "update `customer` set $column = $column - $amount where id='$id'";
+		$this->db->query($sql);
+	}
 	
 }
 

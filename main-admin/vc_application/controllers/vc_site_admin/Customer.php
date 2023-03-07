@@ -1264,31 +1264,23 @@ Team Divinoindia");
             if ($this->form_validation->run()) {
             }
         } else if ($this->input->server('REQUEST_METHOD') === 'POST') {
-            print_r($this->input->post());
-            die();
             /*form validation*/
             $this->form_validation->set_rules('assign_to', 'assign to', 'required|trim');
             $this->form_validation->set_rules('product', 'Package', 'required');
             $customer_id = $this->input->post('assign_to');
             $user = $this->Users_model->get_customer_data_by_id($customer_id);
             if (empty($user)) {
-                $this->form_validation->set_rules('start_date', '', 'required');
                 $this->form_validation->set_message('required', 'This user is not exist');
             } else {
                 $data['user'] = $user;
             }
-
-
-            if ($user[0]['macro'] > 0) {
-                $this->form_validation->set_rules('hsfdgsd', 'sfg', 'required');
-                $this->form_validation->set_message('required', 'Already Activated.');
-            } elseif (6050 > $data['profile'][0]['income_wallet']) {
-                $this->form_validation->set_rules('hsfdgsd', 'sfg', 'required');
-                $this->form_validation->set_message('required', 'Wallet Amount must be greater than Package Amount');
-            }
-
-
-
+            // if ($user[0]['macro'] > 0) {
+            //     $this->form_validation->set_rules('hsfdgsd', 'sfg', 'required');
+            //     $this->form_validation->set_message('required', 'Already Activated.');
+            // } elseif (6050 > $data['profile'][0]['income_wallet']) {
+            //     $this->form_validation->set_rules('hsfdgsd', 'sfg', 'required');
+            //     $this->form_validation->set_message('required', 'Wallet Amount must be greater than Package Amount');
+            // }
             $this->form_validation->set_error_delimiters('<div class="alert alert-danger"><a class="close" data-dismiss="alert">×</a><strong>', '</strong></div>');
             //if the form has passed through the validation
             if ($this->form_validation->run()) {
