@@ -1291,21 +1291,19 @@ Team Divinoindia");
                 $customer_id = $user[0]['customer_id'];
                 $data['user_package_booked'] = $this->Users_model->get_package($cust_id);
                 $data['package'] = $this->Users_model->get_package_data($data['user_package_booked'][0]['package_id']);
+                $package_amount = $data['package'][0]['total'];
                 $order_id = 0;
                 $distribution_amount = 5500;
                 $p_amount = 6050;
-                var_dump($data['user_package_booked']);
-                die();
 
                 if ($customer_id != '' && $cust_id != '') {
                     //$this->Users_model->update_wallet($id, $p_amount, 'income_wallet');
-
                     $date = date('Y-m-d H:i:s');
-
-
-                    $data_to_store = array('role' => 'Macro', 'package_used' => $date, 'macro' => 33, 'consume' => 1, 'package_amt' => 55000);
-
+                    $data_to_store = array('role' => 'Macro', 'package_used' => $date, 'macro' => 33, 'consume' => 1, 'package_amt' => $package_amount);
                     $this->Users_model->update_profile($cust_id, $data_to_store);
+
+                    echo 'reached here';
+                    die();
 
                     $this->Users_model->update_manual('upload_receipt', array('customer_id' => $customer_id), array('role' => 'Macro'));
 

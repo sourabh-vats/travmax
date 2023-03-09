@@ -133,6 +133,13 @@ class Users_model extends CI_Model {
 		$sql = "update `customer` set $column = $column - $amount where id='$id'";
 		$this->db->query($sql);
 	}
+
+	function update_profile($id, $data_to_store)
+	{
+		$this->db->where('id', $id);
+		$this->db->update('customer', $data_to_store);
+		return TRUE;
+	}
 	
 }
 
