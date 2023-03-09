@@ -1233,7 +1233,7 @@ Team Divinoindia");
         $data['page_slug'] = 'Update User';
         $data['page_title'] = 'Update User';
 
-        // $id = $this->session->userdata('cust_id');
+        $id = $this->session->userdata('cust_id');
         // $customer_id = $this->session->userdata('bliss_id');
         // $data['profile'] = $this->Users_model->profile($id);
         // $data['user'] = $data['pin'] = array();
