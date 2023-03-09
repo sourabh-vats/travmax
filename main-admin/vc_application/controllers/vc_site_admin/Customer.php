@@ -1341,6 +1341,11 @@ Team Divinoindia");
                         $insdate = $pay_date;
                         $intallment_amount_left -= 5500;
                         $installment_number += 1;
+                        if ($intallment_amount_left > 5500) {
+                            $installment_amount = 5500;
+                        } else {
+                            $installment_amount = $intallment_amount_left;
+                        }
                     }
                     
                     $this->Users_model->load_wallet($cust_id, 111000, 'eligibility');
