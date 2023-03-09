@@ -1323,7 +1323,7 @@ Team Divinoindia");
 
                     $insdate = date('Y-m-d');
 
-                    $pay_installment_query = array('user_id' => $cust_id, 'amount' => 5500, 'description' => $insdate, 'order_id' => $order_id, 'pay_date' => $insdate, 'installment_no' => 0, 'status' => 'Paid');
+                    $pay_installment_query = array('user_id' => $cust_id, 'amount' => 5500, 'description' => $insdate, 'order_id' => $order_id, 'pay_date' => $insdate, 'installment_no' => 1, 'status' => 'Paid');
                     $this->Users_model->add_installment($pay_installment_query);
                     $installment_number += 1;
                     $intallment_amount_left -= 5500;
@@ -1336,7 +1336,7 @@ Team Divinoindia");
 
                     while ($intallment_amount_left > 0) {
                         $pay_date = date('Y-m-d', strtotime("+ 1 month", strtotime($insdate)));
-                        $add_salary = array('user_id' => $cust_id, 'amount' => 5500, 'description' => $insdate, 'order_id' => $order_id, 'pay_date' => $pay_date, 'installment_no' => $installment_number, 'status' => 'Active');
+                        $add_salary = array('user_id' => $cust_id, 'amount' => $installment_amount, 'description' => $insdate, 'order_id' => $order_id, 'pay_date' => $pay_date, 'installment_no' => $installment_number, 'status' => 'Active');
                         $this->Users_model->add_installment($add_salary);
                         $insdate = $pay_date;
                         $intallment_amount_left -= 5500;
