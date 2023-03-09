@@ -141,12 +141,48 @@ class Users_model extends CI_Model {
 		return TRUE;
 	}
 
+	function update_manual($table, $where, $data_to_store)
+	{
+		$this->db->where($where);
+		$this->db->update($table, $data_to_store);
+		return TRUE;
+	}
+	
 	function add_transactional_wallet($data)
 	{
 		$insert = $this->db->insert('transaction_wallet', $data);
 		$insert_id = $this->db->insert_id();
 		return $insert_id;
 	}
-	
+
+	public function add_income($data)
+	{
+		$this->db->insert('incomes', $data);
+	}
+
+	public function add_purchases($data)
+	{
+		$this->db->insert('purchases', $data);
+		$insert_id = $this->db->insert_id();
+		return $insert_id;
+	}
+
+	function load_wallet($id, $amount, $column)
+	{
+		$sql = "update `customer` set $column = $column + $amount where id='$id'";
+		$this->db->query($sql);
+	}
+
+	function add_installment($data)
+	{
+		$insert = $this->db->insert('installment', $data);
+		return $insert;
+	}
+
+	function distribution(){
+		echo 'distribution starts here';
+		die();
+	}
+
 }
 

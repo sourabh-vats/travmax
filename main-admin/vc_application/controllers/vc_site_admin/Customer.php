@@ -1292,33 +1292,27 @@ Team Divinoindia");
                 $data['user_package_booked'] = $this->Users_model->get_package($cust_id);
                 $data['package'] = $this->Users_model->get_package_data($data['user_package_booked'][0]['package_id']);
                 $package_amount = $data['package'][0]['total'];
+                $intallment_amount_left = $package_amount;
+                $installment_amount = 0;
                 $order_id = 0;
                 $distribution_amount = 5500;
                 $p_amount = $this->input->post('payment');
 
                 if ($customer_id != '' && $cust_id != '') {
                     //$this->Users_model->update_wallet($id, $p_amount, 'income_wallet');
-                    // $this->Users_model->update_manual('upload_receipt', array('customer_id' => $customer_id), array('role' => 'Macro'));
                     //$this->Users_model->update_manual('orders', array('user_id' => $cust_id), array('role' => 'Macro'));
                     // $this->Users_model->update_manual('incomes', array('user_id' => $cust_id), array('role' => 'Macro'));
                     $date = date('Y-m-d H:i:s');
                     $data_to_store = array('role' => 'Macro', 'package_used' => $date, 'macro' => 33, 'consume' => 1, 'package_amt' => $package_amount);
                     $this->Users_model->update_profile($cust_id, $data_to_store);
+                    $this->Users_model->update_manual('upload_receipt', array('customer_id' => $customer_id), array('role' => 'Macro'));
                     $package_history = array('userid' => $id, 'activate_id' => $cust_id, 'type' => 'Activate Account', 'amount' => $p_amount, 'debit' => $p_amount, 'status' => 'Debit', 'rdate' => date('Y-m-d H:i:s'));
                     $insert_id = $this->Users_model->add_transactional_wallet($package_history);
 
-                    echo $insert_id;
-                    die();
-
                     $add_income = array('amount' => 1100, 'user_id' => $user[0]['did'], 'type' => 'Direct', 'user_send_by' => $cust_id, 'status' => 'Approved');
-
                     $this->Users_model->add_income($add_income);
 
-                    $add_cashback = array('amount' => 100, 'user_id' => $cust_id, 'type' => 'Cash Back', 'user_send_by' => $cust_id, 'status' => 'Approved');
-
-                    $this->Users_model->add_income($add_cashback);
-
-                    $add_purchases = array('amount' => 5500, 'user_id' => $cust_id, 'type' => 'Pack', 'order_type' => 'Macro', 'order_id' => $insert_id, 'role' => 'Macro', 'status' => 'Active');
+                    $add_purchases = array('amount' => $p_amount, 'user_id' => $cust_id, 'type' => 'Pack', 'order_type' => 'Macro', 'order_id' => $insert_id, 'role' => 'Macro', 'status' => 'Active');
 
                     $this->Users_model->add_purchases($add_purchases);
 
@@ -1328,18 +1322,39 @@ Team Divinoindia");
 
                     $insdate = date('Y-m-d');
 
-                    $add_salary = array('user_id' => $cust_id, 'amount' => 5500, 'description' => $insdate, 'order_id' => $order_id, 'pay_date' => $insdate, 'installment_no' => 0, 'status' => 'Paid');
-                    $this->Users_model->add_installment($add_salary);
+                    $pay_installment_query = array('user_id' => $cust_id, 'amount' => 5500, 'description' => $insdate, 'order_id' => $order_id, 'pay_date' => $insdate, 'installment_no' => 0, 'status' => 'Paid');
+                    $this->Users_model->add_installment($pay_installment_query);
+                    $intallment_amount_left -= 5500;
+                    if ($intallment_amount_left > 5500) {
+                        $installment_amount = 5500;
+                    } else {
+                        $installment_amount = $intallment_amount_left;
+                    }
+                    
 
-                    for ($i = 1; $i <= 9; $i++) {
-
+                    while ($intallment_amount_left > 0) {
                         $pay_date = date('Y-m-d', strtotime("+ 1 month", strtotime($insdate)));
                         $add_salary = array('user_id' => $cust_id, 'amount' => 5500, 'description' => $insdate, 'order_id' => $order_id, 'pay_date' => $pay_date, 'installment_no' => $i, 'status' => 'Active');
                         $this->Users_model->add_installment($add_salary);
                         $insdate = $pay_date;
+                        $intallment_amount_left -= 5500;
                     }
+                    
+                    for ($i = 1; $i <= 9; $i++) {
 
+                        $pay_date = date('Y-m-d', strtotime("+ 1 month", strtotime($insdate)));
+                        $add_salary = array('user_id' => $cust_id, 'amount' => $installment_amount, 'description' => $insdate, 'order_id' => $order_id, 'pay_date' => $pay_date, 'installment_no' => $i, 'status' => 'Active');
+                        $this->Users_model->add_installment($add_salary);
+                        $insdate = $pay_date;
+                        if ($intallment_amount_left > 5500) {
+                            $installment_amount = 5500;
+                        } else {
+                            $installment_amount = $intallment_amount_left;
+                        }
+                    }
                     $this->Users_model->load_wallet($cust_id, 111000, 'eligibility');
+
+                    $this->Users_model->distribution();
 
                     $dis_level = 1;
                     $p = 0;
