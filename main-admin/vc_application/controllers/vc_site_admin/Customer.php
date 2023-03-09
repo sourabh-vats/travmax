@@ -1274,12 +1274,12 @@ Team Divinoindia");
             } else {
                 $data['user'] = $user;
             }
-             if ($user[0]['macro'] > 0) {
+            if ($user[0]['macro'] > 0) {
                 $this->form_validation->set_rules('hsfdgsd', 'sfg', 'required');
                 $this->form_validation->set_message('required', 'Already Activated.');
-            // } elseif (6050 > $data['profile'][0]['income_wallet']) {
-            //     $this->form_validation->set_rules('hsfdgsd', 'sfg', 'required');
-            //     $this->form_validation->set_message('required', 'Wallet Amount must be greater than Package Amount');
+                // } elseif (6050 > $data['profile'][0]['income_wallet']) {
+                //     $this->form_validation->set_rules('hsfdgsd', 'sfg', 'required');
+                //     $this->form_validation->set_message('required', 'Wallet Amount must be greater than Package Amount');
             }
             $this->form_validation->set_error_delimiters('<div class="alert alert-danger"><a class="close" data-dismiss="alert">×</a><strong>', '</strong></div>');
             //if the form has passed through the validation
@@ -1289,17 +1289,19 @@ Team Divinoindia");
                 $this->matching_amount = array();
                 $cust_id = $user[0]['id'];
                 $customer_id = $user[0]['customer_id'];
+                $data['user_package_booked'] = $this->Users_model->get_package($cust_id);
+                $data['package'] = $this->Users_model->get_package_data($data['user_package_booked'][0]['package_id']);
                 $order_id = 0;
                 $distribution_amount = 5500;
                 $p_amount = 6050;
+                var_dump($data['user_package_booked']);
+                die();
 
                 if ($customer_id != '' && $cust_id != '') {
                     //$this->Users_model->update_wallet($id, $p_amount, 'income_wallet');
 
                     $date = date('Y-m-d H:i:s');
 
-                    echo $date;
-                    die();
 
                     $data_to_store = array('role' => 'Macro', 'package_used' => $date, 'macro' => 33, 'consume' => 1, 'package_amt' => 55000);
 
