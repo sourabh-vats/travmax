@@ -1274,13 +1274,13 @@ Team Divinoindia");
             } else {
                 $data['user'] = $user;
             }
-            // if ($user[0]['macro'] > 0) {
-            //     $this->form_validation->set_rules('hsfdgsd', 'sfg', 'required');
-            //     $this->form_validation->set_message('required', 'Already Activated.');
+             if ($user[0]['macro'] > 0) {
+                $this->form_validation->set_rules('hsfdgsd', 'sfg', 'required');
+                $this->form_validation->set_message('required', 'Already Activated.');
             // } elseif (6050 > $data['profile'][0]['income_wallet']) {
             //     $this->form_validation->set_rules('hsfdgsd', 'sfg', 'required');
             //     $this->form_validation->set_message('required', 'Wallet Amount must be greater than Package Amount');
-            // }
+            }
             $this->form_validation->set_error_delimiters('<div class="alert alert-danger"><a class="close" data-dismiss="alert">×</a><strong>', '</strong></div>');
             //if the form has passed through the validation
             if ($this->form_validation->run()) {
@@ -1294,9 +1294,12 @@ Team Divinoindia");
                 $p_amount = 6050;
 
                 if ($customer_id != '' && $cust_id != '') {
-                    $this->Users_model->update_wallet($id, $p_amount, 'income_wallet');
+                    //$this->Users_model->update_wallet($id, $p_amount, 'income_wallet');
 
                     $date = date('Y-m-d H:i:s');
+
+                    echo $date;
+                    die();
 
                     $data_to_store = array('role' => 'Macro', 'package_used' => $date, 'macro' => 33, 'consume' => 1, 'package_amt' => 55000);
 
