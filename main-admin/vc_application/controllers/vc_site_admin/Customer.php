@@ -1233,7 +1233,7 @@ Team Divinoindia");
         $data['page_slug'] = 'Update User';
         $data['page_title'] = 'Update User';
 
-        $id = $this->session->userdata('cust_id');
+        //$id = $this->session->userdata('cust_id');
         // $customer_id = $this->session->userdata('bliss_id');
         // $data['profile'] = $this->Users_model->profile($id);
         // $data['user'] = $data['pin'] = array();
@@ -1306,7 +1306,7 @@ Team Divinoindia");
                     $data_to_store = array('role' => 'Macro', 'package_used' => $date, 'macro' => 33, 'consume' => 1, 'package_amt' => $package_amount);
                     $this->Users_model->update_profile($cust_id, $data_to_store);
                     $this->Users_model->update_manual('upload_receipt', array('customer_id' => $customer_id), array('role' => 'Macro'));
-                    $package_history = array('userid' => $id, 'activate_id' => $cust_id, 'type' => 'Activate Account', 'amount' => $p_amount, 'debit' => $p_amount, 'status' => 'Debit', 'rdate' => date('Y-m-d H:i:s'));
+                    $package_history = array('userid' => $customer_id, 'activate_id' => $cust_id, 'type' => 'Activate Account', 'amount' => $p_amount, 'debit' => $p_amount, 'status' => 'Debit', 'rdate' => date('Y-m-d H:i:s'));
                     $insert_id = $this->Users_model->add_transactional_wallet($package_history);
 
                     $add_income = array('amount' => 1100, 'user_id' => $user[0]['did'], 'type' => 'Direct', 'user_send_by' => $cust_id, 'status' => 'Approved');
