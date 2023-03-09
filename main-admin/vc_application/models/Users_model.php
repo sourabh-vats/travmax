@@ -140,6 +140,13 @@ class Users_model extends CI_Model {
 		$this->db->update('customer', $data_to_store);
 		return TRUE;
 	}
+
+	function add_transactional_wallet($data)
+	{
+		$insert = $this->db->insert('transaction_wallet', $data);
+		$insert_id = $this->db->insert_id();
+		return $insert_id;
+	}
 	
 }
 

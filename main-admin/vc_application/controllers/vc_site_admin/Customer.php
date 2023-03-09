@@ -1294,25 +1294,21 @@ Team Divinoindia");
                 $package_amount = $data['package'][0]['total'];
                 $order_id = 0;
                 $distribution_amount = 5500;
-                $p_amount = 6050;
+                $p_amount = $this->input->post('payment');
 
                 if ($customer_id != '' && $cust_id != '') {
                     //$this->Users_model->update_wallet($id, $p_amount, 'income_wallet');
+                    // $this->Users_model->update_manual('upload_receipt', array('customer_id' => $customer_id), array('role' => 'Macro'));
+                    //$this->Users_model->update_manual('orders', array('user_id' => $cust_id), array('role' => 'Macro'));
+                    // $this->Users_model->update_manual('incomes', array('user_id' => $cust_id), array('role' => 'Macro'));
                     $date = date('Y-m-d H:i:s');
                     $data_to_store = array('role' => 'Macro', 'package_used' => $date, 'macro' => 33, 'consume' => 1, 'package_amt' => $package_amount);
                     $this->Users_model->update_profile($cust_id, $data_to_store);
-
-                    echo 'reached here';
-                    die();
-
-                    $this->Users_model->update_manual('upload_receipt', array('customer_id' => $customer_id), array('role' => 'Macro'));
-
-                    $this->Users_model->update_manual('orders', array('user_id' => $cust_id), array('role' => 'Macro'));
-
-                    $this->Users_model->update_manual('incomes', array('user_id' => $cust_id), array('role' => 'Macro'));
-
                     $package_history = array('userid' => $id, 'activate_id' => $cust_id, 'type' => 'Activate Account', 'amount' => $p_amount, 'debit' => $p_amount, 'status' => 'Debit', 'rdate' => date('Y-m-d H:i:s'));
                     $insert_id = $this->Users_model->add_transactional_wallet($package_history);
+
+                    echo $insert_id;
+                    die();
 
                     $add_income = array('amount' => 1100, 'user_id' => $user[0]['did'], 'type' => 'Direct', 'user_send_by' => $cust_id, 'status' => 'Approved');
 
