@@ -1343,18 +1343,6 @@ Team Divinoindia");
                         $installment_number += 1;
                     }
                     
-                    for ($i = 1; $i <= 9; $i++) {
-
-                        $pay_date = date('Y-m-d', strtotime("+ 1 month", strtotime($insdate)));
-                        $add_salary = array('user_id' => $cust_id, 'amount' => $installment_amount, 'description' => $insdate, 'order_id' => $order_id, 'pay_date' => $pay_date, 'installment_no' => $i, 'status' => 'Active');
-                        $this->Users_model->add_installment($add_salary);
-                        $insdate = $pay_date;
-                        if ($intallment_amount_left > 5500) {
-                            $installment_amount = 5500;
-                        } else {
-                            $installment_amount = $intallment_amount_left;
-                        }
-                    }
                     $this->Users_model->load_wallet($cust_id, 111000, 'eligibility');
 
                     $this->Users_model->distribution();
