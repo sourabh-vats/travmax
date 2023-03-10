@@ -209,9 +209,6 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                             <li <?php if ($store == 'DistributorLevelInformation') {
                                     echo 'class="home atv"';
                                 } ?>><a href="<?php echo base_url(); ?>admin/DistributorLevelInformation"><i class="fa fa-safari" aria-hidden="true"></i> My Circle Information</a></li>
-                            <li <?php if ($store == 'activity_log') {
-                                    echo 'class="home atv"';
-                                } ?>><a href="<?php echo base_url(); ?>admin/activity_log"><i class="fa fa-address-card-o" aria-hidden="true"></i> Activity log</a></li>
                             <li <?php if ($store == 'wallet_history') {
                                     echo 'class="home atv"';
                                 } ?>><a href="<?php echo base_url(); ?>admin/wallet_history"><i class="fa fa-file" aria-hidden="true"></i> Account History</a></li>
