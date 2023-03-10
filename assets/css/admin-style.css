@@ -765,21 +765,6 @@ header{margin:-30px 0 0 }
 	width: auto;
 	height: auto !important;
 }
-/** shopping_voucher_modal **/
-#shopping_voucher_modal  .modal-body{ background:#FFFFFF;position: absolute;width: 100%;}
-#shopping_voucher_modal  .modal-body h4{font-size:20px; margin:0 0 15px}
-#shopping_voucher_modal form input[type="text"]{width:60%;float:right}
-#shopping_voucher_modal  .modal-body .rc-anchor-pt{display:none !important}
-#shopping_voucher_modal  .modal-body .signup-sect{ border-left:1px solid #b7b8ba;padding:0 30px}
-#shopping_voucher_modal  .modal-body label{font-size:14px;font-weight:normal}
-#shopping_voucher_modal  .modal-contentg{border-radius:0}
-#shopping_voucher_modal  form .form-control{background-color: #f0f0e9;border-radius:0; height:30px}
-#shopping_voucher_modal  form p{color: #363432}
-#shopping_voucher_modal  form  input[type="button"]{background:#FE980F;width:50%;border-radius:0;border:0;font-size:18px;padding:0}
-#shopping_voucher_modal  .modal-header{background:#3c3d41;text-align:center;font-size:30px;color:#fff}
-#shopping_voucher_modal .g-recaptcha div, #registerLoginModal .g-recaptcha div ifarm{width:100% !important}
-/***/
-
 
 #all-transaction-modal {width: 100%;}
 

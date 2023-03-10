@@ -101,7 +101,6 @@ jQuery(document).ready(function () {
 					  setTimeout(function () {
       	             jQuery(".success-add").slideUp(500);
                      }, 2000);
-						jQuery('#shopping_voucher_modal').modal('hide');
 						} 
 						jQuery('.popup-card-button').removeAttr("disabled");
                    }
