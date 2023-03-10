@@ -502,21 +502,13 @@
   </section>
   <hr>
   <hr>
-  
-  <div class="gm fst_gm clr1 col-sm-4">
-    <a href="<?php echo base_url();
-              ?>/admin/my_wallet">
-      <div class="pgn">
-        <div class="imggg">
-          <img src="images/img12.jpg">
-        </div>
 
+  <div class="gm fst_gm clr1 col-sm-4">
+      <div class="pgn">
         <div class="df">
-          <span> Wallet Balance <big>
-              <?php echo $profile[0]['income_wallet']; ?></strong></big></span>
+          <span> Wallet Balance <big><?php echo $profile[0]['income_wallet']; ?></strong></big></span>
         </div>
       </div>
-    </a>
   </div>
 
 

@@ -183,8 +183,6 @@ $route['admin/request-fund'] = 'vc_site_admin/profile/request_fund';
 $route['admin/transfer_master'] = 'vc_site_admin/profile/transfer_master';
 $route['admin/add_money'] = 'vc_site_admin/profile/add_money';
 $route['admin/macro_credits'] = 'vc_site_admin/profile/macro_credits';
-$route['admin/my_wallet'] = 'vc_site_admin/profile/my_wallet';
-
 
 /*
 //$route['admin/uploadreceipts'] = 'vc_site_admin/uploadreceipts/index';
