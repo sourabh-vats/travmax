@@ -55,7 +55,6 @@
 				<div class="col-sm-8 text-right res-hearty">
 					<ul class="list-inline">
 						<li><a href="<?php echo base_url(); ?>admin/profile" data-toggle="tooltip" data-placement="top" data-original-title="Settings "><img src="<?php echo base_url(); ?>images/stg.png"></a></li>
-						<li><a href="<?php echo base_url(); ?>" data-toggle="tooltip" data-placement="top" data-original-title="Home"><img src="<?php echo base_url(); ?>images/home.png"></a></li>
 					</ul>
 				</div>
 
