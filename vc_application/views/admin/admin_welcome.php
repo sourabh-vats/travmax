@@ -502,21 +502,7 @@
   </section>
   <hr>
   <hr>
-  <hr>
-  <hr>
-  <div class="main-wallet">
-    <div class="row">
-
-      <div class="col-md-4 text-center wallet"><a href="<?php echo base_url(); ?>admin/payment">
-          <h4>Online Payment</h4>
-        </a></div>
-      <div class="col-md-4 text-center"><a href="<?php echo base_url(); ?>admin/transfer_master">
-          <h4>Transfer Moneyback</h4>
-      </div>
-
-    </div>
-  </div>
-
+  
   <div class="gm fst_gm clr1 col-sm-4">
     <a href="<?php echo base_url();
               ?>/admin/my_wallet">
