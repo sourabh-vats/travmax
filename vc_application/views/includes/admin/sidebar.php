@@ -191,7 +191,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
 
                             <li <?php if ($store == '') {
                                     echo 'class="home atv"';
-                                } ?>><a href="<?php echo base_url(); ?>admin"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Home </a></li>
+                                } ?>><a href="<?php echo base_url(); ?>admin"><i class="fa fa-house" aria-hidden="true"></i> Home </a></li>
                             <li <?php if ($store == 'profile') {
                                     echo 'class="home atv"';
                                 } ?>><a href="<?php echo base_url(); ?>admin/profile"><i class="fa fa-file-o" aria-hidden="true"></i> Personal Details</a></li>
