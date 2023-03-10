@@ -517,17 +517,6 @@
     </div>
   </div>
 
-  <div class="gm fst_gm clr2 col-sm-4">
-    <a href="<?php echo base_url();
-              ?>/admin/macro_credits">
-      <div class="pgn">
-        <div class="imggg">
-          <img src="images/img12.jpg">
-        </div>
-      </div>
-    </a>
-  </div>
-
   <div class="gm fst_gm clr1 col-sm-4">
     <a href="<?php echo base_url();
               ?>/admin/my_wallet">
