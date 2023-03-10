@@ -183,5 +183,14 @@ class Users_model extends CI_Model {
 		echo 'distribution starts here';
 	}
 
+	function parent_profile($blissid)
+	{
+		$this->db->select('*');
+		$this->db->from('customer');
+		$this->db->where('customer_id', $blissid);
+		$query = $this->db->get();
+		return $query->result_array();
+	}
+
 }
 
