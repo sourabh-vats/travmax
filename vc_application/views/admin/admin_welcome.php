@@ -504,11 +504,11 @@
   <hr>
 
   <div class="gm fst_gm clr1 col-sm-4">
-      <div class="pgn">
-        <div class="df">
-          <span> Wallet Balance <big><?php echo $profile[0]['income_wallet']; ?></strong></big></span>
-        </div>
+    <div class="pgn">
+      <div class="df">
+        <span> Wallet Balance <big><?php echo $profile[0]['income_wallet']; ?></strong></big></span>
       </div>
+    </div>
   </div>
 
 
@@ -516,74 +516,31 @@
 
 
   <div class="gm fst_gm clr4 col-sm-4">
-    <a href="<?php echo base_url(); ?>/admin/add_money">
-      <div class="pgn">
-        <div class="imggg">
-          <img src="images/img12.jpg">
-        </div>
-        <div class="df adds_mny"><span> My Cashback <big>
-              <?php echo $pending_cashback + $redeem_cashback + $approved_cashback; ?></strong></big> </span></div>
-      </div>
-    </a>
+    <div class="pgn">
+      <div class="df adds_mny"><span> My Cashback <big>
+            <?php echo $pending_cashback + $redeem_cashback + $approved_cashback; ?></strong></big> </span></div>
+    </div>
   </div>
 
   <div class="gm fst_gm clr1 col-sm-4">
-    <a href="<?php echo base_url(); ?>/admin/my_wallet">
-      <div class="pgn">
-        <div class="imggg">
-          <img src="images/img12.jpg">
-        </div>
-
-        <div class="df">
-          <span>My Moneyback<big>
-              <?php echo $pending_moneyback + $approved_moneyback; ?></strong></big></span>
-        </div>
+    <div class="pgn">
+      <div class="df">
+        <span>My Moneyback<big>
+            <?php echo $pending_moneyback + $approved_moneyback; ?></strong></big></span>
       </div>
-    </a>
+    </div>
   </div>
 
   <div class="gm fst_gm clr2 col-sm-4">
     <a href="<?php echo base_url(); ?>/admin/income/show">
       <div class="pgn">
-        <div class="imggg">
-          <img src="images/img12.jpg">
-        </div>
-
         <div class="df">
-          <span>My Incoming <big> <?php echo $credits; ?></big> </span>
+          <span>My Income <big> <?php echo $credits; ?></big> </span>
         </div>
       </div>
     </a>
   </div>
-
-  <div class="gm fst_gm clr4 col-sm-4">
-    <a href="<?php echo base_url(); ?>/admin/add_money">
-      <div class="pgn">
-        <div class="imggg">
-          <img src="images/img12.jpg">
-        </div>
-        <div class="df adds_mny"><span> My Trav Cash <big>
-              <?php echo $profile[0]['income_wallet'];
-              ?></strong></big></span></div>
-      </div>
-    </a>
-  </div>
-
-  <div class="gm fst_gm clr1 col-sm-4">
-    <a href="<?php echo base_url(); ?>/admin/my_wallet">
-      <div class="pgn">
-        <div class="imggg">
-          <img src="images/img12.jpg">
-        </div>
-
-        <div class="df">
-          <span>My Travoucher<big>
-              <?php echo $profile[0]['income_wallet'];
-              ?></strong></big></span>
-        </div>
-      </div>
-    </a>
-  </div>
+  
   <div class="gm fst_gm clr2 col-sm-4">
     <a href="<?php echo base_url(); ?>/admin/macro_credits">
       <div class="pgn">
