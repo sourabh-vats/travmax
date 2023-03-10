@@ -202,7 +202,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                             <li><a href="<?php echo base_url(); ?>invite_friend"><i class="fa fa-share-alt" aria-hidden="true"></i> Invite Friends</a></li>
                             <li><a href="<?php echo base_url(); ?>admin/installments"><i class="fa fa-share-alt" aria-hidden="true"></i> Installments</a></li>
                             <!--<li><a href="<?php echo base_url(); ?>admin/password"><i class="fa fa-lock" aria-hidden="true"></i> Change Password</a></li>-->
-                            <li><a href="<?php echo base_url(); ?>admin/uploadreceipts"><i class="fa fa-safari" aria-hidden="true"></i> Upload Payment Proof</a></li>
+                            <li><a href="<?php echo base_url(); ?>admin/request-fund"><i class="fa fa-safari" aria-hidden="true"></i> Upload Payment Proof</a></li>
                             <li <?php if ($store == 'DistributorLevelInformation') {
                                     echo 'class="home atv"';
                                 } ?>><a href="<?php echo base_url(); ?>admin/DistributorLevelInformation"><i class="fa fa-users" aria-hidden="true"></i> My Circle Information</a></li>
@@ -211,6 +211,16 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                                 } ?>><a href="<?php echo base_url(); ?>admin/wallet_history"><i class="fa fa-file" aria-hidden="true"></i> Account History</a></li>
                             <li><a href="<?php echo base_url(); ?>feedback"><i class="fa fa-comment" aria-hidden="true"></i> Give Us Feedback</a></li>
                             <li><a href="<?php echo base_url(); ?>admin/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+                            
+                            <hr>
+                            <p>Later Items</p>
+                            <li><a href="<?php echo base_url(); ?>admin/add_money"><i class="fa fa-sign-out" aria-hidden="true"></i>Add Money</a></li>
+                            <li><a href="<?php echo base_url(); ?>admin/payment"><i class="fa fa-sign-out" aria-hidden="true"></i>Online Payment</a></li>
+                            <li><a href="<?php echo base_url(); ?>admin/request-fund"><i class="fa fa-sign-out" aria-hidden="true"></i>Request Fund</a></li>
+                            <li><a href="<?php echo base_url(); ?>admin/transfer_master"><i class="fa fa-sign-out" aria-hidden="true"></i>Transfer Master</a></li>
+                            <li><a href="<?php echo base_url(); ?>admin/transfer_master"><i class="fa fa-sign-out" aria-hidden="true"></i>Transfer Master</a></li>
+
+
                         <?php } ?>
                     </ul>
                 </div>

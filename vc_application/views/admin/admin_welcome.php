@@ -517,41 +517,12 @@
     </div>
   </div>
 
-
-  <div class="gm fst_gm clr4 col-sm-4">
-    <a href="<?php echo base_url();
-              ?>/admin/add_money">
-      <div class="pgn">
-        <div class="imggg">
-          <img src="images/img12.jpg">
-        </div>
-
-        <div class="df">
-          <span> Total Amount<big>
-              <?php echo $profile[0]['package_amt']; ?></strong></big></span>
-        </div>
-      </div>
-    </a>
-  </div>
-
   <div class="gm fst_gm clr2 col-sm-4">
     <a href="<?php echo base_url();
               ?>/admin/macro_credits">
       <div class="pgn">
         <div class="imggg">
           <img src="images/img12.jpg">
-        </div>
-
-        <div class="df">
-          <span> Booking Amount<big>
-
-              <?php if (!empty($purchases[0]['amount'])) {
-                echo $purchases[0]['amount'];
-              } else {
-                echo 0;
-              } ?>
-              <?php //echo $purchases[0]['amount'] + 0;
-              ?></strong></big></span>
         </div>
       </div>
     </a>
