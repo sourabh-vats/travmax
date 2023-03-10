@@ -181,7 +181,6 @@ class Users_model extends CI_Model {
 
 	function distribution(){
 		echo 'distribution starts here';
-		die();
 	}
 
 }
