@@ -205,16 +205,13 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                             <li><a href="<?php echo base_url(); ?>admin/uploadreceipts"><i class="fa fa-safari" aria-hidden="true"></i> Upload Payment Proof</a></li>
                             <li <?php if ($store == 'DistributorLevelInformation') {
                                     echo 'class="home atv"';
-                                } ?>><a href="<?php echo base_url(); ?>admin/DistributorLevelInformation"><i class="fa fa-safari" aria-hidden="true"></i> My Circle Information</a></li>
+                                } ?>><a href="<?php echo base_url(); ?>admin/DistributorLevelInformation"><i class="fa fa-users" aria-hidden="true"></i> My Circle Information</a></li>
                             <li <?php if ($store == 'wallet_history') {
                                     echo 'class="home atv"';
                                 } ?>><a href="<?php echo base_url(); ?>admin/wallet_history"><i class="fa fa-file" aria-hidden="true"></i> Account History</a></li>
-                            <li><a href="<?php echo base_url(); ?>admin/kyc"><i class="fa fa-cog" aria-hidden="true"></i> Settings </a></li>
                             <li><a href="<?php echo base_url(); ?>feedback"><i class="fa fa-comment" aria-hidden="true"></i> Give Us Feedback</a></li>
                             <li><a href="<?php echo base_url(); ?>admin/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
-                            <!--<li><a href="<?php echo base_url(); ?>admin/kyc"><i class="fa fa-address-card-o" aria-hidden="true"></i> Update Kyc</a></li>-->
                         <?php } ?>
-
                     </ul>
                 </div>
             </nav>
