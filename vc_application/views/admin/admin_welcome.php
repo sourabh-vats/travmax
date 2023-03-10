@@ -1056,7 +1056,6 @@
     <div class="gm fst_gm col-sm-3">
       <div data-toggle="modal" data-target="#referralModal">
         <div class="pgn">
-          <img src="images/img20.jpg">
           <div class="df">
             <span>Independent <big>
 
@@ -1090,7 +1089,7 @@
     </div>
     <div class="gm fst_gm col-sm-3">
       <a data-target="#historyModel" data-toggle="modal" href="javascript:void(0)">
-        <div class="pgn"><img src="images/img6.jpg">
+        <div class="pgn">
           <div class="df"><span>Total <big><?php echo $total_friend; ?></strong></big> </span></div>
           <div class="hover_opn"><span>
               This is the total of all
@@ -1101,7 +1100,7 @@
     </div>
     <div class="gm fst_gm col-sm-3">
       <a data-target="#historyModel" data-toggle="modal" href="javascript:void(0)">
-        <div class="pgn"><img src="images/img8.jpg">
+        <div class="pgn">
           <div class="df"><span>Stage <big><?php echo $stage; ?></strong></big> </span></div>
           <div class="hover_opn"><span>
               This is the total of all
@@ -1112,7 +1111,7 @@
     </div>
     <div class="gm fst_gm col-sm-3">
       <a data-target="#historyModel" data-toggle="modal" href="javascript:void(0)">
-        <div class="pgn"><img src="images/goodness-score.jpg">
+        <div class="pgn">
           <div class="df"><span>Achievers <big><?php echo $achivers; ?></strong></big> </span></div>
           <div class="hover_opn"><span>
               This is the total of all
@@ -1149,14 +1148,14 @@
 
   <div class="gm fst_gm col-sm-3">
     <a href="<?php echo base_url(); ?>admin/income/show">
-      <div class="pgn"><img src="images/img12.jpg">
+      <div class="pgn">
         <div class="df"><span>Referral Income <big><i class="fa fa-inr"></i><?php echo $total; ?></big> </span></div>
       </div>
     </a>
   </div>
   <div class="gm fst_gm col-sm-3">
     <a href="<?php echo base_url(); ?>feedback">
-      <div class="pgn"><img src="images/img21.jpg">
+      <div class="pgn">
         <div class="df">
           <span>Feedback</span>
         </div>
@@ -1166,7 +1165,7 @@
 
   <div class="gm fst_gm col-sm-3">
     <a href="<?php echo base_url(); ?>complaint">
-      <div class="pgn"><img src="images/img19.jpg">
+      <div class="pgn">
         <div class="df">
           <span>Complaint</span>
         </div>
