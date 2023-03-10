@@ -213,7 +213,6 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                                     echo 'class="home atv"';
                                 } ?>><a href="<?php echo base_url(); ?>admin/wallet_history"><i class="fa fa-file" aria-hidden="true"></i> Account History</a></li>
                             <li><a href="<?php echo base_url(); ?>admin/kyc"><i class="fa fa-cog" aria-hidden="true"></i> Settings </a></li>
-                            <li><a href="<?php echo base_url(); ?>terms_of_use"><i class="fa fa-file" aria-hidden="true"></i> Terms and Conditions</a></li>
                             <li><a href="<?php echo base_url(); ?>feedback"><i class="fa fa-comment" aria-hidden="true"></i> Give Us Feedback</a></li>
                             <li><a href="<?php echo base_url(); ?>admin/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
                             <!--<li><a href="<?php echo base_url(); ?>admin/kyc"><i class="fa fa-address-card-o" aria-hidden="true"></i> Update Kyc</a></li>-->
