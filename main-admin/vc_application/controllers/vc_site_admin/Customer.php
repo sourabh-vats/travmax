@@ -1407,7 +1407,7 @@ Team Divinoindia");
 
                             if ($parent_user[0]['macro'] >= $direct) {
                                 $date = date('Y-m-d H:i:s');
-                                $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Approved', 'r_date' => $date);
+                                $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Approved', 'rdate' => $date);
                                 $this->Users_model->add_income($add_income);
                             }
 
