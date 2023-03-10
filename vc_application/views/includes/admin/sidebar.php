@@ -202,10 +202,6 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                             <!-- <li><a href="<?php echo base_url(); ?>admin/add_member"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Add Member's </a></li>
                             <li><a href="<?php echo base_url(); ?>admin/member"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> My Member's </a></li> -->
 
-                            <li <?php if ($store == 'upgrade_account') {
-                                    echo 'class="home atv"';
-                                } ?>><a href="<?php echo base_url(); ?>admin/upgrade_user"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Upgrade Account</a></li>
-                            <!-- <li><a href="<?php echo base_url(); ?>admin/become_mega"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Become Mega</a></li> -->
                             <li><a href="<?php echo base_url(); ?>invite_friend"><i class="fa fa-share-alt" aria-hidden="true"></i> Invite Friends</a></li>
                             <li><a href="<?php echo base_url(); ?>admin/installments"><i class="fa fa-share-alt" aria-hidden="true"></i> Installments</a></li>
                             <!--<li><a href="<?php echo base_url(); ?>admin/password"><i class="fa fa-lock" aria-hidden="true"></i> Change Password</a></li>-->
