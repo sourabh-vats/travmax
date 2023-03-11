@@ -1170,7 +1170,7 @@ class Profile extends CI_Controller
                         $this->Users_model->update_order_status($merchant_order_id, $data_profile_array);
                         $id = $this->session->userdata('cust_id');
                         if ($this->session->userdata('insid') != '') {
-                            $data_profile_arrayy = array('status' => 'Paid', 'pay_date' => date('Y-m-d'));
+                            $data_profile_arrayy = array('status' => 'Test', 'pay_date' => date('Y-m-d'));
                             $this->Users_model->update_ins_status($this->session->userdata('insid'), $data_profile_arrayy);
                         } else {
                             $this->Users_model->load_wallet($id, $amount / 100, 'income_wallet');
