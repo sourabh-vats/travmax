@@ -503,7 +503,7 @@
   <hr>
   <hr>
 
-  <div class="gm fst_gm clr1 col-sm-4">
+  <!-- <div class="gm fst_gm clr1 col-sm-4">
     <div class="pgn">
       <div class="df">
         <span> Wallet Balance <big><?php echo $profile[0]['income_wallet']; ?></strong></big></span>
@@ -1126,7 +1126,7 @@
 </div>
 <div class="col-sm-6 col-sm-offset-3">
   <div class="frdn" data-toggle="modal" data-target="#invite-friend-modal">Invite Friends</div>
-</div>
+</div> -->
 
 
 <!-- Modal -->
