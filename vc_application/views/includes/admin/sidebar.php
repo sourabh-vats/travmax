@@ -213,12 +213,12 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                             <li><a href="<?php echo base_url(); ?>admin/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
                             
                             <hr>
-                            <p>Later Items</p>
+                            <!-- <p>Later Items</p>
                             <li><a href="<?php echo base_url(); ?>admin/add_money"><i class="fa fa-sign-out" aria-hidden="true"></i>Add Money</a></li>
                             <li><a href="<?php echo base_url(); ?>admin/payment"><i class="fa fa-sign-out" aria-hidden="true"></i>Online Payment</a></li>
                             <li><a href="<?php echo base_url(); ?>admin/request-fund"><i class="fa fa-sign-out" aria-hidden="true"></i>Request Fund</a></li>
                             <li><a href="<?php echo base_url(); ?>admin/transfer_master"><i class="fa fa-sign-out" aria-hidden="true"></i>Transfer Master</a></li>
-                            <li><a href="<?php echo base_url(); ?>admin/transfer_master"><i class="fa fa-sign-out" aria-hidden="true"></i>Transfer Master</a></li>
+                            <li><a href="<?php echo base_url(); ?>admin/transfer_master"><i class="fa fa-sign-out" aria-hidden="true"></i>Transfer Master</a></li> -->
 
 
                         <?php } ?>
