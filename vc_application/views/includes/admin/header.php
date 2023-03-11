@@ -10,11 +10,16 @@
     <script src="/assets/jquery/jquery-3.6.4.min.js"></script>
     <script src="/assets/bootstrap5.3/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <?php
+    if (!empty($js)) {
+        echo '<script src="' . $js . '"></script>';
+    }
+    ?>
 </head>
 
 <body>
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Company name</a>
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#"><img class="img-fluid" src="/assets/front/images/logo.png"></a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
