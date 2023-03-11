@@ -887,7 +887,14 @@ Team Wishzon");
 		return TRUE;
 	}
 
-	function get_remaining_payment($id){
+	function get_remaining_payment($id)
+	{
+		$this->db->select_sum('amount');
+		$this->db->select('price');
+		$this->db->from('items');
+		$this->db->order_by('price desc');
+		$this->db->limit(3);
+		$this->db->get();
 		$this->db->select('SUM(amount)');
 		$this->db->from('installment');
 		$this->db->where('id', $id);

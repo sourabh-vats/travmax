@@ -42,8 +42,8 @@ class Profile extends CI_Controller
             $data["package_data"] = $this->Users_model->get_package_data($data['package_information'][0]['package_id']);
         }
         $data['payment_remaining'] = $this->Users_model->get_remaining_payment($id);
-        print_r($data['payment_remaining']);
-        die();
+        // print_r($data['payment_remaining']);
+        // die();
         //Calculate Total Team Members
         $team = array();
         $ids = array($customer_id);
