@@ -220,7 +220,6 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                             <li><a href="<?php echo base_url(); ?>admin/transfer_master"><i class="fa fa-sign-out" aria-hidden="true"></i>Transfer Master</a></li>
                             <li><a href="<?php echo base_url(); ?>admin/transfer_master"><i class="fa fa-sign-out" aria-hidden="true"></i>Transfer Master</a></li> -->
 
-
                         <?php } ?>
                     </ul>
                 </div>

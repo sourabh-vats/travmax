@@ -886,4 +886,13 @@ Team Wishzon");
 		$this->db->insert('package_purchase', $data_to_store);
 		return TRUE;
 	}
+
+	function get_remaining_payment($id){
+		$this->db->select('SUM(amount)');
+		$this->db->from('installment');
+		$this->db->where('id', $id);
+		$this->db->where('status', 'active');
+		$query = $this->db->get();
+		return $query->result_array();
+	}
 }
