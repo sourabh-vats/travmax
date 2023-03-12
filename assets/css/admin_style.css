@@ -173,7 +173,7 @@
 
 .select_package_id:hover {
     cursor: pointer;
-    border: 2px solid deepskyblue;
+    opacity: .8;
 }
 
 .plan_box:hover {
@@ -185,6 +185,10 @@
     background-color: antiquewhite;
 }
 
+.package_card{
+    border: 2px solid grey;
+}
+
 .package_title{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
