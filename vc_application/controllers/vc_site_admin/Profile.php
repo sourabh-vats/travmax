@@ -95,7 +95,6 @@ class Profile extends CI_Controller
         $data['page_slug'] = 'Select Package';
         $data['page_title'] = 'Dashboard';
         $data['js'] = '/assets/js/select_package.js';
-        $data['bootstrap'] = '/assets/css/bootstrap.min.css';
 
         $id = $this->session->userdata('cust_id');
         $customer_id = $this->session->userdata('bliss_id');
@@ -109,12 +108,19 @@ class Profile extends CI_Controller
             redirect(base_url() . '/admin');
         }
         if ($this->input->server('REQUEST_METHOD') && $this->input->server('REQUEST_METHOD') == "POST") {
+            $package_id = $this->input->post('package_id');
+            $payment_type = $this->input->post('payment_type');
+            $package_data = $this->Users_model->get_package_data($package_id);
+            print_r($package_data);
+            echo $package_data[0]['total'];
+            die();
             $data_to_store = array(
                 'user_id' => $id,
-                'package_id' => $this->input->post('package_id'),
-                'payment_type' => $this->input->post('payment_type')
+                'package_id' => $package_id,
+                'payment_type' => $payment_type
             );
             $return = $this->Users_model->add_user_package($data_to_store);
+
             if ($return == TRUE) {
                 $this->session->set_flashdata('flash_message', 'updated');
                 redirect(base_url() . 'admin/select_package');
