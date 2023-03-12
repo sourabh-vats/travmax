@@ -12,7 +12,7 @@
     <?php } ?>
 </div>
 <div class="row d-none" id="pick_a_plan_section">
-    <h1 class="text-center">Pick A Plan</h1>
+    <h1 class="text-center">You have selected <span id="pick_a_plan_selected_package_name"></span> package. Please select a payment plan.</h1>
     <div class="col-md-4 plan_box" id="travnow_plan">
         <h2>Travnow</h2>
         <p>Travel Now</p>
