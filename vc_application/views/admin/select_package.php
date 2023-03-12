@@ -1,9 +1,23 @@
 <h1 class="text-center">Please select a package from the following and continue.</h1>
-<div class="row d-flex align-items-center justify-content-center flex-wrap">
+<div class="row d-flex align-items-center justify-content-center flex-wrap" id="select_package_section">
     <?php foreach ($all_packages as $package) { ?>
         <div class="col-md-4 d-flex justify-content-center p-3">
             <img class="img-fluid select_package_id" src="/assets/images/<?php echo $package['name']; ?>.jpg" alt="" title="<?php echo $package['id']; ?>">
             <input type="hidden" name="package_information" class="package_information" value='<?php echo json_encode($package); ?>'>
+        </div>
+    <?php } ?>
+</div>
+<div class="card-group">
+    <?php foreach ($all_packages as $package) { ?>
+        <div class="card">
+            <img src="/assets/images/<?php echo $package['name']; ?>.jpg" title="<?php echo $package['id']; ?>" class=" card-img-top select_package_id">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
         </div>
     <?php } ?>
 </div>
