@@ -148,7 +148,7 @@
 }
 
 main{
-    margin-left: 260px;
+    margin-left: 260px !important;
     width: -webkit-fill-available;
 }
 
