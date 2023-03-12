@@ -184,3 +184,7 @@
 .plan_box.selected {
     background-color: antiquewhite;
 }
+
+.package_title{
+    font-size: 1.5rem;
+}
