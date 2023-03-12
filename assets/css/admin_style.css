@@ -147,7 +147,7 @@
     height: 100px;
 }
 
-main{
+#main{
     margin-left: 260px !important;
     width: -webkit-fill-available;
 }
