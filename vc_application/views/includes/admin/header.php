@@ -43,43 +43,43 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="#">
                             <i class="bi-house-fill"></i>
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="#">
                             <i class="bi-house-fill"></i>
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="#">
                             <i class="bi-house-fill"></i>
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="#">
                             <i class="bi-house-fill"></i>
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="#">
                             <i class="bi-house-fill"></i>
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="#">
                             <i class="bi-house-fill"></i>
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="#">
                             <i class="bi-house-fill"></i>
                                 Home
                             </a>
