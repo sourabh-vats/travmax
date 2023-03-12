@@ -1,5 +1,5 @@
-<h1 class="text-center">Please select a package from the following and continue.</h1>
 <div class="row d-flex align-items-center justify-content-center flex-wrap" id="select_package_section">
+    <h1 class="text-center">Please select a package from the following and continue.</h1>
     <?php foreach ($all_packages as $package) { ?>
         <div class="col-md-4 d-flex justify-content-center p-3">
             <div class="package_card">
