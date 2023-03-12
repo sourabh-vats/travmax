@@ -1,19 +1,3 @@
-<?php
-//flash messages
-if ($this->session->flashdata('flash_message')) {
-    if ($this->session->flashdata('flash_message') == 'updated') {
-        echo '<div class="alert alert-success">';
-        echo '<a class="close" data-dismiss="alert">×</a>';
-        echo 'Profile updated successfully.';
-        echo '</div>';
-    } else if ($this->session->flashdata('flash_message') == 'not_updated') {
-        echo '<div class="alert alert-danger">';
-        echo '<a class="close" data-dismiss="alert">×</a>';
-        echo 'Some Error Occured. Contact Us for help.';
-        echo '</div>';
-    }
-}
-?>
 <h1 class="text-center">Please select a package from the following and continue.</h1>
 <div class="row d-flex align-items-center justify-content-center flex-wrap">
     <?php foreach ($all_packages as $package) { ?>

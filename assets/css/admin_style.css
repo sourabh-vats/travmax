@@ -143,11 +143,11 @@
     width: 260px;
 }
 
-#header_navbar{
+#header_navbar {
     height: 100px;
 }
 
-#main{
+#main {
     margin-left: 260px !important;
     width: -webkit-fill-available;
 }
@@ -162,4 +162,25 @@
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
+}
+
+/* Select Package Page */
+.select_package_id {
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+.select_package_id:hover {
+    cursor: pointer;
+    border: 2px solid deepskyblue;
+}
+
+.plan_box:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.plan_box.selected {
+    background-color: antiquewhite;
 }
