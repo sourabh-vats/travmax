@@ -200,3 +200,7 @@ p {
 .package_title {
     font-size: 1.6rem;
 }
+
+.plan_box .card-body .card-title{
+    font-size: 1.5rem;
+}
