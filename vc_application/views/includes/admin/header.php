@@ -38,38 +38,50 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
-                            <i class="bi-house-fill" style="font-size: 2rem; color: cornflowerblue;"></i>
+                            <i class="bi-house-fill"></i>
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file" class="align-text-bottom"></span>
-                                Orders
+                            <a class="nav-link active" aria-current="page" href="#">
+                            <i class="bi-house-fill"></i>
+                                Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="shopping-cart" class="align-text-bottom"></span>
-                                Products
+                            <a class="nav-link active" aria-current="page" href="#">
+                            <i class="bi-house-fill"></i>
+                                Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="users" class="align-text-bottom"></span>
-                                Customers
+                            <a class="nav-link active" aria-current="page" href="#">
+                            <i class="bi-house-fill"></i>
+                                Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-                                Reports
+                            <a class="nav-link active" aria-current="page" href="#">
+                            <i class="bi-house-fill"></i>
+                                Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="layers" class="align-text-bottom"></span>
-                                Integrations
+                            <a class="nav-link active" aria-current="page" href="#">
+                            <i class="bi-house-fill"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                            <i class="bi-house-fill"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                            <i class="bi-house-fill"></i>
+                                Home
                             </a>
                         </li>
                     </ul>

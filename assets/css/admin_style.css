@@ -33,14 +33,19 @@
 .sidebar .nav-link {
     font-weight: 500;
     color: #808080;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
 }
 
-.sidebar .nav-link .feather {
+.sidebar .nav-link i {
     margin-right: 4px;
-    color: #727272;
+    color: #808080;
+    font-size: 1.2rem;
 }
 
-.sidebar .nav-link.active {
+.sidebar .nav-link.active,
+.sidebar .nav-link.active i {
     color: #ffffff;
 }
 
