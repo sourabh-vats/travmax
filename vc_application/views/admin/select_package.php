@@ -23,7 +23,7 @@
                 <p>Earn Free Holidays</p>
             </div>
             <div class="card-footer">
-                <h2 id="travnow_price">Rs.69900</h2>
+                <h2>Rs.<span id="travnow_price">69900</span></h2>
             </div>
         </div>
         <div class="card plan_box" id="travlater_plan">
@@ -50,7 +50,7 @@
                 <p>Earn Free Holidays</p>
             </div>
             <div class="card-footer">
-                <h2 id="traveasy_price">Rs.9900</h2>
+                <h2 id="traveasy_price">Rs.6600</h2>
             </div>
         </div>
     </div>
@@ -61,6 +61,6 @@
     ?>
     <input type="hidden" name="package_id">
     <input type="hidden" name="payment_type">
-    <button class="btn btn-lg btn-primary w-100 my-3 d-none" id="book_package_btn" type="submit">Book</button>
+    <button class="btn btn-lg btn-primary w-100 my-3" id="book_package_btn" type="submit" disabled>Book</button>
     <?php echo form_close(); ?>
 </div>

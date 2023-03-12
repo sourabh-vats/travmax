@@ -7,10 +7,6 @@ $(document).ready(function () {
         $("#pick_a_plan_selected_package_name").text(package['name']);
         $("#travnow_price").text(package['total']);
         $("input[name=package_id]").val(package['id']);
-        $(".plan_box").each(function () {
-            $(this).removeClass("selected");
-        })
-        $("#book_package_btn").addClass("d-none");
     });
 
     $(".plan_box").click(function () {
@@ -20,6 +16,6 @@ $(document).ready(function () {
         $(this).addClass("selected");
         var planName = $(this).attr("id");
         $("input[name=payment_type]").val(planName);
-        $("#book_package_btn").removeClass("d-none");
+        $("#book_package_btn").attr("disabled", "false")
     })
 });
