@@ -7,9 +7,9 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="/assets/bootstrap5.3/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/admin_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="/assets/jquery/jquery-3.6.4.min.js"></script>
     <script src="/assets/bootstrap5.3/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
     <?php
     if (!empty($js)) {
         echo '<script src="' . $js . '"></script>';
@@ -38,8 +38,8 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
-                                <span data-feather="home" class="align-text-bottom"></span>
-                                Dashboard
+                            <i class="bi-house-fill" style="font-size: 2rem; color: cornflowerblue;"></i>
+                                Home
                             </a>
                         </li>
                         <li class="nav-item">
