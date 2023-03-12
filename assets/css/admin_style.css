@@ -134,7 +134,7 @@
 }
 
 #sidebarMenu,
-#navbar-brand {
+.navbar-brand {
     width: 260px;
 }
 
