@@ -14,24 +14,15 @@
 <div class="row d-none" id="pick_a_plan_section">
     <h1 class="text-center">You have selected <span id="pick_a_plan_selected_package_name"></span> package. Please select a payment plan.</h1>
     <div class="col-md-4 plan_box" id="travnow_plan">
-        <div class="plan_box_heading">
-            <h2>Travnow</h2>
-        </div>
-        <div class="plan_box_content">
-            <div>
-                <p>Travel Now</p>
-                <p>Pay in Full</p>
-                <p>Get Franchise</p>
-                <p>Earn Free Holidays</p>
-            </div>
-            <h2 id="travnow_price">Rs.69900</h2>
-        </div>
+        <h2>Travnow</h2>
+        <p>Travel Now</p>
+        <p>Pay in Full</p>
+        <p>Get Franchise</p>
+        <p>Earn Free Holidays</p>
+        <h2 id="travnow_price">Rs.69900</h2>
     </div>
     <div class="col-md-4 plan_box" id="travlater_plan">
-        <div class="plan_box_heading">
-            <h2>Travlater</h2>
-        </div>
-
+        <h2>Travlater</h2>
         <p>Book Now</p>
         <p>Pay booking amount</p>
         <p>Pay the rest in 90 Days</p>
@@ -40,11 +31,7 @@
         <h2 id="travlater_price">Rs.13200</h2>
     </div>
     <div class="col-md-4 plan_box" id="traveasy_plan">
-        <div class="plan_box_heading">
-            <h2>Traveasy</h2>
-        </div>
-
-
+        <h2>Traveasy</h2>
         <p>Book Now</p>
         <p>Pay in Installments</p>
         <p>Pay down payment</p>
