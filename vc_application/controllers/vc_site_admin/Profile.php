@@ -105,7 +105,7 @@ class Profile extends CI_Controller
             $data['has_package'] = false;
         } else {
             $data['has_package'] = true;
-            redirect(base_url() . '/admin');
+            redirect(base_url() . 'admin');
         }
         if ($this->input->server('REQUEST_METHOD') && $this->input->server('REQUEST_METHOD') == "POST") {
             $package_id = $this->input->post('package_id');
@@ -126,7 +126,7 @@ class Profile extends CI_Controller
 
             if ($payment_type == "traveasy_plan") {
                 $intallment_amount_left = $package_amount;
-                $installment_amount = 0;
+                $installment_amount = 6600;
                 $installment_number = 1;
                 $insdate = date('Y-m-d');
                 while ($intallment_amount_left > 0) {
@@ -144,8 +144,7 @@ class Profile extends CI_Controller
                 }
             }
             if ($return == TRUE) {
-                $this->session->set_flashdata('flash_message', 'updated');
-                redirect(base_url() . 'admin/select_package');
+                redirect(base_url() . 'admin/package_selected_successfully');
             } else {
                 $this->session->set_flashdata('flash_message', 'not_updated');
             }
@@ -153,6 +152,29 @@ class Profile extends CI_Controller
         $data['all_packages'] = $this->Users_model->get_all_packages();
 
         $data['main_content'] = 'admin/select_package';
+        $this->load->view('includes/admin/template', $data);
+    }
+
+    public function package_selected_successfully()
+    {
+        $data['page_keywords'] = '';
+        $data['page_description'] = '';
+        $data['page_slug'] = 'Select Package';
+        $data['page_title'] = 'Dashboard';
+
+        $id = $this->session->userdata('cust_id');
+        $customer_id = $this->session->userdata('bliss_id');
+        $data['profile'] = $this->Users_model->profile($id);
+        $data['has_package'] = false;
+        $data['package_information'] = $this->Users_model->get_package($id);
+        if (empty($data['package_information'])) {
+            $data['has_package'] = false;
+            redirect(base_url() . 'admin/select_package');
+        } else {
+            $data['has_package'] = true;
+        }
+
+        $data['main_content'] = 'admin/package_selected_successfully';
         $this->load->view('includes/admin/template', $data);
     }
 
