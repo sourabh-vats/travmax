@@ -167,6 +167,7 @@ p {
 }
 #header_date i{
     color: black;
+    margin-right: 5px;
 }
 
 @media (max-width: 767.98px) {
