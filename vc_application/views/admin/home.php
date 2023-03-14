@@ -2,7 +2,7 @@
     <div class="col-md-5 grey_bg p-4">
     </div>
     <div class="col-md">
-        <div class="row mb-4 gradient_parent" style="background: linear-gradient(45deg, black, transparent);">
+        <div class="row mb-4 gradient_parent">
             <div class="col">
                 <h1>Hi</h1>
             </div>
@@ -10,7 +10,7 @@
                 <h1>Hi</h1>
             </div>
         </div>
-        <div class="row gradient_parent" style="background: linear-gradient(45deg, black, transparent);">
+        <div class="row gradient_parent">
             <div class="col">
                 <h1>Hi</h1>
             </div>

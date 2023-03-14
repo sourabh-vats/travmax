@@ -187,6 +187,9 @@ p {
     color: white;
 }
 
+.gradient_parent{
+    background: linear-gradient(#83EAF1,#63A4FF);
+}
 .gradient_parent .col:nth-child(1) {
     border-right: 5px solid white;
 }
