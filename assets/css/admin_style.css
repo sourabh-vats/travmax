@@ -198,11 +198,16 @@ p {
 }
 
 .gradient_parent .col:nth-child(1) {
-    border-right: 5px solid white;
+    border-right: 15px solid white;
 }
 
 .gradient_parent .col:nth-child(2) {
-    border-left: 5px solid white;
+    border-left: 15px solid white;
+}
+
+.box_number_data{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 @media (max-width: 767.98px) {

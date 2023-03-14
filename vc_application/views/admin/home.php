@@ -3,19 +3,23 @@
     </div>
     <div class="col-md">
         <div class="row mb-4 gradient_parent">
-            <div class="col">
-                <h1>Hi</h1>
+            <div class="col text-center p-5">
+                <h2>MY SALES</h2>
+                <span class="box_number_data">50</span>
             </div>
-            <div class="col">
-                <h1>Hi</h1>
+            <div class="col text-center p-5">
+                <h2>TEAM SALES</h2>
+                <span class="box_number_data">100</span>
             </div>
         </div>
         <div class="row gradient_parent">
-            <div class="col">
-                <h1>Hi</h1>
+            <div class="col text-center p-5">
+                <h2>ACTIVE INCOME</h2>
+                <span class="box_number_data">50</span>
             </div>
-            <div class="col">
-                <h1>Hi</h1>
+            <div class="col text-center p-5">
+                <h2>TEAM INCOME</h2>
+                <span class="box_number_data">50</span>
             </div>
         </div>
     </div>
