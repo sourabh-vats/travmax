@@ -174,9 +174,6 @@ class Profile extends CI_Controller
             $data['has_package'] = true;
         }
 
-        var_dump($data['package_information'][0]);
-        die();
-
         $data['main_content'] = 'admin/package_selected_successfully';
         $this->load->view('includes/admin/template', $data);
     }
