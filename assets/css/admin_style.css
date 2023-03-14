@@ -187,9 +187,16 @@ p {
     color: white;
 }
 
-.gradient_parent{
-    background: linear-gradient(#83EAF1,#63A4FF);
+.gradient_parent {
+    background: linear-gradient(to right, #83EAF1, #63A4FF);
 }
+
+.gradient_parent:nth-child(2) {
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+
 .gradient_parent .col:nth-child(1) {
     border-right: 5px solid white;
 }
