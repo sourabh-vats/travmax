@@ -25,6 +25,8 @@ class Profile extends CI_Controller
         $data['main_content'] = 'admin/home';
         $this->load->view('includes/admin/template', $data);
 
+        die();
+
         $data['myfriends'] = array();
         $id = $this->session->userdata('cust_id');
         $customer_id = $this->session->userdata('bliss_id');
