@@ -28,7 +28,7 @@
                 <p class="px-3" id="header_date"><i class="bi-calendar-fill"></i> <?php echo strtoupper(date("l, d M")); ?></p>
             </div>
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="#">Sign out</a>
+                <a class="nav-link px-3" id="header_right_btn" href="#">Settings<i class="bi-gear-fill"></i></a>
             </div>
         </div>
     </header>
