@@ -1,6 +1,6 @@
 <div class="row d-flex justify-content-center flex-wrap">
     <h1 class="text-center">Congratulations</h1>
-    <h2 class="text-center">You have selected <?php echo $package_data[0]['name']; ?> for Rs. <?php echo $package_data[0]['amount']; ?> and have taken the <?php echo $package_information[0]['payment_type']; ?> plan. Please make a payment of Rs. and share the proof with us</h2>
+    <h2 class="text-center">You have selected <?php echo $package_data[0]['name']; ?> for Rs. <?php echo $package_data[0]['total']; ?> and have taken the <?php echo $package_information[0]['payment_type']; ?> plan. Please make a payment of Rs. and share the proof with us</h2>
     <div class="col-md-6 p-5 border-end text-center">
         <h2 class="">QR Code</h2>
         <img src="" alt="" height="250px" width="250px" style="background-color: grey;">
