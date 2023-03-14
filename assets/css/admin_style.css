@@ -160,6 +160,15 @@ p {
     background-color: rgb(242,242,242);
 }
 
+#header_date{
+    color: #808080;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+#header_date i{
+    color: black;
+}
+
 @media (max-width: 767.98px) {
     .sidebar {
         top: 5rem;

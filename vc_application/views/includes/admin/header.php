@@ -25,7 +25,7 @@
         </button>
         <div class="navbar-nav w-100 d-flex flex-row justify-content-between wrap px-md-5">
             <div class="nav-item text-nowrap">
-                <p class="nav-link px-3"><i class="bi-calendar-fill"></i> Date: <?php echo date("l, d M"); ?></p>
+                <p class="px-3" id="header_date"><i class="bi-calendar-fill"></i> <?php echo date("l, d M"); ?></p>
             </div>
             <div class="nav-item text-nowrap">
                 <a class="nav-link px-3" href="#">Sign out</a>
