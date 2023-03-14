@@ -162,12 +162,13 @@ p {
 
 #header_date{
     color: #808080;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-transform: capitalize;
 }
 #header_date i{
     color: black;
-    margin-right: 5px;
+    font-size: 1.2rem;
+    margin-right: 8px;
 }
 
 @media (max-width: 767.98px) {
