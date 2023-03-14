@@ -172,6 +172,10 @@ class Profile extends CI_Controller
             redirect(base_url() . 'admin/select_package');
         } else {
             $data['has_package'] = true;
+            $package_id = $data['package_information'][0]['package_id'];
+            $data['package_data'] = $this->Users_model->get_package_data($package_id);
+            var_dump($data['package_data'][0]);
+            die();
         }
 
         $data['main_content'] = 'admin/package_selected_successfully';
