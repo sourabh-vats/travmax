@@ -37,7 +37,7 @@ p {
 .sidebar .nav-link {
     font-weight: 500;
     color: #808080;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
 }
@@ -45,7 +45,7 @@ p {
 .sidebar .nav-link i {
     margin-right: 4px;
     color: #808080;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .sidebar .nav-link.active,
