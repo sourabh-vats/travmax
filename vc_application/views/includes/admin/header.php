@@ -36,15 +36,15 @@
                 <div class="position-sticky pt-3 sidebar-sticky d-flex align-items-center justify-content-center">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="/admin">
                             <i class="bi-house-fill"></i>
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">
-                            <i class="bi-house-fill"></i>
-                                Home
+                            <i class="bi-person-fill-gear"></i>
+                                Profile
                             </a>
                         </li>
                         <li class="nav-item">
