@@ -25,7 +25,6 @@ class Profile extends CI_Controller
         $data['main_content'] = 'admin/home';
         $this->load->view('includes/admin/template', $data);
 
-        die();
 
         $data['myfriends'] = array();
         $id = $this->session->userdata('cust_id');
@@ -87,8 +86,8 @@ class Profile extends CI_Controller
         $data['redeem_error'] = '';
         $data['shopping_voucher_modal'] = '';
         $data['invite_email'] = '';
-        $data['main_content'] = 'admin/admin_welcome';
-        $this->load->view('includes/admin/template', $data);
+        // $data['main_content'] = 'admin/admin_welcome';
+        // $this->load->view('includes/admin/template', $data);
     }
 
     public function select_package()
