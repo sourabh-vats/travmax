@@ -1,4 +1,4 @@
-<div class="row gap-5">
+<div class="row gap-5 mb-5">
     <div class="col-md-5 grey_bg p-4">
     </div>
     <div class="col-md">
