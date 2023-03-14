@@ -37,50 +37,50 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/admin">
-                            <i class="bi-house-fill"></i>
+                                <i class="bi-house-fill"></i>
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">
-                            <i class="bi-person-fill-gear"></i>
+                                <i class="bi-person-fill-gear"></i>
                                 Profile
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">
-                            <i class="bi-house-fill"></i>
-                                Home
+                                <i class="bi-share-fill"></i>
+                                Invite Friends
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">
-                            <i class="bi-house-fill"></i>
-                                Home
+                                <i class="bi-bank2"></i>
+                                Installments
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">
-                            <i class="bi-house-fill"></i>
-                                Home
+                                <i class="bi-cash"></i>
+                                Upload Payment Proof
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">
-                            <i class="bi-house-fill"></i>
-                                Home
+                                <i class="bi-people-fill"></i>
+                                My Circle Information
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">
-                            <i class="bi-house-fill"></i>
-                                Home
+                                <i class="bi-info-circle-fill"></i>
+                                Give Us Feedback
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">
-                            <i class="bi-house-fill"></i>
-                                Home
+                                <i class="bi-box-arrow-left"></i>
+                                Logout
                             </a>
                         </li>
                     </ul>
