@@ -23,9 +23,9 @@
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-nav w-100 d-flex align-content-space-betweenf wrap">
+        <div class="navbar-nav w-100 d-flex flex-row justify-content-space-between wrap">
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="#">Date: <?php echo date("l, d M"); ?></a>
+                <p class="nav-link px-3"><i class="bi-calendar-fill"></i> Date: <?php echo date("l, d M"); ?></p>
             </div>
             <div class="nav-item text-nowrap">
                 <a class="nav-link px-3" href="#">Sign out</a>
