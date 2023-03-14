@@ -163,7 +163,10 @@ p {
 #header_date{
     color: #808080;
     font-size: 1.1rem;
-    text-transform: capitalize;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 #header_date i{
     color: black;
@@ -180,6 +183,7 @@ p {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    color: white;
 }
 
 @media (max-width: 767.98px) {
