@@ -895,7 +895,11 @@ Team Wishzon");
 
 	function get_total_income($id)
 	{
-		return '0';	
+		$this->db->select('SUM(amount) as total');
+		$this->db->from('incomes');
+		$this->db->where('user_id', $id);
+		$query = $this->db->get();
+		return $query->row()->total;
 	}
 
 	function get_remaining_payment($id)
