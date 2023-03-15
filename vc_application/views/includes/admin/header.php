@@ -81,13 +81,13 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">
                                 <i class="bi-cash"></i>
-                                Upload Payment Proof
+                                Payment Proof
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/admin/DistributorLevelInformation">
                                 <i class="bi-people-fill"></i>
-                                My Circle Information
+                                Circle Information
                             </a>
                         </li>
                         <li class="nav-item">
