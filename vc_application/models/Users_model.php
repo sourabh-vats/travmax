@@ -893,6 +893,14 @@ Team Wishzon");
 		return $query->num_rows();
 	}
 
+	function get_total_income($id)
+	{
+		$query = $this->db->query('SELECT SUM(amount) FROM incomes where user_id = ' . '942');
+		$query = $this->db->get();
+		var_dump($query->result_array());
+		die();
+	}
+
 	function get_remaining_payment($id)
 	{
 		$this->db->select_sum('amount');

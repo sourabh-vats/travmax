@@ -3,11 +3,11 @@
         <div class="row">
             <div class="col-md-auto border-end" id="hero_total_sales">
                 <span class="big_number"><?php echo $total_sales; ?></span>
-                <span class="big_number_title">Sales</span>
+                <span class="big_number_title">Total Sales</span>
             </div>
             <div class="col" id="hero_total_income">
-                <span class="big_number">5Lakh+</span>
-                <span class="big_number_title">Income</span>
+                <span class="big_number"><?php echo $total_income; ?>+</span>
+                <span class="big_number_title">Total Income</span>
             </div>
         </div>
         <hr>
