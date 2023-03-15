@@ -22,15 +22,17 @@ class Profile extends CI_Controller
         $data['page_slug'] = 'Dashboard';
         $data['page_title'] = 'Dashboard';
 
+        $id = $this->session->userdata('cust_id');
+        $customer_id = $this->session->userdata('bliss_id');
+        $data['profile'] = $this->Users_model->profile($id);
+        $data['full_name'] = $data['profile'][0]['f_name'] . " " . $data['profile'][0]['l_name'];
+
         $data['main_content'] = 'admin/home';
         $this->load->view('includes/admin/template', $data);
 
 
         $data['myfriends'] = array();
-        $id = $this->session->userdata('cust_id');
-        $customer_id = $this->session->userdata('bliss_id');
-        $data['profile'] = $this->Users_model->profile($id);
-
+        
         //package information
         $data['has_package'] = false;
         $data['package_information'] = $this->Users_model->get_package($id);
