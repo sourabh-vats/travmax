@@ -266,7 +266,11 @@ p {
 }
 
 .text_2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
+}
+
+.grey {
+    color: grey;
 }
 
 hr {

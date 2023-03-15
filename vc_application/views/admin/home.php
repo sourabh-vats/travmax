@@ -47,14 +47,13 @@
     <div class="col-md-5 grey_bg px-4 py-4">
         <p class="text_1">My Package</p>
         <hr>
-        <p class="text_2">Name: Thailand Beach Prime</p>
-        <p class="text_2">Name: Thailand Beach Prime</p>
-        <p class="text_2">Price: Rs. 79900</p>
-        <p class="text_2">Offered Price: Rs. 69900</p>
-        <p class="text_2">Payment Plan: EasyNow</p>
-        <p class="text_2">Amount Paid: Rs. 6600</p>
-        <p class="text_2">Amount Remaining: Rs. 59000</p>
-        <p class="text_2">Installments: 2/11</p>
+        <p class="text_2">Name: <span class="grey">Thailand Beach Prime</p>
+        <p class="text_2">Price: <span class="grey">Rs. 79900</p>
+        <p class="text_2">Offered Price: <span class="grey">Rs. 69900</p>
+        <p class="text_2">Payment Plan: <span class="grey">EasyNow</p>
+        <p class="text_2">Amount Paid: Rs. <span class="grey">6600</p>
+        <p class="text_2">Amount Remaining: <span class="grey">Rs. 59000</p>
+        <p class="text_2">Installments: <span class="grey">2/11</p>
     </div>
     <div class="col-md grey_bg px-4 py-4">
         <p class="text_1">My Income</p>
