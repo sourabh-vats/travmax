@@ -39,6 +39,7 @@
                 <div class="pt-3 d-none d-md-flex flex-column align-items-center">
                     <img class="img-fluid" width="90px" src="/images/avatar.png">
                     <span class="mt-2" id="sidenav_name"><?php echo $full_name; ?></span>
+                    <span id="sidenav_id">Unique ID: <?php echo $this->session->userdata('bliss_id'); ?></span>
                 </div>
                 <div class="position-sticky sidebar-sticky d-flex align-items-center justify-content-center">
                     <ul class="nav flex-column">
