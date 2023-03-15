@@ -69,7 +69,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="/admin/DistributorLevelInformation">
                                 <i class="bi-people-fill"></i>
                                 My Circle Information
                             </a>

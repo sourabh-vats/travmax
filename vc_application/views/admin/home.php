@@ -10,6 +10,15 @@
                 <span class="big_number_title">Income</span>
             </div>
         </div>
+        <hr>
+        <div class="row">
+            <span>
+                30
+            </span>
+            <a href="/admin/DistributorLevelInformation" class="my_partners_hero_link">
+                MY PARTNERS
+            </a>
+        </div>
     </div>
     <div class="col-md">
         <div class="row mb-4 gradient_parent">

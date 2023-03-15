@@ -218,6 +218,7 @@ p {
 .big_number_title {
     font-size: 2rem;
     font-weight: 200;
+    margin-top: -5px;
 }
 
 #hero_total_sales,
