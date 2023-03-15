@@ -38,7 +38,7 @@
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
                 <div class="pt-3 d-none d-md-flex flex-column align-items-center">
                     <img class="img-fluid" width="90px" src="/images/avatar.png">
-                    <span><?php echo $full_name; ?></span>
+                    <span class="mt-2" id="sidenav_name"><?php echo $full_name; ?></span>
                 </div>
                 <div class="position-sticky pt-3 sidebar-sticky d-flex align-items-center justify-content-center">
                     <ul class="nav flex-column">
