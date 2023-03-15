@@ -1,3 +1,8 @@
+<?php
+$user = $profile[0];
+$full_name = $user['f_name'] . " " . $user['l_name'];
+?>
+
 <!doctype html>
 <html lang="en">
 
