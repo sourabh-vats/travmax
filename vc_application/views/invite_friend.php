@@ -13,7 +13,7 @@
        <h3 class="invite text-center fw-bold">Your Unique Referral Code Is</h3>
        <p class="text-center">This Link automatically Connects your inivited friends to your circle</p>
        <div class="text-center input-copy">
-           <input id="the_text" type="text" value="https://www.zoogol.com/" size="50">
+           <input id="the_text" type="text" value="https://www.zoogol.com/<?php echo $cust_id; ?>" size="50">
             <button onclick="copyById('the_text')">copy to share <i class="fa fa-clone" aria-hidden="true"></i></button>
        </div>
        <div class="or">
