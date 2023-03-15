@@ -119,7 +119,6 @@ class User extends CI_Controller
 			$this->Users_model->update_profile($is_valid['bliss_id'], array('last_visit' => date('Y-m-d H:i:s')));
 
 			echo '<div class="alert alert-success"></div>';
-			redirect(base_url() . 'admin');
 		} else // incorrect username or password
 		{
 			echo '<div class="alert alert-danger">Username or password is wrong.</div>';

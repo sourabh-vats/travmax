@@ -398,7 +398,7 @@ $("#popup").modal('show');
           } else if (jQuery("#due_link").val() != '') {
             window.location.href = jQuery("#due_link").val();
           } else {
-            window.location.href = "<?php echo base_url(); ?>admin";
+            window.location.href = "/admin";
           }
         }
       });
