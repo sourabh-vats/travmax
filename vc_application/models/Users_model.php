@@ -895,7 +895,7 @@ Team Wishzon");
 
 	function get_total_income($id)
 	{
-		$query = $this->db->query('SELECT SUM(amount) FROM incomes where user_id = ' . '942');
+		$query = $this->db->query('SELECT SUM(incomes.amount) FROM incomes where user_id = ' . '942');
 		$query = $this->db->get();
 		var_dump($query->result_array());
 		die();
