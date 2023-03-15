@@ -60,14 +60,14 @@
     <div class="col-md grey_bg px-4 py-4">
         <p class="text_1">My Income</p>
         <hr>
-        <ul>
-            <li>Name: Thailand Beach Prime</li>
-            <li>Price: Rs. 79900</li>
-            <li>Offered Price: Rs. 69900</li>
-            <li>Payment Plan: EasyNow</li>
-            <li>Amount Paid: Rs. 6600</li>
-            <li>Amount Remaining: Rs. 59000</li>
-            <li>Installments: 2/11</li>
-        </ul>
+        <div class="box_content">
+            <p class="text_3">Total: <span class="grey"><?php echo $package_data[0]['name']; ?></p>
+            <p class="text_3">Pending: <span class="grey">Rs. <?php echo $package_data[0]['mrp']; ?></p>
+            <p class="text_3">Approved: <span class="grey">Rs. <?php echo $package_data[0]['total']; ?></p>
+            <p class="text_3">Redemmed: <span class="grey"><?php echo $package_information[0]['payment_type']; ?></p>
+            <p class="text_3">Amount Paid: <span class="grey">Rs. <?php echo $package_information[0]['amount_paid']; ?></p>
+            <p class="text_3">Amount Remaining: <span class="grey">Rs. <?php echo $package_information[0]['amount_remaining']; ?></p>
+            <p class="text_3">Installments: <span class="grey">2/11</p>
+        </div>
     </div>
 </div>

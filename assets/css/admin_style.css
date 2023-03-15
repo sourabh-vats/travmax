@@ -272,6 +272,12 @@ p {
 
 }
 
+.text_3{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
 .grey {
     color: grey;
 }
