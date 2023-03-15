@@ -1188,7 +1188,7 @@ letter-spacing: 1px;
 border-radius: 0;
 }
 #registerLoginModal {
-	background: url(../images/login_bg.jpg) no-repeat;
+	background: url(/assets/images/login_bg.jpg) no-repeat;
 	width: 100%;
 	background-size: cover;
 	background-position: center;
