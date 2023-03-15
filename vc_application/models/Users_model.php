@@ -887,10 +887,10 @@ Team Wishzon");
 		return TRUE;
 	}
 
-	function get_total_sales($id){
+	function get_total_sales($id)
+	{
 		$query = $this->db->query('SELECT * FROM incomes where user_id = ' . $id);
-		echo $query->num_rows();
-		die();
+		return $query->num_rows();
 	}
 
 	function get_remaining_payment($id)
