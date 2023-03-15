@@ -1188,10 +1188,10 @@ letter-spacing: 1px;
 border-radius: 0;
 }
 #registerLoginModal {
-	background: url(../images/model.jpg) no-repeat 0 0;
+	background: url(../images/login_bg.jpg) no-repeat;
 	width: 100%;
 	background-size: cover;
-	background-position: 50%;
+	background-position: center;
 }
 .chain-grid.chain-grid121 {
 	height: 330px;
