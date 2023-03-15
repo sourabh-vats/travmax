@@ -273,10 +273,10 @@ p {
 }
 
 .text_3{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .grey {
