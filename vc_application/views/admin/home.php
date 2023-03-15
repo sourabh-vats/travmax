@@ -12,12 +12,8 @@
         </div>
         <hr>
         <div class="row">
-            <span>
-                30
-            </span>
-            <a href="/admin/DistributorLevelInformation" class="my_partners_hero_link">
-                MY PARTNERS
-            </a>
+            <span><?php echo $total_partners; ?></span>
+            <a href="/admin/DistributorLevelInformation" class="my_partners_hero_link">MY PARTNERS</a>
         </div>
     </div>
     <div class="col-md">

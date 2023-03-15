@@ -902,6 +902,12 @@ Team Wishzon");
 		return $query->row()->total;
 	}
 
+	function get_total_partners($id)
+	{
+		$query = $this->db->query('SELECT * FROM customer where parent_customer_id = ' . $id);
+		return $query->num_rows();
+	}
+
 	function get_remaining_payment($id)
 	{
 		$this->db->select_sum('amount');
