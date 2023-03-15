@@ -248,6 +248,17 @@ p {
     font-size: 2rem;
 }
 
+#my_partners_hero_link{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+#my_partners_hero_link:hover{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
 @media (max-width: 767.98px) {
     .sidebar {
         top: 5rem;

@@ -11,7 +11,7 @@
             </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col">
                 <span id="total_partners_number"><i class="bi-people-fill me-2"></i><?php echo $total_partners; ?></span>
             </div>
