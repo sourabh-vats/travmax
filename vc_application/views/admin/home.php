@@ -44,7 +44,7 @@
     </div>
 </div>
 <div class="row gap-5">
-    <div class="col-md-5 grey_bg px-4 py-5">
+    <div class="col-md-5 grey_bg px-4 py-4">
         <p class="text_1">My Package</p>
         <hr>
         <ul>
@@ -57,7 +57,7 @@
             <li>Installments: 2/11</li>
         </ul>
     </div>
-    <div class="col-md grey_bg px-4 py-5">
+    <div class="col-md grey_bg px-4 py-4">
         <p class="text_1">My Income</p>
         <hr>
         <ul>
