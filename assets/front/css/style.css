@@ -1362,8 +1362,6 @@ margin: 20px 0 0;
 #registerLoginModal .modal-dialog {
 	max-width: 60% !important;
 	margin-top: 20px;
-	/* float: right; */
-	margin-right: 35px;
 	width: 35%;
 }
 #registerLoginModal .modal-body {

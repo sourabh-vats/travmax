@@ -231,6 +231,9 @@ $("#popup").modal('show');
               <p><label>Email</label>
                 <input required="required" type="email" name="email" class="form-control input-empty">
               </p>
+              <p><label>Confirm Email</label>
+                <input required="required" type="email" name="cemail" class="form-control input-empty">
+              </p>
 
 
               <p><label>Password</label> <input type="password" name="password" class="form-control input-empty"></p>
