@@ -92,10 +92,12 @@
                         </li>
                     </ul>
                 </div>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/admin/logout">
-                        <i class="bi-box-arrow-left"></i>
-                        Logout
-                    </a>
-                </li>
+                <div class="d-flex align-items-center justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/admin/logout">
+                            <i class="bi-box-arrow-left"></i>
+                            Logout
+                        </a>
+                    </li>
+                </div>
             </nav>
