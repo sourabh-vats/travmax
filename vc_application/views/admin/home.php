@@ -1,7 +1,7 @@
 <div class="row gap-5 mb-5">
-    <div class="col-md-5 grey_bg py-4">
+    <div class="col-md-5 py-4 px-0">
         <div class="row">
-            <div class="col border-end" id="hero_total_sales">
+            <div class="col-md-auto border-end" id="hero_total_sales">
                 <span class="big_number">45+</span>
                 <span class="big_number_title">Sales</span>
             </div>
