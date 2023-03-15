@@ -36,7 +36,7 @@
     <div class="container-fluid">
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
-                <div class="pt-3 text-center d-none d-md-flex flex-row">
+                <div class="pt-3 d-none d-md-flex flex-row align-items-center">
                     <img class="img-fluid" width="90px" src="/images/avatar.png">
                     <span><?php echo $full_name; ?></span>
                 </div>
@@ -90,12 +90,12 @@
                                 Give Us Feedback
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/admin/logout">
-                                <i class="bi-box-arrow-left"></i>
-                                Logout
-                            </a>
-                        </li>
                     </ul>
                 </div>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/admin/logout">
+                        <i class="bi-box-arrow-left"></i>
+                        Logout
+                    </a>
+                </li>
             </nav>
