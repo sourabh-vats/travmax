@@ -196,7 +196,7 @@ $("#popup").modal('show');
               <p><label>User ID</label> <input type="text" required name="user_name" class="form-control input-empty" placeholder=""></p>
               <p><label>Password</label> <input type="password" required name="password" class="form-control input-empty"></p>
               <div class="col-md-12 col-xs-12 keeplogin text-right ferd"><b>Forgot Password?</b></div><br>
-              <p><input type="submit" name="submit" value="Submit" class="btn btn-primary popup-login-button"> <!--a href="javascript:;" class="show-register-form">Register</a--></p>
+              <p><input type="submit" name="submit" value="Log In" class="btn btn-primary popup-login-button"> <!--a href="javascript:;" class="show-register-form">Register</a--></p>
 
               <p class="rfre ferd3">If you don't have an Account <span class="svn"><b>Register Free</b></span></p>
 
