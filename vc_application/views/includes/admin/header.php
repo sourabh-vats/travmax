@@ -55,25 +55,25 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="/admin/profile">
                                 <i class="bi-person-fill-gear"></i>
                                 Profile
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="/admin/kyc">
                                 <i class="bi-bank2"></i>
                                 Bank Details
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="/invite_friend/">
                                 <i class="bi-share-fill"></i>
                                 Invite Friends
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="/admin/installments">
                                 <i class="bi-calendar2-check-fill"></i>
                                 Installments
                             </a>
@@ -91,7 +91,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="/feedback">
                                 <i class="bi-info-circle-fill"></i>
                                 Give Us Feedback
                             </a>
