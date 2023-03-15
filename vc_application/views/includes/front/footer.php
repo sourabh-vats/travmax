@@ -264,7 +264,7 @@ $("#popup").modal('show');
               </div>
 
               <p><!--label> Reference ID. (Optional)</label--> <input type="hidden" id="Fran_code_input" name="Fran_id" class="form-control input-empty"></p>
-              <p><label> Referral ID</label> <input type="text" id="bliss_code_input" name="bliss_code" class="form-control input-empty request-code-input"></p>
+              <p><label> Referral ID</label> <input type="text" id="bliss_code_input" name="bliss_code" class="form-control input-empty request-code-input" value="<?php echo $_SERVER['REQUEST_URI']; ?>"></p>
               <div id="sponsr_name"></div>
               <div class="form-group">
                 <input checked="checked" name="term_condition" value="left" type="checkbox"><span class="check" style="color:#000;"> I acknowledge that I have read, understood and agree to all the <a href="#" style="cursor:pointer;">Terms & Conditions.</a></span>
