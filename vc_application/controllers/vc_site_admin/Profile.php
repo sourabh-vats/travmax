@@ -28,14 +28,6 @@ class Profile extends CI_Controller
         $data['total_sales'] = $this->Users_model->get_total_sales($id);
         $data['total_income'] = (int)$this->Users_model->get_total_income($id);
         $data['total_partners'] = $this->Users_model->get_total_partners($id);
-
-        $data['main_content'] = 'admin/home';
-        $this->load->view('includes/admin/template', $data);
-
-
-        $data['myfriends'] = array();
-
-        //package information
         $data['has_package'] = false;
         $data['package_information'] = $this->Users_model->get_package($id);
         if (empty($data['package_information'])) {
@@ -49,6 +41,15 @@ class Profile extends CI_Controller
         } else {
             redirect(base_url() . 'admin/select_package');
         }
+        
+        $data['main_content'] = 'admin/home';
+        $this->load->view('includes/admin/template', $data);
+
+
+        $data['myfriends'] = array();
+
+        //package information
+        
         //$data['payment_remaining'] = $this->Users_model->get_remaining_payment($id);
         // print_r($data['payment_remaining']);
         // die();
