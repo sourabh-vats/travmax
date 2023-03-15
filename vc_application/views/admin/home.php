@@ -1,11 +1,11 @@
 <div class="row gap-5 mb-5">
     <div class="col-md-5 grey_bg p-4">
         <div class="row">
-            <div class="col border-end">
+            <div class="col border-end" id="hero_total_sales">
                 <span class="big_number">45+</span>
                 <span>Sales</span>
             </div>
-            <div class="col">
+            <div class="col" id="hero_total_income">
                 <span class="big_number">5Lakh+</span>
                 <span>Income</span>
             </div>

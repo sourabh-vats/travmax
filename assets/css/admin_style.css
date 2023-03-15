@@ -205,9 +205,20 @@ p {
     border-left: 15px solid white;
 }
 
-.box_number_data{
+.box_number_data {
     font-size: 2rem;
     font-weight: 600;
+}
+
+.big_number {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+#hero_total_sales, #hero_total_income{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media (max-width: 767.98px) {
