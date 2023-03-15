@@ -194,13 +194,13 @@ class Page extends CI_Controller
 
 
 
-	public function invite_friend()
+	public function invite_friend($cust_id)
 	{
 		$data['page_keywords'] = '';
 		$data['page_description'] = '';
 		$data['page_slug'] = 'invite_friend';
 		$data['page_title'] = 'invite_friend';
-
+		$data['cust_id'] = $cust_id;
 
 		$data['category_list'] = $this->customer_model->get_category_list();
 		$data['main_content'] = 'invite_friend';

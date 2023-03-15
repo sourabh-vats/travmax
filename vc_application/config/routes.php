@@ -74,6 +74,7 @@ $route['buy_privilege_card'] = 'page/buy_privilege_card';
 $route['about'] = 'page/about';
 $route['recharge'] = 'page/recharge';
 $route['invite_friend'] = 'page/invite_friend';
+$route['invite_friend/(:any)'] = 'page/invite_friend/$1';
 $route['online_stores'] = 'page/online_stores';
 $route['online_stores_cat/(:any)/(:num)'] = 'page/online_stores/$1';
 $route['offline_stores'] = 'page/offline_stores';
