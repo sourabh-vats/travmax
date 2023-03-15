@@ -12,8 +12,12 @@
         </div>
         <hr>
         <div class="row">
-            <span><?php echo $total_partners; ?></span>
-            <a href="/admin/DistributorLevelInformation" class="my_partners_hero_link">MY PARTNERS</a>
+            <div class="col">
+                <span id="total_partners_number"><i class="bi-people-fill me-2"></i><?php echo $total_partners; ?></span>
+            </div>
+            <div class="col text-end">
+                <a href="/admin/DistributorLevelInformation" class="my_partners_hero_link">MY PARTNERS</a>
+            </div>
         </div>
     </div>
     <div class="col-md">
