@@ -1,3 +1,19 @@
+<?php
+$independent = $total_friend = $stage = $achivers = 0;
+$referrals = '';
+if (!empty($myfriends)) {
+    $total_friend = count($myfriends);
+    foreach ($myfriends as $friend) {
+        if ($friend['level'] == '1') {
+            $independent = $independent + 1;
+            $referrals .= '<tr><td>' . $friend['name'] . '</td><td>' . $friend['friends'] . '</td></tr>';
+        }
+        if ($friend['level'] > $stage) {
+            $stage = $friend['level'];
+        }
+    }
+}
+?>
 <div class="row gap-5 mb-5">
     <div class="col-md-5 py-4 px-0">
         <div class="row">
