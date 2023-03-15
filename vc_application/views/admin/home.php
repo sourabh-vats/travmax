@@ -65,9 +65,6 @@
             <p class="text_3">Pending: <span class="grey">Rs. <?php echo $package_data[0]['mrp']; ?></p>
             <p class="text_3">Approved: <span class="grey">Rs. <?php echo $package_data[0]['total']; ?></p>
             <p class="text_3">Redemmed: <span class="grey"><?php echo $package_information[0]['payment_type']; ?></p>
-            <p class="text_3">Amount Paid: <span class="grey">Rs. <?php echo $package_information[0]['amount_paid']; ?></p>
-            <p class="text_3">Amount Remaining: <span class="grey">Rs. <?php echo $package_information[0]['amount_remaining']; ?></p>
-            <p class="text_3">Installments: <span class="grey">2/11</p>
         </div>
     </div>
 </div>
