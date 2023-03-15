@@ -67,7 +67,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/invite_friend/">
+                            <a class="nav-link" aria-current="page" href="/invite_friend/<?php echo $this->session->userdata('bliss_id'); ?>">
                                 <i class="bi-share-fill"></i>
                                 Invite Friends
                             </a>
