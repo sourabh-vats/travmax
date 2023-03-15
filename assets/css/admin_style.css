@@ -140,6 +140,10 @@ p {
 
 #sidebarMenu {
     background-color: black;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 60px;
 }
 
 #sidebarMenu,
