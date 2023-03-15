@@ -26,7 +26,7 @@ class Profile extends CI_Controller
         $customer_id = $this->session->userdata('bliss_id');
         $data['profile'] = $this->Users_model->profile($id);
         $data['total_sales'] = $this->Users_model->get_total_sales($id);
-        $data['total_income'] = $this->Users_model->get_total_income($id);
+        $data['total_income'] = (int)$this->Users_model->get_total_income($id);
 
         $data['main_content'] = 'admin/home';
         $this->load->view('includes/admin/template', $data);

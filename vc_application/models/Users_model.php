@@ -897,7 +897,7 @@ Team Wishzon");
 	{
 		$this->db->select('SUM(amount) as total');
 		$this->db->from('incomes');
-		$this->db->where('user_id', '942');
+		$this->db->where('user_id', $id);
 		$query = $this->db->get();
 		return $query->row()->total;
 	}
