@@ -35,6 +35,10 @@
 
     <div class="container-fluid">
         <div class="row">
+            <div>
+                <img src="/images/avatar.png">
+                <span><?php echo $full_name; ?></span>
+            </div>
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
                 <div class="position-sticky pt-3 sidebar-sticky d-flex align-items-center justify-content-center">
                     <ul class="nav flex-column">
@@ -52,7 +56,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">
-                                <i class="bi-person-bank2"></i>
+                                <i class="bi-bank2"></i>
                                 Bank Details
                             </a>
                         </li>
