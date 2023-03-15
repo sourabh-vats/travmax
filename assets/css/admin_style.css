@@ -148,7 +148,7 @@ p {
 }
 
 #header_navbar {
-    height: 100px;
+    height: 120px;
 }
 
 #main {
@@ -189,11 +189,12 @@ p {
 
 .gradient_parent {
     background: linear-gradient(to right, #83EAF1, #63A4FF);
+    color: white;
 }
 
 .gradient_parent:nth-child(2) {
     background-color: #85FFBD;
-    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    background-image: linear-gradient(to right, #009FFD, #2A2A72);
 
 }
 
