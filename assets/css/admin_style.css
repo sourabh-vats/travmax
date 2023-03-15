@@ -212,13 +212,18 @@ p {
 
 .big_number {
     font-size: 4rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 
-#hero_total_sales, #hero_total_income{
+.big_number_title {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+#hero_total_sales,
+#hero_total_income {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 @media (max-width: 767.98px) {

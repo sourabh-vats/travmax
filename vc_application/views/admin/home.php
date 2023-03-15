@@ -3,11 +3,11 @@
         <div class="row">
             <div class="col border-end" id="hero_total_sales">
                 <span class="big_number">45+</span>
-                <span>Sales</span>
+                <span class="big_number_title">Sales</span>
             </div>
             <div class="col" id="hero_total_income">
                 <span class="big_number">5Lakh+</span>
-                <span>Income</span>
+                <span class="big_number_title">Income</span>
             </div>
         </div>
     </div>
