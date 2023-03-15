@@ -244,24 +244,33 @@ p {
     font-size: 1rem;
 }
 
-#total_partners_number{
+#total_partners_number {
     font-size: 2rem;
 }
 
-.my_partners_hero_link{
+.my_partners_hero_link {
     color: black;
     text-decoration: none;
     font-size: 1.1rem;
 }
-.my_partners_hero_link:hover{
+
+.my_partners_hero_link:hover {
     color: cornflowerblue;
     text-decoration: none;
     font-size: 1.1rem;
 }
 
-.text_1{
+.text_1 {
     font-size: 1.8rem;
     font-weight: 400;
+}
+
+.text_2 {
+    font-size: 1.1rem;
+}
+
+hr {
+    color: grey;
 }
 
 @media (max-width: 767.98px) {

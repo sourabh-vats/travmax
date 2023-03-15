@@ -47,15 +47,14 @@
     <div class="col-md-5 grey_bg px-4 py-4">
         <p class="text_1">My Package</p>
         <hr>
-        <ul>
-            <li>Name: Thailand Beach Prime</li>
-            <li>Price: Rs. 79900</li>
-            <li>Offered Price: Rs. 69900</li>
-            <li>Payment Plan: EasyNow</li>
-            <li>Amount Paid: Rs. 6600</li>
-            <li>Amount Remaining: Rs. 59000</li>
-            <li>Installments: 2/11</li>
-        </ul>
+        <p class="text_2">Name: Thailand Beach Prime</p>
+        <p class="text_2">Name: Thailand Beach Prime</p>
+        <p class="text_2">Price: Rs. 79900</p>
+        <p class="text_2">Offered Price: Rs. 69900</p>
+        <p class="text_2">Payment Plan: EasyNow</p>
+        <p class="text_2">Amount Paid: Rs. 6600</p>
+        <p class="text_2">Amount Remaining: Rs. 59000</p>
+        <p class="text_2">Installments: 2/11</p>
     </div>
     <div class="col-md grey_bg px-4 py-4">
         <p class="text_1">My Income</p>
