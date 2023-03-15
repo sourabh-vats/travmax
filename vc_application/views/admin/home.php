@@ -6,7 +6,7 @@
                 <span class="big_number_title">Total Sales</span>
             </div>
             <div class="col" id="hero_total_income">
-                <span class="big_number"><?php echo $total_income; ?>+</span>
+                <span class="big_number"><?php echo $total_income; ?></span>
                 <span class="big_number_title">Total Income</span>
             </div>
         </div>
