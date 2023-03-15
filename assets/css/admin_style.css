@@ -43,7 +43,7 @@ p {
 }
 
 .sidebar .nav-link i {
-    margin-right: 4px;
+    margin-right: 10px;
     color: #808080;
     font-size: 1rem;
 }
@@ -216,7 +216,7 @@ p {
 }
 
 .big_number {
-    font-size: 10rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 
@@ -232,11 +232,16 @@ p {
     flex-direction: column;
 }
 
-#sidenav_name,
-#sidenav_id {
+#sidenav_name {
     color: white;
     text-transform: uppercase;
     font-size: 1.1rem;
+}
+
+#sidenav_id {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 @media (max-width: 767.98px) {
