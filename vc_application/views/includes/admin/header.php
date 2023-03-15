@@ -37,7 +37,7 @@
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
                 <div class="pt-3 text-center">
-                    <img class="img-fluid" src="/images/avatar.png">
+                    <img class="img-fluid" width="100px" src="/images/avatar.png">
                     <span><?php echo $full_name; ?></span>
                 </div>
                 <div class="position-sticky pt-3 sidebar-sticky d-flex align-items-center justify-content-center">
