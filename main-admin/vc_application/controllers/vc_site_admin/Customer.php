@@ -60,8 +60,7 @@ class Customer extends CI_Controller
     {
         $id = $this->uri->segment(4);
         $data['category'] = $this->customer_model->get_all_fund_request_id($id);
-        var_dump($data['category']);
-        die();
+        $request_data = $data['category'][0];
         /*if save button was clicked, get the data sent via post*/
         if ($this->input->server('REQUEST_METHOD') === 'POST' && $id == $this->input->post('cid')) {
             /*form validation*/
@@ -72,8 +71,17 @@ class Customer extends CI_Controller
                 $data_to_store = array(
                     'status' => $this->input->post('status')
                 );
-                $return = $this->customer_model->update_fund_request($id, $data_to_store);
-                $status = $this->input->post('status');
+                if ($request_data["subject"] == "installment") {
+                    $installment = $this->Users_model->get_installment_by_user_id($request_data["user_id"]);
+                    print_r($installment);
+                    die();
+                    $data_profile_array = array('status' => 'Paid', 'pay_date' => date('Y-m-d'));
+                    $this->Users_model->update_installment_status($request_data["user_id"], $data_profile_array);
+                    $return = $this->customer_model->update_fund_request($id, $data_to_store);
+                } else {
+                    $return = $this->customer_model->update_fund_request($id, $data_to_store);
+                }
+                
                 if ($return == TRUE) {
                     $this->session->set_flashdata('flash_message', 'updated');
                     redirect('admin/fund_request/edit/' . $id . '');

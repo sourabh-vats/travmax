@@ -192,5 +192,22 @@ class Users_model extends CI_Model {
 		return $query->result_array();
 	}
 
+	public function update_installment_status($id, $data_to_store)
+	{
+		$this->db->where('id', $id);
+		$this->db->update('installment', $data_to_store);
+		return TRUE;
+	}
+
+	function get_installment_by_user_id($id)
+	{
+		$this->db->select('*');
+		$this->db->from('installment');
+		$this->db->where('user_id', $id);
+		$this->db->where('status', 'Active');
+		$query = $this->db->get();
+		return $query->row()->first();
+	}
+
 }
 
