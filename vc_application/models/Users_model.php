@@ -954,13 +954,13 @@ Team Wishzon");
 
 	function get_installments_paid($id)
 	{
-		$query = $this->db->query('SELECT * FROM incomes where user_id = ' . $id . ' and where status = "Paid"');
+		$query = $this->db->query('SELECT * FROM installment where user_id = ' . $id . ' and where status = "Paid"');
 		return $query->num_rows();
 	}
 
 	function get_installments_remaining($id)
 	{
-		$query = $this->db->query('SELECT * FROM incomes where user_id = ' . $id . ' and where status = "Active"');
+		$query = $this->db->query('SELECT * FROM installment where user_id = ' . $id . ' and where status = "Active"');
 		return $query->num_rows();
 	}
 
