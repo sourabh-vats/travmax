@@ -78,7 +78,7 @@ class Customer extends CI_Controller
                     $dis_level = 1;
                     $p = 0;
                     $profile = $this->Users_model->profile($request_data["user_id"]);
-                    $customer_id = $profile[0][""];
+                    $customer_id = $profile[0]["customer_id"];
                     echo $customer_id;
                     die();
                     $user = $this->Users_model->get_customer_data_by_id($customer_id);
