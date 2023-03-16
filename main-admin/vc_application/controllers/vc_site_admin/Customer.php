@@ -79,15 +79,12 @@ class Customer extends CI_Controller
                     $p = 0;
                     $profile = $this->Users_model->profile($request_data["user_id"]);
                     $customer_id = $profile[0]["customer_id"];
-                    echo $customer_id;
-                    die();
                     $user = $this->Users_model->get_customer_data_by_id($customer_id);
                     $parent_customer_id = $user[0]['parent_customer_id'];
                     while ($p < 11) {
                         $parent_user = $this->Users_model->parent_profile($parent_customer_id);
                         if (!empty($parent_user)) {
                             $booster_time = date('Y-m-d', strtotime('+15 days', strtotime($parent_user[0]['package_used'])));
-
                             if ($dis_level == 1) {
                                 $percent = 1100;
                                 $direct = 1;
@@ -146,7 +143,6 @@ class Customer extends CI_Controller
                             $p = 100; //So that it exists from loop because no more parent user left
                         }
                     }
-                    $return = TRUE;
                     $return = $this->customer_model->update_fund_request($id, $data_to_store);
                 } else {
                     $return = $this->customer_model->update_fund_request($id, $data_to_store);
