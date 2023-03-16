@@ -1,6 +1,6 @@
 <div class="row gap-5 mb-5">
     <div class="col-md-5 py-4 px-0">
-        <div class="row">
+        <div class="row mb-md-2">
             <div class="col-md-auto border-end" id="hero_total_sales">
                 <span class="big_number"><?php echo $total_sales; ?></span>
                 <span class="big_number_title">Total Sales</span>
@@ -11,7 +11,7 @@
             </div>
         </div>
         <hr>
-        <div class="row align-items-center">
+        <div class="row align-items-center mt-md-2">
             <div class="col">
                 <span id="total_partners_number"><i class="bi-people-fill me-2"></i><?php echo $total_partners; ?></span>
             </div>

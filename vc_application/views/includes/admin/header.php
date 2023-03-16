@@ -44,7 +44,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                 <div class="pt-3 d-none d-md-flex flex-column align-items-center">
                     <img class="img-fluid" width="90px" src="/images/avatar.png" style="filter: contrast(.1);">
                     <span class="mt-2" id="sidenav_name"><?php echo $full_name; ?></span>
-                    <span id="sidenav_id">Unique ID: <?php echo $this->session->userdata('bliss_id'); ?></span>
+                    <span id="sidenav_id">Trav ID: <?php echo $this->session->userdata('bliss_id'); ?></span>
                 </div>
                 <div class="position-sticky sidebar-sticky d-flex align-items-center justify-content-center">
                     <ul class="nav flex-column">
@@ -81,7 +81,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/admin/DistributorLevelInformation">
                                 <i class="bi-people-fill"></i>
-                                Circle Information
+                                My Partners
                             </a>
                         </li>
                         <li class="nav-item">
