@@ -189,7 +189,10 @@ class Profile extends CI_Controller
             $data['has_package'] = true;
             $package_id = $data['package_information'][0]['package_id'];
             $data['package_data'] = $this->Users_model->get_package_data($package_id);
-        }
+            $data['payment_amount'] = $this->Users_model->get_payment_amount($id);
+            echo $data['payment_amount'];
+            die()
+;        }
 
         $data['main_content'] = 'admin/package_selected_successfully';
         $this->load->view('includes/admin/template', $data);

@@ -887,6 +887,15 @@ Team Wishzon");
 		return TRUE;
 	}
 
+	function get_payment_amount($id)
+	{
+		$this->db->select('amount');
+		$this->db->from('installment');
+		$this->db->where('user_id', $id);
+		$query = $this->db->get();
+		return $query->row()->amount;
+	}
+
 	function get_total_sales($id)
 	{
 		$query = $this->db->query('SELECT * FROM incomes where user_id = ' . $id);
