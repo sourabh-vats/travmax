@@ -38,8 +38,10 @@ echo form_open_multipart('admin/request-fund', $attributes);
         <label> Amount</label>
         <?php if (!empty($payment_amount)) {
           echo '<input type="number" class="form-control" name="amount" value="' . $payment_amount . '" readonly>';
+          echo '<input type="hidden" name="subject" value="installment">';
         }else{
           echo '<input type="number" class="form-control" name="amount">';
+          echo '<input type="hidden" name="subject" value="fund">';
         } ?>
       </div>
 
