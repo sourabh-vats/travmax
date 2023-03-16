@@ -233,6 +233,7 @@ class Profile extends CI_Controller
                     'user_id' => $id,
                     'amount' => $this->input->post('amount'),
                     'mode' => $this->input->post('mode'),
+                    'subject' => $this->input->post('subject'),
                     // 'payment_no' => $this->input->post('payment_no'),
                     //  'bank_name' => $this->input->post('bank_name'),
                     'neft' => $this->input->post('neft'),
