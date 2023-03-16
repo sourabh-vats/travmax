@@ -952,6 +952,18 @@ Team Wishzon");
 		return $query->row()->total;
 	}
 
+	function get_installments_paid($id)
+	{
+		$query = $this->db->query('SELECT * FROM incomes where user_id = ' . $id . ' and where status = "Paid"');
+		return $query->num_rows();
+	}
+
+	function get_installments_remaining($id)
+	{
+		$query = $this->db->query('SELECT * FROM incomes where user_id = ' . $id . ' and where status = "Active"');
+		return $query->num_rows();
+	}
+
 	function get_total_partners($id)
 	{
 		$query = $this->db->query('SELECT * FROM customer where parent_customer_id = ' . $id);

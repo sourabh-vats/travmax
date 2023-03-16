@@ -32,6 +32,8 @@ class Profile extends CI_Controller
         $data['redeemed_income'] = (int)$this->Users_model->get_redeemed_income($id);
         $data['amount_paid'] = (int)$this->Users_model->get_amount_paid($id);
         $data['amount_remaining'] = (int)$this->Users_model->get_amount_remaining($id);
+        $data['installments_paid'] = (int)$this->Users_model->get_installments_paid($id);
+        $data['installments_remaining'] = (int)$this->Users_model->get_installments_remaining($id);
         $data['total_partners'] = $this->Users_model->get_total_partners($id);
         $data['has_package'] = false;
         $data['package_information'] = $this->Users_model->get_package($id);
