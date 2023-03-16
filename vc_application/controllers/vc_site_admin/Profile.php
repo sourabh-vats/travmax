@@ -49,7 +49,7 @@ class Profile extends CI_Controller
         } else {
             redirect(base_url() . 'admin/select_package');
         }
-        
+
         $data['main_content'] = 'admin/home';
         $this->load->view('includes/admin/template', $data);
 
@@ -57,7 +57,7 @@ class Profile extends CI_Controller
         $data['myfriends'] = array();
 
         //package information
-        
+
         //$data['payment_remaining'] = $this->Users_model->get_remaining_payment($id);
         // print_r($data['payment_remaining']);
         // die();
@@ -189,8 +189,8 @@ class Profile extends CI_Controller
             $data['has_package'] = true;
             $package_id = $data['package_information'][0]['package_id'];
             $data['package_data'] = $this->Users_model->get_package_data($package_id);
-            $data['payment_amount'] = $this->Users_model->get_payment_amount($id);
-;        }
+            $data['payment_amount'] = $this->Users_model->get_payment_amount($id);;
+        }
 
         $data['main_content'] = 'admin/package_selected_successfully';
         $this->load->view('includes/admin/template', $data);
@@ -253,7 +253,7 @@ class Profile extends CI_Controller
             } //validation run
         }
 
-        if ($_GET['type'] == "installment") {
+        if (!empty($_GET['type']) && $_GET['type'] == "installment") {
             $data['payment_amount'] = $this->Users_model->get_payment_amount($id);
         }
 
