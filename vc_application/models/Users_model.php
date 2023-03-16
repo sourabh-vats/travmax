@@ -932,25 +932,21 @@ Team Wishzon");
 		return $query->row()->total;
 	}
 
+	function get_amount_paid($id)
+	{
+		$this->db->select('SUM(amount) as total');
+		$this->db->from('installment');
+		$this->db->where('user_id', $id);
+		$this->db->where('status', 'Paid');
+		$query = $this->db->get();
+		return $query->row()->total;
+	}
+
 	function get_total_partners($id)
 	{
 		$query = $this->db->query('SELECT * FROM customer where parent_customer_id = ' . $id);
 		return $query->num_rows();
 	}
 
-	function get_remaining_payment($id)
-	{
-		$this->db->select_sum('amount');
-		$this->db->select('price');
-		$this->db->from('items');
-		$this->db->order_by('price desc');
-		$this->db->limit(3);
-		$this->db->get();
-		$this->db->select('SUM(amount)');
-		$this->db->from('installment');
-		$this->db->where('id', $id);
-		$this->db->where('status', 'active');
-		$query = $this->db->get();
-		return $query->result_array();
-	}
+	
 }

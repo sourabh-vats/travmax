@@ -52,7 +52,7 @@
             <p class="text_2">Price: <span class="grey">Rs. <?php echo $package_data[0]['mrp']; ?></p>
             <p class="text_2">Offered Price: <span class="grey">Rs. <?php echo $package_data[0]['total']; ?></p>
             <p class="text_2">Payment Plan: <span class="grey"><?php echo $package_information[0]['payment_type']; ?></p>
-            <p class="text_2">Amount Paid: <span class="grey">Rs. <?php echo $package_information[0]['amount_paid']; ?></p>
+            <p class="text_2">Amount Paid: <span class="grey">Rs. <?php echo $amount_paid; ?></p>
             <p class="text_2">Amount Remaining: <span class="grey">Rs. <?php echo $package_information[0]['amount_remaining']; ?></p>
             <p class="text_2">Installments: <span class="grey">2/11</p>
         </div>
@@ -61,10 +61,10 @@
         <p class="text_1">My Income</p>
         <hr>
         <div class="box_content">
-            <p class="text_3">Total: <span class="grey"><?php echo $total_income; ?></p>
+            <p class="text_3">Total: <span class="grey">Rs. <?php echo $total_income; ?></p>
             <p class="text_3">Pending: <span class="grey">Rs. <?php echo $pending_income; ?></p>
             <p class="text_3">Approved: <span class="grey">Rs. <?php echo $approved_income; ?></p>
-            <p class="text_3">Redemmed: <span class="grey"><?php echo $redeemed_income; ?></p>
+            <p class="text_3">Redemmed: <span class="grey">Rs. <?php echo $redeemed_income; ?></p>
         </div>
     </div>
 </div>
