@@ -942,6 +942,16 @@ Team Wishzon");
 		return $query->row()->total;
 	}
 
+	function get_amount_remaining($id)
+	{
+		$this->db->select('SUM(amount) as total');
+		$this->db->from('installment');
+		$this->db->where('user_id', $id);
+		$this->db->where('status', 'Active');
+		$query = $this->db->get();
+		return $query->row()->total;
+	}
+
 	function get_total_partners($id)
 	{
 		$query = $this->db->query('SELECT * FROM customer where parent_customer_id = ' . $id);
