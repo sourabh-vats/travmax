@@ -58,58 +58,23 @@ class Customer extends CI_Controller
 
     public function fund_request_update()
     {
-
         $id = $this->uri->segment(4);
         $data['category'] = $this->customer_model->get_all_fund_request_id($id);
-        //category id 
-
-
+        var_dump($data['category']);
+        die();
         /*if save button was clicked, get the data sent via post*/
         if ($this->input->server('REQUEST_METHOD') === 'POST' && $id == $this->input->post('cid')) {
             /*form validation*/
-            // $this->form_validation->set_rules('c_name', 'name', 'required|trim|min_length[4]');
             $this->form_validation->set_rules('status', 'status', 'required|trim');
             $this->form_validation->set_error_delimiters('<div class="alert alert-danger"><a class="close" data-dismiss="alert">×</a><strong>', '</strong></div>');
             //if the form has passed through the validation
             if ($this->form_validation->run()) {
-
-                //----- end file upload -----------
                 $data_to_store = array(
-
                     'status' => $this->input->post('status')
                 );
                 $return = $this->customer_model->update_fund_request($id, $data_to_store);
-                $phone = $this->input->post('phone');
                 $status = $this->input->post('status');
-                $reply = $this->input->post('reply');
-
-
-                if ($status == 'Completed' && $data['category'][0]['status'] != 'Completed') {
-                    $this->customer_model->load_wallet($data['category'][0]['user_id'], $data['category'][0]['amount'], 'income_wallet');
-                }
-
                 if ($return == TRUE) {
-                    if ($status != 'active') {
-                        if ($status == 'rejected') {
-                            $message = 'Rejected';
-                        } elseif ($status == 'accepted') {
-                            $message = 'Accepted';
-                        } else {
-                            $message = 'Activated';
-                        }
-
-
-                        /***************** SMS ******************/
-                        $sms_msg = urlencode("Thank you for Requesting ! Your Request is " . $message . ":
-User ID: " . $this->input->post('customer_id') . "
-Tr. Pin: " . $this->input->post('tr_pin') . "\n
-" . $reply . "
-Thank you 
-Team Divinoindia");
-                        $smstext = "http://103.16.101.52/sendsms/bulksms?username=bsz-shiromani&password=" . $this->config->item('sms_pass') . "&type=0&dlr=1&destination=" . $phone . "&source=SHIROM&message=" . $sms_msg;
-                        //file_get_contents($smstext);
-                        /***************** SMS ******************/
-                    }
                     $this->session->set_flashdata('flash_message', 'updated');
                     redirect('admin/fund_request/edit/' . $id . '');
                 } else {
@@ -117,11 +82,6 @@ Team Divinoindia");
                 }
             }/*validation run*/
         }
-
-        //if we are updating, and the data did not pass trough the validation
-        //the code below wel reload the current data
-
-
         //load the view
         $data['main_content'] = 'admin/fund_request_update';
         $this->load->view('includes/admin/template', $data);
@@ -1332,7 +1292,7 @@ Team Divinoindia");
                     } else {
                         $installment_amount = $intallment_amount_left;
                     }
-                    
+
 
                     while ($intallment_amount_left > 0) {
                         $pay_date = date('Y-m-d', strtotime("+ 1 month", strtotime($insdate)));
@@ -1347,7 +1307,7 @@ Team Divinoindia");
                             $installment_amount = $intallment_amount_left;
                         }
                     }
-                    
+
                     $this->Users_model->load_wallet($cust_id, 111000, 'eligibility');
 
                     $this->Users_model->distribution();
