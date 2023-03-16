@@ -36,7 +36,11 @@ echo form_open_multipart('admin/request-fund', $attributes);
 
       <div class="form-group col-sm-12">
         <label> Amount</label>
-        <input type="number" class="form-control" name="amount">
+        <?php if (!empty($payment_amount)) {
+          echo '<input type="number" class="form-control" name="amount" value="' . $payment_amount . '" readonly>';
+        }else{
+          echo '<input type="number" class="form-control" name="amount">';
+        } ?>
       </div>
 
       <div class="form-group col-sm-12">

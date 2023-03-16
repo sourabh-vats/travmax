@@ -200,8 +200,6 @@ class Profile extends CI_Controller
     {
         $id = $this->session->userdata('cust_id');
         $customer_id = $this->session->userdata('bliss_id');
-        echo $_GET['type'];
-        die();
 
         $data['image_error'] = 'false';
 
@@ -212,15 +210,6 @@ class Profile extends CI_Controller
             $data['request_pin'] = $this->Users_model->get_neft($neft);
 
             $this->form_validation->set_rules('amount', 'amount', 'required');
-            /*if(!empty($data['request_pin'])){
-                
-             $this->form_validation->set_rules('dsf', 'pins', 'required');  
-              $this->form_validation->set_message('required', ' This UTR no is already used');
-            }*/
-
-            //form validation
-            //  $this->form_validation->set_rules('pins', 'pins', 'required');
-            //$this->form_validation->set_rules('c_discription', 'discription', 'required');
 
             $this->form_validation->set_error_delimiters('<div class="alert alert-danger"><a class="close" data-dismiss="alert">×</a><strong>', '</strong></div>');
             //if the form has passed through the validation
@@ -261,8 +250,12 @@ class Profile extends CI_Controller
                     $this->session->set_flashdata('flash_message', 'not_updated');
                 }
             } //validation run
-
         }
+
+        if ($_GET['type'] == "installment") {
+            $data['payment_amount'] = $this->Users_model->get_payment_amount($id);
+        }
+
         $data['profile'] = $this->Users_model->profile($id);
         $data['main_content'] = 'admin/request_fund';
         $this->load->view('includes/admin/template', $data);
