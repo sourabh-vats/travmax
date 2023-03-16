@@ -54,7 +54,7 @@
             <p class="text_2">Payment Plan: <span class="grey"><?php echo $package_information[0]['payment_type']; ?></p>
             <p class="text_2">Amount Paid: <span class="grey">Rs. <?php echo $amount_paid; ?></p>
             <p class="text_2">Amount Remaining: <span class="grey">Rs. <?php echo $amount_remaining; ?></p>
-            <p class="text_2">Installments: <span class="grey"><?php echo $installments_paid . '/' . $installments_remaining; ?></p>
+            <p class="text_2">Installments: <span class="grey"><?php echo $installments_paid . '/' . $installments_total; ?></p>
         </div>
     </div>
     <div class="col-md grey_bg px-4 py-4">
