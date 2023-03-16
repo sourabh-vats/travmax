@@ -42,7 +42,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
                 <div class="pt-3 d-none d-md-flex flex-column align-items-center">
-                    <img class="img-fluid" width="90px" src="/images/avatar.png">
+                    <img class="img-fluid" width="90px" src="/images/avatar.png" style="filter: contrast(.1);">
                     <span class="mt-2" id="sidenav_name"><?php echo $full_name; ?></span>
                     <span id="sidenav_id">Unique ID: <?php echo $this->session->userdata('bliss_id'); ?></span>
                 </div>

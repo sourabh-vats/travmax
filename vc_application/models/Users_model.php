@@ -902,6 +902,36 @@ Team Wishzon");
 		return $query->row()->total;
 	}
 
+	function get_pending_income($id)
+	{
+		$this->db->select('SUM(amount) as total');
+		$this->db->from('incomes');
+		$this->db->where('user_id', $id);
+		$this->db->where('status', 'Hold');
+		$query = $this->db->get();
+		return $query->row()->total;
+	}
+
+	function get_approved_income($id)
+	{
+		$this->db->select('SUM(amount) as total');
+		$this->db->from('incomes');
+		$this->db->where('user_id', $id);
+		$this->db->where('status', 'Approved');
+		$query = $this->db->get();
+		return $query->row()->total;
+	}
+
+	function get_redeemed_income($id)
+	{
+		$this->db->select('SUM(amount) as total');
+		$this->db->from('incomes');
+		$this->db->where('user_id', $id);
+		$this->db->where('status', 'Redeemed');
+		$query = $this->db->get();
+		return $query->row()->total;
+	}
+
 	function get_total_partners($id)
 	{
 		$query = $this->db->query('SELECT * FROM customer where parent_customer_id = ' . $id);

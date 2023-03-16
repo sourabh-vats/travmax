@@ -27,6 +27,9 @@ class Profile extends CI_Controller
         $data['profile'] = $this->Users_model->profile($id);
         $data['total_sales'] = $this->Users_model->get_total_sales($id);
         $data['total_income'] = (int)$this->Users_model->get_total_income($id);
+        $data['pending_income'] = (int)$this->Users_model->get_pending_income($id);
+        $data['approved_income'] = (int)$this->Users_model->get_approved_income($id);
+        $data['redeemed_income'] = (int)$this->Users_model->get_redeemed_income($id);
         $data['total_partners'] = $this->Users_model->get_total_partners($id);
         $data['has_package'] = false;
         $data['package_information'] = $this->Users_model->get_package($id);
