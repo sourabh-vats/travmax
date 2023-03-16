@@ -71,12 +71,10 @@ class Customer extends CI_Controller
                 $data_to_store = array(
                     'status' => $this->input->post('status')
                 );
-                if ($request_data["subject"] == "installment") {
+                if ($request_data["subject"] == "installment" && $this->input->post('status') == "Completed") {
                     $installment = $this->Users_model->get_installment_by_user_id($request_data["user_id"]);
-                    echo $installment->id;
-                    die();
-                    $data_profile_array = array('status' => 'Paid', 'pay_date' => date('Y-m-d'));
-                    $this->Users_model->update_installment_status($request_data["user_id"], $data_profile_array);
+                    $data_to_update = array('status' => 'Paid', 'pay_date' => date('Y-m-d'));
+                    $this->Users_model->update_installment_status($installment->id, $data_to_update);
                     $return = $this->customer_model->update_fund_request($id, $data_to_store);
                 } else {
                     $return = $this->customer_model->update_fund_request($id, $data_to_store);
