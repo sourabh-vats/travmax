@@ -200,7 +200,8 @@ class Profile extends CI_Controller
     {
         $id = $this->session->userdata('cust_id');
         $customer_id = $this->session->userdata('bliss_id');
-
+        echo $_GET['type'];
+        die();
 
         $data['image_error'] = 'false';
 

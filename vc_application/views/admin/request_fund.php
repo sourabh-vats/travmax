@@ -1,3 +1,4 @@
+<hr>
 <div class="page-heading">
   <h2>Payment Proof</h2>
 </div>
@@ -34,10 +35,6 @@ echo form_open_multipart('admin/request-fund', $attributes);
     <fieldset>
 
       <div class="form-group col-sm-12">
-        <!-- <label> Name</label>
-              <input type="text" class="form-control"  name="name" value="<?php if ($this->input->post('name') != '') {
-                                                                            echo $this->input->post('name');
-                                                                          }  ?>" >-->
         <label> Amount</label>
         <input type="number" class="form-control" name="amount">
       </div>
