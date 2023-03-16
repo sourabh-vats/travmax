@@ -75,11 +75,83 @@ class Customer extends CI_Controller
                     $installment = $this->Users_model->get_installment_by_user_id($request_data["user_id"]);
                     $data_to_update = array('status' => 'Paid', 'pay_date' => date('Y-m-d'));
                     $this->Users_model->update_installment_status($installment->id, $data_to_update);
+                    $dis_level = 1;
+                    $p = 0;
+                    $profile = $this->Users_model->profile($request_data["user_id"]);
+                    $customer_id = $profile[0][""];
+                    echo $customer_id;
+                    die();
+                    $user = $this->Users_model->get_customer_data_by_id($customer_id);
+                    $parent_customer_id = $user[0]['parent_customer_id'];
+                    while ($p < 11) {
+                        $parent_user = $this->Users_model->parent_profile($parent_customer_id);
+                        if (!empty($parent_user)) {
+                            $booster_time = date('Y-m-d', strtotime('+15 days', strtotime($parent_user[0]['package_used'])));
+
+                            if ($dis_level == 1) {
+                                $percent = 1100;
+                                $direct = 1;
+                            }
+                            if ($dis_level == 2) {
+                                $percent = 1100;
+                                $direct = 1;
+                            }
+                            if ($dis_level == 3) {
+                                $percent = 1100;
+                                $direct = 1;
+                            }
+                            if ($dis_level == 4) {
+                                $percent = 550;
+                                $direct = 3;
+                            }
+                            if ($dis_level == 5) {
+                                $percent = 550;
+                                $direct = 3;
+                            }
+                            if ($dis_level == 6) {
+                                $percent = 550;
+                                $direct = 3;
+                            }
+                            if ($dis_level == 7) {
+                                $percent = 330;
+                                $direct = 5;
+                            }
+                            if ($dis_level == 8) {
+                                $percent = 330;
+                                $direct = 5;
+                            }
+                            if ($dis_level == 9) {
+                                $percent = 330;
+                                $direct = 5;
+                            }
+                            if ($dis_level == 10) {
+                                $percent = 330;
+                                $direct = 5;
+                            }
+                            if ($dis_level == 11) {
+                                $percent = 330;
+                                $direct = 5;
+                            }
+
+                            if ($parent_user[0]['macro'] >= $direct) {
+                                $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Approved');
+
+                                $this->Users_model->add_income($add_income);
+                            }
+
+                            $parent_customer_id = $parent_user[0]['parent_customer_id'];
+                            $dis_level = $dis_level + 1;
+                            $p++;
+                        } else {
+                            $p = 100; //So that it exists from loop because no more parent user left
+                        }
+                    }
+                    $return = TRUE;
                     $return = $this->customer_model->update_fund_request($id, $data_to_store);
                 } else {
                     $return = $this->customer_model->update_fund_request($id, $data_to_store);
                 }
-                
+
                 if ($return == TRUE) {
                     $this->session->set_flashdata('flash_message', 'updated');
                     redirect('admin/fund_request/edit/' . $id . '');
