@@ -171,7 +171,7 @@ p {
 
 #header_date {
     color: #808080;
-    font-size: 1.1rem;
+    font-size: 1rem;
     height: 100%;
     display: flex;
     align-items: center;
@@ -180,14 +180,14 @@ p {
 
 #header_date i {
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-right: 8px;
 }
 
 #header_right_btn {
     background-color: black;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     display: flex;
     align-items: center;
