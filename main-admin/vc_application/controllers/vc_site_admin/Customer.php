@@ -77,7 +77,8 @@ class Customer extends CI_Controller
                     $this->Users_model->update_installment_status($installment->id, $data_to_update);
                     $dis_level = 1;
                     $p = 0;
-                    $profile = $this->Users_model->profile($request_data["user_id"]);
+                    $cust_id = $request_data["user_id"];
+                    $profile = $this->Users_model->profile($cust_id);
                     $customer_id = $profile[0]["customer_id"];
                     $user = $this->Users_model->get_customer_data_by_id($customer_id);
                     $parent_customer_id = $user[0]['parent_customer_id'];
