@@ -206,7 +206,7 @@ class Users_model extends CI_Model {
 		$this->db->where('user_id', $id);
 		$this->db->where('status', 'Active');
 		$query = $this->db->get();
-		return $query->row()->first();
+		return $query->row();
 	}
 
 }
