@@ -1,5 +1,4 @@
 <div class="page-heading">
-
   <h2>Installments</h2>
 </div>
 
