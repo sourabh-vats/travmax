@@ -71,7 +71,7 @@ echo validation_errors();
         }
         if ($con['status'] == 'Active' && $pay == 'yes') {
           $pay = 'no';
-          echo 
+          echo '<a href="/admin/request-fund">Upload Proof</a>';
           // echo' <form class="form club-form" method="post" action="#">
           //         <input type="hidden" name="how_to_pay" value="razorpay">
           //         <input type="hidden" name="amount" value="' . $con['amount'] . '">
@@ -87,6 +87,5 @@ echo validation_errors();
       ?>
 
     </tbody>
-    <a href="/admin/request-fund">Upload Proof</a>
   </table>
 </div>
