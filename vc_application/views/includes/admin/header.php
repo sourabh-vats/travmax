@@ -22,8 +22,9 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
     ?>
     <script>
         $(document).ready(function() {
-            var active = window.location.pathname;
-            $(".nav a[href|='" + active + "']").parent().addClass("active");
+            $(".nav-link").each(function () {
+                console.log($(this).attr("href"));
+            });
         });
     </script>
 </head>
