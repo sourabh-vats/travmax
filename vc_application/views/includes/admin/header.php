@@ -55,7 +55,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                 <div class="position-sticky sidebar-sticky d-flex align-items-center justify-content-center">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/admin">
+                            <a class="nav-link" aria-current="page" href="/admin">
                                 <i class="bi-house-fill"></i>
                                 Home
                             </a>
