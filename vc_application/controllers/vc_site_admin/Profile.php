@@ -43,6 +43,21 @@ class Profile extends CI_Controller
         } else {
             $data['has_package'] = true;
         }
+        $team = array();
+        $ids = array($customer_id);
+        $p = 0;
+        while ($p < 1) {
+            $myfriends = $this->Users_model->my_friends_in($ids);
+            if (!empty($myfriends)) {
+                $team = array_merge($team, $myfriends);
+                $ids = array_column($myfriends, 'customer_id');
+            } else {
+                $p++;
+            }
+        }
+        echo $team;
+        die();
+        $data['total_partner'] = $team;
         $data["package_data"] = "";
         if ($data['has_package']) {
             $data["package_data"] = $this->Users_model->get_package_data($data['package_information'][0]['package_id']);
@@ -56,21 +71,9 @@ class Profile extends CI_Controller
 
         $data['myfriends'] = array();
 
-        
+
         //Calculate Total Team Members
-        $team = array();
-        $ids = array($customer_id);
-        $p = 0;
-        while ($p < 1) {
-            $myfriends = $this->Users_model->my_friends_in($ids);
-            if (!empty($myfriends)) {
-                $team = array_merge($team, $myfriends);
-                $ids = array_column($myfriends, 'customer_id');
-            } else {
-                $p++;
-            }
-        }
-        $data['total_partner'] = $team;
+
 
         $left_count = array_column($team, 'macro');
         $team_consume = array_column($team, 'consume');
