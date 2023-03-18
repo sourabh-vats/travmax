@@ -184,7 +184,7 @@ $("#popup").modal('show');
 
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h2 class="modal-title fdr">Welcome to Travelmax</h2>
+            <h2 class="modal-title fdr">Welcome to Travmax</h2>
             <h2 class="modal-title fdr2" style="display:none">Forgot Password</h2>
             <h2 class="modal-title sng-up" style="display:none">Register Free</h2>
           </div>

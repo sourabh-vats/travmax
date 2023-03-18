@@ -56,11 +56,7 @@ class Profile extends CI_Controller
 
         $data['myfriends'] = array();
 
-        //package information
-
-        //$data['payment_remaining'] = $this->Users_model->get_remaining_payment($id);
-        // print_r($data['payment_remaining']);
-        // die();
+        
         //Calculate Total Team Members
         $team = array();
         $ids = array($customer_id);
