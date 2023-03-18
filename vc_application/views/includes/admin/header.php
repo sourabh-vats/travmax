@@ -22,8 +22,8 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
     ?>
     <script>
         $(document).ready(function() {
-            $('li.active').removeClass('active').removeAttr('aria-current');
-            $('a[href="' + location.pathname + '"]').closest('li').addClass('active').attr('aria-current', 'page');
+            var active = window.location.pathname;
+            $(".nav a[href|='" + active + "']").parent().addClass("active");
         });
     </script>
 </head>
