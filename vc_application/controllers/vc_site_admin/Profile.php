@@ -55,7 +55,7 @@ class Profile extends CI_Controller
                 $p++;
             }
         }
-        echo $team;
+        var_dump($team);
         die();
         $data['total_partner'] = $team;
         $data["package_data"] = "";
