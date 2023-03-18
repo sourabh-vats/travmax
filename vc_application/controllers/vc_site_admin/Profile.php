@@ -35,7 +35,6 @@ class Profile extends CI_Controller
         $data['installments_paid'] = (int)$this->Users_model->get_installments_paid($id);
         $data['installments_remaining'] = (int)$this->Users_model->get_installments_remaining($id);
         $data['installments_total'] = $data['installments_paid'] + $data['installments_remaining'];
-        $data['total_partners'] = $this->Users_model->get_total_partners($id);
         $data['has_package'] = false;
         $data['package_information'] = $this->Users_model->get_package($id);
         if (empty($data['package_information'])) {
@@ -43,6 +42,7 @@ class Profile extends CI_Controller
         } else {
             $data['has_package'] = true;
         }
+        
         $team = array();
         $ids = array($customer_id);
         $p = 0;
@@ -55,9 +55,9 @@ class Profile extends CI_Controller
                 $p++;
             }
         }
-        var_dump(count($team));
-        die();
         $data['total_partner'] = $team;
+        $data['total_partners'] = count($team);
+
         $data["package_data"] = "";
         if ($data['has_package']) {
             $data["package_data"] = $this->Users_model->get_package_data($data['package_information'][0]['package_id']);
