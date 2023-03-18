@@ -20,6 +20,12 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
         echo '<script src="' . $js . '"></script>';
     }
     ?>
+    <script>
+        $(".nav .nav-link").on("click", function() {
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+        });
+    </script>
 </head>
 
 <body>
