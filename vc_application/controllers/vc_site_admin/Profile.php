@@ -61,6 +61,7 @@ class Profile extends CI_Controller
         $my_sales = 0;
         $team_sales = 0;
         $active_income = 0;
+        $team_income = 0;
         for ($i = 0; $i < count($team); $i++) {
             if ($team[$i]["parent_customer_id"] == $customer_id) {
                 $number_of_installments_paid = (int)$this->Users_model->get_installments_paid($team[$i]["id"]);
@@ -73,6 +74,8 @@ class Profile extends CI_Controller
                 $number_of_installments_paid = (int)$this->Users_model->get_installments_paid($team[$i]["id"]);
                 if ($number_of_installments_paid > 0) {
                     $team_sales++;
+                    $income_from_this_partner = (int)$this->Users_model->get_income_from_this_partner($id, $team[$i]["id"]);
+                    $team_income += $income_from_this_partner;
                 }
             }
         }
@@ -80,6 +83,7 @@ class Profile extends CI_Controller
         $data["team_sales"] = $team_sales;
         $data["total_sales"] = $my_sales + $team_sales;        
         $data["active_income"] = $active_income;    
+        $data["team_income"] = $team_income;    
 
         $data["package_data"] = "";
         if ($data['has_package']) {
