@@ -194,7 +194,7 @@ class Users_model extends CI_Model
 	}
 	function my_friends_in($cust_id)
 	{
-		$this->db->select('customer_id,f_name,l_name,rdate,direct_customer_id,parent_customer_id,macro,consume');
+		$this->db->select('id,customer_id,f_name,l_name,rdate,direct_customer_id,parent_customer_id,macro,consume');
 		$this->db->from('customer');
 		$this->db->where_in('parent_customer_id', $cust_id);
 		$query = $this->db->get();
