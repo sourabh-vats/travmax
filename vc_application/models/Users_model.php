@@ -979,6 +979,5 @@ Team Wishzon");
 		$query = $this->db->query('SELECT * FROM customer where parent_customer_id = ' . $id);
 		return $query->num_rows();
 	}
-
 	
 }

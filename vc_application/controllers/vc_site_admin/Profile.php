@@ -61,7 +61,11 @@ class Profile extends CI_Controller
         //calculate my sales
         $my_sales = 0;
         for ($i=0; $i < count($team); $i++) {
-            if ($team[$i]["parent_customer_id"] == $customer_id && $team[$i]["consume"] == 1) {
+            echo '<pre>';
+            print_r($team[$i]);
+            die();
+            if ($team[$i]["parent_customer_id"] == $customer_id) {
+                $number_of_installments_paid = (int)$this->Users_model->get_installments_paid($id);
                 $my_sales++;
             }
         }
