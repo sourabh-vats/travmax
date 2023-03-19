@@ -25,7 +25,6 @@ class Profile extends CI_Controller
         $id = $this->session->userdata('cust_id');
         $customer_id = $this->session->userdata('bliss_id');
         $data['profile'] = $this->Users_model->profile($id);
-        $data['total_sales'] = $this->Users_model->get_total_sales($id);
         $data['total_income'] = (int)$this->Users_model->get_total_income($id);
         $data['pending_income'] = (int)$this->Users_model->get_pending_income($id);
         $data['approved_income'] = (int)$this->Users_model->get_approved_income($id);
@@ -57,23 +56,26 @@ class Profile extends CI_Controller
         }
         $data['total_partner'] = $team;
         $data['total_partners'] = count($team);
-        
+
         //calculate my sales
         $my_sales = 0;
         $team_sales = 0;
-        for ($i=0; $i < count($team); $i++) {
+        for ($i = 0; $i < count($team); $i++) {
             if ($team[$i]["parent_customer_id"] == $customer_id) {
                 $number_of_installments_paid = (int)$this->Users_model->get_installments_paid($team[$i]["id"]);
-                echo $number_of_installments_paid . " ";
-                $my_sales++;
-            }else{
+                if ($number_of_installments_paid > 0) {
+                    $my_sales++;
+                }
+            } else {
                 $number_of_installments_paid = (int)$this->Users_model->get_installments_paid($team[$i]["id"]);
-                echo $number_of_installments_paid . " ";
-                $team_sales++;
+                if ($number_of_installments_paid > 0) {
+                    $team_sales++;
+                }
             }
         }
-        die();
         $data["my_sales"] = $my_sales;
+        $data["team_sales"] = $team_sales;
+        $data["total_sales"] = $my_sales + $team_sales;
 
         $data["package_data"] = "";
         if ($data['has_package']) {

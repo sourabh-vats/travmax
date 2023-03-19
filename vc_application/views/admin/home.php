@@ -28,7 +28,7 @@
             </div>
             <div class="col text-center py-4">
                 <h3>TEAM SALES</h3>
-                <span class="box_number_data">100</span>
+                <span class="box_number_data"><?php echo $team_sales; ?></span>
             </div>
         </div>
         <div class="row gradient_parent">
