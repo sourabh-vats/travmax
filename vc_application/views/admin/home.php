@@ -38,7 +38,7 @@
             </div>
             <div class="col text-center py-4">
                 <h3>TEAM INCOME</h3>
-                <span class="box_number_data">₹ 50</span>
+                <span class="box_number_data">₹ <?php echo $team_income; ?></span>
             </div>
         </div>
     </div>
