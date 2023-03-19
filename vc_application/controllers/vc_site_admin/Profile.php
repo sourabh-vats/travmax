@@ -60,6 +60,7 @@ class Profile extends CI_Controller
         echo '<pre>';
         print_r($data['total_partner']);
         echo '<pre>';
+        die();
 
         $data["package_data"] = "";
         if ($data['has_package']) {
