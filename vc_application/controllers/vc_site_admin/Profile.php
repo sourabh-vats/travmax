@@ -57,9 +57,13 @@ class Profile extends CI_Controller
         }
         $data['total_partner'] = $team;
         $data['total_partners'] = count($team);
-        echo '<pre>';
-        print_r($team);
-        echo '<pre>';
+        
+        //calculate my sales
+        $my_sales = 0;
+        for ($i=0; $i < count($team); $i++) { 
+            var_dump($team[$i]);
+        }
+        die();
 
         $data["package_data"] = "";
         if ($data['has_package']) {
