@@ -34,7 +34,7 @@
         <div class="row gradient_parent">
             <div class="col text-center py-4">
                 <h3>ACTIVE INCOME</h3>
-                <span class="box_number_data">₹ 50</span>
+                <span class="box_number_data">₹ <?php echo $active_income; ?></span>
             </div>
             <div class="col text-center py-4">
                 <h3>TEAM INCOME</h3>

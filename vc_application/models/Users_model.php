@@ -912,6 +912,16 @@ Team Wishzon");
 		return $query->row()->total;
 	}
 
+	function get_income_from_this_partner($id, $partner_id)
+	{
+		$this->db->select('SUM(amount) as total');
+		$this->db->from('incomes');
+		$this->db->where('user_id', $id);
+		$this->db->where('user_send_by', $partner_id);
+		$query = $this->db->get();
+		return $query->row()->total;
+	}
+
 	function get_pending_income($id)
 	{
 		$this->db->select('SUM(amount) as total');
