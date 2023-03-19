@@ -55,12 +55,11 @@ class Profile extends CI_Controller
                 $p++;
             }
         }
-        $data['total_partner'] = $data['total_partner'];
+        $data['total_partner'] = $team;
         $data['total_partners'] = count($team);
         echo '<pre>';
-        print_r($data['total_partner']);
+        print_r($team);
         echo '<pre>';
-        die();
 
         $data["package_data"] = "";
         if ($data['has_package']) {
