@@ -23,22 +23,22 @@
     <div class="col-md">
         <div class="row mb-4 gradient_parent">
             <div class="col text-center py-4">
-                <h2>MY SALES</h2>
-                <span class="box_number_data">50</span>
+                <h3>MY SALES</h3>
+                <span class="box_number_data"><?php echo $my_sales; ?></span>
             </div>
             <div class="col text-center py-4">
-                <h2>TEAM SALES</h2>
+                <h3>TEAM SALES</h3>
                 <span class="box_number_data">100</span>
             </div>
         </div>
         <div class="row gradient_parent">
             <div class="col text-center py-4">
-                <h2>ACTIVE INCOME</h2>
-                <span class="box_number_data">50</span>
+                <h3>ACTIVE INCOME</h3>
+                <span class="box_number_data">₹ 50</span>
             </div>
             <div class="col text-center py-4">
-                <h2>TEAM INCOME</h2>
-                <span class="box_number_data">50</span>
+                <h3>TEAM INCOME</h3>
+                <span class="box_number_data">₹ 50</span>
             </div>
         </div>
     </div>

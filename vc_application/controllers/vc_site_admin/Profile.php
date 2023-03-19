@@ -61,13 +61,11 @@ class Profile extends CI_Controller
         //calculate my sales
         $my_sales = 0;
         for ($i=0; $i < count($team); $i++) {
-            if ($team[$i]["parent_customer_id"] == $customer_id) {
-                echo "<pre>";
-                var_dump($team[$i]);
-                echo "</pre>";
+            if ($team[$i]["parent_customer_id"] == $customer_id && $team[$i]["consume"] == 1) {
+                $my_sales++;
             }
         }
-        die();
+        $data["my_sales"] = $my_sales;
 
         $data["package_data"] = "";
         if ($data['has_package']) {
