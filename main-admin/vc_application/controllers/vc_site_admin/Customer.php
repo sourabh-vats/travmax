@@ -134,10 +134,10 @@ class Customer extends CI_Controller
 
                             if ($parent_user[0]['macro'] >= $direct) {
                                 $parent_installment = $this->Users_model->get_installment_by_user_id($parent_customer_id);
-                                if ($parent_installment->id == 1) {
+                                if ($parent_installment->installment_no == 1) {
                                     //not paid first installment so no distribution
                                     $p = 100;
-                                } elseif ($parent_installment->id == 2) {
+                                } elseif ($parent_installment->installment_no == 2) {
                                     $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Hold');
                                     $this->Users_model->add_income($add_income);
                                 } else {
