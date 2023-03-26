@@ -82,6 +82,11 @@ class Customer extends CI_Controller
                     $customer_id = $profile[0]["customer_id"];
                     $user = $this->Users_model->get_customer_data_by_id($customer_id);
                     $parent_customer_id = $user[0]['parent_customer_id'];
+                    $installment_number = $installment->installment_no;
+                    $status = "Hold";
+                    if ($installment_number > 2) {
+                        $status = "Approved";
+                    }
 
                     while ($p < 11) {
                         $parent_user = $this->Users_model->parent_profile($parent_customer_id);
@@ -141,7 +146,7 @@ class Customer extends CI_Controller
                                     $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Hold');
                                     $this->Users_model->add_income($add_income);
                                 } else {
-                                    $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Approved');
+                                    $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => $status);
                                     $this->Users_model->add_income($add_income);
                                 }
                             }
