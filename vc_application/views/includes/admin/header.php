@@ -61,7 +61,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/admin">
                                 <i class="bi-house-fill"></i>
-                                Home
+                                Dashboard
                             </a>
                         </li>
                         <li class="nav-item">
