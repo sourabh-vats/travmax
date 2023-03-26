@@ -5,7 +5,9 @@
         {
           echo '<div class="alert alert-success">';
             echo '<a class="close" data-dismiss="alert">×</a>';
-            echo 'Register successfully please login now. Your user id is <b>'.$userregisterid.'</b>';
+            echo '<h2>Congratulations</h2>';
+            echo 'You have registered successfully with Travmax.<br>'; 
+            echo 'Your Trav ID is <b>'.$userregisterid.'</b>';
           echo '</div>';      
         } 
         if($this->session->flashdata('register') == 'already')
