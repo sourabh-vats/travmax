@@ -82,6 +82,7 @@ class Customer extends CI_Controller
                     $customer_id = $profile[0]["customer_id"];
                     $user = $this->Users_model->get_customer_data_by_id($customer_id);
                     $parent_customer_id = $user[0]['parent_customer_id'];
+
                     while ($p < 11) {
                         $parent_user = $this->Users_model->parent_profile($parent_customer_id);
                         if (!empty($parent_user)) {
@@ -132,9 +133,17 @@ class Customer extends CI_Controller
                             }
 
                             if ($parent_user[0]['macro'] >= $direct) {
-                                $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Approved');
-
-                                $this->Users_model->add_income($add_income);
+                                $parent_installment = $this->Users_model->get_installment_by_user_id($parent_customer_id);
+                                if ($parent_installment->id == 1) {
+                                    //not paid first installment so no distribution
+                                    $p = 100;
+                                } elseif ($parent_installment->id == 2) {
+                                    $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Hold');
+                                    $this->Users_model->add_income($add_income);
+                                } else {
+                                    $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Approved');
+                                    $this->Users_model->add_income($add_income);
+                                }
                             }
 
                             $parent_customer_id = $parent_user[0]['parent_customer_id'];
