@@ -6,7 +6,7 @@
                 <img class="img-fluid select_package_id" src="/assets/images/<?php echo $package['name']; ?>.jpg" alt="" title="<?php echo $package['id']; ?>">
                 <input type="hidden" name="package_information" class="package_information" value='<?php echo json_encode($package); ?>'>
                 <p class="package_title"><?php echo $package['name']; ?></p>
-                <a href="">Terms And Conditions</a>
+                <a href="/terms_of_use">Terms And Conditions</a>
             </div>
         </div>
     <?php } ?>
