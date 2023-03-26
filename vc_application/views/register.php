@@ -3,7 +3,7 @@
       if($this->session->flashdata('register')){
          if($this->session->flashdata('register') == 'true')
         {
-          echo '<div class="alert alert-success text-center">';
+          echo '<div class="alert alert-info text-center">';
             echo '<a class="close" data-dismiss="alert">×</a>';
             echo '<h2>CONGRATULATIONS</h2>';
             echo 'You have registered successfully with Travmax.<br>'; 
