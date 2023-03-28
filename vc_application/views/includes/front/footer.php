@@ -417,7 +417,7 @@ $("#popup").modal('show');
         url: "<?php echo base_url(); ?>register",
         data: jQuery("#popup-register-form").serialize(),
         success: function(data) {
-          if (data.indexOf("alert alert-success") == "-1") {
+          if (data.indexOf("alert alert-info") == "-1") {
             jQuery("#register-msg-div1").html(data);
             jQuery('#loginModal').modal('show');
             jQuery('#registerModal').modal('hide');
