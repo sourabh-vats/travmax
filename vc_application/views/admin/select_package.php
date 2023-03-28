@@ -1,13 +1,17 @@
+<?php
+$user = $profile[0];
+$full_name = $user['f_name'] . " " . $user['l_name'];
+?>
 <div class="modal fade" id="start_journey_popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title" id="exampleModalLabel">Hi</h1>
+                <h2 class="modal-title" id="exampleModalLabel">Hi <?php echo $full_name; ?></h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <h2>Start your travel journey now.</h2>
-                <h3>Please select a tour package and a payment plan to continue.</h3>
+                <h3>Start your travel journey now.</h3>
+                <h4>Please select a tour package and a payment plan to continue.</h4>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
@@ -20,7 +24,9 @@
     <?php foreach ($all_packages as $package) { ?>
         <div class="col-md-4 d-flex justify-content-center p-3">
             <div class="package_card">
-                <img class="img-fluid select_package_id" src="/assets/images/<?php echo $package['name']; ?>.jpg" alt="" title="<?php echo $package['id']; ?>">
+                <a href="/select_plan?package=<?php echo $package['id']; ?>">
+                    <img class="img-fluid select_package_id" src="/assets/images/<?php echo $package['name']; ?>.jpg" alt="" title="<?php echo $package['id']; ?>">
+                </a>
                 <input type="hidden" name="package_information" class="package_information" value='<?php echo json_encode($package); ?>'>
                 <p class="package_title"><?php echo $package['name']; ?></p>
                 <a href="/terms_of_use">Terms And Conditions</a>
