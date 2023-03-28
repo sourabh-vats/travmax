@@ -2,15 +2,15 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="modal-title fs-5 text-center display-2" id="exampleModalLabel">Hi</span>
+                <h1 class="modal-title" id="exampleModalLabel">Hi</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
                 <h2>Start your travel journey now.</h2>
-                <h2>Please select a tour package and a payment plan to continue.</h2>
+                <h3>Please select a tour package and a payment plan to continue.</h3>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
             </div>
         </div>
     </div>
