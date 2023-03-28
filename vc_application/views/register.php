@@ -5,7 +5,7 @@
         {
           echo '<div class="alert alert-info text-center">';
             echo '<a class="close" data-dismiss="alert">×</a>';
-            echo '<h2>CONGRATULATIONS</h2>';
+            echo '<h2>CONGRATULATIONS!!!</h2>';
             echo 'You have registered successfully with Travmax.<br>'; 
             echo 'Please Login now.<br>'; 
             echo 'Your Trav ID is <b>'.$userregisterid.'</b>';
