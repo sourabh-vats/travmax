@@ -6,12 +6,13 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title" id="exampleModalLabel">Hi <?php echo $full_name; ?></h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <h3>Start your travel journey now.</h3>
-                <h4>Please select a tour package and a payment plan to continue.</h4>
+                <!-- <h2 class="modal-title" id="exampleModalLabel">Hi <?php echo $full_name; ?></h2> -->
+                <!-- <h3>Start your travel journey now.</h3>
+                <h4>Please select a tour package and a payment plan to continue.</h4> -->
+                <img src="/assets/images/select_package_popup.jpg" class="img-fluid" alt="">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
