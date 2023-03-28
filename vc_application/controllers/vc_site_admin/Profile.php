@@ -81,9 +81,9 @@ class Profile extends CI_Controller
         }
         $data["my_sales"] = $my_sales;
         $data["team_sales"] = $team_sales;
-        $data["total_sales"] = $my_sales + $team_sales;        
-        $data["active_income"] = $active_income;    
-        $data["team_income"] = $team_income;    
+        $data["total_sales"] = $my_sales + $team_sales;
+        $data["active_income"] = $active_income;
+        $data["team_income"] = $team_income;
 
         $data["package_data"] = "";
         if ($data['has_package']) {
@@ -193,6 +193,73 @@ class Profile extends CI_Controller
         $data['all_packages'] = $this->Users_model->get_all_packages();
 
         $data['main_content'] = 'admin/select_package';
+        $this->load->view('includes/admin/template', $data);
+    }
+
+    public function select_plan()
+    {
+        $data['page_keywords'] = '';
+        $data['page_description'] = '';
+        $data['page_slug'] = 'Select Package';
+        $data['page_title'] = 'Dashboard';
+        $data['js'] = '/assets/js/select_package.js';
+
+        $id = $this->session->userdata('cust_id');
+        $customer_id = $this->session->userdata('bliss_id');
+        $data['profile'] = $this->Users_model->profile($id);
+        $data['has_package'] = false;
+        $data['package_information'] = $this->Users_model->get_package($id);
+        if (empty($data['package_information'])) {
+            $data['has_package'] = false;
+        } else {
+            $data['has_package'] = true;
+            redirect(base_url() . 'admin');
+        }
+        if ($this->input->server('REQUEST_METHOD') && $this->input->server('REQUEST_METHOD') == "POST") {
+            $package_id = $this->input->post('package_id');
+            $payment_type = $this->input->post('payment_type');
+            $package_data = $this->Users_model->get_package_data($package_id);
+            $package_amount = $package_data[0]['total'];
+            $data_to_store = array(
+                'user_id' => $id,
+                'package_id' => $package_id,
+                'payment_type' => $payment_type,
+                'amount_remaining' => $package_amount
+            );
+            $return = $this->Users_model->add_user_package($data_to_store);
+
+            $date = date('Y-m-d H:i:s');
+            $data_to_store = array('role' => 'Macro', 'package_used' => $date, 'macro' => 33, 'consume' => 1, 'package_amt' => $package_amount);
+            $this->Users_model->update_profile($id, $data_to_store);
+
+            if ($payment_type == "traveasy_plan") {
+                $intallment_amount_left = $package_amount;
+                $installment_amount = 6600;
+                $installment_number = 1;
+                $insdate = date('Y-m-d');
+                while ($intallment_amount_left > 0) {
+                    $pay_date = date('Y-m-d', strtotime("+ 1 month", strtotime($insdate)));
+                    $add_installment = array('user_id' => $id, 'amount' => $installment_amount, 'description' => $insdate, 'pay_date' => $pay_date, 'installment_no' => $installment_number, 'status' => 'Active');
+                    $this->Users_model->add_installment($add_installment);
+                    $insdate = $pay_date;
+                    $intallment_amount_left -= 6600;
+                    $installment_number += 1;
+                    if ($intallment_amount_left > 6600) {
+                        $installment_amount = 6600;
+                    } else {
+                        $installment_amount = $intallment_amount_left;
+                    }
+                }
+            }
+            if ($return == TRUE) {
+                redirect(base_url() . 'admin/package_selected_successfully');
+            } else {
+                $this->session->set_flashdata('flash_message', 'not_updated');
+            }
+        }
+        $data['all_packages'] = $this->Users_model->get_all_packages();
+
+        $data['main_content'] = 'admin/select_plan';
         $this->load->view('includes/admin/template', $data);
     }
 
