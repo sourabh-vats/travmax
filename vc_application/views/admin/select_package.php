@@ -1,13 +1,13 @@
 <div class="modal fade" id="start_journey_popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Hi</h1>
+                <span class="modal-title fs-5 text-center display-2" id="exampleModalLabel">Hi</span>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <span>Start your travel journey now.</span>
-                <span>Please select a tour package and a payment plan to continue.</span>
+                <h2>Start your travel journey now.</h2>
+                <h2>Please select a tour package and a payment plan to continue.</h2>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue</button>
