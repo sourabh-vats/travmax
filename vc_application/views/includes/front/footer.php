@@ -419,8 +419,6 @@ $("#popup").modal('show');
         success: function(data) {
           if (data.indexOf("alert alert-info") == "-1") {
             jQuery("#register-msg-div1").html(data);
-            jQuery('#loginModal').modal('show');
-            jQuery('#registerModal').modal('hide');
           }
           /*  else { jQuery("#register-msg-div").html('');
 					         jQuery("#login-msg-div").html(data); 
