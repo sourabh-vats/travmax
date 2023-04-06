@@ -1,7 +1,5 @@
-<?php print_r($package_data);
-die();?>
 <div class="row" id="pick_a_plan_section">
-    <h1 class="text-center my-5">You have selected <span id="pick_a_plan_selected_package_name"></span> package. Please select a payment plan.</h1>
+    <h1 class="text-center my-5">You have selected <span id="pick_a_plan_selected_package_name"><?php echo $package_data[0]["name"];?></span> package. Please select a payment plan.</h1>
     <div class="card-group text-center">
         <div class="card plan_box" id="travnow_plan">
             <div class="card-body">
@@ -48,8 +46,8 @@ die();?>
     $attributes = array('class' => 'form');
     echo form_open_multipart(base_url() . 'admin/select_package', $attributes);
     ?>
-    <input type="hidden" name="package_id">
+    <input type="hidden" name="package_id" value="<?php echo $package_data[0]["id"];?>">
     <input type="hidden" name="payment_type">
-    <button class="btn btn-lg btn-primary w-100 my-3" id="book_package_btn" type="submit" disabled>Book</button>
+    <button class="btn btn-lg btn-primary my-3" id="book_package_btn" type="submit" disabled>Book</button>
     <?php echo form_close(); ?>
 </div>
