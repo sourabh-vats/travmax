@@ -23,7 +23,7 @@
     <div class="row" id="main-inner-btn-share">
         <div class="col-sm-2">
             <div class="whatsapp">
-                <a href="whatsapp://send?text=Join Travmax and earn free international travel!" data-action="share/whatsapp/share">
+                <a id="whatsapp_share_link" href="whatsapp://send?text=Join Travmax and earn free international travel!" data-action="share/whatsapp/share">
                     <i class="fa fa-whatsapp" aria-hidden="true"></i>
                     <small>Invite via whatsapp</small>
                 </a>
@@ -156,6 +156,9 @@
 </section> -->
 <script type="text/javascript">
     // Author: Joseph Cowdell
+
+var whatsapp_share_link = document.getElementById("whatsapp_share_link");
+whatsapp_share_link.setAttribute('href', "whatsapp://send?text=" + window.location.href);
 
 copyText = function(textToCopy) {
   this.copied = false
