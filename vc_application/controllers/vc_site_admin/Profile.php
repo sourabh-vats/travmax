@@ -216,8 +216,7 @@ class Profile extends CI_Controller
             redirect(base_url() . 'admin');
         }
         $package_id = $_GET["package"];
-        echo $package_id;
-        die();
+        $data['package_data'] = $this->Users_model->get_package_data($package_id);
         if ($this->input->server('REQUEST_METHOD') && $this->input->server('REQUEST_METHOD') == "POST") {
             $package_id = $this->input->post('package_id');
             $payment_type = $this->input->post('payment_type');

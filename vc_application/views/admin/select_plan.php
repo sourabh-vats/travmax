@@ -1,3 +1,5 @@
+<?php print_r($package_data);
+die();?>
 <div class="row" id="pick_a_plan_section">
     <h1 class="text-center my-5">You have selected <span id="pick_a_plan_selected_package_name"></span> package. Please select a payment plan.</h1>
     <div class="card-group text-center">
