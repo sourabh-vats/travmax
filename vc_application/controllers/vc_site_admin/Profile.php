@@ -200,7 +200,7 @@ class Profile extends CI_Controller
     {
         $data['page_keywords'] = '';
         $data['page_description'] = '';
-        $data['page_slug'] = 'Select Package';
+        $data['page_slug'] = 'Select Plan';
         $data['page_title'] = 'Dashboard';
         $data['js'] = '/assets/js/select_package.js';
 
@@ -215,6 +215,9 @@ class Profile extends CI_Controller
             $data['has_package'] = true;
             redirect(base_url() . 'admin');
         }
+        $package_id = $_GET["package"];
+        echo $package_id;
+        die();
         if ($this->input->server('REQUEST_METHOD') && $this->input->server('REQUEST_METHOD') == "POST") {
             $package_id = $this->input->post('package_id');
             $payment_type = $this->input->post('payment_type');
