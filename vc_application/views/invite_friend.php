@@ -23,13 +23,13 @@
     <div class="row" id="main-inner-btn-share">
         <div class="col-sm-2">
             <div class="whatsapp">
-                <a href="#">
+                <a href="whatsapp://send?text=Join Travmax and earn free international travel!" data-action="share/whatsapp/share">
                     <i class="fa fa-whatsapp" aria-hidden="true"></i>
                     <small>Invite via whatsapp</small>
                 </a>
             </div>
         </div>
-         <div class="col-sm-2">
+         <!-- <div class="col-sm-2">
             <div class="facebook">
                 <a href="#">
                     <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -68,7 +68,7 @@
                     <small>Invite via sms</small>
                 </a>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 </div>
@@ -125,7 +125,7 @@
 </section>
 
 
-<section class="trms_cndtions">
+<!-- <section class="trms_cndtions">
     <div class="container">
 	<div class="clip_shadw">
         <h2 class="text-dark" style="font-weight: bold;">Terms & Conditions</h2>
@@ -153,7 +153,7 @@
         </div>
         </div>
     </div>
-</section>
+</section> -->
 <script type="text/javascript">
     // Author: Joseph Cowdell
 
