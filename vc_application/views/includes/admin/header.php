@@ -20,7 +20,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
         echo '<script src="' . $js . '"></script>';
     }
     if (!empty($css)) {
-        echo '<link rel="stylesheet" href="/assets/css/' . $css . '">';
+        echo '<link rel="stylesheet" href="' . $css . '">';
     }
     ?>
     <script>
