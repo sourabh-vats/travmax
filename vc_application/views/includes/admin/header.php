@@ -19,6 +19,9 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
     if (!empty($js)) {
         echo '<script src="' . $js . '"></script>';
     }
+    if (!empty($css)) {
+        echo '<link rel="stylesheet" href="/assets/css/' . $css . '">';
+    }
     ?>
     <script>
         $(document).ready(function() {

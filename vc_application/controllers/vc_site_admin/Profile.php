@@ -266,6 +266,7 @@ class Profile extends CI_Controller
     }
 
     public function package(){
+        $data['css'] = '/assets/css/package.css';
         $data['js'] = '/assets/js/package.js';
 
         $id = $this->session->userdata('cust_id');
