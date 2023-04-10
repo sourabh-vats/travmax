@@ -32,6 +32,8 @@
 
 .btn-primary{
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 1.1rem;
     text-transform: uppercase;
     display: flex;
