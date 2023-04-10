@@ -1,1 +1,3 @@
-<h1>This is package page.</h1>
+<div id="banner">
+    
+</div>

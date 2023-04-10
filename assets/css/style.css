@@ -63,3 +63,10 @@ p {
 .plan_box.selected {
     background-color: antiquewhite;
 }
+
+/* Package Page */
+#banner{
+    height: 250px;
+    width: 100%;
+    background: grey;
+}
