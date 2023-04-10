@@ -38,5 +38,7 @@
             </label>
         </div>
     </div>
-    <a href="" id="continue_btn" class="btn btn-primary">Continue</a>
+    <div class="w-100 text-center">
+        <a href="" id="continue_btn" class="btn btn-primary">Continue</a>
+    </div>
 </div>
