@@ -7,7 +7,23 @@
     justify-content: center;
 }
 
+#package_img{
+    height: 200px;
+    width: 100%;
+    background: grey;
+}
+
 .page_heading{
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 700;
+}
+
+.heading_1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.heading_2{
+    font-size: 25px;
+    font-weight: 600;
 }
