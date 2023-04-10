@@ -25,7 +25,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
     <?php foreach ($all_packages as $package) { ?>
         <div class="col-md-4 d-flex justify-content-center p-3">
             <div class="package_card">
-                <a href="/admin/select_plan?package=<?php echo $package['id']; ?>">
+                <a href="/admin/package?package=<?php echo $package['id']; ?>">
                     <img class="img-fluid select_package_id" src="/assets/images/<?php echo $package['name']; ?>.jpg" alt="" title="<?php echo $package['id']; ?>">
                 </a>
                 <input type="hidden" name="package_information" class="package_information" value='<?php echo json_encode($package); ?>'>

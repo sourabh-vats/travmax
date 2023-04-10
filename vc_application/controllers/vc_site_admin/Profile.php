@@ -265,6 +265,13 @@ class Profile extends CI_Controller
         $this->load->view('includes/admin/template', $data);
     }
 
+    public function package(){
+        $data['js'] = '/assets/js/package.js';
+
+        $data['main_content'] = 'admin/package';
+        $this->load->view('includes/admin/template', $data);
+    }
+
     public function package_selected_successfully()
     {
         $data['page_keywords'] = '';
