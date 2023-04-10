@@ -38,7 +38,7 @@
             </label>
         </div>
     </div>
-    <div class="w-100 text-center">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
         <a href="" id="continue_btn" class="btn btn-primary">Continue</a>
     </div>
 </div>
