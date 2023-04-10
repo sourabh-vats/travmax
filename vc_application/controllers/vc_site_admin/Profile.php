@@ -268,6 +268,10 @@ class Profile extends CI_Controller
     public function package(){
         $data['js'] = '/assets/js/package.js';
 
+        $id = $this->session->userdata('cust_id');
+        $customer_id = $this->session->userdata('bliss_id');
+        $data['profile'] = $this->Users_model->profile($id);
+
         $data['main_content'] = 'admin/package';
         $this->load->view('includes/admin/template', $data);
     }
