@@ -1,17 +1,17 @@
 #banner{
-    height: 200px;
+    height: 180px;
     width: 100%;
-    background: grey;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    background-size: cover; 
+    background-image: url('https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
 }
 
 #package_img{
-    height: 100%;
-    background: grey;
+    background-image: url('https://images.unsplash.com/photo-1573843981267-be1999ff37cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=674&q=80');
 }
 
 .page_heading{
