@@ -1,5 +1,5 @@
 #banner{
-    height: 250px;
+    height: 200px;
     width: 100%;
     background: grey;
     display: flex;
@@ -9,7 +9,7 @@
 }
 
 #package_img{
-    height: 200px;
+    height: 100%;
     background: grey;
 }
 
@@ -19,11 +19,11 @@
 }
 
 .heading_1{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 
 .heading_2{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
