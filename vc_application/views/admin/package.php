@@ -37,6 +37,6 @@
                 I agree to all terms and conditions.
             </label>
         </div>
-        <a href="" id="continue_btn" class="btn btn-primary">Continue</a>
     </div>
+    <a href="" id="continue_btn" class="btn btn-primary">Continue</a>
 </div>
