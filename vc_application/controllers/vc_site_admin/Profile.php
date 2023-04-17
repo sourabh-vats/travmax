@@ -89,7 +89,8 @@ class Profile extends CI_Controller
         if ($data['has_package']) {
             $data["package_data"] = $this->Users_model->get_package_data($data['package_information'][0]['package_id']);
         } else {
-            redirect(base_url() . 'admin/select_package');
+            //redirect(base_url() . 'admin/select_package');
+            redirect(base_url() . 'admin/start');
         }
 
         $data['main_content'] = 'admin/home';
@@ -127,6 +128,31 @@ class Profile extends CI_Controller
         $data['invite_email'] = '';
         // $data['main_content'] = 'admin/admin_welcome';
         // $this->load->view('includes/admin/template', $data);
+    }
+
+    public function start()
+    {
+        $data['page_keywords'] = '';
+        $data['page_description'] = '';
+        $data['page_slug'] = 'Select Package';
+        $data['page_title'] = 'Start Your Journey';
+        $data['js'] = '/assets/js/start.js';
+        $data['css'] = '/assets/css/start.css';
+
+        $id = $this->session->userdata('cust_id');
+        $customer_id = $this->session->userdata('bliss_id');
+        $data['profile'] = $this->Users_model->profile($id);
+        $data['has_package'] = false;
+        $data['package_information'] = $this->Users_model->get_package($id);
+        if (empty($data['package_information'])) {
+            $data['has_package'] = false;
+        } else {
+            $data['has_package'] = true;
+            redirect(base_url() . 'admin');
+        }
+        
+        $data['main_content'] = 'admin/start';
+        $this->load->view('includes/admin/template', $data);
     }
 
     public function select_package()
