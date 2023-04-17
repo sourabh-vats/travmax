@@ -37,7 +37,8 @@ class Users_model extends CI_Model
 			}
 			return $return;
 		} else {
-			return false;
+			$return['login'] = 'false';
+			return $return;
 		}
 	}
 
