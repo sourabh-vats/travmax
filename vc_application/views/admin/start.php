@@ -1,8 +1,9 @@
 <div class="row" id="wrapper">
 <div id="content_box">
     <p class="text_1">
-        Hi Manoj, <br>
-        Start Your Travel Journey Now
+        <strong>Hi Manoj, </strong><br>
+        Start your <br>
+        travel journey now
     </p>
     <p class="text_1">
         Please select a tour package <br>
