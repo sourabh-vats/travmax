@@ -6,7 +6,8 @@
         travel journey now
     </p>
     <p class="text_1">
-        Please select a tour package <br>
+        Please select <br>
+        a tour package <br>
         & <br>
         a payment plan to continue.
     </p>
