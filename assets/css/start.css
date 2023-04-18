@@ -1,8 +1,27 @@
+a{
+    text-decoration: none;
+}
+
 #wrapper {
     height: calc(100vh - 120px);
     background: url("/images/dashboard_home_cover.jpg");
     background-size: contain;
     background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#content_box{
+    padding: 70px 75px;
+    max-width: 720px;
+    background: rgba(255, 255, 255, 0.477);
+    text-align: center;
+}
+
+.text_1{
+    font-size: 32px;
+    font-weight: 500;
 }
 
 .primary_btn {

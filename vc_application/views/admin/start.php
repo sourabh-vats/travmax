@@ -9,6 +9,6 @@
         & <br>
         a payment plan to continue.
     </p>
-    <a href="admin/select_package" class="primary_btn">Continue</a>
+    <a href="/admin/select_package" class="primary_btn">Continue</a>
 </div>
 </div>
