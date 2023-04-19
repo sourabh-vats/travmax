@@ -21,5 +21,13 @@
     Flight, Hotels, Transfers, Breakfast, Sightseeing
     </p>
     <p >Terms & Conditions</p>
-    <a href="/admin/select_plan?package=<?php echo $_GET["package"]; ?>" class="primary_btn">Continue</a>
+    <?php
+    $user = $profile[0];
+    $attributes = array('class' => 'form');
+    echo form_open_multipart(base_url() . 'admin/select_package', $attributes);
+    ?>
+    <input type="hidden" name="package_id" value="<?php echo $package_data[0]["id"];?>">
+    <input type="hidden" name="payment_type">
+    <button class="btn btn-lg btn-primary my-3" id="book_package_btn" type="submit" disabled>Book</button>
+    <?php echo form_close(); ?>
 </div>
