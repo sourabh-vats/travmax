@@ -156,6 +156,7 @@ $route['admin/select_package'] = 'vc_site_admin/profile/select_package';
 $route['admin/select_plan'] = 'vc_site_admin/profile/select_plan';
 $route['admin/package'] = 'vc_site_admin/profile/package';
 $route['admin/package_selected_successfully'] = 'vc_site_admin/profile/package_selected_successfully';
+$route['admin/confirm_plan'] = 'vc_site_admin/profile/confirm_plan';
 
 /* Admin  upload receipt*/
 $route['admin/uploadreceipts'] = 'vc_site_admin/profile/uploadreceipts';

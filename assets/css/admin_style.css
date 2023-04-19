@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 p {
     margin-bottom: 0px;
 }
@@ -277,7 +281,7 @@ p {
 
 }
 
-.text_3{
+.text_3 {
     font-size: 1.4rem;
     display: flex;
     justify-content: space-between;
@@ -292,7 +296,7 @@ hr {
     color: grey;
 }
 
-th{
+th {
     text-align: center;
 }
 
@@ -378,6 +382,6 @@ th{
     color: #FF4742;
 }
 
-.primary_btn:active{
+.primary_btn:active {
     opacity: .5;
 }

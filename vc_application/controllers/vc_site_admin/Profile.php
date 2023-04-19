@@ -329,6 +329,32 @@ class Profile extends CI_Controller
         $this->load->view('includes/admin/template', $data);
     }
 
+    public function confirm_plan()
+    {
+        $data['page_keywords'] = '';
+        $data['page_description'] = '';
+        $data['page_slug'] = 'Confirm Plan';
+        $data['page_title'] = 'Dashboard';
+
+        $id = $this->session->userdata('cust_id');
+        $customer_id = $this->session->userdata('bliss_id');
+        $data['profile'] = $this->Users_model->profile($id);
+        $data['has_package'] = false;
+        $data['package_information'] = $this->Users_model->get_package($id);
+        if (empty($data['package_information'])) {
+            $data['has_package'] = false;
+            redirect(base_url() . 'admin/select_package');
+        } else {
+            $data['has_package'] = true;
+            $package_id = $data['package_information'][0]['package_id'];
+            $data['package_data'] = $this->Users_model->get_package_data($package_id);
+            $data['payment_amount'] = $this->Users_model->get_payment_amount($id);;
+        }
+
+        $data['main_content'] = 'admin/confirm_plan';
+        $this->load->view('includes/admin/template', $data);
+    }
+
     public function request_fund()
     {
         $id = $this->session->userdata('cust_id');
