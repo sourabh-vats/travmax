@@ -20,5 +20,6 @@ $(document).ready(function () {
         $("#book_package_btn").prop('disabled', false);
         var link = $("#confirm_btn").attr("href");
         link = link + planName;
+        $("#confirm_btn").attr("href", link);
     })
 });
