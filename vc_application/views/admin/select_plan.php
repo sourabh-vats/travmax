@@ -50,5 +50,5 @@
     <input type="hidden" name="payment_type">
     <!-- <button class="btn btn-lg btn-primary my-3" id="book_package_btn" type="submit" disabled>Book</button> -->
     <?php echo form_close(); ?>
-    <a href="/admin/confirm_plan?package=<?php echo $_GET["package"]; ?>&plan=" class="primary_btn">Continue</a>
+    <a href="/admin/confirm_plan?package=<?php echo $_GET["package"]; ?>&plan=" id="confirm_btn" class="primary_btn">Continue</a>
 </div>

@@ -18,5 +18,7 @@ $(document).ready(function () {
         var planName = $(this).attr("id");
         $("input[name=payment_type]").val(planName);
         $("#book_package_btn").prop('disabled', false);
+        var link = $("#confirm_btn").attr("href");
+        link = link + planName;
     })
 });
