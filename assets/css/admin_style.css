@@ -2,6 +2,11 @@ a {
     text-decoration: none;
 }
 
+a[disabled] {
+    pointer-events: none;
+    cursor: default;
+}
+
 p {
     margin-bottom: 0px;
 }
@@ -386,6 +391,6 @@ th {
     opacity: .5;
 }
 
-#confirm_btn{
+#confirm_btn {
     width: auto;
 }

@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="w-100 mt-5 text-align-center">
-        <a href="/admin/confirm_plan?package=<?php echo $_GET["package"]; ?>&plan=" id="confirm_btn" class="primary_btn">Continue</a>
+        <a disabled href="/admin/confirm_plan?package=<?php echo $_GET["package"]; ?>&plan=" id="confirm_btn" class="primary_btn">Continue</a>
     </div>
     <?php
     $user = $profile[0];

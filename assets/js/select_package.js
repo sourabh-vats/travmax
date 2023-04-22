@@ -21,5 +21,6 @@ $(document).ready(function () {
         var link = $("#confirm_btn").attr("href");
         link = link + planName;
         $("#confirm_btn").attr("href", link);
+        $("#confirm_btn").removeAttr("disabled");
     })
 });

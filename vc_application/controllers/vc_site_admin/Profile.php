@@ -241,6 +241,11 @@ class Profile extends CI_Controller
             $data['has_package'] = true;
             redirect(base_url() . 'admin');
         }
+
+        if (empty($_GET["package"])) {
+            redirect(base_url() . 'admin');
+        }
+
         $package_id = $_GET["package"];
         $data['package_data'] = $this->Users_model->get_package_data($package_id);
         if ($this->input->server('REQUEST_METHOD') && $this->input->server('REQUEST_METHOD') == "POST") {
