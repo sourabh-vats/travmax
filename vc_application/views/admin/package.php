@@ -11,19 +11,19 @@ $package = $package_data[0];
         </p>
         <br>
         <p>
-            Price: Rs. 1,489,324
+            <span class="text_2">Price: Rs. 1,489,324</span>
             <span class="price_below_info">+ GST 5% and TCS 5%</span>
         </p>
         <p>
-            Price: Rs. 1,489,324
+            <span class="text_2">Price: Rs. 1,489,324</span>
             <span class="price_below_info">+ GST 5% and TCS 5%</span>
         </p>
         <br>
     </div>
     <p>
-    Inclusions: Ex Delhi <br>
-    Flight, Hotels, Transfers, Breakfast, Sightseeing
+        Inclusions: Ex Delhi <br>
+        Flight, Hotels, Transfers, Breakfast, Sightseeing
     </p>
-    <p >Terms & Conditions</p>
+    <p>Terms & Conditions</p>
     <a href="/admin/select_plan?package=<?php echo $_GET["package"]; ?>" class="primary_btn">Continue</a>
 </div>
