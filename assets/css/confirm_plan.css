@@ -76,7 +76,7 @@ a {
 .primary_btn:active {
     background-color: initial;
     background-position: 0 0;
-    color: #FF4742;
+    color: #FF4742 !important;
 }
 
 .primary_btn:active {

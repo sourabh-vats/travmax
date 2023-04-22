@@ -4,7 +4,7 @@ $package = $package_data[0];
 <div class="row" id="wrapper">
     <div id="content_box">
         <p class="text_1">
-            <span>Youh've selected</span>
+            <span>You've selected</span>
             <span class="heading_1"><?php echo $package["name"]; ?></span><br>
             <span>7 Nights 3 Days</span>
             <br>
@@ -19,7 +19,7 @@ $package = $package_data[0];
     <?php
     $user = $profile[0];
     $attributes = array('class' => 'form');
-    echo form_open_multipart(base_url() . 'admin/select_package', $attributes);
+    echo form_open_multipart(base_url() . 'admin/confirm_plan', $attributes);
     ?>
     <input type="hidden" name="package_id" value="<?php echo $package["id"]; ?>">
     <input type="hidden" name="payment_type" value="<?php echo $_GET["plan"]; ?>">
