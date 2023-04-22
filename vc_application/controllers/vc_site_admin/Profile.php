@@ -351,8 +351,15 @@ class Profile extends CI_Controller
         $data['profile'] = $this->Users_model->profile($id);
 
         $package_id = $_GET["package"];
+        $payment_plan = $_GET["plan"];
+        $payment_amount = 0;
         $data['package_data'] = $this->Users_model->get_package_data($package_id);
 
+        if ($payment_plan == "traveasy") {
+            $payment_amount = 6600;
+        }
+
+        $data["payment_amount"] = $payment_amount;
         $data['main_content'] = 'admin/confirm_plan';
         $this->load->view('includes/admin/template', $data);
     }

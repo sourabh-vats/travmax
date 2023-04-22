@@ -7,6 +7,10 @@ $package = $package_data[0];
             <span>Youh've selected</span>
             <span class="heading_1"><?php echo $package["name"]; ?></span><br>
             <span>7 Nights 3 Days</span>
+            <br>
+            <span>The Plan you have selected is <span class="heading_1"><?php echo $_GET["plan"]; ?></span></span>
+            <br>
+            <span>You need to make a payment of Rs <span class="heading_1"><?php echo $payment_amount; ?></span></span>
         </p>
         <br>
     </div>
