@@ -13,6 +13,9 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
     <link rel="stylesheet" href="/assets/bootstrap5.3/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/admin_style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="/assets/jquery/jquery-3.6.4.min.js"></script>
     <script src="/assets/bootstrap5.3/bootstrap.bundle.min.js"></script>
     <?php
@@ -25,7 +28,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
     ?>
     <script>
         $(document).ready(function() {
-            $(".nav-link").each(function () {
+            $(".nav-link").each(function() {
                 var active_url = window.location.pathname;
                 if ($(this).attr("href") == active_url) {
                     $(this).addClass("active");

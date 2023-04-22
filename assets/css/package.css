@@ -1,4 +1,8 @@
-a{
+html * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -12,7 +16,7 @@ a{
     align-items: center;
 }
 
-#content_box{
+#content_box {
     padding: 35px 50px;
     max-width: 482px;
     background: rgba(255, 255, 255, 0.5);
@@ -20,25 +24,25 @@ a{
     margin-top: 35px;
 }
 
-.heading_1{
+.heading_1 {
     font-size: 35px;
     font-weight: 800;
     color: #32679d;
 }
 
-.text_1{
+.text_1 {
     font-size: 32px;
     font-weight: 500;
     line-height: 35px;
 }
 
-.text_2{
+.text_2 {
     font-size: 32px;
     font-weight: 600;
     line-height: 35px;
 }
 
-.price_below_info{
+.price_below_info {
     font-size: 16px;
     font-weight: 300;
 }
@@ -74,15 +78,15 @@ a{
     color: #FF4742;
 }
 
-.primary_btn:active{
+.primary_btn:active {
     opacity: .5;
 }
 
-#package_locations{
+#package_locations {
     font-size: 20px;
     font-weight: bold;
 }
 
-#package_days{
+#package_days {
     font-size: 18px;
 }
