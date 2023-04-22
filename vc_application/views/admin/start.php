@@ -1,7 +1,7 @@
 <div class="row" id="wrapper">
 <div id="content_box">
     <p class="text_1">
-        <strong>Hi <?php var_dump($profile); ?>, </strong><br>
+        <strong>Hi <?php echo $profile["f_name"]; ?>, </strong><br>
         Start your <br>
         travel journey now
     </p>
