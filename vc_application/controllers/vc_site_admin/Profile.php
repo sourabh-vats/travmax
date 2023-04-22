@@ -343,6 +343,8 @@ class Profile extends CI_Controller
         $data['page_description'] = '';
         $data['page_slug'] = 'Confirm Plan';
         $data['page_title'] = 'Dashboard';
+        $data['css'] = '/assets/css/confirm_plan.css';
+        $data['js'] = '/assets/js/confirm_plan.js';
 
         $id = $this->session->userdata('cust_id');
         $customer_id = $this->session->userdata('bliss_id');
