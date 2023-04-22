@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    //$('#start_journey_popup').modal('show');
     $(".select_package_id").click(function () {
         var package = $(this).parent().children(".package_information").val();
         package = JSON.parse(package);
