@@ -385,3 +385,7 @@ th {
 .primary_btn:active {
     opacity: .5;
 }
+
+#confirm_btn{
+    width: auto;
+}
