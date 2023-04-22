@@ -20,7 +20,7 @@ $package = $package_data[0];
         </p>
         <br>
     </div>
-    <p>
+    <p id="package_inclusions">
         Inclusions: Ex Delhi <br>
         Flight, Hotels, Transfers, Breakfast, Sightseeing
     </p>

@@ -17,7 +17,7 @@ a {
 }
 
 #content_box {
-    padding: 35px 50px;
+    padding: 35px 35px;
     max-width: 482px;
     background: rgba(255, 255, 255, 0.5);
     text-align: center;
@@ -91,4 +91,11 @@ a {
 
 #package_days {
     font-size: 18px;
+}
+
+#package_inclusions{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
 }
