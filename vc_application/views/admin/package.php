@@ -11,12 +11,12 @@ $package = $package_data[0];
         </p>
         <br>
         <p>
-            <span class="text_2">Price: Rs. 1,489,324</span>
+            <span class="text_2 text-center">Price: Rs. 1,489,324</span>
             <span class="price_below_info">+ GST 5% and TCS 5%</span>
         </p>
         <p>
-            <span class="text_2">Price: Rs. 1,489,324</span>
-            <span class="price_below_info">+ GST 5% and TCS 5%</span>
+            <span class="text_2 text-center">Price: Rs. 1,489,324</span>
+            <span class="price_below_info">Inclusive of TAX and TCS</span>
         </p>
         <br>
     </div>
