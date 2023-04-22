@@ -3,9 +3,9 @@ $package = $package_data[0];
 ?>
 <div class="row" id="wrapper">
     <div id="content_box">
-        <p class="text_1">
+        <p>
             <span class="heading_1"><?php echo $package["name"]; ?></span><br>
-            <span><strong>Singapore, Malaysia<strong></span>
+            <span><strong>Singapore, Malaysia</strong></span>
             <br>
             <span>7 Nights 3 Days</span>
         </p>
