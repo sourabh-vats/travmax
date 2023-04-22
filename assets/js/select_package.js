@@ -10,6 +10,8 @@ $(document).ready(function () {
         $("input[name=package_id]").val(package['id']);
     });
 
+    var link = $("#confirm_btn").attr("href");
+    var original_link = $("#confirm_btn").attr("href");
     $(".plan_box").click(function () {
         $(".plan_box").each(function () {
             $(this).removeClass("selected");
@@ -18,7 +20,7 @@ $(document).ready(function () {
         var planName = $(this).attr("id");
         $("input[name=payment_type]").val(planName);
         $("#book_package_btn").prop('disabled', false);
-        var link = $("#confirm_btn").attr("href");
+        link = original_link;
         link = link + planName;
         $("#confirm_btn").attr("href", link);
         $("#confirm_btn").removeAttr("disabled");
