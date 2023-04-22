@@ -40,6 +40,8 @@ a {
     font-size: 32px;
     font-weight: 600;
     line-height: 35px;
+    display: flex;
+    justify-content: center;
 }
 
 .price_below_info {
