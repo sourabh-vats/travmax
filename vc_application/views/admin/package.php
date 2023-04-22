@@ -1,7 +1,10 @@
+<?php
+$package = $package_data[0];
+?>
 <div class="row" id="wrapper">
     <div id="content_box">
         <p class="text_1">
-            <span class="heading_1">Maldives</span><br>
+            <span class="heading_1"><?php $package["name"]; ?></span><br>
             <span>Singapore, Malaysia</span>
             <span>7 Nights 3 Days</span>
         </p>
