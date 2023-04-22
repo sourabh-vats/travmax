@@ -350,6 +350,9 @@ class Profile extends CI_Controller
         $customer_id = $this->session->userdata('bliss_id');
         $data['profile'] = $this->Users_model->profile($id);
 
+        $package_id = $_GET["package"];
+        $data['package_data'] = $this->Users_model->get_package_data($package_id);
+
         $data['main_content'] = 'admin/confirm_plan';
         $this->load->view('includes/admin/template', $data);
     }
