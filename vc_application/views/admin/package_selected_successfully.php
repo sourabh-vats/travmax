@@ -16,7 +16,7 @@
     </div>
     <div class="d-flex justify-content-center gap-2 my-3">
         <a class="btn btn-primary" href="/admin">Dashboard</a>
-        <a class="btn btn-primary" href="/admin/upload_proof">Upload Proof</a>
+        <a class="btn btn-primary" href="/admin/request-fund">Upload Proof</a>
         <a class="btn btn-success" href="https://wa.me/9216003333"><i class="bi-whatsapp me-2"></i>WhatsApp</a>
     </div>
 </div>
