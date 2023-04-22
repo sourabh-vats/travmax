@@ -41,7 +41,9 @@
             </div>
         </div>
     </div>
-    <a href="/admin/confirm_plan?package=<?php echo $_GET["package"]; ?>&plan=" id="confirm_btn" class="primary_btn">Continue</a>
+    <div class="w-100">
+        <a href="/admin/confirm_plan?package=<?php echo $_GET["package"]; ?>&plan=" id="confirm_btn" class="primary_btn">Continue</a>
+    </div>
     <?php
     $user = $profile[0];
     $attributes = array('class' => 'form');
