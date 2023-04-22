@@ -71,3 +71,12 @@ a{
 .primary_btn:active{
     opacity: .5;
 }
+
+#package_locations{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#package_days{
+    font-size: 18px;
+}
