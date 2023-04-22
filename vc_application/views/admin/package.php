@@ -5,7 +5,8 @@ $package = $package_data[0];
     <div id="content_box">
         <p class="text_1">
             <span class="heading_1"><?php echo $package["name"]; ?></span><br>
-            <span>Singapore, Malaysia</span>
+            <span><strong>Singapore, Malaysia<strong></span>
+            <br>
             <span>7 Nights 3 Days</span>
         </p>
         <br>
