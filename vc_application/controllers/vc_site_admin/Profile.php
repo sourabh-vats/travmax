@@ -150,7 +150,7 @@ class Profile extends CI_Controller
             $data['has_package'] = true;
             redirect(base_url() . 'admin');
         }
-        
+
         $data['main_content'] = 'admin/start';
         $this->load->view('includes/admin/template', $data);
     }
@@ -296,7 +296,8 @@ class Profile extends CI_Controller
         $this->load->view('includes/admin/template', $data);
     }
 
-    public function package(){
+    public function package()
+    {
         $data['css'] = '/assets/css/package.css';
         $data['js'] = '/assets/js/package.js';
 
@@ -357,6 +358,88 @@ class Profile extends CI_Controller
 
         if ($payment_plan == "traveasy_plan") {
             $payment_amount = 6600;
+        }
+
+        if ($this->input->server('REQUEST_METHOD') && $this->input->server('REQUEST_METHOD') == "POST") {
+            $package_id = $this->input->post('package_id');
+            $payment_type = $this->input->post('payment_type');
+            $package_data = $this->Users_model->get_package_data($package_id);
+            $package_amount = $package_data[0]['total'];
+            $data_to_store = array(
+                'user_id' => $id,
+                'package_id' => $package_id,
+                'payment_type' => $payment_type,
+                'amount_remaining' => $package_amount
+            );
+            $return = $this->Users_model->add_user_package($data_to_store);
+
+            $date = date('Y-m-d H:i:s');
+            $data_to_store = array('role' => 'Macro', 'package_used' => $date, 'macro' => 33, 'consume' => 1, 'package_amt' => $package_amount);
+            $this->Users_model->update_profile($id, $data_to_store);
+
+            if ($payment_type == "traveasy_plan") {
+                $intallment_amount_left = $package_amount;
+                $installment_amount = 6600;
+                $installment_number = 1;
+                $insdate = date('Y-m-d');
+                while ($intallment_amount_left > 0) {
+                    $pay_date = date('Y-m-d', strtotime("+ 1 month", strtotime($insdate)));
+                    $add_installment = array('user_id' => $id, 'amount' => $installment_amount, 'description' => $insdate, 'pay_date' => $pay_date, 'installment_no' => $installment_number, 'status' => 'Active');
+                    $this->Users_model->add_installment($add_installment);
+                    $insdate = $pay_date;
+                    $intallment_amount_left -= 6600;
+                    $installment_number += 1;
+                    if ($intallment_amount_left > 6600) {
+                        $installment_amount = 6600;
+                    } else {
+                        $installment_amount = $intallment_amount_left;
+                    }
+                }
+            } else if ($payment_type == "travnow_plan") {
+                $intallment_amount_left = $package_amount;
+                $installment_amount = $package_amount;
+                $installment_number = 1;
+                $insdate = date('Y-m-d');
+                $pay_date = date('Y-m-d');
+                $add_installment = array('user_id' => $id, 'amount' => $installment_amount, 'description' => $insdate, 'pay_date' => $pay_date, 'installment_no' => $installment_number, 'status' => 'Active');
+                $this->Users_model->add_installment($add_installment);
+            } else if ($payment_type == "travlater_plan") {
+                $intallment_amount_left = $package_amount;
+                $installment_amount = 13200;
+                $installment_number = 1;
+                $insdate = date('Y-m-d');
+
+                $pay_date = date('Y-m-d');
+                $add_installment = array('user_id' => $id, 'amount' => $installment_amount, 'description' => $insdate, 'pay_date' => $pay_date, 'installment_no' => $installment_number, 'status' => 'Active');
+                $this->Users_model->add_installment($add_installment);
+                $insdate = $pay_date;
+                $intallment_amount_left -= 13200;
+                $installment_number += 1;
+                if ($intallment_amount_left > 6600) {
+                    $installment_amount = 6600;
+                } else {
+                    $installment_amount = $intallment_amount_left;
+                }
+                $installment_amount = 6600;
+                while ($intallment_amount_left > 0) {
+                    $pay_date = date('Y-m-d', strtotime("+ 1 month", strtotime($insdate)));
+                    $add_installment = array('user_id' => $id, 'amount' => $installment_amount, 'description' => $insdate, 'pay_date' => $pay_date, 'installment_no' => $installment_number, 'status' => 'Active');
+                    $this->Users_model->add_installment($add_installment);
+                    $insdate = $pay_date;
+                    $intallment_amount_left -= 6600;
+                    $installment_number += 1;
+                    if ($intallment_amount_left > 6600) {
+                        $installment_amount = 6600;
+                    } else {
+                        $installment_amount = $intallment_amount_left;
+                    }
+                }
+            }
+            if ($return == TRUE) {
+                redirect(base_url() . 'admin/package_selected_successfully');
+            } else {
+                $this->session->set_flashdata('flash_message', 'not_updated');
+            }
         }
 
         $data["payment_amount"] = $payment_amount;

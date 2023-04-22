@@ -7,7 +7,6 @@ a {
 }
 
 #wrapper {
-    height: calc(100vh - 120px);
     background: url("/images/confirm_plan_cover.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -55,7 +54,7 @@ a {
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     cursor: pointer;
     display: inline-block;
     font-size: 16px;

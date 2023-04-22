@@ -24,7 +24,7 @@ $package = $package_data[0];
     <input type="hidden" name="package_id" value="<?php echo $package["id"]; ?>">
     <input type="hidden" name="payment_type" value="<?php echo $_GET["plan"]; ?>">
     <div class="text-center">
-        <button class="btn primary_btn my-3" id="book_package_btn" type="submit" disabled>Confirm</button>
+        <button class="primary_btn my-3" id="book_package_btn" type="submit" disabled>Confirm</button>
         <a href="/admin/select_plan?package=<?php echo $_GET["package"]; ?>" class="primary_btn">Change Plan</a>
     </div>
     <?php echo form_close(); ?>
