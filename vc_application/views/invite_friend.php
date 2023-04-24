@@ -154,6 +154,10 @@
         font-size: 26px;
         margin-bottom: 30px;
     }
+
+    #whatsapp_share_link:hover{
+        text-decoration: none;
+    }
     #copy_share_link{
         border-radius:25px;
         padding: 8px 24px;
@@ -185,7 +189,7 @@
     <hr>
     <div class="text-center py-md-5">
         <p class="heading_1">Invite Friends</p>
-        <a id="whatsapp_share_link" href="">Share Via Whatsapp</a>
+        <a id="whatsapp_share_link" href="">Share Via Whatsapp<i class="fa fa-whatsapp" aria-hidden="true"></i></a>
         <p id="copy_share_link" onclick="copyById('the_text')">Share Your Link</p>
         <p class="">Copy your link and share</p>
     </div>
