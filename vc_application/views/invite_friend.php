@@ -116,6 +116,12 @@
         </div>
     </div>
 </section> -->
+<style>
+
+</style>
+<div id="wrapper">
+<img src="/images/invite_friend_cover.jpg" alt="">
+</div>
 
 <script type="text/javascript">
     // Author: Joseph Cowdell
