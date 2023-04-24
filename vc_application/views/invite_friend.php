@@ -150,6 +150,8 @@
         border-radius:20px;
         padding: 10px 20px;
         background-color: #0a822b;
+        color: white;
+        font-size: 30px;
     }
 </style>
 <div id="wrapper">
@@ -169,6 +171,7 @@
             <img src="/images/invite_friend_side_graphic.png" alt="">
         </div>
     </div>
+    <hr>
     <div class="row text-center py-md-5">
         <p class="heading_1">Invite Friends</p>
         <a id="whatsapp_share_link" href="">Share Via Whatsapp</a>
