@@ -204,7 +204,7 @@ class Page extends CI_Controller
 
 		$data['category_list'] = $this->customer_model->get_category_list();
 
-		var_dump($data['category']);
+		var_dump($data['category_list']);
 		die();
 
 		$data['main_content'] = 'invite_friend';
