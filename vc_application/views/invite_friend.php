@@ -189,7 +189,8 @@
     <hr>
     <div class="text-center py-md-5">
         <p class="heading_1 my-md-5">Invite Friends</p>
-        <a id="whatsapp_share_link" href="">Share Via Whatsapp<i class="fa fa-whatsapp ms-3" aria-hidden="true"></i></a>
+        <a id="whatsapp_share_link" href="">Share Via Whatsapp <i class="fa fa-whatsapp ms-3" aria-hidden="true"></i></a>
+        <input id="the_text" type="hidden" value="https://www.travmaxholidays.com?refer_id=<?php echo $cust_id; ?>" size="50">
         <p id="copy_share_link" onclick="copyById('the_text')">Share Your Link</p>
         <p class="text-muted">Copy your link and share</p>
     </div>
@@ -199,7 +200,7 @@
     // Author: Joseph Cowdell
 
     var whatsapp_share_link = document.getElementById("whatsapp_share_link");
-    whatsapp_share_link.setAttribute('href', "whatsapp://send?text=" + window.location.href);
+    whatsapp_share_link.setAttribute('href', "whatsapp://send?text=" + $("#the_text").val());
 
     copyText = function(textToCopy) {
         this.copied = false
