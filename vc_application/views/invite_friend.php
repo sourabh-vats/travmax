@@ -215,7 +215,7 @@
     // Author: Joseph Cowdell
 
     var whatsapp_share_link = document.getElementById("whatsapp_share_link");
-    whatsapp_share_link.setAttribute('href', "whatsapp://send?text=" + $("#the_text").val());
+    whatsapp_share_link.setAttribute('href', "whatsapp://send?text=Please signup using this link:" + $("#the_text").val());
 
     copyText = function(textToCopy) {
         this.copied = false
