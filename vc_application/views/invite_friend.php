@@ -118,13 +118,13 @@
 </section> -->
 <style>
 #rewarding_text{
-    font-size: 35px;
+    font-size: 42px;
     color: #ff4244;
     font-weight: 700;
     line-height: 30px;
 }
 #referral_text{
-    font-size: 40px;
+    font-size: 50px;
     color: #03bcd1;
     font-weight: 800;
     line-height: 30px;
