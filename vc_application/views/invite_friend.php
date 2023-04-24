@@ -117,23 +117,31 @@
     </div>
 </section> -->
 <style>
-
+#rewarding_text{
+    font-size: 30px;
+    color: #ff4244;
+    font-weight: 600;
+}
+#referral_text{
+    font-size: 35px;
+    color: #03bcd1;
+    font-weight: 700;
+}
 </style>
 <div id="wrapper">
 <img src="/images/invite_friend_cover.jpg" alt="">
-<div class="row">
-    <div class="col-md-6">
+<div class="row px-md-5">
+    <div class="col-md-6 px-md-5">
         <p>
-            Connect to the most
-            Rewarding
-            Referral
-            Program
+            Connect to the most <br>
+            <span id="rewarding_text">Rewarding</span><br>
+            <span id="referral_text">Referral<br>Program</span>
         </p>
         <p>
             Small sharing leads to big <br class="d-none d-md-block"> rewards and income.
         </p>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 px-md-5">
         <img src="/images/invite_friend_side_graphic.png" alt="">
     </div>
 </div>
