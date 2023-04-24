@@ -156,11 +156,13 @@
     }
     #copy_share_link{
         border-radius:25px;
-        padding: 9px 24px;
-        background-color: #0a822b;
+        padding: 8px 24px;
+        background-color: #4d4d4d;
         color: white;
-        font-size: 26px;
-        margin-bottom: 30px;
+        font-size: 25px;
+        width: max-content;
+        margin: auto;
+        margin-top: 20px;
     }
 </style>
 <div id="wrapper">
