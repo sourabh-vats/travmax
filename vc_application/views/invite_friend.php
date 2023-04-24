@@ -121,13 +121,13 @@
     font-size: 42px;
     color: #ff4244;
     font-weight: 700;
-    line-height: 35px;
+    line-height: 40px;
 }
 #referral_text{
     font-size: 50px;
     color: #03bcd1;
     font-weight: 800;
-    line-height: 35px;
+    line-height: 40px;
 }
 </style>
 <div id="wrapper">
