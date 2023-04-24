@@ -172,7 +172,7 @@
         </div>
     </div>
     <hr>
-    <div class="row text-center py-md-5">
+    <div class="text-center py-md-5">
         <p class="heading_1">Invite Friends</p>
         <a id="whatsapp_share_link" href="">Share Via Whatsapp</a>
         <p>Share Your Link</p>
