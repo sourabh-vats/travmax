@@ -147,11 +147,11 @@
     }
 
     #whatsapp_share_link{
-        border-radius:20px;
-        padding: 10px 20px;
+        border-radius:25px;
+        padding: 9px 24px;
         background-color: #0a822b;
         color: white;
-        font-size: 30px;
+        font-size: 28px;
     }
 </style>
 <div id="wrapper">
