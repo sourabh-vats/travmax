@@ -117,36 +117,47 @@
     </div>
 </section> -->
 <style>
-#rewarding_text{
-    font-size: 42px;
-    color: #ff4244;
-    font-weight: 700;
-    line-height: 40px;
-}
-#referral_text{
-    font-size: 50px;
-    color: #03bcd1;
-    font-weight: 800;
-    line-height: 40px;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    html * {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #rewarding_text {
+        font-size: 42px;
+        color: #ff4244;
+        font-weight: 700;
+        line-height: 45px;
+    }
+
+    #referral_text {
+        font-size: 50px;
+        color: #03bcd1;
+        font-weight: 800;
+        line-height: 45px;
+    }
 </style>
 <div id="wrapper">
-<img src="/images/invite_friend_cover.jpg" alt="">
-<div class="row px-md-5 align-items-center">
-    <div class="col-md-6 px-md-5 text-center">
-        <p>
-            Connect to the most <br>
-            <span id="rewarding_text">Rewarding</span><br>
-            <span id="referral_text">Referral<br>Program</span>
-        </p>
-        <p>
-            Small sharing leads to big <br class="d-none d-md-block"> rewards and income.
-        </p>
+    <img src="/images/invite_friend_cover.jpg" alt="">
+    <div class="row px-md-5 align-items-center">
+        <div class="col-md-6 px-md-5 text-center">
+            <p>
+                Connect to the most <br>
+                <span id="rewarding_text">Rewarding</span><br>
+                <span id="referral_text">Referral<br>Program</span>
+            </p>
+            <p>
+                Small sharing leads to big <br class="d-none d-md-block"> rewards and income.
+            </p>
+        </div>
+        <div class="col-md-6 px-md-5">
+            <img src="/images/invite_friend_side_graphic.png" alt="">
+        </div>
     </div>
-    <div class="col-md-6 px-md-5">
-        <img src="/images/invite_friend_side_graphic.png" alt="">
-    </div>
-</div>
 </div>
 
 <script type="text/javascript">
