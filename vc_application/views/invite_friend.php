@@ -140,6 +140,17 @@
         font-weight: 800;
         line-height: 52px;
     }
+
+    .heading_1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    #whatsapp_share_link{
+        border-radius:20px;
+        padding: 10px 20px;
+        background-color: #0a822b;
+    }
 </style>
 <div id="wrapper">
     <img src="/images/invite_friend_cover.jpg" alt="">
@@ -157,6 +168,12 @@
         <div class="col-md-6 px-md-5">
             <img src="/images/invite_friend_side_graphic.png" alt="">
         </div>
+    </div>
+    <div class="row text-center py-md-5">
+        <p class="heading_1">Invite Friends</p>
+        <a id="whatsapp_share_link" href="">Share Via Whatsapp</a>
+        <p>Share Your Link</p>
+        <p class="">Copy your link and share</p>
     </div>
 </div>
 
