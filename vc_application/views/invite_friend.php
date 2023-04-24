@@ -142,7 +142,7 @@
     }
 
     .heading_1{
-        font-size: 40px;
+        font-size: 50px;
         font-weight: 700;
     }
 
@@ -151,7 +151,16 @@
         padding: 9px 24px;
         background-color: #0a822b;
         color: white;
-        font-size: 28px;
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    #copy_share_link{
+        border-radius:25px;
+        padding: 9px 24px;
+        background-color: #0a822b;
+        color: white;
+        font-size: 26px;
+        margin-bottom: 30px;
     }
 </style>
 <div id="wrapper">
@@ -175,7 +184,7 @@
     <div class="text-center py-md-5">
         <p class="heading_1">Invite Friends</p>
         <a id="whatsapp_share_link" href="">Share Via Whatsapp</a>
-        <p>Share Your Link</p>
+        <p id="copy_share_link" onclick="copyById('the_text')">Share Your Link</p>
         <p class="">Copy your link and share</p>
     </div>
 </div>
