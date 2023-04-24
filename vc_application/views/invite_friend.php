@@ -168,6 +168,21 @@
         margin: auto;
         margin-top: 20px;
     }
+
+    @media only screen and (max-width: 768px) {
+        .heading_1{
+        font-size: 45px;
+        font-weight: 700;
+    }
+    #whatsapp_share_link{
+        border-radius:25px;
+        padding: 9px 15px;
+        background-color: #0a822b;
+        color: white;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    }
 </style>
 <div id="wrapper">
     <img src="/images/invite_friend_cover.jpg" alt="">
