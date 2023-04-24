@@ -121,6 +121,22 @@
 </style>
 <div id="wrapper">
 <img src="/images/invite_friend_cover.jpg" alt="">
+<div class="row">
+    <div class="col-md-6">
+        <p>
+            Connect to the most
+            Rewarding
+            Referral
+            Program
+        </p>
+        <p>
+            Small sharing leads to big <br class="d-none d-md-block"> rewards and income.
+        </p>
+    </div>
+    <div class="col-md-6">
+        <img src="/images/invite_friend_side_graphic.png" alt="">
+    </div>
+</div>
 </div>
 
 <script type="text/javascript">
