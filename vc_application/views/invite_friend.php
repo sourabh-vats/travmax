@@ -215,7 +215,7 @@
     // Author: Joseph Cowdell
 
     var whatsapp_share_link = document.getElementById("whatsapp_share_link");
-    whatsapp_share_link.setAttribute('href', "whatsapp://send?text=Please signup using this link:" + $("#the_text").val());
+    whatsapp_share_link.setAttribute('href', "whatsapp://send?text=Hey friend, I came across a new exciting idea 💡 where one can travel for international holidays  and can earn from it. I liked it and would like you to explore it too. It's awesome! Signup for free using my link. I am sure you'ld like it 😊.:" + $("#the_text").val());
 
     copyText = function(textToCopy) {
         this.copied = false
