@@ -118,20 +118,22 @@
 </section> -->
 <style>
 #rewarding_text{
-    font-size: 30px;
+    font-size: 35px;
     color: #ff4244;
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 30px;
 }
 #referral_text{
-    font-size: 35px;
+    font-size: 40px;
     color: #03bcd1;
-    font-weight: 700;
+    font-weight: 800;
+    line-height: 30px;
 }
 </style>
 <div id="wrapper">
 <img src="/images/invite_friend_cover.jpg" alt="">
-<div class="row px-md-5">
-    <div class="col-md-6 px-md-5">
+<div class="row px-md-5 align-items-center">
+    <div class="col-md-6 px-md-5 text-center">
         <p>
             Connect to the most <br>
             <span id="rewarding_text">Rewarding</span><br>
