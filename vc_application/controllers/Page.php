@@ -203,6 +203,10 @@ class Page extends CI_Controller
 		$data['cust_id'] = $cust_id;
 
 		$data['category_list'] = $this->customer_model->get_category_list();
+
+		var_dump($data['category']);
+		die();
+
 		$data['main_content'] = 'invite_friend';
 		$this->load->view('includes/front/front_template', $data);
 	}
