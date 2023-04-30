@@ -394,3 +394,11 @@ th {
 #confirm_btn {
     width: auto;
 }
+
+@media(max-width:768px) {
+
+    #sidebarMenu,
+    .navbar-brand {
+        width: auto;
+    }
+}
