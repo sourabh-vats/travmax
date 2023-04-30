@@ -399,6 +399,6 @@ th {
 
     #sidebarMenu,
     .navbar-brand {
-        width: auto;
+        width: -webkit-fill-available;
     }
 }
