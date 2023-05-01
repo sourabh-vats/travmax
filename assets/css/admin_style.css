@@ -404,4 +404,8 @@ th {
     #main{
         margin-left: 0px !important;
     }
+
+    .my_partners_hero_link{
+        display: none;
+    }
 }
