@@ -88,7 +88,7 @@ class Customer extends CI_Controller
                         $status = "Approved";
                     }
 
-                    while ($p < 11) {
+                    while ($p < 5) {
                         $parent_user = $this->Users_model->parent_profile($parent_customer_id);
                         if (!empty($parent_user)) {
                             $booster_time = date('Y-m-d', strtotime('+15 days', strtotime($parent_user[0]['package_used'])));
@@ -105,11 +105,11 @@ class Customer extends CI_Controller
                                 $direct = 1;
                             }
                             if ($dis_level == 4) {
-                                $percent = 550;
+                                $percent = 1100;
                                 $direct = 3;
                             }
                             if ($dis_level == 5) {
-                                $percent = 550;
+                                $percent = 1100;
                                 $direct = 3;
                             }
                             if ($dis_level == 6) {
