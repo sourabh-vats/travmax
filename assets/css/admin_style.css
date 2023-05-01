@@ -400,4 +400,8 @@ th {
     .navbar-brand {
         width: -webkit-fill-available;
     }
+
+    #main{
+        margin-left: 0px !important;
+    }
 }
