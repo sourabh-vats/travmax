@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Travelmax </title>
+	<title> Travmaxholidays </title>
 	<?php
 	if ($page_keywords != '') {
 		echo '<meta name="description" content="' . $page_keywords . '">';

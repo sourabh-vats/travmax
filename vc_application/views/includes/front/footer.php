@@ -280,7 +280,7 @@ $("#popup").modal('show');
                 </div>
               </div>
               <p><input type="submit" name="submit" value="Register" class="btn btn-primary popup-register-button"></p>
-              <div class="col-md-12 keeplogin" style="padding:0px;"><b><a href="javascript:;" class="show-login-form lgt">Login</a></b></div>
+              <div class="col-md-12 keeplogin text-center" style="padding:0px;"><b><p>Already registered? </p><a href="javascript:;" class="show-login-form lgt">Login</a></b></div>
             </form>
           </div>
 

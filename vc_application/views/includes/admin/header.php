@@ -49,7 +49,7 @@ $full_name = $user['f_name'] . " " . $user['l_name'];
                 <p class="px-1" id="header_date"><i class="bi-calendar-fill"></i> <?php echo strtoupper(date("l, d M")); ?></p>
             </div>
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" id="header_right_btn" href="/admin/profile">Profile<i class="bi-person-fill-gear"></i></a>
+                <a class="nav-link px-3" id="header_right_btn" href="/admin/logout">Logout<i class="bi-person-fill-gear"></i></a>
             </div>
         </div>
     </header>
