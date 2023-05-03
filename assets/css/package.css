@@ -129,15 +129,25 @@ a {
     font-size: 18px;
 }
 
-#package_inclusions{
+#package_inclusions {
     margin-top: -30px;
     text-align: center;
     font-size: 18px;
     font-weight: 500;
 }
 
-#package_terms{
+#package_terms {
     font-size: 18px;
     font-weight: 500;
     color: #00CCFF;
+}
+
+@media(max-width:768px) {
+
+    .secondary_btn,
+    .primary_btn {
+        width: auto;
+        margin: 0px 20px;
+        margin-top: 10px;
+    }
 }
