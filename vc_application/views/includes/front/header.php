@@ -184,7 +184,7 @@
 												<div class="dropdown-menu dropdown-menu1 " aria-labelledby="navbarDropdown">
 													<a class="dropdown-item" href="<?php echo base_url(); ?>admin">Dashboard</a>
 													<a class="dropdown-item" href="<?php echo base_url(); ?>admin/profile">Profile</a>
-													<a class="dropdown-item" href="https://www.travmaxholidays.com/invite_friend/<?php echo ucfirst($this->session->userdata('cust_id'));?>">Refer and Earn</a>
+													<a class="dropdown-item" href="https://www.travmaxholidays.com/invite_friend/<?php echo ucfirst($this->session->userdata('bliss_id'));?>">Refer and Earn</a>
 													<a class="dropdown-item" href="<?php echo base_url(); ?>logout">Logout</a>
 												</div>
 											</li>

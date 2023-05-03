@@ -11142,7 +11142,17 @@ a.btn.btn-default.genreate_linkk {
 }
 
 @media(max-width:768px) {
-	h2, .h2 {
+
+	h2,
+	.h2 {
 		font-size: 25px;
+	}
+
+	#navbar {
+		width: 100vw;
+		height: calc(100vh-50px);
+		position: fixed;
+		left: 0;
+		bottom: -50px;
 	}
 }
