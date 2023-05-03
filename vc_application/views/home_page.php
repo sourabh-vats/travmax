@@ -27,7 +27,7 @@
                <div class="col-sm-4">
                <div class="part_back part_1">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/girl-sunset-with-balloons.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/girl-sunset-with-balloons.jpg" class="img-responsive">
 					 <h3>Freedom</h3></a>
                   </div>
                </div>
@@ -35,7 +35,7 @@
             <div class="col-sm-4">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/yoconcept.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/yoconcept.jpg" class="img-responsive">
 					 <h3>Joy</h3></a>
                   </div>
                </div>
@@ -43,7 +43,7 @@
             <div class="col-sm-4">
                <div class="part_back part_3">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/happy-travel.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/happy-travel.jpg" class="img-responsive">
 					 <h3>Explore</h3></a>
                   </div>
                </div>
@@ -71,7 +71,7 @@
                <div class="col-sm-6">
                <div class="part_back part_1">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/ezgif.com-gif-maker.gif" class="img-responsive">
+                     <a href="#"><img src="/assets/images/ezgif.com-gif-maker.gif" class="img-responsive">
 					 <h3>Now Everyone Can Travel</h3></a>
                   </div>
 				  <h4>Making it Accesible to all</h4>
@@ -80,7 +80,7 @@
             <div class="col-sm-6">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/ezgif.com-gif-maker (1).gif" class="img-responsive">
+                     <a href="#"><img src="/assets/images/ezgif.com-gif-maker (1).gif" class="img-responsive">
 					 <h3>Now Everyone Can Earn From Travel</h3></a>
                   </div>
 				  <h4>So Easy So Simple So Profitable</h4>
@@ -110,7 +110,7 @@
                <div class="col-sm-6">
                <div class="part_back part_1">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/BuildMultiple.jpeg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/BuildMultiple.jpeg" class="img-responsive">
 					 <h3>Become a Franchise Partner</h3></a>
                   </div>
 				  <h4>Start your Multiple Incomes Account at no extra cost</h4>
@@ -119,7 +119,7 @@
             <div class="col-sm-6">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/female-holop.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/female-holop.jpg" class="img-responsive">
 					 <h3> Simple Step by Step Process</h3></a>
                   </div>
 				  <h4>Start Small and Build Big Business Easily </h4>
@@ -138,7 +138,7 @@
 			<div class="col-sm-4">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <img src="<?php echo base_url(); ?>assets/images/15.jpg" class="img-responsive">
+                     <img src="/assets/images/15.jpg" class="img-responsive">
                   </div>
                </div>
             </div>
@@ -146,7 +146,7 @@
 			<div class="col-sm-4">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <img src="<?php echo base_url(); ?>assets/images/14.jpg" class="img-responsive">
+                     <img src="/assets/images/14.jpg" class="img-responsive">
                   </div>
 			 </div>
             </div>
@@ -154,7 +154,7 @@
 			<div class="col-sm-4">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <img src="<?php echo base_url(); ?>assets/images/21.jpg" class="img-responsive">
+                     <img src="/assets/images/21.jpg" class="img-responsive">
                   </div>
 				</div>
             </div>
@@ -167,7 +167,7 @@
      <div class="container">
 		  <h2>Make Life a Holiday </h2>
 		  <h3>Usually, we keep working and working for months, years and then once in a while we can afford & plan an International Holiday. Travmax changes that for you. Now you can plan International Holidays, can do it for free and even start earning a decent income from the same. When your holiday starts earning, you can make life a big holiday.</h3>
-		  <img src="<?php echo base_url(); ?>assets/images/summnd.jpg" class="img-responsive">
+		  <img src="/assets/images/summnd.jpg" class="img-responsive">
      </div>
   </section>
 
@@ -179,8 +179,8 @@
             <h2 class="text-center nao-just-custmore">Enjoy Yourself - Share with Friends</h2>
             <h3>Joy Multiplies when we share with our friends and family. Until now you have been doing it without realizing how much beneficial it can be for you and for them. Sharing, suggesting and referring generates a lot of business and when that happens because of you, you get rewarded instantly and it connects in such a way that it keeps working in your favour and keeps you in profits for long term. Also you gather a lot of appreciation and thanks in the process.</h3>
             <div class="inner-images">
-                   <img src="<?php echo base_url(); ?>assets/images/universit).jpg" class="img-responsive">
-                   <img src="<?php echo base_url(); ?>assets/images/Whats.jpeg" class="img-responsive">
+                   <img src="/assets/images/universit).jpg" class="img-responsive">
+                   <img src="/assets/images/Whats.jpeg" class="img-responsive">
             </div>
             </div>
          </div>
@@ -202,11 +202,11 @@
       <div class="partner_main">
          <div class="row">
               <div class="col-sm-4">
-					<img src="<?php echo base_url(); ?>assets/images/Wh.jpeg" class="img-responsive"> 
-					<img class="trt" src="<?php echo base_url(); ?>assets/images/WhatsApp Image).jpeg" class="img-responsive">
+					<img src="/assets/images/Wh.jpeg" class="img-responsive"> 
+					<img class="trt" src="/assets/images/WhatsApp Image).jpeg" class="img-responsive">
             </div>
             <div class="col-sm-8">
-                     <img src="<?php echo base_url(); ?>assets/images/WhatsApp Image 23 PM.jpeg" class="img-responsive">
+                     <img src="/assets/images/WhatsApp Image 23 PM.jpeg" class="img-responsive">
             </div>
             </div>
 			
@@ -223,7 +223,7 @@
                <div class="col-sm-6">
                <div class="part_back part_1">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/WhatsApp ImagPM (3).jpeg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/WhatsApp ImagPM (3).jpeg" class="img-responsive">
 					 <h3>Best of Singapore & Bali</h3></a>
                   </div>
 				  <h4>Specially Crafted and Created Tours</h4>
@@ -232,7 +232,7 @@
             <div class="col-sm-6">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/What1.48.29 PM.jpeg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/What1.48.29 PM.jpeg" class="img-responsive">
 					 <h3> Romance of Switzerland </h3></a>
                   </div>
 				  <h4>Experience the romance of Switzerland with travmax </h4>
@@ -252,7 +252,7 @@
                <div class="col-sm-6">
                <div class="part_back part_1">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/WhatsApp Image 2022.35.12 AM.jpeg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/WhatsApp Image 2022.35.12 AM.jpeg" class="img-responsive">
 					 <h3>USA Extravaganza</h3></a>
                   </div>
 				  <h4>Glittering West Coast with Los Angeles, San Fransisco & Las Vegas</h4>
@@ -261,7 +261,7 @@
             <div class="col-sm-6">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/WhatsApp Im.40 AM.jpeg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/WhatsApp Im.40 AM.jpeg" class="img-responsive">
 					 <h3> Canadian Highlights </h3></a>
                   </div>
 				  <h4>Niagra Falls, Toronto, Canadian Rockies, Calgary</h4>
@@ -297,15 +297,15 @@
       <div class="partner_main">
          <div class="row">
               <div class="col-sm-8">
-					<img src="<?php echo base_url(); ?>assets/images/ezgif.com-gif-maker (4).gif" class="img-responsive"> 
-					<img class="trt" src="<?php echo base_url(); ?>assets/images/ezgif.com-gif-maker (8).gif" class="img-responsive"> 
+					<img src="/assets/images/ezgif.com-gif-maker (4).gif" class="img-responsive"> 
+					<img class="trt" src="/assets/images/ezgif.com-gif-maker (8).gif" class="img-responsive"> 
 					
             </div>
             <div class="col-sm-4">
-                     <img src="<?php echo base_url(); ?>assets/images/ezgif.com-gif-maker (3).gif" class="img-responsive">
-					 <img class="trt" src="<?php echo base_url(); ?>assets/images/travel-summer-vacation-concept-happy-traveler-asian-womanhailand.jpg" class="img-responsive">
-					 <img class="trt" src="<?php echo base_url(); ?>assets/images/ezgif.com-gif-maker (2).gif" class="img-responsive">
-					 <img class="trt" src="<?php echo base_url(); ?>assets/images/seine-paris-withc.jpg" class="img-responsive">
+                     <img src="/assets/images/ezgif.com-gif-maker (3).gif" class="img-responsive">
+					 <img class="trt" src="/assets/images/travel-summer-vacation-concept-happy-traveler-asian-womanhailand.jpg" class="img-responsive">
+					 <img class="trt" src="/assets/images/ezgif.com-gif-maker (2).gif" class="img-responsive">
+					 <img class="trt" src="/assets/images/seine-paris-withc.jpg" class="img-responsive">
             </div>
             </div>
 			
@@ -320,13 +320,13 @@
          <div class="row">
             <div class="inner-images">
                <div class="col-sm-4">
-                   <img src="<?php echo base_url(); ?>assets/images/rear-ish-flag.jpg" class="img-responsive">
+                   <img src="/assets/images/rear-ish-flag.jpg" class="img-responsive">
             </div>
             <div class="col-sm-4">
-                  <img src="<?php echo base_url(); ?>assets/images/ezgif.com).gif" class="img-responsive">
+                  <img src="/assets/images/ezgif.com).gif" class="img-responsive">
             </div>
 			<div class="col-sm-4">
-                 <img src="<?php echo base_url(); ?>assets/images/ground.jpg" class="img-responsive">
+                 <img src="/assets/images/ground.jpg" class="img-responsive">
             </div>
             </div>
          </div>
@@ -349,7 +349,7 @@
                <div class="col-sm-4">
                <div class="part_back part_1">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/hammocks-umbrool.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/hammocks-umbrool.jpg" class="img-responsive">
 					 <h3>Luxury Resorts</h3></a>
                   </div>
 				  <h4>For that memorable stay</h4>
@@ -358,7 +358,7 @@
             <div class="col-sm-4">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/masseur-dyoung-man.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/masseur-dyoung-man.jpg" class="img-responsive">
 					 <h3>Luxury Spas</h3></a>
                   </div>
 				  <h4>Just what you needed </h4>
@@ -367,7 +367,7 @@
 			<div class="col-sm-4">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/snokerling.jpeg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/snokerling.jpeg" class="img-responsive">
 					 <h3> Exciting Adventures </h3></a>
                   </div>
 				  <h4>Those once in lifetime experiences</h4>
@@ -394,11 +394,11 @@
 			<h2 class="text-center nao-just-custmore">Holidays to Relax, Rejuvenate and Rediscover </h2>
          <div class="row">
               <div class="col-sm-4">
-					<img src="<?php echo base_url(); ?>assets/images/spa-products-massage-body-care.jpg" class="img-responsive"> 
-					<img class="trt" src="<?php echo base_url(); ?>assets/images/beautiful-afriresort.jpg" class="img-responsive">
+					<img src="/assets/images/spa-products-massage-body-care.jpg" class="img-responsive"> 
+					<img class="trt" src="/assets/images/beautiful-afriresort.jpg" class="img-responsive">
             </div>
             <div class="col-sm-8">
-                     <img src="<?php echo base_url(); ?>assets/images/woman-practicke.jpg" class="img-responsive">
+                     <img src="/assets/images/woman-practicke.jpg" class="img-responsive">
             </div>
             </div>
 			
@@ -415,7 +415,7 @@
                <div class="col-sm-6">
                <div class="part_back part_1">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/girls-looplay.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/girls-looplay.jpg" class="img-responsive">
 					 <h3>Shopping Holidays</h3></a>
                   </div>
 				  <h4>Shop with our Free Travcash</h4>
@@ -424,7 +424,7 @@
             <div class="col-sm-6">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/ezgif.com-6).gif" class="img-responsive">
+                     <a href="#"><img src="/assets/images/ezgif.com-6).gif" class="img-responsive">
 					 <h3> Solo Travels</h3></a>
                   </div>
 				  <h4>You need no company now </h4>
@@ -442,7 +442,7 @@
 			<h2 class="text-center nao-just-custmore">Cruise Holidays </h2>
          <div class="row">
               <div class="col-sm-12">
-					<img src="<?php echo base_url(); ?>assets/images/aerial-view-beautiful-white-cruise-ship-luxury-cruise-ocean-sation-time-summer.jpg" class="img-responsive"> 
+					<img src="/assets/images/aerial-view-beautiful-white-cruise-ship-luxury-cruise-ocean-sation-time-summer.jpg" class="img-responsive"> 
             </div>
             </div>
          </div>
@@ -458,7 +458,7 @@
                <div class="col-sm-6">
                <div class="part_back part_1">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/indiy-winter.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/indiy-winter.jpg" class="img-responsive">
 					 <h3>Family Holidays</h3></a>
                   </div>
 				  <h4>Family travels are now more fun </h4>
@@ -467,7 +467,7 @@
             <div class="col-sm-6">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/girl-s.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/girl-s.jpg" class="img-responsive">
 					 <h3> Group Travels</h3></a>
                   </div>
 				  <h4>Make Friends Make Profits </h4>
@@ -487,7 +487,7 @@
 
 <section class="zoogal_partner">
    <div class="container">
-		<img src="<?php echo base_url(); ?>assets/images/girl-r-her-back.jpg" class="img-responsive">
+		<img src="/assets/images/girl-r-her-back.jpg" class="img-responsive">
       </div>
 </section>
 
@@ -504,11 +504,11 @@
       <div class="partner_main">
          <div class="row">
               <div class="col-sm-4">
-					<img src="<?php echo base_url(); ?>assets/images/3d-esign.jpg" class="img-responsive"> 
-					<img class="trt" src="<?php echo base_url(); ?>assets/images/home-house-exterior-design-ol-towels.jpg" class="img-responsive">
+					<img src="/assets/images/3d-esign.jpg" class="img-responsive"> 
+					<img class="trt" src="/assets/images/home-house-exterior-design-ol-towels.jpg" class="img-responsive">
             </div>
             <div class="col-sm-8">
-                     <img src="<?php echo base_url(); ?>assets/images/centara room 1.jpg" class="img-responsive">
+                     <img src="/assets/images/centara room 1.jpg" class="img-responsive">
             </div>
             </div>
 			
@@ -530,11 +530,11 @@
       <div class="partner_main">
          <div class="row">
               <div class="col-sm-4">
-					<img src="<?php echo base_url(); ?>assets/images/iced-glass.jpg" class="img-responsive"> 
-					<img class="trt" src="<?php echo base_url(); ?>assets/images/iced-co.jpg" class="img-responsive">
+					<img src="/assets/images/iced-glass.jpg" class="img-responsive"> 
+					<img class="trt" src="/assets/images/iced-co.jpg" class="img-responsive">
             </div>
             <div class="col-sm-8">
-                     <img src="<?php echo base_url(); ?>assets/images/cld-plate.jpg" class="img-responsive">
+                     <img src="/assets/images/cld-plate.jpg" class="img-responsive">
             </div>
             </div>
 			
@@ -545,7 +545,7 @@
 
 <section class="zoogal_partner">
    <div class="container">
-		<img src="<?php echo base_url(); ?>assets/images/WhatsApp ImM.jpeg" class="img-responsive">
+		<img src="/assets/images/WhatsApp ImM.jpeg" class="img-responsive">
       </div>
 </section>
 
@@ -565,7 +565,7 @@
                <div class="col-sm-6">
                <div class="part_back part_1">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/hone-outdoors.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/hone-outdoors.jpg" class="img-responsive">
 					 <h3>Make Memories</h3></a>
                   </div>
 				  <h4>So many pics, you will need a  bigger phone with big memory </h4>
@@ -574,7 +574,7 @@
             <div class="col-sm-6">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/cpt.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/cpt.jpg" class="img-responsive">
 					 <h3> Make Money </h3></a>
                   </div>
 				  <h4>Use the phone to ring in big profits</h4>
@@ -594,7 +594,7 @@
                <div class="col-sm-6">
                <div class="part_back part_1">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/top-viewy-space.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/top-viewy-space.jpg" class="img-responsive">
 					 <h3>Start Travel Business</h3></a>
                   </div>
 				  <h4>You always wanted to do this </h4>
@@ -603,7 +603,7 @@
             <div class="col-sm-6">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="<?php echo base_url(); ?>assets/images/handing-seedlings.jpg" class="img-responsive">
+                     <a href="#"><img src="/assets/images/handing-seedlings.jpg" class="img-responsive">
 					 <h3> Start Small Build Big </h3></a>
                   </div>
 				  <h4> Its amazing, how it all adds up </h4>
@@ -617,7 +617,7 @@
 
 <section class="zoogal_partner">
    <div class="container">
-		<img src="<?php echo base_url(); ?>assets/images/WhatsApp Image 2AM.jpeg" class="img-responsive">
+		<img src="/assets/images/WhatsApp Image 2AM.jpeg" class="img-responsive">
       </div>
 </section>
 
@@ -627,10 +627,10 @@
          <div class="row">
             <div class="inner-images">
                <div class="col-sm-6">
-                  <img src="<?php echo base_url(); ?>assets/images/WhatsAp AM.jpeg" class="img-responsive">
+                  <img src="/assets/images/WhatsAp AM.jpeg" class="img-responsive">
             </div>
             <div class="col-sm-6">
-                <img src="<?php echo base_url(); ?>assets/images/WhatsApp Image AM.jpeg" class="img-responsive">
+                <img src="/assets/images/WhatsApp Image AM.jpeg" class="img-responsive">
 			</div>
             </div>
          </div>
@@ -644,10 +644,10 @@
          <div class="row">
             <div class="inner-images">
                <div class="col-sm-6">
-                  <img src="<?php echo base_url(); ?>assets/images/WhatsApp Im3 at 10.35.35 AM.jpeg" class="img-responsive">
+                  <img src="/assets/images/WhatsApp Im3 at 10.35.35 AM.jpeg" class="img-responsive">
             </div>
             <div class="col-sm-6">
-                <img src="<?php echo base_url(); ?>assets/images/WhatsApp Ige AM.jpeg" class="img-responsive">
+                <img src="/assets/images/WhatsApp Ige AM.jpeg" class="img-responsive">
 			</div>
             </div>
          </div>
@@ -657,7 +657,7 @@
 
 <section class="zoogal_partner">
    <div class="container">
-		<img src="<?php echo base_url(); ?>assets/images/WhatsA8.14 AM.jpeg" class="img-responsive">
+		<img src="/assets/images/WhatsA8.14 AM.jpeg" class="img-responsive">
       </div>
 </section>
 
