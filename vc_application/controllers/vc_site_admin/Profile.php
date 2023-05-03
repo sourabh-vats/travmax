@@ -363,7 +363,7 @@ class Profile extends CI_Controller
         }elseif ($payment_plan == "travlater_plan") {
             $payment_amount = 13200;
         }elseif ($payment_plan == "travnow_plan") {
-            $payment_amount = 13200;
+            $payment_amount = $data['package_data'][0]["total"];
         }
 
         if ($this->input->server('REQUEST_METHOD') && $this->input->server('REQUEST_METHOD') == "POST") {
