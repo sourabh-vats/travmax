@@ -3,7 +3,7 @@
     <h2 class="text-center">You have selected <?php echo $package_data[0]['name']; ?> for Rs. <?php echo $package_data[0]['total']; ?> and have taken the <?php echo $package_information[0]['payment_type']; ?> plan. Please make a payment of Rs. <?php echo $payment_amount; ?> and share the proof with us</h2>
     <div class="col-md-6 p-5 border-end text-center">
         <h2 class="">QR Code</h2>
-        <img src="" alt="" height="250px" width="250px" style="background-color: grey;">
+        <img src="/images/travmax_qr.jpeg" alt="" width="250px" style="background-color: grey;">
     </div>
     <div class="col-md-6 p-5 text-center">
         <h2>Bank Information</h2>
