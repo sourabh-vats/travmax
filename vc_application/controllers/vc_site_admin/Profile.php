@@ -356,8 +356,6 @@ class Profile extends CI_Controller
         $payment_amount = 0;
         $data['package_data'] = $this->Users_model->get_package_data($package_id);
 
-        var_dump($data['package_data']);
-        die();
         if ($payment_plan == "traveasy_plan") {
             $payment_amount = 6600;
         }elseif ($payment_plan == "travlater_plan") {
