@@ -1,5 +1,5 @@
 <div class="page-heading">
-  <h2>My Partners</h2>
+	<h2>My Partners</h2>
 </div>
 
 <?php
@@ -86,46 +86,6 @@ echo validation_errors();
 									<td><span class="btn green" style="margin-bottom: 2px;"><label><input <?php if ($this->input->post('level') == '5') {
 																												echo 'checked="checked"';
 																											} ?> type="radio" name="level" value="5" onclick="this.form.submit();"> Circle 5</label></span></td>
-
-									<td><span class="btn green" style="margin-bottom: 2px;"><label><input <?php if ($this->input->post('level') == '6') {
-																												echo 'checked="checked"';
-																											} ?> type="radio" name="level" value="6" onclick="this.form.submit();"> Circle 6</label></span></td>
-
-									<td><span class="btn green" style="margin-bottom: 2px;"><label><input <?php if ($this->input->post('level') == '7') {
-																												echo 'checked="checked"';
-																											} ?> type="radio" name="level" value="7" onclick="this.form.submit();"> Circle 7</label></span></td>
-
-									<td><span class="btn green" style="margin-bottom: 2px;"><label><input <?php if ($this->input->post('level') == '8') {
-																												echo 'checked="checked"';
-																											} ?> type="radio" name="level" value="8" onclick="this.form.submit();"> Circle 8</label></span></td>
-
-									<td><span class="btn green" style="margin-bottom: 2px;"><label><input <?php if ($this->input->post('level') == '9') {
-																												echo 'checked="checked"';
-																											} ?> type="radio" name="level" value="9" onclick="this.form.submit();"> Circle 9</label></span></td>
-
-									<td><span class="btn green" style="margin-bottom: 2px;"><label><input <?php if ($this->input->post('level') == '10') {
-																												echo 'checked="checked"';
-																											} ?> type="radio" name="level" value="10" onclick="this.form.submit();"> Circle 10</label></span></td>
-
-									<td><span class="btn green" style="margin-bottom: 2px;"><label><input <?php if ($this->input->post('level') == '11') {
-																												echo 'checked="checked"';
-																											} ?> type="radio" name="level" value="11" onclick="this.form.submit();"> Circle 11</label></span></td>
-
-									<!-- <td><span class="btn green" style="margin-bottom: 2px;"><label><input <?php if ($this->input->post('level') == '12') {
-																													echo 'checked="checked"';
-																												} ?> type="radio" name="level" value="7" onclick="this.form.submit();"> Circle 12</label></span></td>
-	  
-	  <td><span class="btn green" style="margin-bottom: 2px;"><label><input <?php if ($this->input->post('level') == '13') {
-																				echo 'checked="checked"';
-																			} ?> type="radio" name="level" value="7" onclick="this.form.submit();"> Circle 13</label></span></td>
-	  
-	  <td><span class="btn green" style="margin-bottom: 2px;"><label><input <?php if ($this->input->post('level') == '14') {
-																				echo 'checked="checked"';
-																			} ?> type="radio" name="level" value="7" onclick="this.form.submit();"> Circle 14</label></span></td>
-	  
-	  <td><span class="btn green" style="margin-bottom: 2px;"><label><input <?php if ($this->input->post('level') == '15') {
-																				echo 'checked="checked"';
-																			} ?> type="radio" name="level" value="7" onclick="this.form.submit();"> Circle 15</label></span></td> -->
 								</tr>
 							</tbody>
 						</table>
