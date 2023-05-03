@@ -4,7 +4,7 @@ $user = $profile[0];
 <div class="row" id="wrapper">
 <div id="content_box">
     <p class="text_1">
-        <strong>Hi <?php echo $user["f_name"]; ?>, </strong><br>
+        <strong>Hey <?php echo $user["f_name"]; ?>, </strong><br>
         Start your <br>
         travel journey now
     </p>

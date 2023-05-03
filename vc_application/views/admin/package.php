@@ -26,4 +26,5 @@ $package = $package_data[0];
     </p>
     <a id="package_terms" href="/terms_of_use" class="text-center">Terms & Conditions</as>
     <a href="/admin/select_plan?package=<?php echo $_GET["package"]; ?>" class="primary_btn">Continue</a>
+    <a href="/admin/select_package" class="secondary_btn">Back</a>
 </div>
