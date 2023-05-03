@@ -11150,7 +11150,7 @@ a.btn.btn-default.genreate_linkk {
 
 	#navbar {
 		width: 100vw;
-		height: calc(100vh-50px);
+		height: calc(100vh - 50px);
 		position: fixed;
 		left: 0;
 		bottom: -50px;
