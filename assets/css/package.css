@@ -108,16 +108,17 @@ a {
     vertical-align: middle;
 }
 
-.primary_btn:hover,
-.primary_btn:active {
+.secondary_btn:hover,
+.secondary_btn:active {
     background-color: initial;
     background-position: 0 0;
     color: darkgrey;
 }
 
-.primary_btn:active {
+.secondary_btn:active {
     opacity: .5;
 }
+
 
 #package_locations {
     font-size: 20px;

@@ -43,6 +43,7 @@
     </div>
     <div class="w-100 mt-5 text-center">
         <a disabled href="/admin/confirm_plan?package=<?php echo $_GET["package"]; ?>&plan=" id="confirm_btn" class="primary_btn">Continue</a>
+        <a href="/admin/package?package=<?php echo $_GET["package"]; ?>" class="secondary_btn">Back</a>
     </div>
     <?php
     $user = $profile[0];

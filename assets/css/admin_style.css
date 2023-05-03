@@ -390,6 +390,41 @@ th {
     opacity: .5;
 }
 
+.secondary_btn {
+    background: darkgrey;
+    border: 1px solid darkgrey;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.secondary_btn:hover,
+.secondary_btn:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: darkgrey;
+}
+
+.secondary_btn:active {
+    opacity: .5;
+}
+
 #confirm_btn {
     width: auto;
 }
