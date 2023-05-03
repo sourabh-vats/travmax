@@ -11,12 +11,12 @@
       </div>
       <div class="col-sm-4">
         <div class="ha">
-          <p><b> Privacy Policy </b></p>
+          <p><a href="/terms_of_use"><b> Privacy Policy </b></a></p>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="ha">
-          <p> <b> Terms & Conditions </b></p>
+          <p><a href="/terms_of_use"><b> Terms & Conditions </b></a></p>
         </div>
       </div>
     </div>
