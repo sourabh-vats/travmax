@@ -23,22 +23,22 @@
     <div class="col-md">
         <div class="row mb-4 gradient_parent">
             <div class="col text-center py-4">
+                <h3>TRAVMONEY</h3>
+                <span class="box_number_data"><?php echo $my_sales; ?></span>
+            </div>
+            <div class="col text-center py-4">
+                <h3>TRAVPROFIT</h3>
+                <span class="box_number_data"><?php echo $team_sales; ?></span>
+            </div>
+        </div>
+        <div class="row gradient_parent">
+            <div class="col text-center py-4">
                 <h3>MY SALES</h3>
                 <span class="box_number_data"><?php echo $my_sales; ?></span>
             </div>
             <div class="col text-center py-4">
                 <h3>TEAM SALES</h3>
                 <span class="box_number_data"><?php echo $team_sales; ?></span>
-            </div>
-        </div>
-        <div class="row gradient_parent">
-            <div class="col text-center py-4">
-                <h3>ACTIVE INCOME</h3>
-                <span class="box_number_data">₹ <?php echo $active_income; ?></span>
-            </div>
-            <div class="col text-center py-4">
-                <h3>TEAM INCOME</h3>
-                <span class="box_number_data">₹ <?php echo $team_income; ?></span>
             </div>
         </div>
     </div>
@@ -65,6 +65,8 @@
             <p class="text_3">Pending: <span>₹ <?php echo $pending_income; ?></p>
             <p class="text_3">Approved: <span>₹ <?php echo $approved_income; ?></p>
             <p class="text_3">Redemmed: <span>₹ <?php echo $redeemed_income; ?></p>
+            <p class="text_3">Active: <span>₹ <?php echo $active_income; ?></p>
+            <p class="text_3">TEAM: <span>₹ <?php echo $team_income; ?></p>
         </div>
     </div>
 </div>

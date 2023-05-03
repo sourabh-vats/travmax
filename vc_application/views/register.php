@@ -15,7 +15,7 @@
         {
           echo '<div class="alert alert-danger">';
             echo '<a class="close" data-dismiss="alert">×</a>';
-            echo 'Email id is already register.';
+            echo 'Email id is already registered.';
           echo '</div>';       
         } 
         if($this->session->flashdata('register') == 'bliss_code')
