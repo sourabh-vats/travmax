@@ -141,13 +141,13 @@
         line-height: 52px;
     }
 
-    .heading_1{
+    .heading_1 {
         font-size: 50px;
         font-weight: 700;
     }
 
-    #whatsapp_share_link{
-        border-radius:25px;
+    #whatsapp_share_link {
+        border-radius: 25px;
         padding: 9px 24px;
         background-color: #0a822b;
         color: white;
@@ -155,11 +155,12 @@
         margin-bottom: 30px;
     }
 
-    #whatsapp_share_link:hover{
+    #whatsapp_share_link:hover {
         text-decoration: none;
     }
-    #copy_share_link{
-        border-radius:25px;
+
+    #copy_share_link {
+        border-radius: 25px;
         padding: 8px 24px;
         background-color: #4d4d4d;
         color: white;
@@ -167,21 +168,35 @@
         width: max-content;
         margin: auto;
         margin-top: 20px;
+        cursor: pointer;
+    }
+
+    #copy_share_link:active {
+        border-radius: 25px;
+        padding: 8px 24px;
+        background-color: #5d5d5d;
+        color: white;
+        font-size: 25px;
+        width: max-content;
+        margin: auto;
+        margin-top: 20px;
+        cursor: pointer;
     }
 
     @media only screen and (max-width: 768px) {
-        .heading_1{
-        font-size: 45px;
-        font-weight: 700;
-    }
-    #whatsapp_share_link{
-        border-radius:25px;
-        padding: 9px 15px;
-        background-color: #0a822b;
-        color: white;
-        font-size: 25px;
-        margin-bottom: 30px;
-    }
+        .heading_1 {
+            font-size: 45px;
+            font-weight: 700;
+        }
+
+        #whatsapp_share_link {
+            border-radius: 25px;
+            padding: 9px 15px;
+            background-color: #0a822b;
+            color: white;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
     }
 </style>
 <div id="wrapper">

@@ -111,7 +111,6 @@ echo form_open_multipart('admin/request-fund', $attributes);
       <div class="col-lg-12 col-md-12">
         <div class="form-group">
           <button class="btn btn-primary" type="submit">Request</button> &nbsp;
-          <a class="btn btn-primary" href="<?php echo base_url() . 'admin/category'; ?>">Cancel </a>
         </div>
       </div>
     </fieldset>
