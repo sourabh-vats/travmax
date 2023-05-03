@@ -193,7 +193,7 @@ $("#popup").modal('show');
             <div id="login-msg-div"></div>
             <!-- <div id="register-msg-div1"></div> -->
             <form class="form" action="" method="post" id="popup-login-form">
-              <p><label>User ID</label> <input type="text" required name="user_name" class="form-control input-empty" placeholder=""></p>
+              <p><label>User ID/Email/Phone</label> <input type="text" required name="user_name" class="form-control input-empty" placeholder=""></p>
               <p><label>Password</label> <input type="password" required name="password" class="form-control input-empty"></p>
               <div class="col-md-12 col-xs-12 keeplogin text-right ferd"><b>Forgot Password?</b></div><br>
               <p><input type="submit" name="submit" value="Log In" class="btn btn-primary popup-login-button"> <!--a href="javascript:;" class="show-register-form">Register</a--></p>
@@ -280,7 +280,7 @@ $("#popup").modal('show');
                 </div>
               </div>
               <p><input type="submit" name="submit" value="Register" class="btn btn-primary popup-register-button"></p>
-              <div class="col-md-12 keeplogin text-center" style="padding:0px;"><b><p>Already registered? </p><a href="javascript:;" class="show-login-form lgt">Login</a></b></div>
+              <div class="col-md-12 keeplogin text-center" style="padding:0px;"><b><span>Already registered? </span><a href="javascript:;" class="show-login-form lgt">Login</a></b></div>
             </form>
           </div>
 
