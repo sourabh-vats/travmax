@@ -66,7 +66,7 @@
             <p class="text_3">Approved: <span>₹ <?php echo $approved_income; ?></p>
             <p class="text_3">Redemmed: <span>₹ <?php echo $redeemed_income; ?></p>
             <p class="text_3">Active: <span>₹ <?php echo $active_income; ?></p>
-            <p class="text_3">TEAM: <span>₹ <?php echo $team_income; ?></p>
+            <p class="text_3">Team: <span>₹ <?php echo $team_income; ?></p>
         </div>
     </div>
 </div>
