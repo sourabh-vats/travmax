@@ -11140,3 +11140,9 @@ a.btn.btn-default.genreate_linkk {
 
 
 }
+
+@media(max-width:768px) {
+	h2, .h2 {
+		font-size: 25px;
+	}
+}

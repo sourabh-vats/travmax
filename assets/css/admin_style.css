@@ -447,4 +447,15 @@ th {
     .navbar-toggler-icon{
         filter: invert(1);
     }
+    .navbar-nav{
+        display: none !important;
+    }
+
+    #header_navbar{
+        height: 55px;
+    }
+
+    .sidebar {
+        top: 55px;
+    }
 }
