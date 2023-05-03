@@ -443,4 +443,8 @@ th {
     .my_partners_hero_link{
         display: none;
     }
+
+    .navbar-toggler-icon{
+        filter: invert(1);
+    }
 }

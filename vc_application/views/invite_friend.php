@@ -262,6 +262,7 @@
         }
 
         textarea.remove()
+        
     }
 
     copyById = function(id) {
