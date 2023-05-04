@@ -150,7 +150,7 @@ class Customer extends CI_Controller
                                     $row = $query->row();
                                     $travmoney = $row->travmoney;
                                     if ($parent_installment->amount > $travmoney) {
-                                        $this->db->query('UPDATE customer SET travmoney = ' . $percent . ' WHERE customer_id = ' . $parent_customer_id);
+                                        $this->db->query('UPDATE customer SET travmoney = ' . $percent . ' WHERE customer_id = "' . $parent_customer_id . '"');
                                     }
                                     die();
                                     $this->Users_model->add_travmoney($travmoney, $parent_user[0]['id']);
