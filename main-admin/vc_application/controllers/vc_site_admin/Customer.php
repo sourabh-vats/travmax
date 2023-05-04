@@ -58,6 +58,11 @@ class Customer extends CI_Controller
 
     public function fund_request_update()
     {
+        echo "<pre>";
+        var_dump("test");
+        echo "</pre>";
+        die();
+
         $id = $this->uri->segment(4);
         $data['category'] = $this->customer_model->get_all_fund_request_id($id);
         $request_data = $data['category'][0];
