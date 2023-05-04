@@ -155,6 +155,13 @@ class Users_model extends CI_Model {
 		return $insert_id;
 	}
 
+	public function add_travmoney($travmoney, $customer_id)
+	{
+		$this->db->where("customer_id", $customer_id);
+		$this->db->update("customer", array('travmoney' => $travmoney));
+		return TRUE;
+	}
+
 	public function add_income($data)
 	{
 		$this->db->insert('incomes', $data);
