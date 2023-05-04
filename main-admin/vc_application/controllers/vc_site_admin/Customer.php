@@ -146,7 +146,7 @@ class Customer extends CI_Controller
                                     $p = 100;
                                 } elseif ($parent_installment->installment_no == 2) {
                                     //Parent paid first installment
-                                    $query = $this->db->query('SELECT travmoney FROM customer where customer_id = ' . $parent_customer_id . ' LIMIT 1');
+                                    $query = $this->db->query('SELECT travmoney FROM customer where customer_id = "' . $parent_customer_id . '" LIMIT 1');
                                     $row = $query->row();
                                     echo $row->travmoney;
                                     die();
