@@ -148,12 +148,11 @@ class Customer extends CI_Controller
                                     //Parent paid first installment
                                     $query = $this->db->query('SELECT travmoney FROM customer where customer_id = "' . $parent_customer_id . '" LIMIT 1');
                                     $row = $query->row();
-                                    echo $row->travmoney;
-                                    die();
-                                    if ($parent_installment->amount) {
-                                        # code...
+                                    $travmoney = $row->travmoney;
+                                    if ($parent_installment->amount > $travmoney) {
+                                        $this->db->query('UPDATE customer SET travmoney = ' . $percent . ' WHERE customer_id = ' . $parent_customer_id);
                                     }
-
+                                    die();
                                     $this->Users_model->add_travmoney($travmoney, $parent_user[0]['id']);
                                     $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Hold');
                                     $this->Users_model->add_income($add_income);
