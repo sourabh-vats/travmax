@@ -94,7 +94,7 @@ class Profile extends CI_Controller
             redirect(base_url() . 'admin/start');
         }
 
-        $query = $this->db->query('SELECT travmoney, travprofit FROM customer where customer_id = "' . $id . '" LIMIT 1');
+        $query = $this->db->query('SELECT travmoney, travprofit FROM customer where customer_id = "' . $customer_id . '" LIMIT 1');
         $row = $query->row();
         $data['travmoney'] = $row->travmoney;
         $data['travprofit'] = $row->travprofit;
