@@ -146,17 +146,13 @@ class Customer extends CI_Controller
                                     $p = 100;
                                 } elseif ($parent_installment->installment_no == 2) {
                                     //Parent paid first installment
-                                    $travmoney = $percent;
-                                    $query = $this->db->query('SELECT * FROM customer');
-
-                                    foreach ($query->result() as $row) {
-                                        echo $row->f_name;
-                                        echo $row->l_name;
-                                        echo $row->email;
-                                    }
-
-                                    echo 'Total Results: ' . $query->num_rows();
+                                    $query = $this->db->query('SELECT travmoney FROM customer where customer_id = ' . $parent_customer_id . ' LIMIT 1');
+                                    $row = $query->row();
+                                    echo $row->travmoney;
                                     die();
+                                    if ($parent_installment->amount) {
+                                        # code...
+                                    }
 
                                     $this->Users_model->add_travmoney($travmoney, $parent_user[0]['id']);
                                     $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Hold');
