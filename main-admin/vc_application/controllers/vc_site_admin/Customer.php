@@ -13,6 +13,8 @@ class Customer extends CI_Controller
         $this->load->model('customer_model');
         $this->load->model('Users_model');
 
+        $this->load->database();
+
         if (!$this->session->userdata('is_admin_logged_in')) {
             redirect('admin');
         }
@@ -145,10 +147,17 @@ class Customer extends CI_Controller
                                 } elseif ($parent_installment->installment_no == 2) {
                                     //Parent paid first installment
                                     $travmoney = $percent;
-                                    echo "<pre>";
-                                    var_dump($travmoney);
-                                    echo "</pre>";
+                                    $query = $this->db->query('SELECT * FROM customer');
+
+                                    foreach ($query->result() as $row) {
+                                        echo $row->f_name;
+                                        echo $row->l_name;
+                                        echo $row->email;
+                                    }
+
+                                    echo 'Total Results: ' . $query->num_rows();
                                     die();
+
                                     $this->Users_model->add_travmoney($travmoney, $parent_user[0]['id']);
                                     $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Hold');
                                     $this->Users_model->add_income($add_income);
