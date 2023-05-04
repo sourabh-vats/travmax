@@ -58,11 +58,6 @@ class Customer extends CI_Controller
 
     public function fund_request_update()
     {
-        echo "<pre>";
-        var_dump("test");
-        echo "</pre>";
-        die();
-
         $id = $this->uri->segment(4);
         $data['category'] = $this->customer_model->get_all_fund_request_id($id);
         $request_data = $data['category'][0];
@@ -144,6 +139,10 @@ class Customer extends CI_Controller
 
                             if ($parent_user[0]['macro'] >= $direct) {
                                 $parent_installment = $this->Users_model->get_installment_by_user_id($parent_customer_id);
+                                echo "<pre>";
+                                var_dump($parent_installment->installment_no);
+                                echo "</pre>";
+                                die();
                                 if ($parent_installment->installment_no == 1) {
                                     //Parent not paid first installment so no distribution
                                     $p = 100;
@@ -151,7 +150,7 @@ class Customer extends CI_Controller
                                     //Parent paid first installment
                                     $travmoney = $percent;
                                     echo "<pre>";
-                                    var_dump($travmoney);
+                                    var_dump($parent_installment->installment_no);
                                     echo "</pre>";
                                     die();
                                     $this->Users_model->add_travmoney($travmoney, $parent_user[0]['id']);
