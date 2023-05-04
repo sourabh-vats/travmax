@@ -139,10 +139,6 @@ class Customer extends CI_Controller
 
                             if ($parent_user[0]['macro'] >= $direct) {
                                 $parent_installment = $this->Users_model->get_installment_by_user_id($parent_customer_id);
-                                echo "<pre>";
-                                var_dump($parent_installment->installment_no);
-                                echo "</pre>";
-                                die();
                                 if ($parent_installment->installment_no == 1) {
                                     //Parent not paid first installment so no distribution
                                     $p = 100;
@@ -150,7 +146,7 @@ class Customer extends CI_Controller
                                     //Parent paid first installment
                                     $travmoney = $percent;
                                     echo "<pre>";
-                                    var_dump($parent_installment->installment_no);
+                                    var_dump($travmoney);
                                     echo "</pre>";
                                     die();
                                     $this->Users_model->add_travmoney($travmoney, $parent_user[0]['id']);
