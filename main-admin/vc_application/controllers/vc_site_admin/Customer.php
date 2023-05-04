@@ -145,6 +145,10 @@ class Customer extends CI_Controller
                                 } elseif ($parent_installment->installment_no == 2) {
                                     //Parent paid first installment
                                     $travmoney = $percent;
+                                    echo "<pre>";
+                                    var_dump($travmoney);
+                                    echo "</pre>";
+                                    die();
                                     $this->Users_model->add_travmoney($travmoney, $parent_user[0]['id']);
                                     $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Hold');
                                     $this->Users_model->add_income($add_income);
