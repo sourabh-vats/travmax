@@ -141,9 +141,10 @@ class Customer extends CI_Controller
 
                             if ($parent_user[0]['macro'] >= $direct) {
                                 $parent_installment = $this->Users_model->get_installment_by_user_id($parent_customer_id);
-                                $query = $this->db->query('SELECT travmoney FROM customer where customer_id = "' . $parent_customer_id . '" LIMIT 1');
+                                $query = $this->db->query('SELECT travmoney, travprofit FROM customer where customer_id = "' . $parent_customer_id . '" LIMIT 1');
                                 $row = $query->row();
                                 $travmoney = $row->travmoney;
+                                $travprofit = $row->travprofit;
                                 if ($parent_installment->installment_no == 1) {
                                     //Parent not paid first installment so no distribution
                                     $p = 100;
@@ -152,7 +153,7 @@ class Customer extends CI_Controller
                                     if ($parent_installment->amount > $travmoney) {
                                         $this->db->query('UPDATE customer SET travmoney = ' . ($travmoney + $percent) . ' WHERE customer_id = "' . $parent_customer_id . '"');
                                     } else {
-                                        $this->db->query('UPDATE customer SET travmoney = ' . $percent / 2 . ', travprofit = ' . $percent / 2 . ' WHERE customer_id = "' . $parent_customer_id . '"');
+                                        $this->db->query('UPDATE customer SET travmoney = ' . ($travmoney + $percent / 2) . ', travprofit = ' . ($travprofit + $percent / 2) . ' WHERE customer_id = "' . $parent_customer_id . '"');
                                     }
                                     $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => 'Hold');
                                     $this->Users_model->add_income($add_income);
@@ -161,7 +162,7 @@ class Customer extends CI_Controller
                                     $row = $query->row();
                                     $travmoney = $row->travmoney;
                                     if ($parent_installment->amount > $travmoney) {
-                                        $this->db->query('UPDATE customer SET travmoney = ' . $percent / 2 . ', travprofit = ' . $percent / 2 . ' WHERE customer_id = "' . $parent_customer_id . '"');
+                                        $this->db->query('UPDATE customer SET travmoney = ' . ($travmoney + $percent / 2) . ', travprofit = ' . ($travprofit + $percent / 2) . ' WHERE customer_id = "' . $parent_customer_id . '"');
                                     }
                                     $add_income = array('amount' => $percent, 'user_id' => $parent_user[0]['id'], 'type' => 'Level Income', 'user_send_by' => $cust_id, 'dist_level' => $dis_level, 'description' => 'Macro', 'status' => $status);
                                     $this->Users_model->add_income($add_income);
