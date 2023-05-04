@@ -24,11 +24,11 @@
         <div class="row mb-4 gradient_parent">
             <div class="col text-center py-4">
                 <h3>TRAVMONEY</h3>
-                <span class="box_number_data"><?php echo $my_sales; ?></span>
+                <span class="box_number_data"><?php echo $travmoney; ?></span>
             </div>
             <div class="col text-center py-4">
                 <h3>TRAVPROFIT</h3>
-                <span class="box_number_data"><?php echo $team_sales; ?></span>
+                <span class="box_number_data"><?php echo $travprofit; ?></span>
             </div>
         </div>
         <div class="row gradient_parent">

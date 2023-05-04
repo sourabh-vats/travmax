@@ -13,6 +13,7 @@ class Profile extends CI_Controller
         if (!$this->session->userdata('is_customer_logged_in')) {
             redirect(base_url() . '');
         }
+        $this->load->database();
     }
 
     public function index()
@@ -92,6 +93,11 @@ class Profile extends CI_Controller
             //redirect(base_url() . 'admin/select_package');
             redirect(base_url() . 'admin/start');
         }
+
+        $query = $this->db->query('SELECT travmoney, travprofit FROM customer where customer_id = "' . $id . '" LIMIT 1');
+        $row = $query->row();
+        $data['travmoney'] = $row->travmoney;
+        $data['travprofit'] = $row->travprofit;
 
         $data['main_content'] = 'admin/home';
         $this->load->view('includes/admin/template', $data);
@@ -358,9 +364,9 @@ class Profile extends CI_Controller
 
         if ($payment_plan == "traveasy_plan") {
             $payment_amount = 6600;
-        }elseif ($payment_plan == "travlater_plan") {
+        } elseif ($payment_plan == "travlater_plan") {
             $payment_amount = 13200;
-        }elseif ($payment_plan == "travnow_plan") {
+        } elseif ($payment_plan == "travnow_plan") {
             $payment_amount = $data['package_data'][0]["total"];
         }
 
