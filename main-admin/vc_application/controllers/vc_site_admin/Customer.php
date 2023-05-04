@@ -76,7 +76,7 @@ class Customer extends CI_Controller
                 if ($request_data["subject"] == "installment" && $this->input->post('status') == "Completed") {
                     $installment = $this->Users_model->get_installment_by_user_id($request_data["user_id"]);
                     $data_to_update = array('status' => 'Paid', 'pay_date' => date('Y-m-d'));
-                    //$this->Users_model->update_installment_status($installment->id, $data_to_update);
+                    $this->Users_model->update_installment_status($installment->id, $data_to_update);
                     $dis_level = 1;
                     $p = 0;
                     $cust_id = $request_data["user_id"];
