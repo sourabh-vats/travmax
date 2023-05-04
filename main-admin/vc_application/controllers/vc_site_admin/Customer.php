@@ -150,7 +150,7 @@ class Customer extends CI_Controller
                                 } elseif ($parent_installment->installment_no == 2) {
                                     //Parent paid first installment
                                     if ($parent_installment->amount > $travmoney) {
-                                        $this->db->query('UPDATE customer SET travmoney = ' . $travmoney + $percent . ' WHERE customer_id = "' . $parent_customer_id . '"');
+                                        $this->db->query('UPDATE customer SET travmoney = ' . ($travmoney + $percent) . ' WHERE customer_id = "' . $parent_customer_id . '"');
                                     } else {
                                         $this->db->query('UPDATE customer SET travmoney = ' . $percent / 2 . ', travprofit = ' . $percent / 2 . ' WHERE customer_id = "' . $parent_customer_id . '"');
                                     }
