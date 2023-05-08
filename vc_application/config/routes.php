@@ -84,7 +84,7 @@ $route['services'] = 'page/services';
 $route['packages'] = 'page/packages';
 $route['regis'] = 'page/regis';
 $route['testimonials'] = 'page/testimonials';
-//$route['partner'] = 'page/partner';
+$route['partner'] = 'page/partner';
 
   
 $route['business_plan'] = 'page/business_plan';
