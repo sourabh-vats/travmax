@@ -9,7 +9,7 @@
     <div class="contentt">
       <h1> Terms and Conditions – Travmax</h1>
       <p>
-        <ol>
+        <ol type="1">
           <li>All prices for all tours are on Twin sharing basis. In case of a single traveller, single supplement charges will apply.</li>
           <li></li>
           <li></li>
