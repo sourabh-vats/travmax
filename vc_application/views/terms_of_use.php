@@ -8,42 +8,42 @@
     </div>
     <div class="contentt">
       <h1> Terms and Conditions – Travmax</h1>
-      <pre>
-        1. All prices for all tours are on Twin sharing basis. In case of a single traveller, single supplement charges will apply.
-        2. The tour price includes all the inclusions mentioned and excludes all that’s not mentioned in the inclusions.
-        3. The tour cost usually includes Return Airfare, Hotel Stays, Transfers, Breakfasts, Sight Seeing, Visa Assistance ( not visa fees ). Please read the list of inclusions for each tour.
-        4. In the Traveasy plan the tour can be availed after making all the instalments or after making the complete payment at any stage.
-        5. All the prices are for normal season. High season surcharge or special days surcharge may apply.
-        6. If a tour is achieved with Travmoney as earned or incentive, it cannot be exchanged with cash.
-        7. Commission Payout of the current month will be released only when all instalments are paid on due dates without delay.
-        8. Minimum 2 instalments need to be paid to be eligible for availing the Travmoney/Travcash/Free Travel incentive.
-        9. All commissions are paid monthly.
-        10. For all Partners, Travellers willing to use the refer a friend model for Income and Incentives should adhere to the Partner rules of Travmax Holidays with regard to Micro, Macro and Mega Partners.
-        11. After booking the tour by making the payment of 20% of the tour cost or Rs. 11,000                 ( whichever is higher as per the tour cost ), the tour price is valid for a period of 45 days only. A revised price may be applicable post 45 days depending upon the season. 
-        12. All applicable Taxes are extra.
-        13. All the terms and conditions, rules and regulations pertaining to Travel packages and becoming a partner/distributor/advisor/franchise or amount of commission etc. can be amended, changed, modified, withdrawn, reintroduced or suspended anytime with or without notice. The same shall be binding on all the concerned.
-        14. In case of family travellers, in order to work as partner distributors/advisors/franchisees/resellers they need to fulfil all the requirements and conditions for each of its centre/partnership.
-        15. Booking cost paid is non-refundable.
-        16. After making minimum 2 instalments, a passenger can take an instalment holiday and can hold the tour up to 1 year as per his suitability. He will need to pay the revised cost of the tour applicable at that time.
-        17. Travmax Holidays reserves the right, at any time, without prior notice and liability and without assigning any reason whatsoever, to add/alter/modify/change or vary all of these terms and conditions or to replace, wholly or in part, this offer by another offer, whether similar to this offer or not, or to extend or withdraw it altogether.
-        18. In the event of any misuse or abuse of the offer or the conditions by the traveller /partner/distributor/advisor or any travel agent, Travmax Holidays reserves the right to deny the offer or cancel the bookings without assigning any refund.
-        19. This offer is valid for bookings made through travmax account log-in only.
-        20. Cashback/Moneyback/Income/Commission will be credited within 45 days of travel corresponding to last eligible booking and after the payment of minimum 2 instalments or 20% of the tour cost ( which ever is highest ).
-        21. A partner/advisor needs to make 5 own sales in order to be eligible for maximum incentives and commissions.
-        22. 5% TDS and 5% Admn charges will be deducted from the final payout/commission.
-        23. Any fully cancelled or partially cancelled booking will not be considered for commission/offer as this is only for valid confirmed bookings.
-        24. Travmax Holidays shall not be liable to for any indirect, punitive, special, incidental or consequential damages arising out of or in connection with the offer or in travel, before, during and after.
-        25. All the Air Tickets and travel, hotel bookings and stays, transfers etc. etc. are third party arrangements and are outside the control of Travmax Holidays.
-        26. Travmax Holidays will not be responsible for any delays/dysfunctions/damages arising out of any of the activity before, during and after the travel/tour.
-        27. All the visas are the sole discretion of the respective embassy and Travmax Holidays can have no role in that. Incase the visa is delayed or denied, Travmax Holidays cannot be held responsible in any way whatsoever. Fees paid or any other charges paid are non refundable in case of any delay or denial.
-        28. In case of International travel, to grant entry into the foreign country is the prerogative of the presiding immigration officer. Though its usually not a problem but in case of some extra ordinary unusual circumstances if the entry is denied to anyone in particular or a group in together, Travmax Holidays will not be responsible in any way whatsoever. No refund shall be made in that case whatsoever.
-        29. Any Inconveniences, delays, damages, losses occurring before, during or after the tour due to any reason, due to any party, due to any conditions are not the responsibility of Travmax Holidays and no compensation/refund partial or full can be made in any such case.
-        30. Travellers are advised to keep special care of their personal belongings ( cash, mobile, documents etc. ) during travel, stays, transfers, flights, commute, dining, sightseeing etc. Travmax Holidays will not be responsible for any loss resulting out of anything lost or stolen or any other factor. No compensation/refund can be made in such case.
-        31. Decision on cashback/moneyback/income/commissions to be credited remains solely with Travmax Holidays.
-        32. Disputes, if any, arising out of or in connection with this arrangement/offer shall be subject to the exclusive jurisdiction of the competent courts in Chandigarh.
-        33. Travmax Holidays is very firm with its “Respect Your Visa” policy. Every traveller needs to respect, follow and abide by the terms and conditions of every visa of every country that’s been granted. The conditions regarding the duration and any other if applicable need to be strictly adhered to by each one as individuals or/and groups.
-        34. Travmax Holidays reserves the right to amend these terms and conditions at any time without any prior notice. Modifications of these terms will be effective from the time they are updated in the Terms and Conditions section.
-      </pre>
+      <p>
+        1. All prices for all tours are on Twin sharing basis. In case of a single traveller, single supplement charges will apply.<br>
+        2. The tour price includes all the inclusions mentioned and excludes all that’s not mentioned in the inclusions.<br>
+        3. The tour cost usually includes Return Airfare, Hotel Stays, Transfers, Breakfasts, Sight Seeing, Visa Assistance ( not visa fees ). Please read the list of inclusions for each tour.<br>
+        4. In the Traveasy plan the tour can be availed after making all the instalments or after making the complete payment at any stage.<br>
+        5. All the prices are for normal season. High season surcharge or special days surcharge may apply.<br>
+        6. If a tour is achieved with Travmoney as earned or incentive, it cannot be exchanged with cash.<br>
+        7. Commission Payout of the current month will be released only when all instalments are paid on due dates without delay.<br>
+        8. Minimum 2 instalments need to be paid to be eligible for availing the Travmoney/Travcash/Free Travel incentive.<br>
+        9. All commissions are paid monthly.<br>
+        10. For all Partners, Travellers willing to use the refer a friend model for Income and Incentives should adhere to the Partner rules of Travmax Holidays with regard to Micro, Macro and Mega Partners.<br>
+        11. After booking the tour by making the payment of 20% of the tour cost or Rs. 11,000                 ( whichever is higher as per the tour cost ), the tour price is valid for a period of 45 days only. A revised price may be applicable post 45 days depending upon the season. <br>
+        12. All applicable Taxes are extra.<br>
+        13. All the terms and conditions, rules and regulations pertaining to Travel packages and becoming a partner/distributor/advisor/franchise or amount of commission etc. can be amended, changed, modified, withdrawn, reintroduced or suspended anytime with or without notice. The same shall be binding on all the concerned.<br>
+        14. In case of family travellers, in order to work as partner distributors/advisors/franchisees/resellers they need to fulfil all the requirements and conditions for each of its centre/partnership.<br>
+        15. Booking cost paid is non-refundable.<br>
+        16. After making minimum 2 instalments, a passenger can take an instalment holiday and can hold the tour up to 1 year as per his suitability. He will need to pay the revised cost of the tour applicable at that time.<br>
+        17. Travmax Holidays reserves the right, at any time, without prior notice and liability and without assigning any reason whatsoever, to add/alter/modify/change or vary all of these terms and conditions or to replace, wholly or in part, this offer by another offer, whether similar to this offer or not, or to extend or withdraw it altogether.<br>
+        18. In the event of any misuse or abuse of the offer or the conditions by the traveller /partner/distributor/advisor or any travel agent, Travmax Holidays reserves the right to deny the offer or cancel the bookings without assigning any refund.<br>
+        19. This offer is valid for bookings made through travmax account log-in only.<br>
+        20. Cashback/Moneyback/Income/Commission will be credited within 45 days of travel corresponding to last eligible booking and after the payment of minimum 2 instalments or 20% of the tour cost ( which ever is highest ).<br>
+        21. A partner/advisor needs to make 5 own sales in order to be eligible for maximum incentives and commissions.<br>
+        22. 5% TDS and 5% Admn charges will be deducted from the final payout/commission.<br>
+        23. Any fully cancelled or partially cancelled booking will not be considered for commission/offer as this is only for valid confirmed bookings.<br>
+        24. Travmax Holidays shall not be liable to for any indirect, punitive, special, incidental or consequential damages arising out of or in connection with the offer or in travel, before, during and after.<br>
+        25. All the Air Tickets and travel, hotel bookings and stays, transfers etc. etc. are third party arrangements and are outside the control of Travmax Holidays.<br>
+        26. Travmax Holidays will not be responsible for any delays/dysfunctions/damages arising out of any of the activity before, during and after the travel/tour.<br>
+        27. All the visas are the sole discretion of the respective embassy and Travmax Holidays can have no role in that. Incase the visa is delayed or denied, Travmax Holidays cannot be held responsible in any way whatsoever. Fees paid or any other charges paid are non refundable in case of any delay or denial.<br>
+        28. In case of International travel, to grant entry into the foreign country is the prerogative of the presiding immigration officer. Though its usually not a problem but in case of some extra ordinary unusual circumstances if the entry is denied to anyone in particular or a group in together, Travmax Holidays will not be responsible in any way whatsoever. No refund shall be made in that case whatsoever.<br>
+        29. Any Inconveniences, delays, damages, losses occurring before, during or after the tour due to any reason, due to any party, due to any conditions are not the responsibility of Travmax Holidays and no compensation/refund partial or full can be made in any such case.<br>
+        30. Travellers are advised to keep special care of their personal belongings ( cash, mobile, documents etc. ) during travel, stays, transfers, flights, commute, dining, sightseeing etc. Travmax Holidays will not be responsible for any loss resulting out of anything lost or stolen or any other factor. No compensation/refund can be made in such case.<br>
+        31. Decision on cashback/moneyback/income/commissions to be credited remains solely with Travmax Holidays.<br>
+        32. Disputes, if any, arising out of or in connection with this arrangement/offer shall be subject to the exclusive jurisdiction of the competent courts in Chandigarh.<br>
+        33. Travmax Holidays is very firm with its “Respect Your Visa” policy. Every traveller needs to respect, follow and abide by the terms and conditions of every visa of every country that’s been granted. The conditions regarding the duration and any other if applicable need to be strictly adhered to by each one as individuals or/and groups.<br>
+        34. Travmax Holidays reserves the right to amend these terms and conditions at any time without any prior notice. Modifications of these terms will be effective from the time they are updated in the Terms and Conditions section.<br>
+      </p>
       <!-- <p>
         1. All prices for all tours are on Twin sharing basis. In case of a single traveller, single supplement charges will apply.<br>
         2. The tour price includes all the inclusions mentioned and excludes all that’s not mentioned in the inclusions.<br>
