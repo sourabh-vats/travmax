@@ -8,7 +8,7 @@
     </div>
     <div class="contentt">
       <h1> Terms and Conditions – Travmax</h1>
-      <p>
+      <pre>
         1. All prices for all tours are on Twin sharing basis. In case of a single traveller, single supplement charges will apply.
         2. The tour price includes all the inclusions mentioned and excludes all that’s not mentioned in the inclusions.
         3. The tour cost usually includes Return Airfare, Hotel Stays, Transfers, Breakfasts, Sight Seeing, Visa Assistance ( not visa fees ). Please read the list of inclusions for each tour.
@@ -43,7 +43,7 @@
         32. Disputes, if any, arising out of or in connection with this arrangement/offer shall be subject to the exclusive jurisdiction of the competent courts in Chandigarh.
         33. Travmax Holidays is very firm with its “Respect Your Visa” policy. Every traveller needs to respect, follow and abide by the terms and conditions of every visa of every country that’s been granted. The conditions regarding the duration and any other if applicable need to be strictly adhered to by each one as individuals or/and groups.
         34. Travmax Holidays reserves the right to amend these terms and conditions at any time without any prior notice. Modifications of these terms will be effective from the time they are updated in the Terms and Conditions section.
-      </p>
+      </pre>
       <!-- <p>
         1. All prices for all tours are on Twin sharing basis. In case of a single traveller, single supplement charges will apply.<br>
         2. The tour price includes all the inclusions mentioned and excludes all that’s not mentioned in the inclusions.<br>
