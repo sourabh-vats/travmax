@@ -1,5 +1,6 @@
 <?php
 $package = $package_data[0];
+$amount_with_tax = $package["total"] + ($package["total"] * 0.5 * 2);
 ?>
 <div class="row" id="wrapper">
     <div id="content_box">
@@ -11,11 +12,11 @@ $package = $package_data[0];
         </p>
         <br>
         <p>
-            <span class="text_2 text-center">Price: Rs. 1,489,324</span>
+            <span class="text_2 text-center">Price: Rs. <?php echo $package["total"]; ?></span>
             <span class="price_below_info">+ GST 5% and TCS 5%</span>
         </p>
         <p>
-            <span class="text_2 text-center">Price: Rs. 1,489,324</span>
+            <span class="text_2 text-center">Price: Rs. <?php echo $amount_with_tax ?></span>
             <span class="price_below_info">Inclusive of TAX and TCS</span>
         </p>
         <br>
