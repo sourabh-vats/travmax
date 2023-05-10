@@ -302,7 +302,7 @@
 					
             </div>
             <div class="col-sm-4">
-                     <img src="/assets/images/ezgif.com-gif-maker (3).gif" class="img-responsive">
+                     <img src="/images/dubai_home.jpg" class="img-responsive">
 					 <img class="trt" src="/assets/images/travel-summer-vacation-concept-happy-traveler-asian-womanhailand.jpg" class="img-responsive">
 					 <img class="trt" src="/assets/images/ezgif.com-gif-maker (2).gif" class="img-responsive">
 					 <img class="trt" src="/assets/images/seine-paris-withc.jpg" class="img-responsive">
