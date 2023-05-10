@@ -304,7 +304,7 @@
             <div class="col-sm-4">
                      <img src="/images/dubai_home.jpg" class="img-responsive">
 					 <img class="trt" src="/assets/images/travel-summer-vacation-concept-happy-traveler-asian-womanhailand.jpg" class="img-responsive">
-					 <img class="trt" src="/assets/images/ezgif.com-gif-maker (2).gif" class="img-responsive">
+					 <img class="trt" src="/images/usa_home.jpg" class="img-responsive">
 					 <img class="trt" src="/assets/images/seine-paris-withc.jpg" class="img-responsive">
             </div>
             </div>
@@ -323,7 +323,7 @@
                    <img src="/assets/images/rear-ish-flag.jpg" class="img-responsive">
             </div>
             <div class="col-sm-4">
-                  <img src="/assets/images/ezgif.com).gif" class="img-responsive">
+                  <img src="/images/canada_home.jpg" class="img-responsive">
             </div>
 			<div class="col-sm-4">
                  <img src="/assets/images/ground.jpg" class="img-responsive">
@@ -424,7 +424,7 @@
             <div class="col-sm-6">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="/assets/images/ezgif.com-6).gif" class="img-responsive">
+                     <a href="#"><img src="/images/solo_travel_home.jpg" class="img-responsive">
 					 <h3> Solo Travels</h3></a>
                   </div>
 				  <h4>You need no company now </h4>
