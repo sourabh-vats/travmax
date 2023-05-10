@@ -297,8 +297,8 @@
       <div class="partner_main">
          <div class="row">
               <div class="col-sm-8">
-					<img src="/assets/images/ezgif.com-gif-maker (4).gif" class="img-responsive"> 
-					<img class="trt" src="/assets/images/ezgif.com-gif-maker (8).gif" class="img-responsive"> 
+					<img src="/images/maldives_home.jpg" class="img-responsive"> 
+					<img class="trt" src="/images/switzerland_home.jpg" class="img-responsive"> 
 					
             </div>
             <div class="col-sm-4">
