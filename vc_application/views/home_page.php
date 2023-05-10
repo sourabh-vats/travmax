@@ -71,7 +71,7 @@
                <div class="col-sm-6">
                <div class="part_back part_1">
                   <div class="part_botm">
-                     <a href="#"><img src="/assets/images/ezgif.com-gif-maker.gif" class="img-responsive">
+                     <a href="#"><img src="/images/now_every_one_can_travel.jpg" class="img-responsive">
 					 <h3>Now Everyone Can Travel</h3></a>
                   </div>
 				  <h4>Making it Accesible to all</h4>
@@ -80,7 +80,7 @@
             <div class="col-sm-6">
                <div class="part_back part_2">
                   <div class="part_botm">
-                     <a href="#"><img src="/images/now_every_one_can_travel.jpg" class="img-responsive">
+                     <a href="#"><img src="/images/now_every_one_can_travel_2.jpg" class="img-responsive">
 					 <h3>Now Everyone Can Earn From Travel</h3></a>
                   </div>
 				  <h4>So Easy So Simple So Profitable</h4>
