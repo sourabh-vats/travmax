@@ -41,7 +41,7 @@
           <div class="classs04">
 		  <div class="container">
             <div class="divvv05">
-              <img src="assets/images/pat1.jpg" class="img-fluid" alt="...">
+            <img src="images/partner_types.jpeg" class="img-fluid" alt="...">
             </div>
             </div>
             <div class="divvv04">
@@ -53,7 +53,7 @@
           <div class="classs05">
 		  <div class="container">
             <div class="divvv07">
-              <img src="images/partner_types.jpeg" class="img-fluid" alt="...">
+              <img src="images/travmax_advantage.png" class="img-fluid" alt="...">
             </div>
             </div>
             <div class="divvv04">
@@ -63,7 +63,7 @@
 		  <div class="container">
           <div class="classs06">
             <div class="divvv09">
-              <img src="assets/images/pat3.jpg" class="img-fluid" alt="...">
+              <img src="images/new_plans.jpeg" class="img-fluid" alt="...">
             </div>
             </div>
             </div>
