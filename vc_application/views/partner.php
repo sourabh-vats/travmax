@@ -28,8 +28,8 @@
           
           
             <div class="divvv04">
-              <h1>Be a Franchise, Reseller or simply refer a friend and gain from Travmax Platform</h1>
-              <h1 style="color:#ff9900;">Sell Travel, Earn Free Travel & Much More</h1>
+              <h1>Be a Franchise, Reseller or simply refer a <br class="d-none d-md-block"> friend and gain from Travmax Platform</h1>
+              <h1 style="color:#ff9900; padding-top: 1rem;">Sell Travel, Earn Free Travel & Much More</h1>
                <h3>Share your Own Travel Experiences & Build Business </h3>
                <p>Travmax gives every of its customer an opportunity to become a partner. Customers can become partners and can promote the same <br>
                 products that they have used and same experiences they've had with their friends, family and others looking to travel. Sharing your<br>
@@ -53,7 +53,7 @@
           <div class="classs05">
 		  <div class="container">
             <div class="divvv07">
-              <img src="assets/images/pat2.jpg" class="img-fluid" alt="...">
+              <img src="images/partner_types.jpeg" class="img-fluid" alt="...">
             </div>
             </div>
             <div class="divvv04">
