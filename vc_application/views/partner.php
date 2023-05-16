@@ -28,7 +28,8 @@
           
           
             <div class="divvv04">
-              <h1>Be a Franchise, Start Selling Travel & Much More</h1>
+              <h1>Be a Franchise, Reseller or simply refer a friend and gain from Travmax Platform</h1>
+              <h1 style="color:#ff9900;">Sell Travel, Earn Free Travel & Much More</h1>
                <h3>Share your Own Travel Experiences & Build Business </h3>
                <p>Travmax gives every of its customer an opportunity to become a partner. Customers can become partners and can promote the same <br>
                 products that they have used and same experiences they've had with their friends, family and others looking to travel. Sharing your<br>
