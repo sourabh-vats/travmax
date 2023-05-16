@@ -222,6 +222,21 @@
         <a id="whatsapp_share_link" href="">Share Via Whatsapp <i class="fa fa-whatsapp ms-3" aria-hidden="true"></i></a>
         <input id="the_text" type="hidden" value="https://www.travmaxholidays.com?refer_id=<?php echo $cust_id; ?>" size="50">
         <p id="copy_share_link" onclick="copyById('the_text')">Share Your Link</p>
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="..." class="rounded me-2" alt="...">
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Hello, world! This is a toast message.
+                </div>
+            </div>
+        </div>
         <p class="text-muted">Copy your link and share</p>
     </div>
 </div>
@@ -262,7 +277,7 @@
         }
 
         textarea.remove()
-        
+
     }
 
     copyById = function(id) {
