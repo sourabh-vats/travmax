@@ -22,7 +22,7 @@
 <section>
   <div class="classs03">
     <div class="divvv03">
-      <a class="fist-c" href="<?php echo base_url(); ?>regis">Be a Partner - Register Now</a>
+      <a class="fist-c" href="" data-toggle="modal" data-target="#registerLoginModal">Be a Partner - Register Now</a>
     </div>
 
 
@@ -90,7 +90,7 @@
     </div>
   </div>
   <div class="divvv03">
-    <a class="fist-c" href="<?php echo base_url(); ?>regis">Be a Partner - Register Now</a>
+    <a class="fist-c" href="" data-toggle="modal" data-target="#registerLoginModal">Be a Partner - Register Now</a>
   </div>
   <div class="divvv16">
     <span>Go to Home Page</span>
