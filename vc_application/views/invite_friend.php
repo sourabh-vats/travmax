@@ -223,7 +223,7 @@
         <input id="the_text" type="hidden" value="https://www.travmaxholidays.com?refer_id=<?php echo $cust_id; ?>" size="50">
         <p id="copy_share_link" onclick="copyById('the_text')">Share Your Link</p>
         <div class="alert alert-success d-none" role="alert" id="copy_success">
-            A simple success alert—check it out!
+            Link Copied Successfully!
         </div>
         <p class="text-muted">Copy your link and share</p>
     </div>
