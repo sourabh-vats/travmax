@@ -222,29 +222,14 @@
         <a id="whatsapp_share_link" href="">Share Via Whatsapp <i class="fa fa-whatsapp ms-3" aria-hidden="true"></i></a>
         <input id="the_text" type="hidden" value="https://www.travmaxholidays.com?refer_id=<?php echo $cust_id; ?>" size="50">
         <p id="copy_share_link" onclick="copyById('the_text')">Share Your Link</p>
-        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
-
-        <div class="toast-container position-fixed bottom-0 end-0 p-3">
-            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                    <img src="..." class="rounded me-2" alt="...">
-                    <strong class="me-auto">Bootstrap</strong>
-                    <small>11 mins ago</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                    Hello, world! This is a toast message.
-                </div>
-            </div>
+        <div class="alert alert-success d-none" role="alert" id="copy_success">
+            A simple success alert—check it out!
         </div>
         <p class="text-muted">Copy your link and share</p>
     </div>
 </div>
 
 <script type="text/javascript">
-    const toastElList = document.querySelectorAll('.toast')
-    const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
-    // Author: Joseph Cowdell
 
     var whatsapp_share_link = document.getElementById("whatsapp_share_link");
     whatsapp_share_link.setAttribute('href', "whatsapp://send?text=Hey friend, I came across a new exciting idea 💡 where one can travel for international holidays  and can earn from it. I liked it and would like you to explore it too. It's awesome! Signup for free using my link. I am sure you'ld like it 😊." + $("#the_text").val());
@@ -279,6 +264,7 @@
         }
 
         textarea.remove()
+        $("#copy_success").removeClass("d-none");
 
     }
 
