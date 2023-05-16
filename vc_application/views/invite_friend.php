@@ -242,6 +242,8 @@
 </div>
 
 <script type="text/javascript">
+    const toastElList = document.querySelectorAll('.toast')
+    const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
     // Author: Joseph Cowdell
 
     var whatsapp_share_link = document.getElementById("whatsapp_share_link");
