@@ -1,8 +1,6 @@
 <?php
 $package = $package_data[0];
-$amount_with_tax = $package["total"] + ($package["total"] * 0.5) + ($package["total"] * 0.5);
-echo $package["total"] * 0.05;
-die();
+$amount_with_tax = $package["total"] + ($package["total"] * 0.05) + ($package["total"] * 0.05);
 ?>
 <div class="row" id="wrapper">
     <div id="content_box">
